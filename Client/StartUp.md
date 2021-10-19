@@ -8,26 +8,17 @@
 
 
 
-## 平台要求
-
-| 平台    | 支持版本     |
-| ------- | ------------ |
-| Android | Android 5.0+ |
-| iOS     | iOS 9.0+     |
-
-
-
 ## 快速开始
 
 ### Android接入流程
 
-1. 与Sud商务团队洽谈合作事宜，获取项目的appid、appkey、appsecret、code和SudMGPSDK库链接等信息
+1. 与Sud商务团队洽谈合作事宜，获取项目的appid、appkey、appsecret、code、SudMGP SDK库链接和Demo工程等信息
 
 2. 从SudMGPSDK库链接下载SudMGPSDK.aar
 
 3. 在工程中引入SDK：
 
-   以Android Studio 4.2，Gradle 6.7.1，工程SudMgpExample-Android为例：
+   以Android Studio 4.2，Gradle 6.7.1，编程语言Java，工程SudMgpExample-Android为例：
 
    - 将SudMGPSDK.aar拷贝到SudMgpExample-Android/app/libs目录
 
@@ -47,7 +38,7 @@
      }
      
      repositories {
-         // 加载游戏SDK路径
+         // 加载游戏SDK libs路径
          flatDir {
              dirs '../app/libs'
          }
@@ -70,6 +61,7 @@
    	public static final int GAME_ID_BUMPER_CAR = 1001; // 游戏ID:碰碰车
    	public static final int GAME_ID_FLY_CUTTER = 1002; // 游戏ID:飞刀达人
    	public static final int GAME_ID_DRAW_GUESS = 1003; // 游戏ID:你画我猜
+   
    	/**
      	* 打开-碰碰车游戏
      	*/
@@ -100,10 +92,13 @@
    
    ```
 
-6. GameActivity初始化游戏SDK，加载游戏 并把游戏view加入项目界面
+6. GameActivity初始化游戏SDK，加载游戏，回调生命周期并把游戏view加入项目界面
 
    ```java
-       /**
+   
+   	 private ISudFSTAPP mISudFSTAPP; //调用游戏SDK的接口,成功加载游戏后可用
+   
+   	 /**
         * 1，初始化游戏SDK
         *
         * @param context   上下文
@@ -151,19 +146,124 @@
            container.addView(gameView);
            appStateToMG();
        }
+   
+   		@Override
+       protected void onStart() {
+           super.onStart();
+           if (mISudFSTAPP != null) {
+               mISudFSTAPP.startMG();//启动游戏
+           }
+       }
+   
+       @Override
+       protected void onResume() {
+           super.onResume();
+           if (mISudFSTAPP != null) {
+               mISudFSTAPP.playMG();//开始游戏
+           }
+       }
+   
+       @Override
+       protected void onPause() {
+           super.onPause();
+           if (mISudFSTAPP != null) {
+               mISudFSTAPP.pauseMG();//暂停游戏
+           }
+       }
+   
+       @Override
+       protected void onStop() {
+           super.onStop();
+           if (mISudFSTAPP != null) {
+               mISudFSTAPP.stopMG();//停止游戏
+           }
+       }
+   
+       @Override
+       protected void onDestroy() {
+           super.onDestroy();
+           if (mISudFSTAPP != null) {
+               mISudFSTAPP.destroyMG();//释放资源
+           }
+       }
+   ```
+   
+   
+   
+7. GameActivity实现ISudFSMMG接口，具体可参考SDK Demo工程
+
+   ```java
+   	 /**
+        * 游戏SDK调用app的接口
+        */
+       private final ISudFSMMG mISudFSMMG = new ISudFSMMG() {
+   
+           /**
+            * 回调此方法，表示令牌过期，此时需要刷新令牌并使用ISudFSMStateHandle回调
+            * @param handle
+            * @param dataJson
+            */
+           @Override
+           public void onExpireCode(ISudFSMStateHandle handle, String dataJson) {
+               
+           }
+   
+           /**
+            * 处理获取游戏视图信息
+            * @param handle
+            * @param dataJson
+            */
+           @Override
+           public void onGetGameViewInfo(ISudFSMStateHandle handle, String dataJson) {
+               
+           }
+   
+           /**
+            * 通知游戏，游戏视图信息
+            * @param handle
+            * @param gameViewWidth
+            * @param gameViewHeight
+            */
+           private void notifyGameViewInfo(ISudFSMStateHandle handle, int gameViewWidth, int gameViewHeight) {
+               
+           }
+   
+           /**
+            * 游戏状态变化
+            * @param handle
+            * @param state     状态名
+            * @param dataJson  状态数据，json字符串
+            */
+           @Override
+           public void onGameStateChange(ISudFSMStateHandle handle, String state, String dataJson) {
+               Log.d(TAG, "onGameStateChange state:" + state + "--dataJson:" + dataJson);
+           }
+   
+           /**
+            * 玩家状态变化
+            * @param handle
+            * @param userId    玩家用户ID
+            * @param state     状态名
+            * @param dataJson  状态数据，json字符串。参考文档
+            */
+           @Override
+           public void onPlayerStateChange(ISudFSMStateHandle handle, String userId, String state, String dataJson) {
+               Log.d(TAG, "onPlayerStateChange userId:" + userId + "--state:" + state + "--dataJson:" + dataJson);
+           }
+       };
    ```
 
    
 
 ### iOS接入流程
 
-1. 与Sud商务团队洽谈合作事宜，获取项目的appid、appkey、appsecret、code和SudMGPSDK库链接等信息
+1. 与Sud商务团队洽谈合作事宜，获取项目的appid、appkey、appsecret、code、SudMGP SDK库链接和Demo工程等信息
 
 2. 从SudMGPSDK库链接下载SudMGPSDK.framework和lib_runtime.framework
 
 3. 在工程中引入SDK：
 
-   以Xcode 13.0，目标工程SudMgpExample-iOS为例：
+   以Xcode 13.0，编程语言Objective-C，目标工程SudMgpExample-iOS为例：
 
    - 将lib_runtime.framework、SudMGPSDK.framework 拷贝到GameSDK文件夹中
 
@@ -249,7 +349,7 @@
 
    
 
-7. 在GameViewController需要实现 ISudFSMMG 代理协议和加载游戏view，销毁GameViewController需要调用destroyMG方法，代码入下所示：
+7. 在GameViewController加载游戏view，销毁GameViewController需要调用destroyMG方法，代码入下所示：
 
    ```objective-c
    #import "GameViewController.h"
@@ -292,6 +392,57 @@
    - (void)destroyMG {
        [self.fsmAPP2MG destroyMG];
    }
+   ```
+
+   
+
+8. GameViewController需要实现 ISudFSMMG 代理协议，具体可参考SDK Demo工程
+
+   ```objective-c
+   #import "GameViewController.h"
+   #import <SudMGPSDK/ISudFSMMG.h>
+   #import <SudMGPSDK/ISudFSTAPP.h>
+   #import <SudMGPSDK/SudMGP.h>
+   #import <SudMGPSDK/ISudFSMStateHandle.h>
+   
+   @interface GameViewController () <ISudFSMMG>
+   @property (nonatomic, strong) id<ISudFSTAPP> fsmAPP2MG;
+   @end
+   
+   @implementation GameViewController
+   
+   #pragma mark - APP-->MG 状态
+   /// 状态通知（app to mg）
+   /// @param state 状态名称
+   /// @param dataJson 需传递的json
+   - (void)gameNotifyStateChange:(NSString *) state dataJson:(NSString*) dataJson {
+       [self.fsmAPP2MG notifyStateChange:state dataJson:dataJson listener:^(int retCode, const NSString *retMsg, const NSString *dataJson) {
+           NSLog(@"retCode=%@ retMsg=%@ dataJson=%@", @(retCode), retMsg, dataJson);
+       }];
+   }
+     
+    #pragma mark - ISudFSMMG
+   /// code到期通知
+   - (void)onExpireCode:(id<ISudFSMStateHandle>)handle dataJson:(NSString *)dataJson {
+       NSLog(@"onExpireCode");
+   }
+   
+   /// 获取游戏视图信息
+   - (void)onGetGameViewInfo:(id<ISudFSMStateHandle>)handle dataJson:(NSString *)dataJson {
+       NSLog(@"onGetGameViewInfo");
+   }
+   
+   /// 通用状态-游戏
+   - (void)onGameStateChange:(id<ISudFSMStateHandle>)handle state:(NSString *)state dataJson:(NSString *)dataJson {
+       NSLog(@"onGameStateChange state: %@ --dataJson: %@", state, dataJson);
+   }
+   
+   /// 游戏状态变更
+   - (void)onPlayerStateChange:(id<ISudFSMStateHandle>)handle userId:(NSString *)userId state:(NSString *)state dataJson:(NSString *)dataJson {
+       NSLog(@"onPlayerStateChange userId: %@ --state: %@ --dataJson: %@", userId, state, dataJson);
+   }
+     
+   @end
    ```
 
    
