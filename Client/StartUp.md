@@ -287,7 +287,25 @@
 
    
 
-4. 如果项目使用CocoaPods，则编辑项目的Podfile，引用SDK所需第三方库，编辑如下：
+4. 编辑SudMgpExample-iOS/info.plist增加蓝牙权限
+
+   ```xml
+   <plist version="1.0">
+   <dict>	
+     ......
+   	<key>NSBluetoothAlwaysUsageDescription</key>
+   	<string>是否允许“SudMgpExample-iOS”使用您的蓝牙，以便使用蓝牙设备</string>
+   	<key>NSBluetoothPeripheralUsageDescription</key>
+   	<string>是否允许“SudMgpExample-iOS”使用您的外接设备，以便使用外接设备</string>
+   	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>我们需要通过您的地理位置信息获取您周边的相关数据</string>
+   </dict>
+</plist>
+   ```
+
+   
+
+5. 如果项目使用CocoaPods，则编辑项目的Podfile，引用SDK所需第三方库，编辑如下：
 
    ```ruby
      # SudMGPSDK
@@ -307,49 +325,11 @@
 
    如果项目未使用CocoaPods，则可查看 [CocoaPods集成方法](https://cocoapods.org)
 
-5. 项目新建两个ViewController,一个为游戏列表GameListViewController，一个为游戏显示GameViewController。如下图：
+6. 项目新建GameViewController，用于初始化加载展示游戏界面。如下图：
 
    ![SUD](../Resource/Client/file.png)
 
-   
-
-6. 在GameListViewController中初始化SDK，代码如下：
-
-   ```objective-c
-   #import "GameListViewController.h"
-   #import "GameViewController.h"
-   #import <SudMGPSDK/SudMGP.h>
-   
-   /**
-    * 初始化游戏SDK
-    *
-    * @param appID      NSString        项目的appID
-    * @param appKey     NSString        项目的appKey
-    * @param isTestEnv  Boolean         是否是测试环境，true:测试环境, false:正式环境
-    * @param gameID     NSInteger       游戏ID，如 碰碰我最强:1001；飞刀我最强:1002；你画我猜:1003
-    */
-   - (void)initGameSDKWithAppID:(NSString *)appID appKey:(NSString *)appKey isTestEnv:(Boolean)isTestEnv gameID:(NSInteger)gameID {
-       [SudMGP initSDK:appID appKey:appKey isTestEnv:isTestEnv listener:^(int retCode, const NSString *retMsg) {
-           if (retCode == 0) {
-               // SudMGPSDK初始化成功,跳转游戏界面
-               GameViewController *gameVC = [[GameViewController alloc] init];
-               if (@available(iOS 13.0, *)) {
-                   gameVC.modalInPresentation = YES;
-               }
-               gameVC.gameEnum = (int)gameID;
-               gameVC.modalPresentationStyle = UIModalPresentationFullScreen;
-               [self presentViewController:gameVC animated:YES completion:nil];
-           } else {
-               /// 初始化失败, 可根据业务重试
-               NSLog(@"初始化sdk失败");
-           }
-       }];
-   }
-   ```
-
-   
-
-7. 在GameViewController加载游戏view，销毁GameViewController需要调用destroyMG方法，代码入下所示：
+7. 在GameViewController初始化游戏SDK，加载游戏view，销毁GameViewController需要调用destroyMG方法，代码入下所示：
 
    ```objective-c
    #import "GameViewController.h"
@@ -369,9 +349,29 @@
        
        self.view.backgroundColor = [UIColor whiteColor];
        
-       /// 加载MG
-       NSString *demoCode = @"xxxxxxxxxxxxxxxx";
-       [self loadMG:@"xxxxxx" roomId:@"xxx" code:demoCode mgId: xxxxxxx language:@"zh-CN" fsmMG:self rootView:self.view];
+     	[self initGameSDKWithAppID:APP_ID appKey:APP_KEY isTestEnv:true mgID:GAME_ID];
+       
+   }
+   
+   /**
+    * 初始化游戏SDK
+    *
+    * @param appID      NSString        项目的appID
+    * @param appKey     NSString        项目的appKey
+    * @param isTestEnv  Boolean         是否是测试环境，true:测试环境, false:正式环境
+    * @param gameID     NSInteger       游戏ID，如 碰碰我最强:1001；飞刀我最强:1002；你画我猜:1003
+    */
+   - (void)initGameSDKWithAppID:(NSString *)appID appKey:(NSString *)appKey isTestEnv:(Boolean)isTestEnv gameID:(NSInteger)gameID {
+       [SudMGP initSDK:appID appKey:appKey isTestEnv:isTestEnv listener:^(int retCode, const NSString *retMsg) {
+           if (retCode == 0) {
+               // SudMGPSDK初始化成功
+               /// 加载MG
+               [self loadMG:mUserID roomId:mRoomID code:CODE mgId: mgID language:mLanguage fsmMG:self rootView:self.view];
+           } else {
+               /// 初始化失败, 可根据业务重试
+               NSLog(@"初始化sdk失败");
+           }
+       }];
    }
    
    /** 加载游戏MG
