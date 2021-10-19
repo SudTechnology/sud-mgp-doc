@@ -20,6 +20,8 @@
 
 - [Go](./Server/StartUp-Go.md)
 
+- [Node](./Server/StartUp-Node.md)
+
 ## 服务端文档
 
 - [文档](./Server/StartUp.md)

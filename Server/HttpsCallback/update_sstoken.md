@@ -18,11 +18,26 @@
 - POST
 - 参数为Json格式，放在body内
 
-## 参数
+## 请求参数
 
 |参数名|必选|类型|说明|
 |:----|:---|:-----|-----|
 |ss_token|是|string|token|
+
+## 请求示例
+
+```json
+{
+    "ss_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMjMiLCJleHAiOjE2MzA0MTc4NDksImFwcF9pZCI6ImFwcElEIn0.BWFAf7-Bi20KsFIjnQcF2ET1RNhoZRhoWa-VOxYbPuY"
+}
+```
+
+## 返回参数
+
+|参数名|必选|类型|说明|
+|:----|:---|:-----|-----|
+|ss_token|是|string|token|
+|expire_date|是|int64|过期时间（毫秒数）|
 
 ## 返回示例
 
@@ -36,10 +51,3 @@
     }
 }
 ```
-
-## 返回参数说明
-
-|参数名|必选|类型|说明|
-|:----|:---|:-----|-----|
-|ss_token|是|string|token|
-|expire_date|是|int64|过期时间（毫秒数）|

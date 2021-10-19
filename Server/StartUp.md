@@ -8,10 +8,15 @@
 
 - [Go](./StartUp-Go.md)
 
+- [Node](./StartUp-Node.md)
+
 ## API
 
-- [Java](./API/DefaultSudMGPClient.md)
-- [Go](./API/DefaultSudMGPClient.md)
+- [Java](./API/SudMGPAuth-Java.md)
+
+- [Go](./API/SudMGPAuth-Go.md)
+
+- [Node](./API/SudMGPAuth-Node.md)
 
 ## Https服务回调
 
