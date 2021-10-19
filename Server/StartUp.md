@@ -19,6 +19,23 @@ app服务端集成jar包后，根据jar包生成code，解析code，提供小游
 
 ### sdk快速开始
 
+- 项目集成jar包，您需在项目的pom.xml文件中声明如下依赖
+```xml
+        <dependency>
+            <groupId>tech.sud.mgp.auth</groupId>
+            <artifactId>sud-mgp-auth-java</artifactId>
+            <version>1.0.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/sud-mgp-auth-java-1.0.2.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.10.3</version>
+        </dependency>
+```
+- 调用示例
 
 ```java
 package tech.sud.mgp.auth.example;
