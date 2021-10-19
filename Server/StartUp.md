@@ -40,11 +40,6 @@ public class Main {
         SdkTokenResponse resp = client.getCode(String.valueOf(uid));
         System.out.println("code:" + resp.getToken());
 
-        // getSSToken
-        DefaultSudMGPClient client = new DefaultSudMGPClient(appID, secret);
-        SdkTokenResponse resp = client.getSSToken(String.valueOf(uid));
-        System.out.println("sstoken:" + resp.getToken());
-
         // getUidFromCode
         String code = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxNDM4NzU3ODI1MjQwMTMzNjY4IiwiZXhwIjoxNjM1NTYwODM4LCJhcHBfaWQiOiJhcHBpZDEyMyJ9.gIZhP1Qt16ZXYaqGt2OflOIZArtlRMQwBzaSySFml9c";
         SdkUidResponse uidResp = client.getUidFromCode(code);
@@ -54,14 +49,6 @@ public class Main {
             System.out.println("验证code 失败");
         }
 
-        // getUidFromSSToken
-        String ssToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxNDM4NzU3ODI1MjQwMTMzNjY4IiwiZXhwIjoxNjM1NTYwODM4LCJhcHBfaWQiOiJhcHBpZDEyMyJ9.gIZhP1Qt16ZXYaqGt2OflOIZArtlRMQwBzaSySFml9c";
-        SdkUidResponse uidResp = client.getUidFromSSToken(ssToken);
-        if (uidResp.isSuccess()) {
-            System.out.println("调用成功 uid:" + uidResp.getUid());
-        } else {
-            System.out.println("验证sstoken 失败");
-        }
     }
 }
 
