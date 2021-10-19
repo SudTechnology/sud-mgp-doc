@@ -2,8 +2,6 @@
 
 ![SUD](../../Resource/logo.png)
 
-[Toc]
-
 ## 简要描述
 
 - 根据code 获取sstoken

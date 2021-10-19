@@ -2,8 +2,6 @@
 
 ![SUD](../Resource/logo.png)
 
-[Toc]
-
 ## iOS快速开始
 
 1. 需要联系Sud.Tech为业务分配 `appId`、 `appKey`、 `appSecret`

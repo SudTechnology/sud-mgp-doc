@@ -2,8 +2,6 @@
 
 ![SUD](../Resource/logo.png)
 
-[Toc]
-
 ## 客户端接入文档
 
 ### 快速开始

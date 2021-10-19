@@ -2,8 +2,6 @@
 
 ![SUD](../../Resource/logo.png)
 
-[Toc]
-
 ## SudMGPAuth Java
 
 ```java

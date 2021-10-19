@@ -2,8 +2,6 @@
 
 ![SUD](../Resource/logo.png)
 
-[Toc]
-
 ## 介绍
 
 - App服务需要实现Https回调接口，供小游戏服务鉴权并获取用户基本信息
