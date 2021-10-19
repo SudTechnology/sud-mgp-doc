@@ -5,3 +5,7 @@
 [TOC]
 
 ![SUD](./Resource/startup.png)
+
+[客户端快速接入](./Client/StartUp.md)
+
+[服务端端快速接入](./Server/StartUp.md)
