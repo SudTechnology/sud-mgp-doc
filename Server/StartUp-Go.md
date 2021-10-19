@@ -22,15 +22,7 @@
    replace github.com/SudTechnology/mgp-auth-go => /Users/xiaoenai/working/go/src/github.com/SudTechnology/mgp-auth-go
     ```
 
-2. 调用工具类 [jwt_utils](./API/jwt_utils.md)
-
-    ```go
-    token, exp, err := jwtUtils.GetToken(userClaims, appSecret)
-    user, err := jwtUtils.ParseToken(req.Code, appSecret)
-    token, exp, err := jwtUtils.UpdateToken(req.Token, appSecret)
-    ```
-
-3. 使用[DefaultSudMGPClient](./API/DefaultSudMGPClient.md)提供的API实现以下回调接口，供小游戏服务鉴权和获取用户基本信息，可参考Demo
+2. 使用[SudMGPAuth](./API/DefaultSudMGPClient-Go.md)提供的API实现以下回调接口，供小游戏服务鉴权和获取用户基本信息，可参考Demo
 
     - [get_sstoken](./HttpsCallback/get_sstoken.md)
 
