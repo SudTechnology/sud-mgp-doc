@@ -271,7 +271,7 @@
        
        /// 加载MG
        NSString *demoCode = @"xxxxxxxxxxxxxxxx";
-       [self loadMG:@"xxxxxx" roomId:@"xxx" code:demoCode mgId: @"xxxxxxx" language:@"zh-CN" fsmMG:self rootView:self.view];
+       [self loadMG:@"xxxxxx" roomId:@"xxx" code:demoCode mgId: xxxxxxx language:@"zh-CN" fsmMG:self rootView:self.view];
    }
    
    /** 加载游戏MG
