@@ -21,4 +21,8 @@
 
 - [get_user_info](./HttpsCallback/get_user_info.md)
 
-## 最佳实践：基于原登陆方式的鉴权
+## JWT最佳实践：基于客户端登陆态的服务器鉴权与数据交换
+
+- [鉴权](./Auth/鉴权.md)
+
+- [数据交换](./Auth/数据交换.md)
