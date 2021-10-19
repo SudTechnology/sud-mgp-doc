@@ -1,4 +1,4 @@
-![SUD](/Users/zqw/Documents/project/git/divtoss/gamedemo/doc/sud-mgp-doc/Resource/logo.png)
+![SUD](../Resource/logo.png)
 
 [Toc]
 
@@ -24,7 +24,7 @@
 
      如下图：
 
-     ![SUD](/Users/zqw/Documents/project/git/divtoss/gamedemo/doc/sud-mgp-doc/Resource/Client/libaar.png)
+     ![SUD](../Resource/Client/libaar.png)
 
    - 编辑SudMgpExample-Android/app/build.gradle，增加SDK需要的配置
 

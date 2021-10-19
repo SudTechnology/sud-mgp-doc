@@ -1,4 +1,4 @@
-![SUD](/Users/zqw/Documents/project/git/divtoss/gamedemo/doc/sud-mgp-doc/Resource/logo.png)
+![SUD](../Resource/logo.png)
 
 [Toc]
 
@@ -34,11 +34,11 @@
 
      如下图：
 
-     ![SUD](/Users/zqw/Documents/project/git/divtoss/gamedemo/doc/sud-mgp-doc/Resource/Client/bitcode.png)
+     ![SUD](../Resource/Client/bitcode.png)
 
-     ![SUD](/Users/zqw/Documents/project/git/divtoss/gamedemo/doc/sud-mgp-doc/Resource/Client/target.png)
+     ![SUD](../Resource/Client/target.png)
 
-   ![SUD](/Users/zqw/Documents/project/git/divtoss/gamedemo/doc/sud-mgp-doc/Resource/Client/emed.png)
+   ![SUD](../Resource/Client/emed.png)
 
    
 
@@ -58,13 +58,13 @@
 
    如下图：
 
-   ![SUD](/Users/zqw/Documents/project/git/divtoss/gamedemo/doc/sud-mgp-doc/Resource/Client/podfile.png)
+   ![SUD](../Resource/Client/podfile.png)
 
    如果项目未使用CocoaPods，则可查看 [CocoaPods集成方法](https://cocoapods.org)
 
 5. 项目新建两个ViewController,一个为游戏列表GameListViewController，一个为游戏显示GameViewController。如下图：
 
-   ![SUD](/Users/zqw/Documents/project/git/divtoss/gamedemo/doc/sud-mgp-doc/Resource/Client/file.png)
+   ![SUD](../Resource/Client/file.png)
 
    
 
