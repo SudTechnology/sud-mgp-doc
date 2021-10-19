@@ -10,77 +10,39 @@ app服务端集成jar包后，根据jar包生成code，解析code，提供小游
 
 ### 环境要求
 
-- sud-mgp-auth-java 需要配合JKD 1.8或其以上版本。
-- 使用 sud-mgp-auth-java 之前，您需要先前与Sud商务团队洽谈合作事宜，获取项目的appid、appkey、appsecret等信息。
+- 支持JKD 1.8或其以上版本
+- 需要先从Sud处获取 `appid`、 `appkey`、 `appsecret`
 
 ### 集成流程
 
-1. 项目集成 sud-mgp-auth-java-1.0.2.jar，初始化DefaultSudMGPClient类，传appId 和appSecret
-2. getCode 生成，根据DefaultSudMGPClient对象，传入uid 生成code和过期时间
-3. 服务端实现[get_sstoken](./HttpsCallback/get_sstoken.md)，[update_sstoken](./HttpsCallback/update_sstoken.md)，[get_user_info](./HttpsCallback/get_user_info.md) 三个接口。
+1. 项目集成 sud-mgp-auth-java-1.0.2.jar
 
-### sdk快速开始
+    ```xml
+    <dependency>
+        <groupId>tech.sud.mgp.auth</groupId>
+        <artifactId>sud-mgp-auth-java</artifactId>
+        <version>1.0.2</version>
+        <scope>system</scope>
+        <systemPath>${project.basedir}/lib/sud-mgp-auth-java-1.0.2.jar</systemPath>
+    </dependency>
 
-- 项目集成jar包，您需在项目的pom.xml文件中声明如下依赖
+    <dependency>
+        <groupId>com.auth0</groupId>
+        <artifactId>java-jwt</artifactId>
+        <version>3.10.3</version>
+    </dependency>
+    ```
 
-```xml
-<dependency>
-    <groupId>tech.sud.mgp.auth</groupId>
-    <artifactId>sud-mgp-auth-java</artifactId>
-    <version>1.0.2</version>
-    <scope>system</scope>
-    <systemPath>${project.basedir}/lib/sud-mgp-auth-java-1.0.2.jar</systemPath>
-</dependency>
+2. 初始化[DefaultSudMGPClient](./API/DefaultSudMGPClient.md)
 
-<dependency>
-    <groupId>com.auth0</groupId>
-    <artifactId>java-jwt</artifactId>
-    <version>3.10.3</version>
-</dependency>
-```
+    ```java
+    DefaultSudMGPClient client = new DefaultSudMGPClient(appID, secret);
+    ```
 
-- 调用示例
+3. 使用[DefaultSudMGPClient](./API/DefaultSudMGPClient.md)提供的API实现以下回调接口，供小游戏服务鉴权和获取用户基本信息，可参考Demo
 
-```java
-package tech.sud.mgp.auth.example;
+    - [get_sstoken](./HttpsCallback/get_sstoken.md)
 
-import tech.sud.mgp.auth.api.DefaultSudMGPClient;
-import tech.sud.mgp.auth.api.SdkTokenResponse;
-import tech.sud.mgp.auth.api.SdkUidResponse;
+    - [update_sstoken](./HttpsCallback/update_sstoken.md)
 
-public class Main {
-    public static void main(String[] args) {
-
-        // 测试环境数据
-        String appID = "tech.sud.mgp.hello";
-        String secret = "123456";
-        String uid = "uid123";
-
-        // getCode
-        DefaultSudMGPClient client = new DefaultSudMGPClient(appID, secret);
-        SdkTokenResponse resp = client.getCode(String.valueOf(uid));
-        System.out.println("code:" + resp.getToken());
-
-        // getUidFromCode
-        String code = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxNDM4NzU3ODI1MjQwMTMzNjY4IiwiZXhwIjoxNjM1NTYwODM4LCJhcHBfaWQiOiJhcHBpZDEyMyJ9.gIZhP1Qt16ZXYaqGt2OflOIZArtlRMQwBzaSySFml9c";
-        SdkUidResponse uidResp = client.getUidFromCode(code);
-        if (uidResp.isSuccess()) {
-            System.out.println("调用成功 uid:" + uidResp.getUid());
-        } else {
-            System.out.println("验证code 失败");
-        }
-
-    }
-}
-
-```
-
-### 小游戏服务端调用的接口文档
-
-- [get_sstoken](./HttpsCallback/get_sstoken.md)
-- [update_sstoken](./HttpsCallback/update_sstoken.md)
-- [get_user_info](./HttpsCallback/get_user_info.md)
-
-### sdk 接口
-
-[DefaultSudMGPClient](./API/DefaultSudMGPClient.md)
+    - [get_user_info](./HttpsCallback/get_user_info.md)

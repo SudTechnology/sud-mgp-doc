@@ -6,6 +6,14 @@
 
 ![SUD](./Resource/startup.png)
 
-[客户端快速接入](./Client/StartUp.md)
+## 客户端快速接入
 
-[服务端端快速接入](./Server/StartUp.md)
+- [Android](./Client/StartUp-Android.md)
+
+- [iOS](./Client/StartUp-iOS.md)
+
+## 服务端端快速接入
+
+- [Java](./Server/StartUp-Java.md)
+
+- [Go](./Server/StartUp-Go.md)
