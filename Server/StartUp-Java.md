@@ -6,14 +6,15 @@
 
 ## 介绍
 
-app服务端集成jar包后，根据jar包生成code，解析code，提供小游戏服务端访问http接口。
+- App服务需要实现Https回调接口，供小游戏服务鉴权并获取用户基本信息
+- sud-mgp-auth-java提供了实现回调接口的大部分功能，App服务只需要实现Https接口，并调用sud-mgp-auth-java即可
 
-### 环境要求
+## SDK环境要求
 
 - 支持JKD 1.8或其以上版本
 - 需要先从Sud处获取 `appid`、 `appkey`、 `appsecret`
 
-### 集成流程
+## 集成流程
 
 1. 项目集成 sud-mgp-auth-java-1.0.2.jar
 
