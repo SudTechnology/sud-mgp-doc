@@ -5,7 +5,7 @@
 [Toc]
 ## 介绍
 
-服务端集成jar包后，生成code，提供小游戏服务端访问http接口。
+app服务端集成jar包后，根据jar包生成code，解析code，提供小游戏服务端访问http接口。
 
 ### 环境要求
 - sud-mgp-auth-java 需要配合JKD 1.8或其以上版本。
@@ -17,7 +17,7 @@
 3. 服务端实现[get_sstoken](./HttpsCallback/get_sstoken.md)，[update_sstoken](./HttpsCallback/update_sstoken.md)，[get_user_info](./HttpsCallback/get_user_info.md) 三个接口。
 
 
-### 快速开始
+### sdk快速开始
 
 
 ```java
