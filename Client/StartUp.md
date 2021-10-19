@@ -2,13 +2,17 @@
 
 ![SUD](../Resource/logo.png)
 
-## 快速开始
+[Toc]
+
+## 客户端接入文档
+
+### 快速开始
 
 - [Android](./StartUp-Android.md)
 
 - [iOS](./StartUp-iOS.md)
 
-## API
+### API
 
 - [SudMGP](./API/SudMGP.md)
 
@@ -16,11 +20,11 @@
 
 - [ISudFSMMG](./API/ISudFSMMG.md)
 
-## APP状态控制器
+### APP状态控制器
 
 - [通用状态](./APP%20FST/通用状态.md)
 
-## MG状态机
+### MG状态机
 
 - [通用状态-游戏](./MG%20FSM/通用状态-游戏.md)
 
