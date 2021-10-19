@@ -1,14 +1,10 @@
+#
+
 ![SUD](../Resource/logo.png)
 
 [Toc]
 
-# SudMGP SDK - iOS
-
-更新时间 2021/10/19 10:00:00
-
-## 快速开始
-
-### iOS接入流程
+## iOS快速开始
 
 1. 与Sud商务团队洽谈合作事宜，获取项目的appid、appkey、appsecret、code、SudMGP SDK库链接和Demo工程等信息
 

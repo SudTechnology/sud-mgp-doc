@@ -12,7 +12,7 @@
 ## SDK环境要求
 
 - 支持go version1.16或其以上版本
-- 需要先从Sud处获取 `appid`、 `appkey`、 `appsecret`
+- 需要联系Sud.Tech为业务分配 `appId`、 `appKey`、 `appSecret`
 
 ## 集成流程
 

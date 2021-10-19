@@ -2,8 +2,6 @@
 
 ![SUD](./Resource/logo.png)
 
-[TOC]
-
 ![SUD](./Resource/startup.png)
 
 ## 客户端快速接入
@@ -12,8 +10,16 @@
 
 - [iOS](./Client/StartUp-iOS.md)
 
-## 服务端端快速接入
+## 客户端文档
+
+- [文档](./Client/StartUp.md)
+
+## 服务端快速接入
 
 - [Java](./Server/StartUp-Java.md)
 
 - [Go](./Server/StartUp-Go.md)
+
+## 服务端文档
+
+- [文档](./Server/StartUp.md)

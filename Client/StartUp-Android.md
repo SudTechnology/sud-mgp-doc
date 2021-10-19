@@ -1,20 +1,12 @@
+#
+
 ![SUD](../Resource/logo.png)
 
-[Toc]
+## Android 快速开始
 
-# SudMGP SDK - Android
+1. 需要联系Sud.Tech为业务分配 `appId`、 `appKey`、 `appSecret`
 
-更新时间 2021/10/19 10:00:00
-
-
-
-## 快速开始
-
-### Android接入流程
-
-1. 与Sud商务团队洽谈合作事宜，获取项目的appid、appkey、appsecret、code、SudMGP SDK库链接和Demo工程等信息
-
-2. 从SudMGPSDK库链接下载SudMGPSDK.aar
+2. 联系获取Android SDK `SudMGP.aar` 和 Demo工程 `HelloSud-Android.zip`
 
 3. 在工程中引入SDK：
 
@@ -251,4 +243,3 @@
            }
        };
    ```
-

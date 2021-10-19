@@ -2,17 +2,16 @@
 
 ![SUD](../Resource/logo.png)
 
-[Toc]
-
 ## 快速开始
 
 - [Java](./StartUp-Java.md)
 
 - [Go](./StartUp-Go.md)
 
-## SDK接口
+## API
 
-- [DefaultSudMGPClient](./API/DefaultSudMGPClient.md)
+- [Java](./API/DefaultSudMGPClient.md)
+- [Go](./API/DefaultSudMGPClient.md)
 
 ## Https服务回调
 
@@ -21,3 +20,5 @@
 - [update_sstoken](./HttpsCallback/update_sstoken.md)
 
 - [get_user_info](./HttpsCallback/get_user_info.md)
+
+## 最佳实践：基于原登陆方式的鉴权
