@@ -46,3 +46,11 @@
     }
 }
 ```
+
+## 返回参数说明
+|参数名|必选|类型|说明|
+|:----|:---|:-----|-----|
+|uid|是|string|用户id|
+|nick_name|是|string|用户昵称|
+|avatar_url|是|string|用户头像url|
+|gender|是|string|性别（female|male）|
