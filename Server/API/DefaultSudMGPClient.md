@@ -48,5 +48,4 @@ public class DefaultSudMGPClient {
      */
     public boolean verify(String token);
 }
-
 ```
