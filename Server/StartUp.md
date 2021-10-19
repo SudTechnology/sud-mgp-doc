@@ -11,7 +11,7 @@ app服务端集成jar包后，根据jar包生成code，解析code，提供小游
 ### 环境要求
 
 - sud-mgp-auth-java 需要配合JKD 1.8或其以上版本。
-- 使用 sud-mgp-auth-java 之前 ，您需要先前与Sud商务团队洽谈合作事宜，获取项目的appid、appkey、appsecret、code和SudMGPSDK库链接等信息等。
+- 使用 sud-mgp-auth-java 之前，您需要先前与Sud商务团队洽谈合作事宜，获取项目的appid、appkey、appsecret等信息。
 
 ### 集成流程
 

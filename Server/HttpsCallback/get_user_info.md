@@ -8,19 +8,29 @@
 
 - 获取用户信息
 
-## 请求URL(该地址需要通知sud 进行配置)
+## 请求URL
 
-- 开发环境 `https://xxx/v1/get_user_info`
+- 分为测试环境和生产环境，需要通知Sud分别进行配置
+- 生产环境地址需要正式上线部署后才能生效
 
 ## 请求方式
 
 - POST
+- 参数为Json格式，放在body内
 
 ## 参数
 
 |参数名|必选|类型|说明|
-|:----    |:---|:----- |-----   |
-|ss_token |是  |string |token   |
+|:----|:---|:-----|-----|
+|ss_token|是|string|token|
+
+## 请求示例
+
+```json
+{
+    "ss_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMjMiLCJleHAiOjE2MzA0MTc4NDksImFwcF9pZCI6ImFwcElEIn0.BWFAf7-Bi20KsFIjnQcF2ET1RNhoZRhoWa-VOxYbPuY"
+}
+```
 
 ## 返回示例
 
