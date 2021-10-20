@@ -5,17 +5,27 @@
 ## SudMGPAuth NodeJs
 
 ```javascript
-public class SudMGPAuth {
-
-    public SudCode getCode(String uid);
-
-    public SudSSToken getSSToken(String uid);
-
-    public SudUid getUidByCode(String code);
-
-    public SudUid getUidBySSToken(String ssToken);
-
-    public boolean verify(String token);
-
+class SudMGPAuth {
+    //构造函数
+    constructor(appId, appSecret) {
+    }
+    //类中函数
+    getCode(uid) {
+    }
+    
+    getSSToken(uid) {
+    }
+    
+    getUidByCode(code) { 
+    }
+    
+    getUidBySSToken(ssToken) {
+    }
+    
+    verifyCode(code) {
+    }
+    
+    verifySSToken(ssToken) {
+    }
 }
 ```
