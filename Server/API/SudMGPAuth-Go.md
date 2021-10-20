@@ -5,17 +5,28 @@
 ## SudMGPAuth Go
 
 ```javascript
-public class SudMGPAuth {
 
-    public SudCode getCode(String uid);
-
-    public SudSSToken getSSToken(String uid);
-
-    public SudUid getUidByCode(String code);
-
-    public SudUid getUidBySSToken(String ssToken);
-
-    public boolean verify(String token);
-
+type SudMGPAuth struct {
+	AppID     string
+	AppSecret string
 }
+
+func NewSudMGPAuth(appID string, appSecret string) *SudMGPAuth {
+	client := &SudMGPAuth{
+		AppID:     appID,
+		AppSecret: appSecret,
+	}
+	return client
+}
+
+func (client *SudMGPAuth) GetCode(uid string) *SudCode
+
+func (client *SudMGPAuth) GetSSToken(uid string) *SudSSToken 
+
+func (client *SudMGPAuth) GetUidFromCode(code string) *SudUid 
+
+func (client *SudMGPAuth) GetUidFromSSToken(ssToken string) *SudUid
+
+func (client *SudMGPAuth) Verify(token string) bool 
+
 ```
