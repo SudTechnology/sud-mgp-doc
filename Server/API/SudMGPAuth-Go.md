@@ -23,10 +23,12 @@ func (client *SudMGPAuth) GetCode(uid string) *SudCode
 
 func (client *SudMGPAuth) GetSSToken(uid string) *SudSSToken 
 
-func (client *SudMGPAuth) GetUidFromCode(code string) *SudUid 
+func (client *SudMGPAuth) GetUidByCode(code string) *SudUid 
 
-func (client *SudMGPAuth) GetUidFromSSToken(ssToken string) *SudUid
+func (client *SudMGPAuth) GetUidBySSToken(ssToken string) *SudUid
 
-func (client *SudMGPAuth) Verify(token string) bool 
+func (client *SudMGPAuth) VerifyCode(code string) bool 
+
+func (client *SudMGPAuth) VerifySSToken(code string) bool 
 
 ```

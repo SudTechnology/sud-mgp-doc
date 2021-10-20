@@ -5,6 +5,8 @@
 ## SudMGPAuth Java
 
 ```java
+SudMGPAuth sudMGPAuth = new SudMGPAuth(CommonConstant.APP_ID,CommonConstant.APP_SECRET);
+
 public class SudMGPAuth {
 
     public String getCode(String uid);
@@ -15,9 +17,9 @@ public class SudMGPAuth {
 
     public String getUidBySSToken(String ssToken);
 
-    public int verifyCode(String code);
+    public boolean verifyCode(String code);
 
-    public int verifySSToken(String ssToken);
+    public boolean verifySSToken(String ssToken);
 
 }
 ```
