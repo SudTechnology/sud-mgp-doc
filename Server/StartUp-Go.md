@@ -20,7 +20,7 @@
    replace github.com/SudTechnology/mgp-auth-go => /localpath/github.com/SudTechnology/mgp-auth-go
     ```
 
-2. 使用[SudMGPAuth](./API/DefaultSudMGPClient-Go.md)提供的API实现以下回调接口，供小游戏服务鉴权和获取用户基本信息，可参考Demo
+2. 使用[SudMGPAuth](./API/SudMGPAuth-Go.md)提供的API实现以下回调接口，供小游戏服务鉴权和获取用户基本信息，可参考Demo
 
     - [get_sstoken](./HttpsCallback/get_sstoken.md)
 
