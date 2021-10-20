@@ -20,6 +20,18 @@
 
 - [文档](./Client/StartUp.md)
 
+## 客户端SDK下载
+
+- [Android v1.1.22.0](https://github.com/SudTechnology/sud-mgp-android/releases)
+
+- [iOS v1.1.15.75](https://github.com/SudTechnology/sud-mgp-ios/releases)
+
+## 客户端Demo下载
+
+- [Android v1.0.2](https://github.com/SudTechnology/hello-sud-android/releases)
+
+- [iOS v1.0.2](https://github.com/SudTechnology/hello-sud-ios/releases)
+
 > Tips
 >
 > 1. 服务端中，小游戏服务与业务服务的鉴权和数据交换，建议通过标准JWT进行，也可以通过任何自定义的方式进行。
@@ -37,3 +49,19 @@
 ## 服务端文档
 
 - [文档](./Server/StartUp.md)
+
+## 服务端SDK下载
+
+- [Java v1.0.2](https://github.com/SudTechnology/sud-mgp-auth-java/releases)
+
+- [Go v1.0.2](https://github.com/SudTechnology/sud-mgp-auth-go/releases)
+
+- [Node v1.0.0](https://github.com/SudTechnology/sud-mgp-auth-node/releases)
+
+## 服务端Demo下载
+
+- [Java v1.0.0](https://github.com/SudTechnology/hello-sud-java/releases)
+
+- [Go v1.0.0](https://github.com/SudTechnology/hello-sud-go/releases)
+
+- [Node v1.0.0](https://github.com/SudTechnology/hello-sud-node/releases)
