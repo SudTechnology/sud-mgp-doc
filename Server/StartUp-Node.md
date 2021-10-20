@@ -16,7 +16,7 @@
 
 1. 项目导入包 npm install -d
 
-2. 使用[SudMGPAuth](./API/DefaultSudMGPClient-Node.md)提供的API实现以下回调接口，供小游戏服务鉴权和获取用户基本信息，可参考Demo
+2. 使用[SudMGPAuth](./API/SudMGPClient-Node.md)提供的API实现以下回调接口，供小游戏服务鉴权和获取用户基本信息，可参考Demo
 
     - [get_sstoken](./HttpsCallback/get_sstoken.md)
 
