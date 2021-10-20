@@ -9,13 +9,13 @@ SudMGPAuth sudMGPAuth = new SudMGPAuth(CommonConstant.APP_ID,CommonConstant.APP_
 
 public class SudMGPAuth {
 
-    public String getCode(String uid);
+    public SudCode getCode(String uid);
 
-    public String getSSToken(String uid);
+    public SudSSToken getSSToken(String uid);
 
-    public String getUidByCode(String code);
+    public SudUid getUidByCode(String code);
 
-    public String getUidBySSToken(String ssToken);
+    public SudUid getUidBySSToken(String ssToken);
 
     public boolean verifyCode(String code);
 
