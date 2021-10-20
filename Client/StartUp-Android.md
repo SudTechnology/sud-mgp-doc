@@ -12,7 +12,7 @@
 
     以Android Studio 4.2，Gradle 6.7.1，编程语言Java，工程SudMgpExample-Android为例：
 
-    - 将 `SudMGPSDK.aar` 拷贝到SudMgpExample-Android/app/libs目录
+    - 将 `SudMGP.aar` 拷贝到SudMgpExample-Android/app/libs目录
 
         如下图：
 
@@ -21,14 +21,6 @@
     - 编辑SudMgpExample-Android/app/build.gradle，增加SDK需要的配置
 
         ```groovy
-        android {
-        ......
-            // 游戏SDK使用了viewBinding
-            buildFeatures {
-                viewBinding true
-            }
-        }
-        
         repositories {
             // 加载游戏SDK libs路径
             flatDir {
@@ -44,7 +36,7 @@
             ......
         }
         ```
-
+    
 4. 初始化 [SudMGP](./API/SudMGP.md) ，具体可参考HelloSud-Android
 
 5. 对接 [SudMGP](./API/SudMGP.md) 相关生命周期回调，讲游戏View加入到原生布局中，具体可参考HelloSud-Android
