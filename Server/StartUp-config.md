@@ -4,7 +4,7 @@
 
 ## 介绍
 
-- 申请测试appId、 appKey、 appSecret配置流程
+- 申请appId、 appKey、 appSecret配置流程
 
 ## 流程
 
