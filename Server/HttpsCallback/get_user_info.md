@@ -37,7 +37,7 @@
 |uid|是|string|用户id|
 |nick_name|是|string|用户昵称|
 |avatar_url|是|string|用户头像url|
-|gender|是|string|性别（female|male）|
+|gender|是|string|性别（female or male）|
 
 ## 返回示例
 
