@@ -6,7 +6,7 @@
 
 1. 需要联系Sud.Tech为业务分配 `appId`、 `appKey`、 `appSecret`
 
-2. 联系获取Android SDK `SudMGP.aar` 和 Demo工程 `HelloSud-Android.zip`
+2. 下载 [Android SDK SudMGP.aar](https://github.com/SudTechnology/sud-mgp-android/releases) 和 Demo工程 [HelloSud-Android.zip](https://github.com/SudTechnology/hello-sud-android/releases)
 
 3. 在工程中引入SDK：
 
@@ -28,10 +28,10 @@
             }
         }
         dependencies {
-        // 加载游戏SDK aar
+            // 加载游戏SDK aar
             implementation fileTree(include: ['*.jar', "*.aar"], dir: 'libs')
-            // 游戏SDK需引入glide库
-            implementation 'com.github.bumptech.glide:glide:4.12.0'
+            // SudMGP需引入okhttp
+            implementation 'com.squareup.okhttp3:okhttp:4.9.2'
         
             ......
         }
