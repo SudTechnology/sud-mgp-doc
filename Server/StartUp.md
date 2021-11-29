@@ -28,6 +28,12 @@
 
 - [get_user_info](./HttpsCallback/get_user_info.md)
 
+### Https服务API
+
+- [mg_list](./AppServerAPI/获取游戏列表.md)
+
+- [mg_info](./AppServerAPI/获取游戏信息.md)
+
 ### JWT最佳实践：基于客户端登陆态的服务器鉴权与数据交换
 
 - [鉴权](./Auth/鉴权.md)
