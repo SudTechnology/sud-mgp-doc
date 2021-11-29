@@ -28,7 +28,7 @@
 
 - [get_user_info](./HttpsCallback/get_user_info.md)
 
-### Https服务API
+### SDK服务API
 
 - [mg_list](./AppServerAPI/获取游戏列表.md)
 
