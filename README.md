@@ -22,15 +22,15 @@
 
 ## 客户端SDK下载
 
-- [Android v1.1.22.0](https://github.com/SudTechnology/sud-mgp-android/releases)
+- [Android v1.1.30.161](https://github.com/SudTechnology/sud-mgp-android/releases)
 
-- [iOS v1.1.15.75](https://github.com/SudTechnology/sud-mgp-ios/releases)
+- [iOS v1.1.30.187](https://github.com/SudTechnology/sud-mgp-ios/releases)
 
 ## 客户端Demo下载
 
-- [Android v1.0.2](https://github.com/SudTechnology/hello-sud-android/releases)
+- [Android v1.1.30.161](https://github.com/SudTechnology/hello-sud-android/releases)
 
-- [iOS v1.0.2](https://github.com/SudTechnology/hello-sud-ios/releases)
+- [iOS v1.1.30.187](https://github.com/SudTechnology/hello-sud-ios/releases)
 
 > Tips
 >
