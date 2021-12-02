@@ -51,6 +51,7 @@
 ## 服务端文档
 
 - [文档](./Server/StartUp.md)
+- [更新日志](./Server/Server_Change_Log)
 
 ## 服务端SDK下载
 
