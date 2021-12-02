@@ -1,4 +1,4 @@
-# SudMGP 更新日志
+# SudMGP和游戏 更新日志
 
 ## [v1.1.30.xx](https://github.com/github-changelog-generator/github-changelog-generator/tree/1.16.4) (2021-10-27)
 **Android:**
