@@ -1,0 +1,29 @@
+# SudMGP 更新日志
+
+## [v1.1.30.xx](https://github.com/github-changelog-generator/github-changelog-generator/tree/1.16.4) (2021-10-27)
+**Android:**
+- [SudMGP-Android-v1.1.30.161](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.30.161)
+- [HelloSud-Android-v1.1.30.161](https://github.com/SudTechnology/hello-sud-android/releases/tag/v1.1.30.161)
+
+**iOS:**
+- [SudMGP-iOS-v1.1.30.187](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.30.187)
+- [HelloSud-iOS-v1.1.30.187](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.30.187)
+
+**新增功能:**
+- 提供更灵活的接口，APP自定义主动串游戏逻辑([APP状态控制器-通用状态](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/APP%20FST/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81.md))，或者游戏主动串游戏逻辑([MG状态机-通用状态-游戏]()和[MG状态机-通用状态-玩家](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MG%20FSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E7%8E%A9%E5%AE%B6.md))；
+
+**修改功能:**
+- [MG状态机-通用状态-玩家](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MG%20FSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E7%8E%A9%E5%AE%B6.md) 新增参数；
+- 废弃Depreated APP状态控制器-通用状态 [房间状态和麦位状态](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/APP%20FST/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81.md)；
+- iOS SDK使用SudMGP.xcframework方式出包;
+- 修改appId生成规则；
+- 修改mgId类型，int改成int64；
+  
+**优化内容:**
+- 优化代码结构；
+- 优化Loading UI；
+- 优化首次下载包体积；
+  
+**Bug修复:**
+- 修复状态栏，改成默认不隐藏；
+- 修复已知bug；
