@@ -20,13 +20,13 @@
 
 - [文档](./Client/StartUp.md)
 
+- [更新日志(SudMGP和游戏)](./Client/ChangeLog.md)
 ## 客户端SDK下载
 
 - [Android v1.1.30.161](https://github.com/SudTechnology/sud-mgp-android/releases)
 
 - [iOS v1.1.30.187](https://github.com/SudTechnology/sud-mgp-ios/releases)
   
-- [更新日志(SudMGP和游戏)](./Client/ChangeLog.md)
 
 ## 客户端Demo下载
 
