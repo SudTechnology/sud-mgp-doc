@@ -25,6 +25,8 @@
 - [Android v1.1.30.161](https://github.com/SudTechnology/sud-mgp-android/releases)
 
 - [iOS v1.1.30.187](https://github.com/SudTechnology/sud-mgp-ios/releases)
+  
+- [更新日志(SudMGP和游戏)](./Client/ChangeLog.md)
 
 ## 客户端Demo下载
 
@@ -49,6 +51,7 @@
 ## 服务端文档
 
 - [文档](./Server/StartUp.md)
+- [更新日志](./Server/Server_Change_Log.md)
 
 ## 服务端SDK下载
 
