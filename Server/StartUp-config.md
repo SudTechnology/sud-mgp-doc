@@ -12,11 +12,13 @@
         - ios  bundleID
         - android  applicationID
 - 2. 小游戏客户端需要向申请方服务端鉴权和获取玩家信息，申请方服务端需要部署如下接口并提供调用地址（公网https）进行配置
-     - [get_sstoken](./HttpsCallback/get_sstoken.md)
+     - [get_sstoken](./HttpsCallback/get_sstoken.md)（必选）
 
-     - [update_sstoken](./HttpsCallback/update_sstoken.md)
+     - [update_sstoken](./HttpsCallback/update_sstoken.md)（必选）
 
-     - [get_user_info](./HttpsCallback/get_user_info.md)
+     - [get_user_info](./HttpsCallback/get_user_info.md)（必选）
+
+     - [report_game_settle_rs](./HttpsCallback/report_game_settle_rs.md)（可选）
               
 
 
