@@ -1,5 +1,26 @@
 # SudMGP和游戏 更新日志
 
+## v1.1.31.xx (2021-12-03)
+**Android:**
+- [SudMGP-Android-v1.1.31.188](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.31.188)
+- [HelloSud-Android-v1.1.31.188](https://github.com/SudTechnology/hello-sud-android/releases/tag/v1.1.31.188)
+
+**iOS:**
+- [SudMGP-iOS-v1.1.31.222](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.31.222)
+- [HelloSud-iOS-v1.1.31.222](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.31.222)
+
+**新增功能:**
+- 无
+
+**修改功能:**
+- 无
+  
+**优化内容:**
+- 无
+  
+**Bug修复:**
+- 修复Android SDK initSDK Activity持有问题；
+
 ## v1.1.31.xx (2021-12-02)
 **Android:**
 - [SudMGP-Android-v1.1.31.181](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.31.181)
@@ -24,7 +45,6 @@
 **Bug修复:**
 - 修复iOS内存释放；
 
-#
 ## v1.1.30.xx (2021-11-27)
 **Android:**
 - [SudMGP-Android-v1.1.30.161](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.30.161)
