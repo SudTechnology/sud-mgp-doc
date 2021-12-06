@@ -85,7 +85,6 @@ dataJsonResp = {
 |ui.game_help_btn.hide  |否  |bool |是否隐藏游戏场景中的帮助按钮（false: 显示； true: 隐藏，默认为false）   |
 
 
-
 ### 返回示例
 ```txt
 {
@@ -157,3 +156,5 @@ dataJsonResp = {
     }
 }
 ```
+
+![GameCfg](../../../Resource/Client/ongetgamecfg.png)
