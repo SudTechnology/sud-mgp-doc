@@ -81,7 +81,7 @@ public enum ErrorCodeEnum {
 
 |参数名|类型|说明|
 |:----|:---|-----|
-|code|String|根据UID生成的code|
+|code|String|根据UID生成的短期令牌Code|
 |expireDate|Long|过期时间戳（毫秒）|
 
 ### SudMGPAuth.getCode
@@ -97,14 +97,14 @@ public enum ErrorCodeEnum {
 |参数名|必选|类型|说明|
 |:----|:---|:-----|-----|
 |uid|是|String|用户id，需全局唯一，为保证数据安全，可通过自己的UID哈希出虚拟UID|
-|expireDuration|是|Long|code过期时长（毫秒数），例如：1小时：3600000|
+|expireDuration|是|Long|短期令牌Code过期时长（毫秒数），例如：1小时：3600000|
 
 - 返回值(SudCode)
 
 |参数名|类型|说明|
 |:----|:---|-----|
-|code|String|根据UID生成的code|
-|expireDate|Long|过期时间戳（毫秒）|
+|code|String|根据UID生成的短期令牌Code|
+|expireDate|Long|短期令牌Code过期时间戳（毫秒）|
 
 
 ### SudMGPAuth.getSSToken
@@ -125,8 +125,8 @@ public enum ErrorCodeEnum {
 
 |参数名|类型|说明|
 |:----|:---|-----|
-|token|String|长期令牌SSToken|
-|expireDate|Long|过期时间戳（毫秒）|
+|token|String|根据UID生成的长期令牌SSToken|
+|expireDate|Long|长期令牌SSToken过期时间戳（毫秒）|
 
 ### SudMGPAuth.getUidByCode
 
@@ -146,7 +146,7 @@ public enum ErrorCodeEnum {
 
 |参数名|类型|说明|
 |:----|:---|-----|
-|uid|String|用户ID，从code中获取|
+|uid|String|用户ID，从短期令牌Code中获取|
 |isSuccess|Boolean|是否成功|
 |errorCode|int|服务端sdk错误码，isSuccess为false时返回，需透传到游戏服务器|
 
@@ -169,7 +169,7 @@ public enum ErrorCodeEnum {
 
 |参数名|类型|说明|
 |:----|:---|-----|
-|uid|String|用户ID，从ssToken中获取|
+|uid|String|用户ID，从长期令牌SSToken中获取|
 |isSuccess|Boolean|是否成功|
 |errorCode|int|服务端sdk错误码，isSuccess为false时返回，需透传到游戏服务器|
 
