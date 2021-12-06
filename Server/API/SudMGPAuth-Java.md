@@ -68,7 +68,7 @@ public enum ErrorCodeEnum {
 - 说明
 
 ```txt
-获取临时令牌Code，默认时长2小时
+获取短期令牌Code，默认时长2小时
 ```
 
 - 参数
@@ -89,7 +89,7 @@ public enum ErrorCodeEnum {
 - 说明
 
 ```txt
-获取临时令牌Code，自定义时长
+获取短期令牌Code，自定义时长
 ```
 
 - 参数
@@ -119,13 +119,13 @@ public enum ErrorCodeEnum {
 
 |参数名|必选|类型|说明|
 |:----|:---|:-----|-----|
-|uid|是|String|用户id，需全局唯一，可通过短期令牌获得|
+|uid|是|String|用户id，需全局唯一，可通过短期令牌Code获得|
 
 - 返回值(SudSSToken)
 
 |参数名|类型|说明|
 |:----|:---|-----|
-|token|String|长期令牌|
+|token|String|长期令牌SSToken|
 |expireDate|Long|过期时间戳（毫秒）|
 
 ### SudMGPAuth.getUidByCode
@@ -140,7 +140,7 @@ public enum ErrorCodeEnum {
 
 |参数名|必选|类型|说明|
 |:----|:---|:-----|-----|
-|code|是|String|短期令牌|
+|code|是|String|短期令牌Code|
 
 - 返回值(SudUid)
 
@@ -163,7 +163,7 @@ public enum ErrorCodeEnum {
 
 |参数名|必选|类型|说明|
 |:----|:---|:-----|-----|
-|ssToken|是|String|长期令牌|
+|ssToken|是|String|长期令牌SSToken|
 
 - 返回值(SudUid)
 
@@ -179,14 +179,14 @@ public enum ErrorCodeEnum {
 - 说明
 
 ```txt
-校验短期令牌有效性
+校验短期令牌Code有效性
 ```
 
 - 参数
 
 |参数名|必选|类型|说明|
 |:----|:---|:-----|-----|
-|code|是|String|短期令牌|
+|code|是|String|短期令牌Code|
 
 - 返回值(ErrorCodeEnum): 见“错误码信息定义”
 
@@ -196,13 +196,13 @@ public enum ErrorCodeEnum {
 - 说明
 
 ```txt
-校验长期令牌有效性
+校验长期令牌SSToken有效性
 ```
 
 - 参数
 
 |参数名|必选|类型|说明|
 |:----|:---|:-----|-----|
-|ssToken|是|String|短期令牌|
+|ssToken|是|String|长期令牌SSToken|
 
 - 返回值(ErrorCodeEnum): 见“错误码信息定义”
