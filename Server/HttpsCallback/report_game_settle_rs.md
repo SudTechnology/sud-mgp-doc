@@ -2,9 +2,9 @@
 
 ![SUD](../../Resource/logo.png)
 
-## 简要描述
+## 简要描述（Deprecated）
 
-- 游戏服务端上报游戏接入方的游戏结算数据
+- 游戏服务端上报游戏接入方的游戏结算数据（Deprecated）
 
 ## 请求URL
 
