@@ -23,15 +23,15 @@
 - [更新日志(SudMGP和游戏)](./Client/ChangeLog.md)
 ## 客户端SDK下载
 
-- [SudMGP-Android-v1.1.31.188](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.31.188)
+- [SudMGP-Android-v1.1.32.200](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.32.200)
   
-- [SudMGP-iOS-v1.1.31.222](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.31.222)
+- [SudMGP-iOS-v1.1.32.232](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.32.232)
   
 
 ## 客户端Demo下载
-- [HelloSud-Android-v1.1.31.188](https://github.com/SudTechnology/hello-sud-android/releases/tag/v1.1.31.188)
+- [HelloSud-Android-v1.1.32.200](https://github.com/SudTechnology/hello-sud-android/releases)
   
-- [HelloSud-iOS-v1.1.31.222](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.31.222)
+- [HelloSud-iOS-v1.1.32.232](https://github.com/SudTechnology/sud-mgp-ios/releases)
 
 > Tips
 >
