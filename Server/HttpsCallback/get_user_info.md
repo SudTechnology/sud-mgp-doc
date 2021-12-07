@@ -36,7 +36,7 @@
 |:----|:---|:-----|-----|
 |uid|是|string|用户id|
 |nick_name|是|string|用户昵称|
-|avatar_url|是|string|用户头像url|
+|avatar_url|是|string|用户头像url(建议使用128*128尺寸)|
 |gender|是|string|性别（female or male）|
 
 ## 返回示例
@@ -48,7 +48,7 @@
     "data": {
         "uid": "1380100177150345266",
         "nick_name": "萌萌",
-        "avatar_url": "https://icon.png",
+        "avatar_url": "https://icon.png?128*128",
         "gender": "female"
     }
 }
