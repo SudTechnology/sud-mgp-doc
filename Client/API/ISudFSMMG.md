@@ -30,12 +30,14 @@ public interface ISudFSMMG {
 
     /**
      * Code过期
+     * APP接入方需要调用handle.success或handle.fail
      * @param dataJson {"code":"value"}
      */
     void onExpireCode(ISudFSMStateHandle handle, String dataJson);
 
     /**
      * 获取游戏View信息
+     * APP接入方需要调用handle.success或handle.fail
      * @param handle
      * @param dataJson {}
      */
@@ -43,6 +45,7 @@ public interface ISudFSMMG {
 
     /**
      * 获取游戏Config
+     * APP接入方需要调用handle.success或handle.fail
      * @param handle
      * @param dataJson {}
      * 最低版本：v1.1.30.xx
@@ -51,6 +54,7 @@ public interface ISudFSMMG {
 
     /**
      * 游戏状态变化
+     * APP接入方需要调用handle.success或handle.fail
      * @param handle
      * @param state
      * @param dataJson
@@ -59,6 +63,7 @@ public interface ISudFSMMG {
 
     /**
      * 游戏玩家状态变化
+     * APP接入方需要调用handle.success或handle.fail
      * @param handle
      * @param userId
      * @param state
@@ -94,12 +99,14 @@ public interface ISudFSMMG {
 
 /**
  * Code过期
+ * APP接入方需要调用handle.success或handle.fail
  * @param dataJson {"code":"value"}
  */
 -(void) onExpireCode:(id<ISudFSMStateHandle>)handle dataJson:(NSString*)dataJson;
 
 /**
  * 获取游戏View信息
+ * APP接入方需要调用handle.success或handle.fail
  * @param handle
  * @param dataJson {}
  */
@@ -107,6 +114,7 @@ public interface ISudFSMMG {
 
 /**
  * 获取游戏配置
+ * APP接入方需要调用handle.success或handle.fail
  * @param handle
  * @param dataJson {}
  * 最低版本：v1.1.30.xx
@@ -115,6 +123,7 @@ public interface ISudFSMMG {
 
 /**
  * 游戏状态变化
+ * APP接入方需要调用handle.success或handle.fail
  * @param handle
  * @param state
  * @param dataJson
@@ -123,6 +132,7 @@ public interface ISudFSMMG {
 
 /**
  * 游戏玩家状态变化
+ * APP接入方需要调用handle.success或handle.fail
  * @param handle
  * @param userId
  * @param state

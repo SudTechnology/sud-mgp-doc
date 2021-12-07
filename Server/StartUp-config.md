@@ -18,7 +18,7 @@
 
      - [get_user_info](./HttpsCallback/get_user_info.md)（必选）
 
-     - [report_game_settle_rs](./HttpsCallback/report_game_settle_rs.md)（可选）
+     - [report_game_info_rs](./HttpsCallback/report_game_info_rs.md)（可选）
               
 
 
