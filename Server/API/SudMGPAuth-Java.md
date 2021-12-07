@@ -5,11 +5,13 @@
 ## SudMGPAuth Java
 
 ```java
-SudMGPAuth sudMGPAuth = new SudMGPAuth(CommonConstant.APP_ID,CommonConstant.APP_SECRET);
+SudMGPAuth sudMGPAuth = new SudMGPAuth(APP_ID, APP_SECRET);
 
 public class SudMGPAuth {
 
     public SudCode getCode(String uid);
+
+    public SudCode getCode(String uid, Long expireDuration);
 
     public SudSSToken getSSToken(String uid);
 
@@ -22,6 +24,43 @@ public class SudMGPAuth {
     public boolean verifySSToken(String ssToken);
 
 }
+
+/**
+ * 错误码信息定义
+ * @author sud
+ */
+public enum ErrorCodeEnum {
+    /**
+     * 成功
+     */
+    SUCCESS(0, "成功"),
+    /**
+     * Token创建失败
+     */
+    TOKEN_CREATE_FAILED(1001, "Token创建失败"),
+    /**
+     * Token校验失败（算法，签名错误）
+     */
+    TOKEN_VERIFY_FAILED(1002, "Token校验失败"),
+    /**
+     * Token解析失败
+     */
+    TOKEN_DECODE_FAILED(1003, "Token解析失败"),
+    /**
+     * Token非法（携带的Claim错误）
+     */
+    TOKEN_INVALID(1004, "Token非法"),
+    /**
+     * Token过期
+     */
+    TOKEN_EXPIRED(1005, "Token过期"),
+    /**
+     * 未知错误
+     */
+    UNDEFINE(9999, "未知错误");
+}
+
+
 ```
 
 ### SudMGPAuth.getCode
@@ -29,7 +68,7 @@ public class SudMGPAuth {
 - 说明
 
 ```txt
-获取临时令牌Code
+获取短期令牌Code，默认时长2小时
 ```
 
 - 参数
@@ -38,11 +77,35 @@ public class SudMGPAuth {
 |:----|:---|:-----|-----|
 |uid|是|String|用户id，需全局唯一，为保证数据安全，可通过自己的UID哈希出虚拟UID|
 
-- 返回值
+- 返回值(SudCode)
+
+|参数名|类型|说明|
+|:----|:---|-----|
+|code|String|根据UID生成的短期令牌Code|
+|expireDate|Long|过期时间戳（毫秒）|
+
+### SudMGPAuth.getCode
+
+- 说明
 
 ```txt
-Code
+获取短期令牌Code，自定义时长
 ```
+
+- 参数
+
+|参数名|必选|类型|说明|
+|:----|:---|:-----|-----|
+|uid|是|String|用户id，需全局唯一，为保证数据安全，可通过自己的UID哈希出虚拟UID|
+|expireDuration|是|Long|短期令牌Code过期时长（毫秒数），例如：1小时：3600000|
+
+- 返回值(SudCode)
+
+|参数名|类型|说明|
+|:----|:---|-----|
+|code|String|根据UID生成的短期令牌Code|
+|expireDate|Long|短期令牌Code过期时间戳（毫秒）|
+
 
 ### SudMGPAuth.getSSToken
 
@@ -56,13 +119,14 @@ Code
 
 |参数名|必选|类型|说明|
 |:----|:---|:-----|-----|
-|uid|是|String|用户id，需全局唯一，可通过短期令牌获得|
+|uid|是|String|用户id，需全局唯一，可通过短期令牌Code获得|
 
-- 返回值
+- 返回值(SudSSToken)
 
-```txt
-SSToken
-```
+|参数名|类型|说明|
+|:----|:---|-----|
+|token|String|根据UID生成的长期令牌SSToken|
+|expireDate|Long|长期令牌SSToken过期时间戳（毫秒）|
 
 ### SudMGPAuth.getUidByCode
 
@@ -76,13 +140,16 @@ SSToken
 
 |参数名|必选|类型|说明|
 |:----|:---|:-----|-----|
-|code|是|String|短期令牌|
+|code|是|String|短期令牌Code|
 
-- 返回值
+- 返回值(SudUid)
 
-```txt
-UID
-```
+|参数名|类型|说明|
+|:----|:---|-----|
+|uid|String|用户ID，从短期令牌Code中获取|
+|isSuccess|Boolean|是否成功|
+|errorCode|int|服务端sdk错误码，isSuccess为false时返回，需透传到游戏服务器|
+
 
 ### SudMGPAuth.getUidBySSToken
 
@@ -96,54 +163,46 @@ UID
 
 |参数名|必选|类型|说明|
 |:----|:---|:-----|-----|
-|ssToken|是|String|长期令牌|
+|ssToken|是|String|长期令牌SSToken|
 
-- 返回值
+- 返回值(SudUid)
 
-```txt
-UID
-```
+|参数名|类型|说明|
+|:----|:---|-----|
+|uid|String|用户ID，从长期令牌SSToken中获取|
+|isSuccess|Boolean|是否成功|
+|errorCode|int|服务端sdk错误码，isSuccess为false时返回，需透传到游戏服务器|
+
 
 ### SudMGPAuth.verifyCode
 
 - 说明
 
 ```txt
-校验短期令牌有效性
+校验短期令牌Code有效性
 ```
 
 - 参数
 
 |参数名|必选|类型|说明|
 |:----|:---|:-----|-----|
-|code|是|String|短期令牌|
+|code|是|String|短期令牌Code|
 
-- 返回值
+- 返回值(ErrorCodeEnum): 见“错误码信息定义”
 
-```txt
-0 有效
-1 无效
-2 过期
-```
 
 ### SudMGPAuth.verifySSToken
 
 - 说明
 
 ```txt
-校验短期令牌有效性
+校验长期令牌SSToken有效性
 ```
 
 - 参数
 
 |参数名|必选|类型|说明|
 |:----|:---|:-----|-----|
-|ssToken|是|String|短期令牌|
+|ssToken|是|String|长期令牌SSToken|
 
-- 返回值
-
-```txt
-0 有效
-1 无效
-2 过期
-```
+- 返回值(ErrorCodeEnum): 见“错误码信息定义”
