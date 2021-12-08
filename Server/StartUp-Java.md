@@ -64,8 +64,8 @@
 
 3.使用[SudMGPAuth](./API/SudMGPAuth-Java.md)提供的API实现以下回调接口，供小游戏服务鉴权和获取用户基本信息，可参考Demo
 
-    - [get_sstoken](./HttpsCallback/get_sstoken.md)
+- [get_sstoken](./HttpsCallback/get_sstoken.md)
 
-    - [update_sstoken](./HttpsCallback/update_sstoken.md)
+- [update_sstoken](./HttpsCallback/update_sstoken.md)
 
-    - [get_user_info](./HttpsCallback/get_user_info.md)
+- [get_user_info](./HttpsCallback/get_user_info.md)
