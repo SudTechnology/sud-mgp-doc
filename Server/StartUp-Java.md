@@ -14,15 +14,13 @@
 
 ## 集成流程
 
-1. 项目集成 sud-mgp-auth-java-1.0.2.jar
+1. 项目集成 sud-mgp-auth-java.jar
 
     ```xml
     <dependency>
         <groupId>tech.sud.mgp.auth</groupId>
         <artifactId>sud-mgp-auth-java</artifactId>
-        <version>1.0.2</version>
-        <scope>system</scope>
-        <systemPath>${project.basedir}/lib/sud-mgp-auth-java-1.0.2.jar</systemPath>
+        <version>${sud-mgp-auth-java.version}</version>
     </dependency>
 
     <dependency>
