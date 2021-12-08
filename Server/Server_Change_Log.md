@@ -8,5 +8,5 @@
 **增加游戏服务端上报游戏接入方的游戏的数据接口:**
 - [report_game_info.mod](./HttpsCallback/report_game_info.md)
 
-**服务端SDK(Java版本)新增创建自定义过期时间短期令牌Code方法**
+**服务端SDK(Java版本)新增自定义时长创建短期令牌Code与长期令牌SSToken的方法**
 - [server-sdk-java.mod](./API/SudMGPAuth-Java.md)
