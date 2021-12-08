@@ -1,5 +1,28 @@
 # SudMGP和游戏 更新日志
 
+## v1.1.32.xx (2021-12-08)
+**Android:**
+- [SudMGP-Android-v1.1.32.200](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.32.200)
+- [HelloSud-Android-v1.1.32.200](https://github.com/SudTechnology/hello-sud-android/releases)
+
+**iOS:**
+- [SudMGP-iOS-v1.1.32.232](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.32.232)
+- [HelloSud-iOS-v1.1.32.232](https://github.com/SudTechnology/hello-sud-ios/releases)
+
+**新增功能:**
+- [状态app_common_self_in新增字段seatIndex](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/APP%20FST/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81.md)
+- [状态mg_common_self_click_join_btn新增字段seatIndex](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MG%20FSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E6%B8%B8%E6%88%8F.md)
+- [onGetGameCfg游戏位加入按钮新增自定义配置lobby_players.custom](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/API/ISudFSMMG/onGetGameCfg.md)
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 小游戏弹框加上错误码提示，便于排查问题；
+
+**Bug修复:**
+- 小游戏修复已知bug；
+
 ## v1.1.32.xx (2021-12-07)
 **Android:**
 - [SudMGP-Android-v1.1.32.200](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.32.200)
