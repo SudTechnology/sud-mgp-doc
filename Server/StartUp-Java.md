@@ -17,6 +17,7 @@
 1. 项目集成 sud-mgp-auth-java.jar
 
     ```xml
+   <!-- 引用服务端sdk依赖 -->
     <dependency>
         <groupId>tech.sud.mgp.auth</groupId>
         <artifactId>sud-mgp-auth-java</artifactId>
