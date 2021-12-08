@@ -15,6 +15,8 @@ public class SudMGPAuth {
 
     public SudSSToken getSSToken(String uid);
 
+    public SudSSToken getSSToken(String uid, Long expireDuration);
+
     public SudUid getUidByCode(String code);
 
     public SudUid getUidBySSToken(String ssToken);
@@ -97,7 +99,7 @@ public enum ErrorCodeEnum {
 |参数名|必选|类型|说明|
 |:----|:---|:-----|-----|
 |uid|是|String|用户id，需全局唯一，为保证数据安全，可通过自己的UID哈希出虚拟UID|
-|expireDuration|是|Long|短期令牌Code过期时长（毫秒数），例如：1小时：3600000|
+|expireDuration|是|Long|短期令牌Code过期时长（毫秒数），例如：1小时：3600000, 最短限制半小时，小于半小时会使用半小时|
 
 - 返回值(SudCode)
 
@@ -120,6 +122,28 @@ public enum ErrorCodeEnum {
 |参数名|必选|类型|说明|
 |:----|:---|:-----|-----|
 |uid|是|String|用户id，需全局唯一，可通过短期令牌Code获得|
+
+- 返回值(SudSSToken)
+
+|参数名|类型|说明|
+|:----|:---|-----|
+|token|String|根据UID生成的长期令牌SSToken|
+|expireDate|Long|长期令牌SSToken过期时间戳（毫秒）|
+
+### SudMGPAuth.getSSToken
+
+- 说明
+
+```txt
+通过UID获取长期令牌SSToken，SSToken为小游戏服务端与业务服务端数据交换的令牌，自定义时长
+```
+
+- 参数
+
+|参数名|必选|类型|说明|
+|:----|:---|:-----|-----|
+|uid|是|String|用户id，需全局唯一，可通过短期令牌Code获得|
+|expireDuration|是|Long|长期令牌SSToken过期时长（毫秒数），例如：1小时：3600000, 最短限制2小时，小于2小时会使用2小时|
 
 - 返回值(SudSSToken)
 
