@@ -1,6 +1,6 @@
 # SudMGP和游戏 更新日志
 
-## v1.1.31.xx (2021-12-07)
+## v1.1.32.xx (2021-12-07)
 **Android:**
 - [SudMGP-Android-v1.1.32.200](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.32.200)
 - [HelloSud-Android-v1.1.32.200](https://github.com/SudTechnology/hello-sud-android/releases)
