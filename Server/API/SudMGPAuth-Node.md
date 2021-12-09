@@ -27,8 +27,6 @@ SudMGPAuth.prototype.verifyCode = function (code) {}
 
 SudMGPAuth.prototype.verifySSToken = function (ssToken) {}
 
-``` go
-
 
 /**
  * 错误码信息定义
