@@ -19,9 +19,9 @@ func NewSudMGPAuth(appID string, appSecret string) *SudMGPAuth {
 	return client
 }
 
-func (client *SudMGPAuth) GetCode(uid string) *SudCode
+func (client *SudMGPAuth) GetCode(uid string, expireDuration int64) *SudCode
 
-func (client *SudMGPAuth) GetSSToken(uid string) *SudSSToken 
+func (client *SudMGPAuth) GetSSToken(uid string, expireDuration int64) *SudSSToken 
 
 func (client *SudMGPAuth) GetUidByCode(code string) *SudUid 
 
