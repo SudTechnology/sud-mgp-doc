@@ -5,7 +5,7 @@
 ## SudMGPAuth Dotnet
 
 ```text
-private readonly SudMgpAuth _sudMgpAuth; = new SudMGPAuth(APP_ID, APP_SECRET);
+private readonly SudMgpAuth _sudMgpAuth = new SudMGPAuth(APP_ID, APP_SECRET);
 
 public class SudMGPAuth {
 
