@@ -168,7 +168,7 @@ const (
 |:----|:---|:-----|-----|
 |code|是|string|短期令牌Code|
 
-- 返回值true或false
+- 返回值(errorCode): 见“错误码信息定义”
 
 
 ### SudMGPAuth.VerifySSToken
@@ -185,4 +185,4 @@ const (
 |:----|:---|:-----|-----|
 |ssToken|是|string|长期令牌SSToken|
 
-- 返回值true或false
+- 返回值(errorCode): 见“错误码信息定义”
