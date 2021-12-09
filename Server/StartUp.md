@@ -20,6 +20,8 @@
 
 - [Node](./API/SudMGPAuth-Node.md)
 
+- [Dotnet](./API/SudMGPAuth-Dotnet.md)
+
 ### Https服务回调
 
 - [get_sstoken](./HttpsCallback/get_sstoken.md)
