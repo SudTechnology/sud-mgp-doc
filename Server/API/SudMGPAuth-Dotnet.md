@@ -15,7 +15,7 @@ public class SudMGPAuth {
 
     public SudSsToken GetSsToken(string uid);
 
-    public SudSsToken getSsToken(string uid, long expireDuration);
+    public SudSsToken GetSsToken(string uid, long expireDuration);
 
     public SudUid GetUidByCode(string code);
 
