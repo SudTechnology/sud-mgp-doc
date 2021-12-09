@@ -31,7 +31,7 @@
 ## 客户端Demo下载
 - [HelloSud-Android-v1.1.32.200](https://github.com/SudTechnology/hello-sud-android/releases)
   
-- [HelloSud-iOS-v1.1.32.232](https://github.com/SudTechnology/sud-mgp-ios/releases)
+- [HelloSud-iOS-v1.1.32.232](https://github.com/SudTechnology/hello-sud-ios/releases)
 
 > Tips
 >
