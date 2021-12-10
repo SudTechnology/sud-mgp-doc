@@ -58,7 +58,7 @@
 
 - [Go v1.0.2](https://github.com/SudTechnology/sud-mgp-auth-go/releases)
 
-- [Node v1.0.0](https://github.com/SudTechnology/sud-mgp-auth-node/releases)
+- [Node v1.0.1](https://github.com/SudTechnology/sud-mgp-auth-node/releases)
 
 ## 服务端Demo下载
 
@@ -66,4 +66,4 @@
 
 - [Go v1.0.0](https://github.com/SudTechnology/hello-sud-go/releases)
 
-- [Node v1.0.0](https://github.com/SudTechnology/hello-sud-node/releases)
+- [Node v1.0.1](https://github.com/SudTechnology/hello-sud-node/releases)
