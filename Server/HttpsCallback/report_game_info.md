@@ -24,7 +24,7 @@
 |:----|:---|:-----|-----|
 |report_type |是  |string |上报类型  |
 |report_msg |是  |object |上报数据对象  |
-|uid |是  |string |平台用户id （鉴权使用）  |
+|uid |是  |string |接入方用户id （鉴权使用）  |
 |ss_token  |是  |string |接入方服务端生成ss_token （鉴权使用）   |
 
 ##### report_type 参数对应表
@@ -40,7 +40,7 @@
 |:----|:---|:-----|-----|
 |mg_id |是  |int64 |游戏id |
 |mg_id_str |是  |string |小游戏id数值型兼容字段（nodejs服务请使用当前字段） |
-|room_id |是 |string |平台房间id  |
+|room_id |是 |string |接入方房间id  |
 |game_mode  |是 |int32 |游戏模式  |
 |game_round_id |是 |string |本局游戏的id （重复上报，使用该字段去重） |
 |battle_start_at |是 |int32 |战斗开始时间（秒）  |
@@ -50,7 +50,7 @@
 
 |参数名|必选|类型|说明|
 |:----|:---|:-----|-----|
-|uid |是 |string|平台uid，机器人为空字符 |
+|uid |是 |string|接入方uid，机器人为空字符 |
 |is_ai |是 |int32|0:普通用户，1:机器人 |
 
 
@@ -60,7 +60,7 @@
 |:----|:---|:-----|-----|
 |mg_id |是  |int64 |游戏id |
 |mg_id_str |是  |string |小游戏id数值型兼容字段（nodejs服务请使用当前字段） |
-|room_id |是 |string |平台房间id  |
+|room_id |是 |string |接入方房间id  |
 |game_mode  |是 |int32 |游戏模式  |
 |game_round_id |是 |string |本局游戏的id （重复上报，使用该字段去重） |
 |battle_start_at |是 |int32 |战斗开始时间（秒）  |
@@ -72,7 +72,7 @@
 
 |参数名|必选|类型|说明|
 |:----|:---|:-----|-----|
-|uid |是 |string|平台uid，机器人为空字符 |
+|uid |是 |string|接入方uid，机器人为空字符 |
 |rank |是 |int32|排名从1开始，平局排名相同 |
 |is_escaped |是 |int32|0:正常，1:逃跑 |
 |is_ai |是 |int32|0:普通用户，1:机器人 |
