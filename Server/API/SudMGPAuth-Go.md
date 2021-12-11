@@ -21,7 +21,11 @@ func NewSudMGPAuth(appID string, appSecret string) *SudMGPAuth {
 
 func (client *SudMGPAuth) GetCode(uid string, expireDuration int64) *SudCode
 
+func (client *SudMGPAuth) GetCodeByDefaultDuration(uid string) *SudCode
+
 func (client *SudMGPAuth) GetSSToken(uid string, expireDuration int64) *SudSSToken 
+
+func (client *SudMGPAuth) GetSSTokenByDefaultDuration(uid string) *SudSSToken 
 
 func (client *SudMGPAuth) GetUidByCode(code string) *SudUid 
 
@@ -86,7 +90,28 @@ const (
 |参数名|必选|类型|说明|
 |:----|:---|:-----|-----|
 |uid|是|string|用户id，需全局唯一，为保证数据安全，可通过自己的UID哈希出虚拟UID|
-|expireDuration|是|int64|短期令牌Code过期时长（毫秒数），例如：1小时：3600000, 最短限制2小时，小于2小时会使用2小时|
+|expireDuration|是|int64|短期令牌Code过期时长（毫秒数），例如：1小时：3600000, 最短限制半小时，小于半小时会使用半小时|
+
+- 返回值(SudCode)
+
+|参数名|类型|说明|
+|:----|:---|-----|
+|code|string|根据UID生成的短期令牌Code|
+|expireDate|int64|短期令牌Code过期时间戳（毫秒）|
+
+### SudMGPAuth.GetCodeByDefaultDuration
+
+- 说明
+
+```txt
+获取短期令牌Code，默认时长2小时
+```
+
+- 参数
+
+|参数名|必选|类型|说明|
+|:----|:---|:-----|-----|
+|uid|是|string|用户id，需全局唯一，为保证数据安全，可通过自己的UID哈希出虚拟UID|
 
 - 返回值(SudCode)
 
@@ -110,6 +135,28 @@ const (
 |:----|:---|:-----|-----|
 |uid|是|string|用户id，需全局唯一，可通过短期令牌Code获得|
 |expireDuration|是|int64|长期令牌SSToken过期时长（毫秒数），例如：1小时：3600000, 最短限制2小时，小于2小时会使用2小时|
+
+- 返回值(SudSSToken)
+
+|参数名|类型|说明|
+|:----|:---|-----|
+|token|string|根据UID生成的长期令牌SSToken|
+|expireDate|int64|长期令牌SSToken过期时间戳（毫秒）|
+
+
+### SudMGPAuth.GetSSTokenByDefaultDuration
+
+- 说明
+
+```txt
+通过UID获取长期令牌SSToken，SSToken为小游戏服务端与业务服务端数据交换的令牌，默认时长2小时
+```
+
+- 参数
+
+|参数名|必选|类型|说明|
+|:----|:---|:-----|-----|
+|uid|是|string|用户id，需全局唯一，可通过短期令牌Code获得|
 
 - 返回值(SudSSToken)
 
