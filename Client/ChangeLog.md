@@ -1,5 +1,30 @@
 # SudMGP和游戏 更新日志
 
+## v1.1.33.xx (2021-12-13)
+**Android:**
+- [SudMGP-Android-v1.1.33.219](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.33.219)
+- [HelloSud-Android-v1.1.33.219](https://github.com/SudTechnology/hello-sud-android/releases)
+
+**iOS:**
+- [SudMGP-iOS-v1.1.33.258](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.33.258)
+- [HelloSud-iOS-v1.1.33.258](https://github.com/SudTechnology/hello-sud-ios/releases)
+
+**新增功能:**
+- 无
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 优化连接超时时间；
+- 游戏ID传递给游戏；
+- iOS destroyMG时，SDK内主动移除游戏View；
+
+**Bug修复:**
+- 修复Android加载进度条阴影变大问题；
+- 修复iOS类型错误问题；
+- 修复iOS点击重新加载按钮没有隐藏问题；
+
 ## v1.1.32.xx (2021-12-08)
 **Android:**
 - [SudMGP-Android-v1.1.32.200](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.32.200)
