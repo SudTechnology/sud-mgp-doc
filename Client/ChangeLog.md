@@ -1,4 +1,24 @@
 # SudMGP和游戏 更新日志
+## v1.1.33.xx (2021-12-14)
+**Android:**
+- [SudMGP-Android-v1.1.33.227](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.33.227)
+- [HelloSud-Android-v1.1.33.227](https://github.com/SudTechnology/hello-sud-android/releases)
+
+**iOS:**
+- [SudMGP-iOS-v1.1.33.258](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.33.258)
+- [HelloSud-iOS-v1.1.33.258](https://github.com/SudTechnology/hello-sud-ios/releases)
+
+**新增功能:**
+- 无
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 无
+
+**Bug修复:**
+- 修复指令集兼容问题；
 
 ## v1.1.33.xx (2021-12-13)
 **Android:**
