@@ -1,4 +1,33 @@
 # SudMGP和游戏 更新日志
+
+
+## 游戏更新 (2021-12-15)
+
+**新增功能:**
+- 新增状态 [玩家换游戏位状态](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MG%20FSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E7%8E%A9%E5%AE%B6.md)
+- 新增状态 [游戏状态](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MG%20FSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E6%B8%B8%E6%88%8F.md)
+- 新增字段isSeatRandom [加入状态app_common_self_in](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/APP%20FST/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81.md)
+- 新增字段gameCPU [onGetGameCfg](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/API/ISudFSMMG/onGetGameCfg.md)
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 优化断线重连状态通知的完整性和一致性；
+- 优化排名算法，相同积分则相同排名；
+- 优化段位升级算法，不再扣除奖杯；
+- 优化调整分享按钮位置； 
+- 优化游戏位的默认头像；
+
+**Bug修复:**
+- 修复隐藏段位UI，结算界面的奖杯资源未隐藏的问题；
+- 修复断线重连的相关问题；
+- 修复“飞镖达人”的logo适配；
+- 修复其他问题;
+- 修复teamId不同问题；
+- 修复游戏位根据配置隐藏队长和踢人标识；
+- 修复玩家断线，在重连上来之前，有玩家离开导致的麦位和游戏位玩家显示不一致的问题；
+
 ## v1.1.33.xx (2021-12-14)
 **Android:**
 - [SudMGP-Android-v1.1.33.227](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.33.227)
