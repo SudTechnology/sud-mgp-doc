@@ -86,7 +86,7 @@
 		"mg_id_str": "1461227817776713818",
 		"room_id": "xxx123",
 		"game_mode": 1,
-		"game_round_id": "1466938649865117696",
+		"game_round_id": "ce56b6lzi1a7-cehorlmy01pq-cqkdd39jyrmz",
 		"battle_start_at": 1638845715,
 		"players": [{
 			"uid": "u2",
@@ -110,7 +110,7 @@
 		"mg_id_str": "1461227817776713818",
 		"room_id": "xxx123",
 		"game_mode": 1,
-		"game_round_id": "1466938649865117696",
+		"game_round_id": "ce56b6lzi1a7-cehorlmy01pq-cqkdd39jyrmz",
 		"battle_start_at": 1638845715,
 		"battle_end_at": 1638845720,
 		"battle_duration": 5,
