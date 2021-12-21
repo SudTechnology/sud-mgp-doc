@@ -43,8 +43,9 @@
 
 ```json
 {
-    "ret_code": 0,
+    "ret_code": 0, //错误码，0为成功，其他错误
     "ret_msg": "",
+    "sdk_error_code":0,//sdk错误码，0为成功，其他错误
     "data": {
         "uid": "1380100177150345266",
         "nick_name": "萌萌",

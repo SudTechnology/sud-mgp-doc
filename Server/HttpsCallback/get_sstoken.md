@@ -41,8 +41,9 @@
 
 ```json
 {
-    "ret_code": 0,
+    "ret_code": 0, //错误码，0为成功，其他错误
     "ret_msg": "",
+    "sdk_error_code":0,//sdk错误码，0为成功，其他错误
     "data": {
         "ss_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMjMiLCJleHAiOjE2MzA0MTc4NjEsImFwcF9pZCI6ImFwcElEIn0.vk6cX4dGHJ-du6tKAMqy-qoD9xB_GV2Dh356cZgMQxM",
         "expire_date": 1630417861359
