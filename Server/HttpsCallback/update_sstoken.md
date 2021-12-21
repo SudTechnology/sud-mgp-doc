@@ -37,13 +37,27 @@
 |ss_token|是|string|token|
 |expire_date|是|int64|过期时间（毫秒数）|
 
-## 返回示例
+## 正确返回示例
 
 ```json
 {
     "ret_code": 0, //错误码，0为成功，其他错误
     "ret_msg": "",
     "sdk_error_code":0,//sdk错误码，0为成功，其他错误
+    "data": {
+        "ss_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMzgwMTAwMTc3MTUwMzQ1MjY2IiwiZXhwIjoxNjMwNTgwMTU2LCJhcHBfaWQiOiJhcHBJRCJ9.A9VAOC2ltCn_6pVn3jA8zHBos6QQs0_1_RnxsuK9M44",
+        "expire_date": 1630580156184
+    }
+}
+```
+
+## 带错误码返回示例
+
+```json
+{
+    "ret_code": 1, //错误码，0为成功，其他错误
+    "ret_msg": "",
+    "sdk_error_code":1005,//sdk错误码，0为成功，其他错误
     "data": {
         "ss_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMzgwMTAwMTc3MTUwMzQ1MjY2IiwiZXhwIjoxNjMwNTgwMTU2LCJhcHBfaWQiOiJhcHBJRCJ9.A9VAOC2ltCn_6pVn3jA8zHBos6QQs0_1_RnxsuK9M44",
         "expire_date": 1630580156184
