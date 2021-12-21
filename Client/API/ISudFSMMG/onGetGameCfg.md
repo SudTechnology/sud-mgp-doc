@@ -33,11 +33,14 @@ dataJsonResp = {
 }
 ```
 
+![GameCfg](../../../Resource/Client/ongetgamecfg.png)
+
 ### 参数
 
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
 |gameMode	|否	|类型	|游戏模式（每个游戏默认模式是1，不填是1）|
+|gameCPU	|否	|类型	|游戏CPU（值为0和1；0：CPU正常功耗，1：CPU低功耗；默认是0，CPU正常功耗）|
 |ui	|否	|json	|对游戏ui界面的配置，可定制ui界面的显示与不显示|
 |ui.gameSettle  |否  |json |结算界面   |
 |ui.gameSettle.hide  |否  |bool |是否隐藏结算界面（false: 显示； true: 隐藏，默认为 false）   |
@@ -156,5 +159,3 @@ dataJsonResp = {
     }
 }
 ```
-
-![GameCfg](../../../Resource/Client/ongetgamecfg.png)
