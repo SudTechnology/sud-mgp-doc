@@ -54,9 +54,10 @@
     <servers>
         <server>
             <id>sudtech-github</id>
-            <!-- github用户名，建议创建一个公司通用账号 -->
+            <!-- github用户名，建议创建一个公司通用账号，注意：不要使用邮箱，使用用户名！！！ -->
             <username>USERNAME</username>
             <!-- https://github.com/settings/tokens -> Personal access tokens -->
+            <!-- 此处使用的是token，非密码明文！！！ -->
             <password>YOUR_GITHUB_PAT</password>
         </server>
     </servers>  
