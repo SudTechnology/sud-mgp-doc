@@ -42,3 +42,6 @@ dataJsonResp = {
 |view_game_rect.top |是  |int |相对于view_size上边框偏移（单位像素）   |
 |view_game_rect.right |是  |int |相对于view_size右边框偏移（单位像素）   |
 |view_game_rect.bottom |是  |int |相对于view_size下边框偏移（单位像素）   |
+
+## 安全区标注
+![GameCfg](../../../Resource/Client/gameview.png)

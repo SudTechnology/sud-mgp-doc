@@ -33,6 +33,7 @@ dataJsonResp = {
 }
 ```
 
+### 标注
 ![GameCfg](../../../Resource/Client/ongetgamecfg.png)
 
 ### 参数
