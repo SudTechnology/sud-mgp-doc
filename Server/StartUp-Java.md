@@ -65,7 +65,7 @@
 </settings>
 ```
 
-3.使用[SudMGPAuth](./API/SudMGPAuth-Java.md)提供的API实现以下回调接口，供小游戏服务鉴权和获取用户基本信息，可参考Demo
+3.使用[SudMGPAuth](./API/SudMGPAuth-Java.md)提供的API实现以下回调接口，供小游戏服务鉴权和获取用户基本信息，可参考[Demo](https://github.com/SudTechnology/hello-sud-java)
 
 - [get_sstoken](./HttpsCallback/get_sstoken.md)
 

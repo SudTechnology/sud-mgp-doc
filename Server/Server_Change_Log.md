@@ -23,3 +23,4 @@
 **接入方服务端获取"游戏信息"，"游戏列表"接口增加游戏背景图字段**
 - [server-sdk-api(mg-info).mod](./ServerSDKAPI/获取游戏信息.md)
 - [server-sdk-api(mg-list).mod](./ServerSDKAPI/获取游戏列表.md)
+
