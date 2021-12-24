@@ -11,7 +11,6 @@
 **服务端SDK(Java版本)新增自定义时长创建短期令牌Code与长期令牌SSToken的方法**
 - [server-sdk-java.mod](./API/SudMGPAuth-Java.md)
 
-
 ## 2021-12-8
 **服务端SDK(go版本)新增自定义时长创建短期令牌Code与长期令牌SSToken的方法**
 - [server-sdk-go.mod](./API/SudMGPAuth-Go.md)
@@ -19,3 +18,8 @@
 ## 2021-12-9
 **服务端SDK(node版本)新增自定义时长创建短期令牌Code与长期令牌SSToken的方法**
 - [server-sdk-node.mod](./API/SudMGPAuth-Node.md)
+
+## 2021-12-23
+**接入方服务端获取"游戏信息"，"游戏列表"接口增加游戏背景图字段**
+- [server-sdk-api(mg-info).mod](./ServerSDKAPI/获取游戏信息.md)
+- [server-sdk-api(mg-list).mod](./ServerSDKAPI/获取游戏列表.md)
