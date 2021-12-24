@@ -16,7 +16,7 @@
 
 1.项目集成 sud-mgp-auth-java，添加以下依赖
 ```xml
-   <!-- 引用服务端sdk依赖 -->
+<!-- 引用服务端sdk依赖 -->
 <dependencies>
    <dependency>
       <groupId>tech.sud.mgp.auth</groupId>
