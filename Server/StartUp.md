@@ -30,6 +30,8 @@
 
 - [get_user_info](./HttpsCallback/get_user_info.md)
 
+- [report_game_info](./HttpsCallback/report_game_info.md)
+
 ### SDK服务API
 
 - [mg_list](ServerSDKAPI/获取游戏列表.md)
