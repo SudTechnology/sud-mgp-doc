@@ -87,6 +87,10 @@ dataJsonResp = {
 |ui.game_setting_btn.hide  |否  |bool |是否隐藏游戏场景中的设置按钮（false: 显示； true: 隐藏，默认为false）   |
 |ui.game_help_btn  |否  |json |游戏场景中的帮助按钮   |
 |ui.game_help_btn.hide  |否  |bool |是否隐藏游戏场景中的帮助按钮（false: 显示； true: 隐藏，默认为false）   |
+|ui.game_settle_close_btn  |否  |json |游戏结算界面中的关闭按钮   |
+|ui.game_settle_close_btn.custom  |否  |bool |游戏结算界面中的关闭按钮（false: 关闭结算界面返回大厅； true: 游戏通知按钮点击事件，并关闭结算界面返回大厅；默认为false）   |
+|ui.game_settle_again_btn  |否  |json |游戏结算界面中的再来一局按钮   |
+|ui.game_settle_again_btn.custom  |否  |bool |游戏结算界面中的再来一局按钮（false: 关闭结算界面返回大厅并将玩家设置为准备状态； true: 游戏通知按钮点击事件，并关闭结算界面返回大厅（不将玩家设置为准备状态）；默认为false）   |
 
 
 ### 返回示例
@@ -156,6 +160,12 @@ dataJsonResp = {
         },
         "game_help_btn":{
             "hide":false
+        },
+        "game_settle_close_btn": {
+            "custom": false
+        },
+        "game_settle_again_btn": {
+            "custom": false
         }
     }
 }
