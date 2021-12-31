@@ -1,6 +1,6 @@
 # SudMGP和游戏 更新日志
 
-## 游戏更新 (2021-12-30)
+## 游戏更新 (2021-12-31)
 **新增功能:**
 - 游戏碰碰我最强新增[配置gameSoundControl gameSoundVolume](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/API/ISudFSMMG/onGetGameCfg.md)
 - 游戏碰碰我最强新增[设置游戏的音量大小](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/APP%20FST/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81.md)
