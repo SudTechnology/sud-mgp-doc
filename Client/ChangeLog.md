@@ -228,8 +228,8 @@
 - [HelloSud-Android-v1.1.30.161](https://github.com/SudTechnology/hello-sud-android/releases/tag/v1.1.30.161)
 
 **iOS:**
-- [SudMGP-iOS-v1.1.31.187](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.30.187)
-- [HelloSud-iOS-v1.1.31.187](https://github.com/SudTechnology/hello-sud-ios/releases)
+- [SudMGP-iOS-v1.1.30.187](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.30.187)
+- [HelloSud-iOS-v1.1.30.187](https://github.com/SudTechnology/hello-sud-ios/releases)
 
 **新增功能:**
 - 提供更灵活的接口，APP自定义主动串游戏逻辑([APP状态控制器-通用状态](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/APP%20FST/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81.md))，或者游戏主动串游戏逻辑([MG状态机-通用状态-游戏]()和[MG状态机-通用状态-玩家](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MG%20FSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E7%8E%A9%E5%AE%B6.md))；
