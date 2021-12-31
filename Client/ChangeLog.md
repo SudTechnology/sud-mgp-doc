@@ -1,5 +1,20 @@
 # SudMGP和游戏 更新日志
 
+## 游戏更新 (2021-12-30)
+**新增功能:**
+- 游戏碰碰我最强新增[配置gameSoundControl gameSoundVolume](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/API/ISudFSMMG/onGetGameCfg.md)
+- 游戏碰碰我最强新增[设置游戏的音量大小](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/APP%20FST/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81.md)
+- 游戏碰碰我最强新增[游戏上报游戏中的声音列表](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MG%20FSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E6%B8%B8%E6%88%8F.md)
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 无
+
+**Bug修复:**
+- 无
+
 ## v1.1.35.xx (2021-12-30)
 **Android:**
 - [SudMGP-Android-v1.1.35.286](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.35.286)
@@ -32,7 +47,6 @@
 - 游戏修复退出重进或者断线重连回来，isready和isplaying的状态问题；
 - 游戏修复“五子棋”里昵称带%引起的问题；
 - 游戏修复其他BUG；
-
 
 ## 游戏更新 (2021-12-15)
 

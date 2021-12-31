@@ -42,6 +42,8 @@ dataJsonResp = {
 |:----    |:---|:----- |-----   |
 |gameMode	|否	|类型	|游戏模式（每个游戏默认模式是1，不填是1）|
 |gameCPU	|否	|类型	|游戏CPU（值为0和1；0：CPU正常功耗，1：CPU低功耗；默认是0，CPU正常功耗）|
+|gameSoundControl	|否	|int	|游戏中声音的播放是否被app层接管（值为0和1；0：游戏播放声音，1：app层播放声音，游戏中不播放任何声音；默认是0）|
+|gameSoundVolume	|否	|int	|游戏中音量的大小（值为0到100；默认是100）|
 |ui	|否	|json	|对游戏ui界面的配置，可定制ui界面的显示与不显示|
 |ui.gameSettle  |否  |json |结算界面   |
 |ui.gameSettle.hide  |否  |bool |是否隐藏结算界面（false: 显示； true: 隐藏，默认为 false）   |
