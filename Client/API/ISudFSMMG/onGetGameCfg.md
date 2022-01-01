@@ -67,9 +67,9 @@ dataJsonResp = {
 |ui.lobby_rule.hide  |否  |bool |是否隐藏大厅的玩法规则描述文字（false: 显示； true: 隐藏，默认为false）   |
 |ui.lobby_game_setting  |否  |json |玩法设置   |
 |ui.lobby_game_setting.hide  |否  |bool |是否隐藏玩法设置（false: 显示； true: 隐藏，默认为false）   |
-|ui.jion_btn  |否  |json |加入按钮   |
-|ui.jion_btn.custom  |否  |bool |加入按钮（false: 游戏处理逻辑； true: 游戏只通知按钮点击事件，不处理；默认为false）   |
-|ui.jion_btn.hide  |否  |bool |是否隐藏加入按钮（false: 显示； true: 隐藏，默认为false）   |
+|ui.join_btn  |否  |json |加入按钮   |
+|ui.join_btn.custom  |否  |bool |加入按钮（false: 游戏处理逻辑； true: 游戏只通知按钮点击事件，不处理；默认为false）   |
+|ui.join_btn.hide  |否  |bool |是否隐藏加入按钮（false: 显示； true: 隐藏，默认为false）   |
 |ui.cancel_join_btn  |否  |json |取消加入按钮   |
 |ui.cancel_join_btn.custom  |否  |bool |取消加入按钮（false: 游戏处理逻辑； true: 游戏只通知按钮点击事件，不处理；默认为false）   |
 |ui.cancel_join_btn.hide  |否  |bool |是否隐藏取消加入按钮（false: 显示； true: 隐藏，默认为false）   |
