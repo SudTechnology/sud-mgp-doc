@@ -1,5 +1,52 @@
 # SudMGP和游戏 更新日志
 
+## 游戏更新 (2021-12-31)
+**新增功能:**
+- 游戏碰碰我最强新增[配置gameSoundControl gameSoundVolume](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/API/ISudFSMMG/onGetGameCfg.md)
+- 游戏碰碰我最强新增[设置游戏的音量大小](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/APP%20FST/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81.md)
+- 游戏碰碰我最强新增[游戏上报游戏中的声音列表](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MG%20FSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E6%B8%B8%E6%88%8F.md)
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 无
+
+**Bug修复:**
+- 无
+
+## v1.1.35.xx (2021-12-30)
+**Android:**
+- [SudMGP-Android-v1.1.35.286](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.35.286)
+- [HelloSud-Android-v1.1.35.286](https://github.com/SudTechnology/hello-sud-android/releases)
+
+**iOS:**
+- [SudMGP-iOS-v1.1.35.311](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.35.311)
+- [HelloSud-iOS-v1.1.35.311](https://github.com/SudTechnology/hello-sud-ios/releases)
+
+**新增功能:**
+- SDK iOS ISudFSTAPP新增接口playMG和pauseMG；
+- SDK iOS SudMGP新增接口autoSetAudioSession，解决AudioSession冲突问题；
+- SDK 测试环境显示仅供测试；
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 游戏优化结算界面的【再来一局】、结算界面的【关闭】和自动关闭，都向app发送消息，通过GetGameCfg实现；
+- 游戏优化音乐开关、音效开关、震动开关，可设置默认值，通过通用状态实现；
+- 游戏优化内存使用；
+- 游戏优化部分文字；
+- 游戏优化部分美术资源；
+- 游戏优化部分游戏切换队长，增加发送非队长的状态；
+
+**Bug修复:**
+- SDK修复Android切后台游戏连接断开问题；
+- SDK修复iOS滑动TableView游戏渲染暂停问题；
+- SDK修复已知问题；
+- 游戏修复退出重进或者断线重连回来，isready和isplaying的状态问题；
+- 游戏修复“五子棋”里昵称带%引起的问题；
+- 游戏修复其他BUG；
 
 ## 游戏更新 (2021-12-15)
 
@@ -195,8 +242,8 @@
 - [HelloSud-Android-v1.1.30.161](https://github.com/SudTechnology/hello-sud-android/releases/tag/v1.1.30.161)
 
 **iOS:**
-- [SudMGP-iOS-v1.1.31.187](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.30.187)
-- [HelloSud-iOS-v1.1.31.187](https://github.com/SudTechnology/hello-sud-ios/releases)
+- [SudMGP-iOS-v1.1.30.187](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.30.187)
+- [HelloSud-iOS-v1.1.30.187](https://github.com/SudTechnology/hello-sud-ios/releases)
 
 **新增功能:**
 - 提供更灵活的接口，APP自定义主动串游戏逻辑([APP状态控制器-通用状态](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/APP%20FST/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81.md))，或者游戏主动串游戏逻辑([MG状态机-通用状态-游戏]()和[MG状态机-通用状态-玩家](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MG%20FSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E7%8E%A9%E5%AE%B6.md))；

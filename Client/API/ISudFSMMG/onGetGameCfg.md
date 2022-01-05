@@ -40,8 +40,10 @@ dataJsonResp = {
 
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
-|gameMode	|否	|类型	|游戏模式（每个游戏默认模式是1，不填是1）|
-|gameCPU	|否	|类型	|游戏CPU（值为0和1；0：CPU正常功耗，1：CPU低功耗；默认是0，CPU正常功耗）|
+|gameMode	|否	|int	|游戏模式（每个游戏默认模式是1，不填是1）|
+|gameCPU	|否	|int	|游戏CPU（值为0和1；0：CPU正常功耗，1：CPU低功耗；默认是0，CPU正常功耗）|
+|gameSoundControl	|否	|int	|游戏中声音的播放是否被app层接管（值为0和1；0：游戏播放声音，1：app层播放声音，游戏中不播放任何声音；默认是0）|
+|gameSoundVolume	|否	|int	|游戏中音量的大小（值为0到100；默认是100）|
 |ui	|否	|json	|对游戏ui界面的配置，可定制ui界面的显示与不显示|
 |ui.gameSettle  |否  |json |结算界面   |
 |ui.gameSettle.hide  |否  |bool |是否隐藏结算界面（false: 显示； true: 隐藏，默认为 false）   |
@@ -56,6 +58,7 @@ dataJsonResp = {
 |ui.lobby_help_btn  |否  |json |大厅的帮助按钮   |
 |ui.lobby_help_btn.hide  |否  |bool |是否隐藏大厅的帮助按钮（false: 显示； true: 隐藏，默认为false）   |
 |ui.lobby_players  |否  |json |大厅玩家展示位   |
+|ui.lobby_players.custom  |否  |bool |大厅玩家展示位头像点击加入（false: 游戏处理逻辑； true: 游戏只通知按钮点击事件，不处理；默认为false）   |
 |ui.lobby_players.hide  |否  |bool |是否隐藏大厅玩家展示位（false: 显示； true: 隐藏，默认为false）   |
 |ui.lobby_player_captain_icon  |否  |json |大厅玩家展示位上队长标识   |
 |ui.lobby_player_captain_icon.hide  |否  |bool |是否隐藏大厅玩家展示位上队长标识（false: 显示； true: 隐藏，默认为false）   |
@@ -65,9 +68,9 @@ dataJsonResp = {
 |ui.lobby_rule.hide  |否  |bool |是否隐藏大厅的玩法规则描述文字（false: 显示； true: 隐藏，默认为false）   |
 |ui.lobby_game_setting  |否  |json |玩法设置   |
 |ui.lobby_game_setting.hide  |否  |bool |是否隐藏玩法设置（false: 显示； true: 隐藏，默认为false）   |
-|ui.jion_btn  |否  |json |加入按钮   |
-|ui.jion_btn.custom  |否  |bool |加入按钮（false: 游戏处理逻辑； true: 游戏只通知按钮点击事件，不处理；默认为false）   |
-|ui.jion_btn.hide  |否  |bool |是否隐藏加入按钮（false: 显示； true: 隐藏，默认为false）   |
+|ui.join_btn  |否  |json |加入按钮   |
+|ui.join_btn.custom  |否  |bool |加入按钮（false: 游戏处理逻辑； true: 游戏只通知按钮点击事件，不处理；默认为false）   |
+|ui.join_btn.hide  |否  |bool |是否隐藏加入按钮（false: 显示； true: 隐藏，默认为false）   |
 |ui.cancel_join_btn  |否  |json |取消加入按钮   |
 |ui.cancel_join_btn.custom  |否  |bool |取消加入按钮（false: 游戏处理逻辑； true: 游戏只通知按钮点击事件，不处理；默认为false）   |
 |ui.cancel_join_btn.hide  |否  |bool |是否隐藏取消加入按钮（false: 显示； true: 隐藏，默认为false）   |
@@ -87,12 +90,20 @@ dataJsonResp = {
 |ui.game_setting_btn.hide  |否  |bool |是否隐藏游戏场景中的设置按钮（false: 显示； true: 隐藏，默认为false）   |
 |ui.game_help_btn  |否  |json |游戏场景中的帮助按钮   |
 |ui.game_help_btn.hide  |否  |bool |是否隐藏游戏场景中的帮助按钮（false: 显示； true: 隐藏，默认为false）   |
+|ui.game_settle_close_btn  |否  |json |游戏结算界面中的关闭按钮   |
+|ui.game_settle_close_btn.custom  |否  |bool |游戏结算界面中的关闭按钮（false: 关闭结算界面返回大厅； true: 游戏通知按钮点击事件，并关闭结算界面返回大厅；默认为false）   |
+|ui.game_settle_again_btn  |否  |json |游戏结算界面中的再来一局按钮   |
+|ui.game_settle_again_btn.custom  |否  |bool |游戏结算界面中的再来一局按钮（false: 关闭结算界面返回大厅并将玩家设置为准备状态； true: 游戏通知按钮点击事件，并关闭结算界面返回大厅（不将玩家设置为准备状态）；默认为false）   |
+
 
 
 ### 返回示例
 ```txt
 {
     "gameMode":1,
+	"gameCPU": 0,
+	"gameSoundControl": 0,
+	"gameSoundVolume": 100,
     "ui":{
         "gameSettle":{
             "hide":false
@@ -113,6 +124,7 @@ dataJsonResp = {
             "hide":false
         },
         "lobby_players":{
+			"custom": false,
             "hide":true
         },
         "lobby_player_captain_icon":{
@@ -156,6 +168,12 @@ dataJsonResp = {
         },
         "game_help_btn":{
             "hide":false
+        }
+        "game_settle_close_btn": {
+            "custom": false
+        },
+        "game_settle_again_btn": {
+            "custom": false
         }
     }
 }
