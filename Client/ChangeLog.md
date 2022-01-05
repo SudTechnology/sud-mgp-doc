@@ -1,5 +1,28 @@
 # SudMGP和游戏 更新日志
 
+## v1.1.36.xx (2022-01-05)
+**Android:**
+- [SudMGP-Android-v1.1.36.302](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.36.302)
+- [HelloSud-Android-v1.1.35.286](https://github.com/SudTechnology/hello-sud-android/releases)
+
+**iOS:**
+- [SudMGP-iOS-v1.1.36.326](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.36.326)
+- [HelloSud-iOS-v1.1.35.311](https://github.com/SudTechnology/hello-sud-ios/releases)
+
+**新增功能:**
+- 无
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 无；
+
+**Bug修复:**
+- Android修复onPreDraw偶现异常；
+- Android修复加载停止，没有进度；
+- iOS修复getPlayerState无法获取玩家状态问题；
+
 ## 游戏更新 (2021-12-31)
 **新增功能:**
 - 游戏碰碰我最强新增[配置gameSoundControl gameSoundVolume](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/API/ISudFSMMG/onGetGameCfg.md)
