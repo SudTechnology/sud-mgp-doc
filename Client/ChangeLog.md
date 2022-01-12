@@ -1,5 +1,49 @@
 # SudMGP和游戏 更新日志
 
+## v1.1.38.xx (2022-01-12)
+**Android:**
+- [SudMGP-Android-v1.1.38.320](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.38.320)
+- [HelloSud-Android-v1.1.35.286](https://github.com/SudTechnology/hello-sud-android/releases)
+
+**iOS:**
+- [SudMGP-iOS-v1.1.38.350](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.38.350)
+- [HelloSud-iOS-v1.1.35.311](https://github.com/SudTechnology/hello-sud-ios/releases)
+
+**新增功能:**
+- 无
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 优化降低游戏碰碰我最强优化内存；
+- 优化降低游戏碰碰我最强CPU占用，解决手机发烫问题；
+
+**Bug修复:**
+- Android修复Http curl close崩溃栈问题；
+- Android优化代码；
+- iOS修复视图不跟随设置的view的大小进行缩放的问题；
+- iOS优化代码；
+
+## v1.1.37.xx (2022-01-08)
+**Android:**
+- 无
+**iOS:**
+- [SudMGP-iOS-v1.1.37.331](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.37.331)
+- [HelloSud-iOS-v1.1.35.311](https://github.com/SudTechnology/hello-sud-ios/releases)
+
+**新增功能:**
+- 无
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 无；
+
+**Bug修复:**
+- iOS修复JSON库名字冲突问题；
+
 ## v1.1.36.xx (2022-01-05)
 **Android:**
 - [SudMGP-Android-v1.1.36.302](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.36.302)
