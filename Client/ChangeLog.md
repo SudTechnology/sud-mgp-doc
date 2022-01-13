@@ -3,7 +3,7 @@
 ## v1.1.38.xx (2022-01-12)
 **Android:**
 - [SudMGP-Android-v1.1.38.320](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.38.320)
-- [HelloSud-Android-v1.1.35.286](https://github.com/SudTechnology/hello-sud-android/releases)
+- [HelloSud-Android-v1.1.38.320](https://github.com/SudTechnology/hello-sud-android/releases)
 
 **iOS:**
 - [SudMGP-iOS-v1.1.38.350](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.38.350)
