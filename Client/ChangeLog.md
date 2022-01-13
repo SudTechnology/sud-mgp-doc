@@ -1,5 +1,25 @@
 # SudMGP和游戏 更新日志
 
+## v1.1.39.xx (2022-01-13)
+**Android:**
+- [SudMGP-Android-v1.1.39.324](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.39.324)
+- [HelloSud-Android-v1.1.35.286](https://github.com/SudTechnology/hello-sud-android/releases)
+
+**iOS:**
+- 无
+
+**新增功能:**
+- 无
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 无
+
+**Bug修复:**
+- 修复v1.1.38.320版本getGameState和getPlayerState未返回状态问题；
+
 ## v1.1.38.xx (2022-01-12)
 **Android:**
 - [SudMGP-Android-v1.1.38.320](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.38.320)
