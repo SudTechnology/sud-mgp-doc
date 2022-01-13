@@ -23,7 +23,7 @@
 - [更新日志(SudMGP和游戏)](./Client/ChangeLog.md)
 ## 客户端SDK下载
 
-- [SudMGP-Android-v1.1.38.320](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.38.320)
+- [SudMGP-Android-v1.1.39.324](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.39.324)
   
 - [SudMGP-iOS-v1.1.38.350](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.38.350)
   
