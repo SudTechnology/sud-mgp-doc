@@ -1,5 +1,48 @@
 # SudMGP和游戏 更新日志
 
+## v1.1.41.xx (2022-01-17)
+**Android:**
+- [SudMGP-Android-v1.1.41.344](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.41.344)
+- [HelloSud-Android-v1.1.41.344](https://github.com/SudTechnology/hello-sud-android/releases)
+
+**iOS:**
+- [SudMGP-iOS-v1.1.41.372](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.41.372)
+- [HelloSud-iOS-v1.1.35.311](https://github.com/SudTechnology/hello-sud-ios/releases)
+
+**新增功能:**
+- 无
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 优化Android和iOS initSDK内部实现逻辑，支持appId、appKey、isTestEnv有一个参数不同，就重新初始化SDK；
+- 无；
+
+**Bug修复:**
+- Android修复SDK混淆后，与其他SDK名字冲突的问题；
+- iOS修复Loading时，不支持的语言，返回空字符串问题；
+
+## v1.1.40.xx (2022-01-14)
+**Android:**
+- [SudMGP-iOS-v1.1.40.363](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.40.363)
+- [HelloSud-Android-v1.1.35.286](https://github.com/SudTechnology/hello-sud-android/releases)
+
+**iOS:**
+- 无
+
+**新增功能:**
+- 无
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 无
+
+**Bug修复:**
+- 修复NSError转NSString引起偶现异常的问题；
+
 ## v1.1.39.xx (2022-01-13)
 **Android:**
 - [SudMGP-Android-v1.1.39.324](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.39.324)
