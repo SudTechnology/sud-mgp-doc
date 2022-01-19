@@ -45,11 +45,11 @@
 
 ## v1.1.40.xx (2022-01-14)
 **Android:**
-- [SudMGP-iOS-v1.1.40.363](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.40.363)
-- [HelloSud-Android-v1.1.35.286](https://github.com/SudTechnology/hello-sud-android/releases)
+- 无
 
 **iOS:**
-- 无
+- [SudMGP-iOS-v1.1.40.363](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.40.363)
+- [HelloSud-iOS-v1.1.35.311](https://github.com/SudTechnology/hello-sud-ios/releases)
 
 **新增功能:**
 - 无
@@ -61,7 +61,7 @@
 - 无
 
 **Bug修复:**
-- 修复NSError转NSString引起偶现异常的问题；
+- iOS修复NSError转NSString引起偶现异常的问题；
 
 ## v1.1.39.xx (2022-01-13)
 **Android:**
