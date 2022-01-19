@@ -1,5 +1,25 @@
 # SudMGP和游戏 更新日志
 
+## v1.1.42.xx (2022-01-18)
+**Android:**
+- 无
+
+**iOS:**
+- [SudMGP-iOS-v1.1.42.376](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.42.376)
+- [HelloSud-iOS-v1.1.35.311](https://github.com/SudTechnology/hello-sud-ios/releases)
+
+**新增功能:**
+- 无
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 无；
+
+**Bug修复:**
+- iOS修复AVAudioSession一行开关代码合并掉的问题；
+
 ## v1.1.41.xx (2022-01-17)
 **Android:**
 - [SudMGP-Android-v1.1.41.344](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.41.344)
