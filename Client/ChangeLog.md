@@ -1,6 +1,6 @@
 # SudMGP和游戏 更新日志
 
-## v1.1.43.xx (2022-01-22)
+## v1.1.43.xx (2022-01-21)
 **Android:**
 - [SudMGP-Android-v1.1.43.356](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.43.356)
 - [HelloSud-Android-v1.1.43.356](https://github.com/SudTechnology/hello-sud-android/releases)
