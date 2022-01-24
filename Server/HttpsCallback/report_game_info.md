@@ -45,6 +45,7 @@
 |game_round_id |是 |string |本局游戏的id （重复上报，使用该字段去重） |
 |battle_start_at |是 |int32 |战斗开始时间（秒）  |
 |players |是 |player_object |player_object 数组 |
+|custom_param |是 |string |接入方自定义信息，取值范围：长度不超过1024字节 |
 
 - player_object
 
@@ -76,6 +77,7 @@
 |rank |是 |int32|排名从1开始，平局排名相同 |
 |is_escaped |是 |int32|0:正常，1:逃跑 |
 |is_ai |是 |int32|0:普通用户，1:机器人 |
+|role |否 |int32|玩家在游戏中的角色 [游戏role 说明](./game/游戏role说明.md)|
 
 ## game_start 请求示例
 ```json
@@ -118,12 +120,14 @@
 			"uid": "u2",
 			"rank": 1,
 			"is_escaped": 0,
-			"is_ai": 0
+			"is_ai": 0,
+			"role": 0
 		}, {
 			"uid": "",
 			"rank": 2,
 			"is_escaped": 0,
-			"is_ai": 1
+			"is_ai": 1,
+			"role": 0
 		}]
 	},
 	"uid": "u1",
