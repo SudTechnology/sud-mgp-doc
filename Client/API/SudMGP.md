@@ -23,6 +23,12 @@ public class SudMGP {
     public static void initSDK(Context context, String appId, String appKey, boolean isTestEnv, ISudListenerInitSDK listener);
 
     /**
+     * 反初始化SDK
+     * @param listener
+     */
+    public static void uninitSDK(ISudListenerUninitSDK listener);
+    
+    /**
      * 获取游戏列表
      * @param listener
      */
@@ -68,17 +74,68 @@ public class SudMGP {
 ```objective-c
 @interface SudMGP : NSObject
 
-+ (NSString*_Nullable) getVersion;
+/**
+ * 获取SDK版本
+ * @return 示例:"1.1.35.286"
+ */
++ (NSString*_Nonnull)getVersion;
 
-+ (void) initSDK:(NSString*_Nullable) appId appKey:(NSString*_Nullable) appKey isTestEnv:(BOOL) isTestEnv listener:(ISudListenerInitSDK _Nullable ) listener;
+/**
+ * 初始化SDK
+ * @param context Context
+ * @param appId 小游戏平台生成
+ * @param appKey 小游戏平台生成
+ * @param isTestEnv true:测试环境 false:生产环境
+ * @param listener ISudListenerInitSDK
+ */
++ (void)initSDK:(NSString*_Nonnull)appId
+         appKey:(NSString*_Nonnull)appKey
+      isTestEnv:(BOOL)isTestEnv
+       listener:(ISudListenerInitSDK _Nullable )listener;
 
-+ (void) getMGList:(ISudListenerGetMGList _Nullable ) listener;
+/**
+ * 反初始化SDK
+ * @param listener ISudListenerUninitSDK
+ */
++ (void)uninitSDK:(ISudListenerUninitSDK _Nullable )listener;
 
-+ (id<ISudFSTAPP>_Nonnull)loadMG:(NSString*_Nullable)userId roomId:(NSString*_Nullable)roomId code:(NSString*_Nullable)code mgId:(int)mgId language:(NSString*_Nullable)language fsmMG:(id<ISudFSMMG>_Nonnull)fsmMG rootView:(UIView*_Nullable)rootView;
+/**
+ * 获取游戏列表
+ * @param listener ISudListenerGetMGList
+ */
++ (void)getMGList:(ISudListenerGetMGList _Nullable )listener;
 
-+ (bool) destroyMG:(id<ISudFSTAPP>_Nullable) fstAPP;
+/**
+ * 加载游戏
+ * @param userId 用户ID，业务系统保证每个用户拥有唯一ID
+ * @param roomId 房间ID，业务系统保证唯一性，进入同一房间内
+ * @param code 短期令牌Code
+ * @param mgId 小游戏ID，测试环境和生成环境小游戏ID是一致的
+ * @param language 游戏语言 现支持，简体：zh-CN 繁体：zh-TW 英语：en-US 马来语：ms-MY
+ * @param fsmMG ISudFSMMG
+ * @param rootView 用于显示游戏的根视图
+ * @return ISudFSTAPP
+ */
++ (id<ISudFSTAPP>_Nonnull)loadMG:(NSString*_Nonnull)userId
+                          roomId:(NSString*_Nonnull)roomId
+                            code:(NSString*_Nonnull)code
+                            mgId:(int64_t)mgId
+                        language:(NSString*_Nonnull)language
+                           fsmMG:(id<ISudFSMMG>_Nonnull)fsmMG
+                        rootView:(UIView*_Nonnull)rootView;
 
-+ (void) setLogLevel:(int) logLevel;
+/**
+ * 销毁游戏
+ * @param fstApp 加载游戏返回的对象ISudFSTAPP
+ * @return boolean
+ */
++ (bool)destroyMG:(id<ISudFSTAPP>_Nonnull) fstAPP;
+
+/**
+ * 设置日志等级
+ * @param logLevel 输出log的等级,LogVERBOSE,LogDEBUG,LogINFO 见ISudLogger.h
+ */
++ (void)setLogLevel:(int)logLevel;
 
 /**
  * 游戏是否设置AudioSession；

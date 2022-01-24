@@ -1,5 +1,26 @@
 # SudMGP和游戏 更新日志
 
+## v1.1.43.xx (2022-01-21)
+**Android:**
+- [SudMGP-Android-v1.1.43.356](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.43.356)
+- [HelloSud-Android-v1.1.43.356](https://github.com/SudTechnology/hello-sud-android/releases)
+
+**iOS:**
+- [SudMGP-iOS-v1.1.43.388](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.43.388)
+- [HelloSud-iOS-v1.1.43.388](https://github.com/SudTechnology/hello-sud-ios/releases)
+
+**新增功能:**
+- 新增语音识别功能，ISudFSTAPP新增pushAudio接口；
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 无；
+
+**Bug修复:**
+- 无；
+
 ## v1.1.42.xx (2022-01-18)
 **Android:**
 - 无
@@ -45,11 +66,11 @@
 
 ## v1.1.40.xx (2022-01-14)
 **Android:**
-- [SudMGP-iOS-v1.1.40.363](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.40.363)
-- [HelloSud-Android-v1.1.35.286](https://github.com/SudTechnology/hello-sud-android/releases)
+- 无
 
 **iOS:**
-- 无
+- [SudMGP-iOS-v1.1.40.363](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.40.363)
+- [HelloSud-iOS-v1.1.35.311](https://github.com/SudTechnology/hello-sud-ios/releases)
 
 **新增功能:**
 - 无
@@ -61,7 +82,7 @@
 - 无
 
 **Bug修复:**
-- 修复NSError转NSString引起偶现异常的问题；
+- iOS修复NSError转NSString引起偶现异常的问题；
 
 ## v1.1.39.xx (2022-01-13)
 **Android:**
