@@ -24,3 +24,7 @@
 - [server-sdk-api(mg-info).mod](./ServerSDKAPI/获取游戏信息.md)
 - [server-sdk-api(mg-list).mod](./ServerSDKAPI/获取游戏列表.md)
 
+## 2022-01-25
+**游戏服务端上报游戏接入方的游戏的数据接口:report_game_info接口增加report_game_Info_extras，role参数**
+- [report_game_info.mod](./HttpsCallback/report_game_info.md)
+
