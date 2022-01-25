@@ -77,7 +77,7 @@
 |rank |是 |int32|排名从1开始，平局排名相同 |
 |is_escaped |是 |int32|0:正常，1:逃跑 |
 |is_ai |是 |int32|0:普通用户，1:机器人 |
-|role |否 |int32|0表示没有角色信息，玩家在游戏中的角色 [游戏role 说明](./game/游戏role说明.md)|
+|role |否 |int32|0:表示没有角色信息，玩家在游戏中的角色 [游戏role 说明](./game/游戏role说明.md)|
 
 ## game_start 请求示例
 ```json
