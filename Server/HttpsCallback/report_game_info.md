@@ -78,6 +78,7 @@
 |is_escaped |是 |int32|0:正常，1:逃跑 |
 |is_ai |是 |int32|0:普通用户，1:机器人 |
 |role |否 |int32|0:表示没有角色信息，玩家在游戏中的角色 [游戏role 说明](./game/游戏role说明.md)|
+|score |否 |int32|玩家当前局得到的分数 |
 
 ## game_start 请求示例
 ```json
@@ -122,13 +123,15 @@
 			"rank": 1,
 			"is_escaped": 0,
 			"is_ai": 0,
-			"role": 0
+			"role": 0,
+			"score":1
 		}, {
 			"uid": "",
 			"rank": 2,
 			"is_escaped": 0,
 			"is_ai": 1,
-			"role": 0
+			"role": 0,
+			"score":2
 		}]
 	},
 	"uid": "u1",
