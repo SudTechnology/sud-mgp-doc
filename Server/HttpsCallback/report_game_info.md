@@ -45,7 +45,7 @@
 |game_round_id |是 |string |本局游戏的id （重复上报，使用该字段去重） |
 |battle_start_at |是 |int32 |战斗开始时间（秒）  |
 |players |是 |player_object |player_object 数组 |
-|report_game_Info_extras |是 |string |游戏上报信息扩展参数（透传），取值范围：长度不超过1024字节，超过则截断  |
+|report_game_info_extras |是 |string |游戏上报信息扩展参数（透传），取值范围：长度不超过1024字节，超过则截断  |
 
 - player_object
 
@@ -102,7 +102,7 @@
 	},
 	"uid": "u1",
 	"ss_token": "fyRTOsubRLCGrRvKoKm7wIcMM1DL7cfb",
-	"report_game_Info_extras":"custom param"
+	"report_game_info_extras":"custom param"
 }
 ```
 
