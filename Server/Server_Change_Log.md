@@ -28,3 +28,7 @@
 **游戏服务端上报游戏接入方的游戏的数据接口:report_game_info接口增加report_game_Info_extras，role参数**
 - [report_game_info.mod](./HttpsCallback/report_game_info.md)
 
+## 2022-02-08
+**游戏服务端上报游戏接入方的游戏的数据接口:report_game_info接口增加 is_win参数**
+- [report_game_info.mod](./HttpsCallback/report_game_info.md)
+

@@ -38,6 +38,7 @@
 |nick_name|是|string|用户昵称|
 |avatar_url|是|string|用户头像url(建议使用128*128尺寸)|
 |gender|是|string|性别（female or male）|
+|is_ai |否|int32|0:普通用户，1:机器人（默认为0）|
 
 ## 正确返回示例
 
@@ -50,7 +51,8 @@
         "uid": "1380100177150345266",
         "nick_name": "萌萌",
         "avatar_url": "https://icon.png?128*128",
-        "gender": "female"
+        "gender": "female",
+        "is_ai": 0
     }
 }
 ```
