@@ -37,7 +37,7 @@
 |uid|是|string|用户id|
 |nick_name|是|string|用户昵称|
 |avatar_url|是|string|用户头像url(建议使用128*128尺寸)|
-|gender|是|string|性别（female or male）|
+|gender|是|string|性别（female or male or "") 未知性别请填写空字符串|
 |is_ai |否|int32|0:普通用户，1:机器人（默认为0）|
 
 ## 正确返回示例
