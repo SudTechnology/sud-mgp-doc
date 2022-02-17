@@ -71,9 +71,7 @@ public interface ISudFSTAPP {
     /**
      * 传入的音频切片数据必须是：PCM格式，采样率：16000， 采样位数：16， 声道数： MONO
      * 100ms必须是音频切片长度的整数倍。切片长度可以是：10ms, 20ms, 50ms, 100ms
-     * 即构RTC，每次原始音频数据采集均返回10ms切片
-     * 声网RTC，samplesPerCall设置为160即返回10ms切片：new AudioParams(16000, 1, Constants.RAW_AUDIO_FRAME_OP_MODE_READ_ONLY, 160);
-     * size一定要是有效数据长度，否则精确性有影响
+     * dataLength一定要是有效数据长度，否则精确性有影响
      */
     void pushAudio(ByteBuffer data, int dataLength);
 }
@@ -122,8 +120,6 @@ public interface ISudFSTAPP {
 
 /// 传入的音频切片数据必须是：PCM格式，采样率：16000， 采样位数：16， 声道数： MONO
 /// 100ms必须是音频切片长度的整数倍。切片长度可以是：10ms, 20ms, 50ms, 100ms
-/// 即构RTC，每次原始音频数据采集均返回10ms切片
-/// 声网RTC，samplesPerCall设置为160即返回10ms切片：AgoraAudioParam *param=[[AgoraAudioParam alloc] init];param.channel=1;param.sampleRate=16000; param.samplesPerCall=160;
 /// @param data pcm数据
 - (void)pushAudio:(NSData *)data;
 @end
