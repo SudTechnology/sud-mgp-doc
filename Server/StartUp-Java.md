@@ -33,6 +33,7 @@
 ```
 
 2.maven(setting.xml)设置
+- 2.1 必要配置
 ```xml
 <settings>
     ...
@@ -61,10 +62,29 @@
             <!-- 此处使用的是personal access token，非密码明文！！！ -->
             <password>YOUR_GITHUB_PAT</password>
         </server>
-    </servers>  
+    </servers>
     ...
 </settings>
 ```
+- 2.2 非必要配置
+```xml
+    <!-- 镜像设置（非必须，如果之前没有特意设置过Mirrors，忽略以下配置 -->
+    <!-- 如果已经设置了其他镜像，例如阿里云等，需要在Mirrors里面添加当前设置） -->
+    <mirrors>
+        <!-- 将当前Mirror配置放置在Mirrors中最上面 -->
+        <mirror>
+            <mirrorOf>sudtech-github</mirrorOf>
+            <id>sudtech-github</id>
+            <url>https://maven.pkg.github.com/sudtechnology/sud-mgp-auth-java/</url>
+        </mirror>
+        
+        <!-- 其他已经设置的镜像，例如阿里云等 -->
+        <mirror>
+            ......
+        </mirror>
+    </mirrors>
+```
+
 
 3.使用[SudMGPAuth](./API/SudMGPAuth-Java.md)提供的API实现以下回调接口，供小游戏服务鉴权和获取用户基本信息，可参考[Demo](https://github.com/SudTechnology/hello-sud-java)
 
