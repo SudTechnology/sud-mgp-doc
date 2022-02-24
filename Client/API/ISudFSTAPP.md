@@ -69,8 +69,9 @@ public interface ISudFSTAPP {
     void pauseMG();
 
     /**
-     * 传入的音频数据必须是：PCM格式，采样率：16000， 采样位数：16， 声道数： MONO
-     * size一定要是有效数据长度，否则精确性有影响
+     * 传入的音频切片数据必须是：PCM格式，采样率：16000， 采样位数：16， 声道数： MONO
+     * 100ms必须是音频切片长度的整数倍。切片长度可以是：10ms, 20ms, 50ms, 100ms
+     * dataLength一定要是有效数据长度，否则精确性有影响
      */
     void pushAudio(ByteBuffer data, int dataLength);
 }
@@ -117,7 +118,8 @@ public interface ISudFSTAPP {
 /// 暂停游戏
 - (void) pauseMG;
 
-/// 传入的音频数据必须是：PCM格式，采样率：16000， 采样位数：16， 声道数： MONO
+/// 传入的音频切片数据必须是：PCM格式，采样率：16000， 采样位数：16， 声道数： MONO
+/// 100ms必须是音频切片长度的整数倍。切片长度可以是：10ms, 20ms, 50ms, 100ms
 /// @param data pcm数据
 - (void)pushAudio:(NSData *)data;
 @end

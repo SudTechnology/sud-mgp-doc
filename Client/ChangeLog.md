@@ -1,5 +1,26 @@
 # SudMGP和游戏 更新日志
 
+## v1.1.45.xx (2022-02-16)
+**Android:**
+- [SudMGP-Android-v1.1.45.432](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.45.432)
+- [HelloSud-Android-v1.1.45.432](https://github.com/SudTechnology/hello-sud-android/releases)
+
+**iOS:**
+- [SudMGP-iOS-v1.1.45.416](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.45.416)
+- [HelloSud-iOS-v1.1.45.416](https://github.com/SudTechnology/hello-sud-ios/releases)
+
+**新增功能:**
+- 新增ASR状态mg_common_game_asr，便于APP感知何时采集PCM音频流数据，调用pushAudio；
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 优化代码；
+
+**Bug修复:**
+- 无；
+
 ## v1.1.43.xx (2022-01-21)
 **Android:**
 - [SudMGP-Android-v1.1.43.356](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.43.356)
