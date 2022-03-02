@@ -13,6 +13,12 @@ public class SudMGP {
     public static String getVersion();
 
     /**
+     * 获取配置 最低支持版本v1.1.46.449
+     * @return ISudCfg
+     */
+    public static ISudCfg getCfg();
+    
+    /**
      * 初始化SDK
      * @param context
      * @param appId
@@ -79,6 +85,12 @@ public class SudMGP {
  * @return 示例:"1.1.35.286"
  */
 + (NSString*_Nonnull)getVersion;
+
+/**
+ * 获取配置 最低支持版本v1.1.46.449
+ * @return ISudCfg
+ */
++ (id<ISudCfg>_Nonnull)getCfg;
 
 /**
  * 初始化SDK

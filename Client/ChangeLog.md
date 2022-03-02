@@ -1,5 +1,28 @@
 # SudMGP和游戏 更新日志
 
+## v1.1.46.xx (2022-03-02)
+**Android:**
+- [SudMGP-Android-v1.1.46.449](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.46.449)
+- [HelloSud-Android-v1.1.46.449](https://github.com/SudTechnology/hello-sud-android/releases)
+
+**iOS:**
+- [SudMGP-iOS-v1.1.46.432](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.46.432)
+- [HelloSud-iOS-v1.1.46.432](https://github.com/SudTechnology/hello-sud-ios/releases)
+
+**新增功能:**
+- 支持隐藏游戏背景；
+- 具体实现隐藏游戏背景条件SudMGP.getCfg().setShowLoadingGameBg(false); 且 onGetGameCfg ui.game_bg.hide=true；
+- SudMGP SDK内部ASR增加支持的语言列表；
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 优化代码；
+
+**Bug修复:**
+- 无；
+
 ## v1.1.45.xx (2022-02-16)
 **Android:**
 - [SudMGP-Android-v1.1.45.432](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.45.432)
