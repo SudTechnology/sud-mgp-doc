@@ -68,6 +68,7 @@
 |battle_end_at |是 |int32 |战斗结束时间（秒）  |
 |battle_duration |是 |int32 |战斗总时间（秒） |
 |results  |是 |player_result_object |player_result_object 数组 |
+|report_game_info_extras |是 |string |游戏上报信息扩展参数（透传），取值范围：长度不超过1024字节，超过则截断  |
 
 - player_result_object
 
@@ -79,7 +80,7 @@
 |is_ai |是 |int32|0:普通用户，1:机器人 |
 |role |否 |int32|0:表示没有角色信息，玩家在游戏中的角色 [游戏role 说明](./game/游戏role说明.md)|
 |score |否 |int32|玩家当前局得到的分数 |
-|is_win |否 |int32|结果 0:表示没有信息，1:输，2:赢，3:平局 (接口待实现)|
+|is_win |否 |int32|结果 0:表示没有信息，1:输，2:赢，3:平局|
 
 ## game_start 请求示例
 ```json
