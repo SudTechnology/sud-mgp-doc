@@ -5,8 +5,8 @@
 ## 客户端
 ### API
 - [SudMGP](API/SudMGP.md)
-- [ISudFSTAPP](API/ISudFSTAPP/ISudFSTAPP.md)
-- [ISudFSMMG](API/ISudFSMMG/README.md)
+- [ISudFSTAPP](API/ISudFSTAPP.md)
+- [ISudFSMMG](API/ISudFSMMG.md)
   - [onGetGameCfg](API/ISudFSMMG/onGetGameCfg.md)
   - [onGetGameViewInfo](API/ISudFSMMG/onGetGameViewInfo.md)
   
