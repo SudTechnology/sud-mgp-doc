@@ -11,7 +11,7 @@
   - [onGetGameViewInfo](API/ISudFSMMG/onGetGameViewInfo.md)
   
 ### APP状态控制器
-- [通用状态](./APP FST/通用状态.md)
+- [通用状态](APPFST/通用状态.md)
 
 ### MG状态机
 - [通用状态-游戏](./MG FSM/通用状态-游戏.md)
