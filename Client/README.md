@@ -11,11 +11,11 @@
   - [onGetGameViewInfo](API/ISudFSMMG/onGetGameViewInfo.md)
   
 ### APP状态控制器
-- [通用状态](APP FST/通用状态.md)
+- [通用状态](./APP FST/通用状态.md)
 
 ### MG状态机
-- [通用状态-游戏](MG FSM/通用状态-游戏.md)
-- [通用状态-玩家](MG FSM/通用状态-玩家.md)
-- [砰砰我最强](MG FSM/砰砰我最强.md)
-- [你画我猜](MG FSM/你画我猜.md)
-- [飞刀大战](MG FSM/飞刀大战.md)
+- [通用状态-游戏](./MG FSM/通用状态-游戏.md)
+- [通用状态-玩家](./MG FSM/通用状态-玩家.md)
+- [砰砰我最强](./MG FSM/砰砰我最强.md)
+- [你画我猜](./MG FSM/你画我猜.md)
+- [飞刀大战](./MG FSM/飞刀大战.md)
