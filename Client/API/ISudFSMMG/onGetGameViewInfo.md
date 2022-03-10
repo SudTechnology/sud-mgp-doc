@@ -3,6 +3,9 @@
 ![SUD](../../../Resource/logo.png)
 
 
+## 安全区标注
+![GameCfg](../../../Resource/Client/gameview.png)
+
 ```txt
 /**
  * 获取游戏View信息
@@ -43,5 +46,3 @@ dataJsonResp = {
 |view_game_rect.right |是  |int |相对于view_size右边框偏移（单位像素）   |
 |view_game_rect.bottom |是  |int |相对于view_size下边框偏移（单位像素）   |
 
-## 安全区标注
-![GameCfg](../../../Resource/Client/gameview.png)
