@@ -218,8 +218,8 @@
 ## 游戏更新 (2021-12-31)
 **新增功能:**
 - 游戏碰碰我最强新增[配置gameSoundControl gameSoundVolume](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/API/ISudFSMMG/onGetGameCfg.md)
-- 游戏碰碰我最强新增[设置游戏的音量大小](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/APP%20FST/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81.md)
-- 游戏碰碰我最强新增[游戏上报游戏中的声音列表](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MG%20FSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E6%B8%B8%E6%88%8F.md)
+- 游戏碰碰我最强新增[设置游戏的音量大小](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/APPFST/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81.md)
+- 游戏碰碰我最强新增[游戏上报游戏中的声音列表](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MGFSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E6%B8%B8%E6%88%8F.md)
 
 **修改功能:**
 - 无
@@ -266,9 +266,9 @@
 ## 游戏更新 (2021-12-15)
 
 **新增功能:**
-- 新增状态 [玩家换游戏位状态](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MG%20FSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E7%8E%A9%E5%AE%B6.md)
-- 新增状态 [游戏状态](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MG%20FSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E6%B8%B8%E6%88%8F.md)
-- 新增字段isSeatRandom [加入状态app_common_self_in](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/APP%20FST/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81.md)
+- 新增状态 [玩家换游戏位状态](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MGFSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E7%8E%A9%E5%AE%B6.md)
+- 新增状态 [游戏状态](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MGFSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E6%B8%B8%E6%88%8F.md)
+- 新增字段isSeatRandom [加入状态app_common_self_in](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/APPFST/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81.md)
 - 新增字段gameCPU，低功耗 [onGetGameCfg](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/API/ISudFSMMG/onGetGameCfg.md)
 
 **修改功能:**
@@ -346,8 +346,8 @@
 - [HelloSud-iOS-v1.1.32.232](https://github.com/SudTechnology/hello-sud-ios/releases)
 
 **新增功能:**
-- [状态app_common_self_in新增字段seatIndex](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/APP%20FST/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81.md)
-- [状态mg_common_self_click_join_btn新增字段seatIndex](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MG%20FSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E6%B8%B8%E6%88%8F.md)
+- [状态app_common_self_in新增字段seatIndex](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/APPFST/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81.md)
+- [状态mg_common_self_click_join_btn新增字段seatIndex](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MGFSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E6%B8%B8%E6%88%8F.md)
 - [onGetGameCfg游戏位加入按钮新增自定义配置lobby_players.custom](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/API/ISudFSMMG/onGetGameCfg.md)
 
 **修改功能:**
@@ -390,7 +390,7 @@
 - [HelloSud-iOS-v1.1.31.222](https://github.com/SudTechnology/hello-sud-ios/releases)
 
 **新增功能:**
-- [MG状态机-通用状态-游戏](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MG%20FSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E6%B8%B8%E6%88%8F.md)
+- [MG状态机-通用状态-游戏](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MGFSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E6%B8%B8%E6%88%8F.md)
 - 4.加入游戏按钮点击状态
 - 5.取消加入游戏按钮点击状态
 - 6.准备按钮点击状态
@@ -437,8 +437,8 @@
 - [HelloSud-iOS-v1.1.31.222](https://github.com/SudTechnology/hello-sud-ios/releases)
 
 **新增功能:**
-- [游戏结算状态](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MG%20FSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E6%B8%B8%E6%88%8F.md)，新增gameRoundId字段；
-- [游戏状态](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MG%20FSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E7%8E%A9%E5%AE%B6.md)，新增gameRoundId字段；
+- [游戏结算状态](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MGFSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E6%B8%B8%E6%88%8F.md)，新增gameRoundId字段；
+- [游戏状态](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MGFSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E7%8E%A9%E5%AE%B6.md)，新增gameRoundId字段；
 
 **修改功能:**
 - [onGetGameCfg](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/API/ISudFSMMG/onGetGameCfg.md)，ui中的jion_btn 改为join_btn , cancel_btn 改为 cancel_join_btn
@@ -461,11 +461,11 @@
 - [HelloSud-iOS-v1.1.30.187](https://github.com/SudTechnology/hello-sud-ios/releases)
 
 **新增功能:**
-- 提供更灵活的接口，APP自定义主动串游戏逻辑([APP状态控制器-通用状态](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/APP%20FST/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81.md))，或者游戏主动串游戏逻辑([MG状态机-通用状态-游戏]()和[MG状态机-通用状态-玩家](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MG%20FSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E7%8E%A9%E5%AE%B6.md))；
+- 提供更灵活的接口，APP自定义主动串游戏逻辑([APP状态控制器-通用状态](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/APPFST/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81.md))，或者游戏主动串游戏逻辑([MG状态机-通用状态-游戏]()和[MG状态机-通用状态-玩家](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MGFSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E7%8E%A9%E5%AE%B6.md))；
 
 **修改功能:**
-- [MG状态机-通用状态-玩家](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MG%20FSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E7%8E%A9%E5%AE%B6.md) 新增参数；
-- 废弃Depreated APP状态控制器-通用状态 [房间状态和麦位状态](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/APP%20FST/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81.md)；
+- [MG状态机-通用状态-玩家](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/MGFSM/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81-%E7%8E%A9%E5%AE%B6.md) 新增参数；
+- 废弃Depreated APP状态控制器-通用状态 [房间状态和麦位状态](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/APPFST/%E9%80%9A%E7%94%A8%E7%8A%B6%E6%80%81.md)；
 - iOS SDK使用SudMGP.xcframework方式出包;
 - 修改appId生成规则；
 - 修改mgId类型，int改成int64；
