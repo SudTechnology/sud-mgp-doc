@@ -35,7 +35,7 @@
 - [HelloSud-iOS-v1.1.46.432](https://github.com/SudTechnology/hello-sud-ios/releases/tag/v1.1.46.432)
 
 ## 游戏多语言
-[游戏多语言](Client/Languages/README.md) loadMG language参数
+- [游戏多语言](Client/Languages/README.md) loadMG language参数
 
 > Tips
 >
