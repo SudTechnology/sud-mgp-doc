@@ -3,16 +3,14 @@
 ![SUD](../../Resource/logo.png)
 
 ## 一、loadMG接口 language参数
-    * 格式：语言代码-国家代码 
-    * 示例: zh-CN、en-US、af-ZA、
+    * 格式：语言代码(小写)-国家代码(大写) 
+    * 示例: zh-CN、en-US、af-ZA
 
 ISO标准
 
 [语言代码参考](languages.json)
 
 [国家代码参考](countries.json)
-
-
 
 ## 二、语言代码表
 

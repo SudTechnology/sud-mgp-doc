@@ -4,6 +4,8 @@
 
 ## loadMG接口
 - [多语言参数 language](../Languages/README.md)
+    * 格式：语言代码(小写)-国家代码(大写)
+    * 示例: zh-CN、en-US、af-ZA
 
 ## Android
 
