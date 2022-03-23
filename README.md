@@ -34,6 +34,9 @@
   
 - [HelloSud-iOS-v1.1.46.432](https://github.com/SudTechnology/hello-sud-ios/releases/tag/v1.1.46.432)
 
+## 游戏多语言
+[游戏多语言](Client/Languages/README.md) loadMG language参数
+
 > Tips
 >
 > 1. 服务端中，小游戏服务与业务服务的鉴权和数据交换，建议通过标准JWT进行，也可以通过任何自定义的方式进行。

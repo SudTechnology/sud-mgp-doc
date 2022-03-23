@@ -22,6 +22,8 @@
             * [你画我猜](Client/MGFSM/你画我猜.md)
             * [飞刀大战](Client/MGFSM/飞刀大战.md)
     * [客户端SDK下载](Client/SDK/README.md)
+    * [客户端Demo下载](Client/Demo/README.md)
+    * [游戏多语言](Client/Languages/README.md)
     * [更新日志(SudMGP和游戏)](Client/ChangeLog.md)
 
 
