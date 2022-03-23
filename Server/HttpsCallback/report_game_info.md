@@ -99,11 +99,12 @@
 		}, {
 			"uid": "u1",
 			"is_ai": 0
-		}]
+		}],
+		"report_game_info_extras":"custom param"
 	},
 	"uid": "u1",
 	"ss_token": "fyRTOsubRLCGrRvKoKm7wIcMM1DL7cfb",
-	"report_game_info_extras":"custom param"
+	
 }
 ```
 
@@ -136,7 +137,8 @@
 			"role": 0,
 			"score":2,
 			"is_win":0
-		}]
+		}],
+		"report_game_info_extras":"custom param"
 	},
 	"uid": "u1",
 	"ss_token": "fyRTOsubRLCGrRvKoKm7wIcMM1DL7cfb"
