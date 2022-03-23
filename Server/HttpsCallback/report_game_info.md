@@ -99,11 +99,12 @@
 		}, {
 			"uid": "u1",
 			"is_ai": 0
-		}]
+		}],
+		"report_game_info_extras":"custom param"
 	},
 	"uid": "u1",
 	"ss_token": "fyRTOsubRLCGrRvKoKm7wIcMM1DL7cfb",
-	"report_game_info_extras":"custom param"
+	
 }
 ```
 
@@ -136,7 +137,8 @@
 			"role": 0,
 			"score":2,
 			"is_win":0
-		}]
+		}],
+		"report_game_info_extras":"custom param"
 	},
 	"uid": "u1",
 	"ss_token": "fyRTOsubRLCGrRvKoKm7wIcMM1DL7cfb"
@@ -148,7 +150,10 @@
 
 |参数名|必选|类型|说明|
 |:----|:---|:-----|-----|
-|-|-|-|-|
+|ret_code|是|int32|错误码，0:成功，其他表示错误|
+|ret_msg|是|string|错误信息|
+|sdk_error_code|否|int32|sdk错误码，0:成功，其他表示错误|
+|data|是|object|data数据|
 
 ## 返回示例
 
