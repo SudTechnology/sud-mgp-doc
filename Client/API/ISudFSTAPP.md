@@ -2,6 +2,9 @@
 
 ![SUD](../../Resource/logo.png)
 
+## loadMG接口
+- [多语言参数 language](../Languages/README.md)
+
 ## Android
 
 ```java
