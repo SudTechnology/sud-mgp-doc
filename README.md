@@ -24,15 +24,15 @@
 - [更新日志(SudMGP和游戏)](./Client/ChangeLog.md)
 ## 客户端SDK下载
 
-- [SudMGP-Android-v1.1.46.449](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.46.449)
+- [SudMGP-Android](https://github.com/SudTechnology/sud-mgp-android/releases)
   
-- [SudMGP-iOS-v1.1.46.432](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.46.432)
+- [SudMGP-iOS](https://github.com/SudTechnology/sud-mgp-ios/releases)
   
 
 ## 客户端Demo下载
-- [HelloSud-Android-v1.1.46.449](https://github.com/SudTechnology/hello-sud-android/releases/tag/v1.1.46.449)
+- [HelloSud-Android](https://github.com/SudTechnology/hello-sud-android/releases)
   
-- [HelloSud-iOS-v1.1.46.432](https://github.com/SudTechnology/hello-sud-ios/releases/tag/v1.1.46.432)
+- [HelloSud-iOS](https://github.com/SudTechnology/hello-sud-ios/releases)
 
 ## 游戏多语言
 - [游戏多语言](Client/Languages/README.md) loadMG language参数
