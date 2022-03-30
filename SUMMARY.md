@@ -18,7 +18,7 @@
         * [MG状态机](Client/MGFSM/README.md)
             * [通用状态-游戏](Client/MGFSM/通用状态-游戏.md)
             * [通用状态-玩家](Client/MGFSM/通用状态-玩家.md)
-            * [砰砰我最强](Client/MGFSM/砰砰我最强.md)
+            * [砰砰我最强](Client/MGFSM/碰碰我最强.md)
             * [你画我猜](Client/MGFSM/你画我猜.md)
             * [飞刀大战](Client/MGFSM/飞刀大战.md)
     * [客户端SDK下载](Client/SDK/README.md)
