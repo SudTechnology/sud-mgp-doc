@@ -1,0 +1,24 @@
+{
+  "name": "sud-mgp-doc",
+  "version": "1.0.0",
+  "description": "![SUD](./Resource/logo.png)",
+  "main": "index.js",
+  "dependencies": {
+    "gitbook": "^2.6.9",
+    "gitbook-cli": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SudTechnology/sud-mgp-doc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SudTechnology/sud-mgp-doc/issues"
+  },
+  "homepage": "https://github.com/SudTechnology/sud-mgp-doc#readme"
+}
