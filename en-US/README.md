@@ -13,15 +13,15 @@
 
 ## Quick client access
 
-- [Android](./app/Client/StartUp-Android.md)
+- [Android](app/Client/StartUp-Android.md)
 
-- [iOS](./app/Client/StartUp-iOS.md)
+- [iOS](app/Client/StartUp-iOS.md)
 
 ## Client documentation
 
-- [Documentation](./app/Client/StartUp.md)
+- [Documentation](app/Client/StartUp.md)
 
-- [Changelog(SudMGP and Game)](./app/Client/ChangeLog.md)
+- [Changelog(SudMGP and Game)](app/Client/ChangeLog.md)
 ## Download the client SDK
 
 - [SudMGP-Android-v1.1.46.449](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.46.449)
@@ -35,7 +35,7 @@
 - [HelloSud-iOS-v1.1.46.432](https://github.com/SudTechnology/hello-sud-ios/releases/tag/v1.1.46.432)
 
 ## Multiple languages for game
-- [Multiple Languages for Game](./app/Client/Languages/README.md) loadMG language parameters
+- [Multiple Languages for Game](app/Client/Languages/README.md) loadMG language parameters
 
 > Tips
 >
@@ -45,16 +45,16 @@
 
 ## Quick server access
 
-- [Java](./Server/StartUp-Java.md)
+- [Java](app/Server/StartUp-Java.md)
 
-- [Go](./Server/StartUp-Go.md)
+- [Go](app/Server/StartUp-Go.md)
 
-- [Node](./Server/StartUp-Node.md)
+- [Node](app/Server/StartUp-Node.md)
 
 ## Server documentation
 
-- [Documentation](./Server/StartUp.md)
-- [Changelog](./Server/Server_Change_Log.md)
+- [Documentation](app/Server/StartUp.md)
+- [Changelog](app/Server/Server_Change_Log.md)
 
 ## Download the server-end SDK
 
