@@ -17,16 +17,16 @@ if [ ! -e "${OUTPUT_DIR_PATH}"/archives ]; then
   mkdir -p "${OUTPUT_DIR_PATH}"/archives
 fi
 
-gitbook build
+gitbook build ./ ./build
 
-rm -f ./_book/build.sh
+rm -f ./build/build.sh
 
-cd ./_book
+cd ./build
 zip -r ${OUTPUT_FILE_NAME}.zip ./
 
 cd ..
-mv ./_book/${OUTPUT_FILE_NAME}.zip "${OUTPUT_DIR_PATH}"/archives
+mv ./build/${OUTPUT_FILE_NAME}.zip "${OUTPUT_DIR_PATH}"/archives
 
-rm -rf ./_book
+rm -rf ./build
 
 
