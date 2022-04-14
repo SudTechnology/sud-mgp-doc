@@ -103,7 +103,7 @@
 		"report_game_info_extras":"custom param"
 	},
 	"uid": "u1",
-	"ss_token": "fyRTOsubRLCGrRvKoKm7wIcMM1DL7cfb",
+	"ss_token": "fyRTOsubRLCGrRvKoKm7wIcMM1DL7cfb"
 	
 }
 ```
