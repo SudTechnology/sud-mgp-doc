@@ -34,9 +34,16 @@
 
 ### SDK服务API
 
-- [mg_list](ServerSDKAPI/获取游戏列表.md)
+- [获取游戏列表](ServerSDKAPI/获取游戏列表.md)
 
-- [mg_info](ServerSDKAPI/获取游戏信息.md)
+- [获取游戏信息](ServerSDKAPI/获取游戏信息.md)
+
+- [获取游戏上报信息](ServerSDKAPI/获取游戏上报信息.md)
+
+- [分页获取房间内游戏上报信息](ServerSDKAPI/分页获取房间内游戏上报信息.md)
+
+- [获取服务端接口API配置](ServerSDKAPI/获取服务端接口API配置.md)
+
 
 ### JWT最佳实践：基于客户端登陆态的服务器鉴权与数据交换
 
