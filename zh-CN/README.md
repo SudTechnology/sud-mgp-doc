@@ -1,12 +1,8 @@
-
-
-![SUD](zh-CN/app/Resource/logo.png)
-
-[README in English](README.en.md)
-
 # SUD MGP 互动小游戏接入平台
 
-![SUD](zh-CN/app/Resource/startup.png)
+![SUD](app/Resource/logo.png)
+
+![SUD](app/Resource/startup.png)
 
 > Tips
 >
@@ -17,15 +13,15 @@
 
 ## 客户端快速接入
 
-- [Android](zh-CN/app/Client/StartUp-Android.md)
+- [Android](app/Client/StartUp-Android.md)
 
-- [iOS](zh-CN/app/Client/StartUp-iOS.md)
+- [iOS](app/Client/StartUp-iOS.md)
 
 ## 客户端文档
 
-- [文档](zh-CN/app/Client/StartUp.md)
+- [文档](app/Client/StartUp.md)
 
-- [更新日志(SudMGP和游戏)](zh-CN/app/Client/ChangeLog.md)
+- [更新日志(SudMGP和游戏)](app/Client/ChangeLog.md)
 ## 客户端SDK下载
 
 - [SudMGP-Android](https://github.com/SudTechnology/sud-mgp-android/releases)
@@ -49,16 +45,16 @@
 
 ## 服务端快速接入
 
-- [Java](zh-CN/app/Server/StartUp-Java.md)
+- [Java](app/Server/StartUp-Java.md)
 
-- [Go](zh-CN/app/Server/StartUp-Go.md)
+- [Go](app/Server/StartUp-Go.md)
 
-- [Node](zh-CN/app/Server/StartUp-Node.md)
+- [Node](app/Server/StartUp-Node.md)
 
 ## 服务端文档
 
-- [文档](zh-CN/app/Server/StartUp.md)
-- [更新日志](zh-CN/app/Server/Server_Change_Log.md)
+- [文档](app/Server/StartUp.md)
+- [更新日志](app/Server/Server_Change_Log.md)
 
 ## 服务端SDK下载
 

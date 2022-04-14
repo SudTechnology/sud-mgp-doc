@@ -1,0 +1,83 @@
+#
+
+![SUD](../../Resource/logo.png)
+
+## Description
+
+- Obtain user information.
+
+## Request URL
+
+- The test environment and production environment URLs are different and need to be separately configured by Sud.
+- The production environment URL takes effect after its online deployment.
+
+## Request method
+- https
+- POST
+- Parameters are in JSON format and included in the request body.
+
+## Request parameters (More fields may be added, and the client needs to ensure the compatibility of new fields.)
+
+| Parameter | Required | Type | Description |
+|:----|:---|:-----|-----|
+| ss_token | Yes | string | The token. |
+
+## Sample requests
+
+```json
+{
+    "ss_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMjMiLCJleHAiOjE2MzA0MTc4NDksImFwcF9pZCI6ImFwcElEIn0.BWFAf7-Bi20KsFIjnQcF2ET1RNhoZRhoWa-VOxYbPuY"
+}
+```
+
+## Response parameters
+
+| Parameter | Required | Type | Description |
+|:----|:---|:-----|-----|
+| ret_code | Yes | int32 | The error code. Valid values: **0**: the request is successful; other values: the request is failed. |
+| ret_msg | Yes | string | The error information. |
+| sdk_error_code | No | int32 | The SDK error code. Valid values: **0**: the request is successful; other values: the request is failed. |
+| data | Yes | object | Data. |
+
+## data parameter description
+
+| Parameter | Required | Type | Description |
+|:----|:---|:-----|-----|
+| uid | Yes | string | The user ID. |
+| nick_name | Yes | string | The user nickname. |
+| avatar_url | Yes | string | The URL of the user avatar. (The recommended size is 128 x 128 pixels.)|
+| gender | Yes | string | The gender. Valid values: **female**, **male**. If the gender is unknown, leave it empty. |
+| is_ai | No | int32 | Whether the player is a robot. Valid values: **0**: common user; **1**: robot. The parameter is set to **0** by default. |
+
+## Sample success responses
+
+```json
+{
+    "ret_code": 0, // The error code. Valid values: 0: the request is successful; other values: the request is failed.
+    "ret_msg": "",
+    "sdk_error_code":0,// The SDK error code. Valid values: 0: the request is successful; other values: the request is failed.
+    "data": {
+        "uid": "1380100177150345266",
+        "nick_name": "Mengmeng",
+        "avatar_url": "https://icon.png?128*128",
+        "gender": "female",
+        "is_ai": 0
+    }
+}
+```
+
+## Sample responses with error codes
+
+```json
+{
+    "ret_code": 1, // The error code. Valid values: 0: the request is successful; other values: the request is failed.
+    "ret_msg": "",
+    "sdk_error_code":1005,// The SDK error code. Valid values: 0: the request is successful; other values: the request is failed.
+    "data": {
+        "uid": "1380100177150345266",
+        "nick_name": "Mengmeng",
+        "avatar_url": "https://icon.png?128*128",
+        "gender": "female"
+    }
+}
+```
