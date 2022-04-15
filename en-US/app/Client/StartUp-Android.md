@@ -49,3 +49,7 @@
 
 9. Deinitialize the [SudMGP](API/SudMGP.md). For details, see "HelloSud-Android".
 
+10. API call sequence diagram.
+
+   ![api](../Resource/Client/sdk_api_sd.png)
+

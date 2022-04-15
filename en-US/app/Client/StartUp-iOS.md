@@ -39,3 +39,7 @@
 7. Optional: Implement [`ISudFSTAPP`](API/ISudFSTAPP.md) to send states from the app to the app finite state transducer (FST). For details, see "HelloSud-iOS".
 
 8. Deinitialize the [SudMGP](API/SudMGP.md). For details, see "HelloSud-iOS".
+
+9. API call sequence diagram.
+   
+![api](../Resource/Client/sdk_api_sd.png)
