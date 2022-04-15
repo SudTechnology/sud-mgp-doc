@@ -9,8 +9,8 @@
 
 ## 请求URL
 
-- 测试环境：接口地址详见[获取服务端API配置](获取服务端接口API配置.md)中get_game_report_info字段
-- 生产环境：接口地址详见[获取服务端API配置](获取服务端接口API配置.md)中get_game_report_info字段
+- 测试环境：接口地址详见[获取服务端API配置](Obtain%20server-end%20API%20configurations.md)中get_game_report_info字段
+- 生产环境：接口地址详见[获取服务端API配置](Obtain%20server-end%20API%20configurations.md)中get_game_report_info字段
 
 ## 请求方式
 - https
