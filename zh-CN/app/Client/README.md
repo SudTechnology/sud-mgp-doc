@@ -11,9 +11,9 @@
   - [onGetGameViewInfo](API/ISudFSMMG/onGetGameViewInfo.md)
   
 ### APP状态控制器
-- [通用状态](APPFST/通用状态.md)
+- [通用状态](APPFST/CommonState.md)
 
 ### MG状态机
-- [通用状态-游戏](MGFSM/通用状态-游戏.md)
-- [通用状态-玩家](MGFSM/通用状态-玩家.md)
+- [通用状态-游戏](MGFSM/CommonStateGame.md)
+- [通用状态-玩家](MGFSM/CommonStatePlayer.md)
 - [飞刀大战](MGFSM/飞刀大战.md)
