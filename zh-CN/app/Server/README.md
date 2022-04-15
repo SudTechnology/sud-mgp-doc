@@ -34,22 +34,22 @@
 
 ### SDK服务API
 
-- [获取游戏列表](ServerSDKAPI/获取游戏列表.md)
+- [获取游戏列表](ServerSDKAPI/Obtain%20the%20game%20list.md)
 
-- [获取游戏信息](ServerSDKAPI/获取游戏信息.md)
+- [获取游戏信息](ServerSDKAPI/Obtain%20game%20information.md)
 
-- [获取游戏上报信息](ServerSDKAPI/获取游戏上报信息.md)
+- [获取游戏上报信息](ServerSDKAPI/Obtain%20the%20report%20information%20of%20game.md)
 
-- [分页获取房间内游戏上报信息](ServerSDKAPI/分页获取房间内游戏上报信息.md)
+- [分页获取房间内游戏上报信息](ServerSDKAPI/Obtain%20the%20report%20information%20of%20game%20by%20page.md)
 
-- [获取服务端接口API配置](ServerSDKAPI/获取服务端接口API配置.md)
+- [获取服务端接口API配置](ServerSDKAPI/Obtain%20server-end%20API%20configurations.md)
 
 
 ### JWT最佳实践：基于客户端登陆态的服务器鉴权与数据交换
 
-- [鉴权](./Auth/鉴权.md)
+- [鉴权](Auth/Authentication.md)
 
-- [数据交换](./Auth/数据交换.md)
+- [数据交换](Auth/Data%20exchange.md)
 
 ### 服务端错误码
 
