@@ -4,13 +4,13 @@
 
 ## SDK service API
 
-- [Obtain the game list](Obtain the game list.md)
+- [Obtain the game list](ObtainTheGameList.md)
 
-- [Obtain game information](Obtain game information.md)
+- [Obtain game information](ObtainGameInformation.md)
 
-- [Obtain the report information of game](Obtain the report information of game.md)
+- [Obtain the report information of game](ObtainTheReportInformationOfGame.md)
 
-- [Obtain the report information of game by page](Obtain the report information of game by page.md)
+- [Obtain the report information of game by page](ObtainTheReportInformationOfGameByPage.md)
 
-- [Obtain server-end API configurations](Obtain server-end API configurations.md)
+- [Obtain server-end API configurations](ObtainServerEndAPIConfigurations.md)
 

@@ -4,13 +4,13 @@
 
 ## Description
 
-- Access the server end and obtain game report information in rooms by page based on **AppId**, **AppSecret**, **RoomId**, **PageNo**, and **PageSize**.
+- Access the server end and obtain game report information based on **AppId**, **AppSecret**, **GameRoundId**, and **ReportType**.
 - Only game data in 24 hours is stored.
 
 ## Request URL
 
-- Test environment: For more information about the API address, see the **get_game_report_info_page** field in [Obtain server-end API configurations](Obtain server-end API configurations.md).
-- Production environment: For more information about the API address, see the **get_game_report_info_page** field in [Obtain server-end API configurations](Obtain server-end API configurations.md).
+- Test environment: For more information about the API address, see the **get_game_report_info** field in [Obtain server-end API configurations](ObtainServerEndAPIConfigurations.md).
+- Production environment: For more information about the API address, see the **get_game_report_info** field in [Obtain server-end API configurations](ObtainServerEndAPIConfigurations.md).
 
 ## Request method
 - https
@@ -21,22 +21,28 @@
 ## Request parameters
 
 | Parameter | Required | Type | Description |
-|:-----------|:---|:-----|---------------------|
+|:--------------|:---|:-----|------------|
 | app_id | Yes | string | The app ID. |
 | app_secret | Yes | string | The app secret key. |
-| room_id | Yes | string | The room ID. |
-| page_no | No | int32 | The page number. The parameter is set to **0** by default. |
-| page_size | No | int32 | Number of pages. The parameter is set to **5** by default. The maximum valid value is **10**. |
+| game_round_id | Yes | string | The game round ID. |
+| report_type | Yes | string | The report type. |
+
+##### report_type parameters
+
+| Parameter | Description |
+|:------------|-----|
+| game_start | game_start_object | The notification for game startup. |
+| game_settle | game_settle_object | The notification for post-game analysis. |
+
 
 ## Sample requests
 
 ```json
 {
-  "app_id": "1461564080052506636",
-  "app_secret": "xJL0HU9ailVSGInqPyNK3Ev3qNHReRbR",
-  "room_id": "9009",
-  "page_no": 0,
-  "page_size": 10
+    "app_id":"1461298604781080632",
+    "app_secret":"fyRTOsubRLCGrRvKoKm7wIcMM1DL7cfb",
+    "game_round_id": "ce56b6lzi1a7-cqhuiaj1wlh6-cpgxupfcpbrz",
+    "report_type": "game_start"
 }
 ```
 
@@ -45,24 +51,24 @@
 - BaseResp
 
 | Parameter | Required | Type | Description |
-|:----    |:---|:-----------------------|------|
+|:----    |:---|:-------------------------------|------|
 | ret_code | Yes | int | The response code. |
 | ret_msg | Yes | string | The response information. |
-| data | Yes | List< GameReportInfo > | The response data. |
+| data | Yes | AppServerGetGameReportInfoResp | The response data. |
 
-- GameReportInfo
+- AppServerGetGameReportInfoResp
 
 | Parameter | Required | Type | Description |
-|:----    |:---|:----- |-----   |
-| game_round_id | Yes | string | The game round ID. |
-| report_info | Yes | map | The reported information. |
+|:----|:---|:-------|--------------------|
+| report_type | Yes | string | The report type. |
+| report_msg | Yes | object | The reported data object. |
 
-- report_info key values
+- report_type parameters
 
-| Key | Value type | Description |
-|:------------|:------------|:-------|
-| game_start | game_start_object | The notification for game startup. |
-| game_settle | game_settle_object | The notification for post-game analysis. |
+| Parameter type | Parameter value | report_msg type | Description |
+|:----|:---|:-----|-----|
+| report_type | game_start | game_start_object | The notification for game startup. |
+| report_type | game_settle | game_settle_object | The notification for post-game analysis. |
 
 - game_start_object
 
@@ -113,53 +119,26 @@
 {
   "ret_code": 0,
   "ret_msg": "",
-  "data": [
-    {
-      "game_round_id": "ce56b6lzi1a7-cqhuiaj1wlh6-cpgxupfcpbrg",
-      "report_info": {
-        "game_start": {
-          "mg_id": 1472142559912517631,
-          "room_id": "9009",
-          "mg_id_str": "1472142559912517633",
-          "players": [
-            {
-              "is_ai": 0,
-              "uid": "515b8e0b"
-            },
-            {
-              "is_ai": 0,
-              "uid": "09d032dd"
-            }
-          ],
-          "game_mode": 1,
-          "game_round_id": "ce56b6lzi1a7-cqhuiaj1wlh6-cpgxupfcpbrg",
-          "battle_start_at": 1642500300
+  "data": {
+    "report_type": "game_start",
+    "report_msg": {
+      "mg_id": 1472142559912517633,
+      "room_id": "9009",
+      "mg_id_str": "1472142559912517633",
+      "players": [
+        {
+          "is_ai": 0,
+          "uid": "515b8e0b"
+        },
+        {
+          "is_ai": 0,
+          "uid": "09d032dd"
         }
-      }
-    },
-    {
-      "game_round_id": "ce56b6lzi1a7-cqhuiaj1wlh6-cpgxupfcpbrf",
-      "report_info": {
-        "game_start": {
-          "mg_id": 1472142559912517631,
-          "room_id": "9009",
-          "mg_id_str": "1472142559912517633",
-          "players": [
-            {
-              "is_ai": 0,
-              "uid": "515b8e0b"
-            },
-            {
-              "is_ai": 0,
-              "uid": "09d032dd"
-            }
-          ],
-          "game_mode": 1,
-          "game_round_id": "ce56b6lzi1a7-cqhuiaj1wlh6-cpgxupfcpbrf",
-          "battle_start_at": 1642500300
-        }
-      }
+      ],
+      "game_mode": 1,
+      "game_round_id": "ce56b6lzi1a7-cqhuiaj1wlh6-cpgxupfcpbrz",
+      "battle_start_at": 1642500300
     }
-  ]
+  }
 }
 ```
