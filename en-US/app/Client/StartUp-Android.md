@@ -14,9 +14,9 @@
 
     - Copy **SudMGP.aar** to the **SudMgpExample-Android/app/libs** directory, as shown in the following figure:
 
-        
 
-        ![SUD](../Resource/Client/libaar.png)
+ 
+   ![SUD](../Resource/Client/libaar.png)
 
     - Add the configurations required by the SDK to the **SudMgpExample-Android/app/build.gradle** file.
 
@@ -48,4 +48,8 @@
 8. Optional: Implement [`ISudFSTAPP`](API/ISudFSTAPP.md). For details, see "HelloSud-Android".
 
 9. Deinitialize the [SudMGP](API/SudMGP.md). For details, see "HelloSud-Android".
+
+10. API call sequence diagram.
+
+   ![api](../Resource/Client/sdk_api_sd.png)
 

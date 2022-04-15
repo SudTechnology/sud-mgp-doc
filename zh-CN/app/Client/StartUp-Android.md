@@ -48,3 +48,7 @@
 8. 可选：实现 [ISudFSTAPP](API/ISudFSTAPP.md) ，具体可参考HelloSud-Android
 
 9. 反初始化 [SudMGP](API/SudMGP.md) ，具体可参考HelloSud-Android
+   
+10. API调用时序图
+
+![api](../Resource/Client/sdk_api_sd.png)

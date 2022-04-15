@@ -159,3 +159,7 @@ public class SudMGP {
 + (void) autoSetAudioSession:(BOOL)autoSet;
 @end
 ```
+
+## API call sequence diagram.
+
+![api](../../Resource/Client/sdk_api_sd.png)

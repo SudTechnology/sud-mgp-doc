@@ -20,16 +20,16 @@
 
 ### App FST
 
-- [General state](./APPFST/通用状态.md)
+- [General state](APPFST/CommonState.md)
 
 ### MG FSM
 
-- [General state - Game](./MGFSM/通用状态-游戏.md)
+- [General state - Game](MGFSM/CommonStateGame.md)
 
-- [General state - Player](./MGFSM/通用状态-玩家.md)
+- [General state - Player](MGFSM/CommonStatePlayer.md)
 
 - [Pong](./MGFSM/Pong.md)
 
-- [DrawGuess](./MGFSM/你画我猜.md)
+- [DrawGuess](MGFSM/DrawGuess.md)
 
 - [Flippy Knife](./MGFSM/Flippy Knife.md)

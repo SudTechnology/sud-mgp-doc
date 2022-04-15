@@ -4,8 +4,9 @@
 
 ## MG FSM
 
-- ### [General state - Game](通用状态-游戏.md)
+- ### [General state - Game](CommonStateGame.md)
 
-- ### [General state - Player](通用状态-玩家.md)
+- ### [General state - Player](CommonStatePlayer.md)
 
-- ### [DrawGuess](你画我猜.md)
+- ### [DrawGuess](DrawGuess.md)
+    

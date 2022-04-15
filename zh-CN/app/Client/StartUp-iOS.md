@@ -39,3 +39,8 @@
 7. 可选：实现 [ISudFSTAPP](API/ISudFSTAPP.md) 将App状态发送到App状态控制器，具体可参考HelloSud-iOS
 
 8.  反初始化 [SudMGP](API/SudMGP.md) ，具体可参考HelloSud-iOS
+
+9. API调用时序图
+
+![api](../Resource/Client/sdk_api_sd.png)
+   
