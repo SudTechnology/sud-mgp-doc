@@ -21,8 +21,8 @@
 
 ## 2021-12-23
 **接入方服务端获取"游戏信息"，"游戏列表"接口增加游戏背景图字段**
-- [server-sdk-api(mg-info).mod](./ServerSDKAPI/Obtain game information.md)
-- [server-sdk-api(mg-list).mod](./ServerSDKAPI/Obtain the game list.md)
+- [server-sdk-api(mg-info).mod](ServerSDKAPI/ObtainGameInformation.md)
+- [server-sdk-api(mg-list).mod](ServerSDKAPI/ObtainTheGameList.md)
 
 ## 2022-01-25
 **游戏服务端上报游戏接入方的游戏的数据接口:report_game_info接口增加report_game_Info_extras，role参数**

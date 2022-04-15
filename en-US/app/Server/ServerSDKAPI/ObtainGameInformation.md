@@ -8,8 +8,8 @@
 
 ## Request URL
 
-- Test environment: For more information about the API address, see the **get_mg_info** field in [Obtain server-end API configurations](Obtain server-end API configurations.md).
-- Production environment: For more information about the API address, see the **get_mg_info** field in [Obtain server-end API configurations](Obtain server-end API configurations.md).
+- Test environment: For more information about the API address, see the **get_mg_info** field in [Obtain server-end API configurations](ObtainServerEndAPIConfigurations.md).
+- Production environment: For more information about the API address, see the **get_mg_info** field in [Obtain server-end API configurations](ObtainServerEndAPIConfigurations.md).
 
 ## Request method
 - https
