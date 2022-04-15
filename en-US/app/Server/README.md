@@ -34,9 +34,15 @@
 
 ### SDK service API
 
-- [mg_list](ServerSDKAPI/Obtain the game list.md)
+- [Obtain the game list](ServerSDKAPI/Obtain the game list.md)
 
-- [mg_info](ServerSDKAPI/Obtain game information.md)
+- [Obtain game information](ServerSDKAPI/Obtain game information.md)
+
+- [Obtain the report information of game](ServerSDKAPI/Obtain the report information of game.md)
+
+- [Obtain the report information of game by page](ServerSDKAPI/Obtain the report information of game by page.md)
+
+- [Obtain server-end API configurations](ServerSDKAPI/Obtain server-end API configurations.md)
 
 ### JWT best practices: server authentication and data exchange based on the client login state
 
