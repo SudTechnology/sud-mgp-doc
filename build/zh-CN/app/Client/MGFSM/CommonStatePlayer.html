@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>你画我猜 · GitBook</title>
+        <title>通用状态-玩家 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../SDK/" />
+    <link rel="next" href="DrawGuess.html" />
     
     
-    <link rel="prev" href="通用状态-玩家.html" />
+    <link rel="prev" href="CommonStateGame.html" />
     
 
     </head>
@@ -279,9 +279,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.2.2.1" data-path="../APPFST/通用状态.html">
+        <li class="chapter " data-level="1.2.2.2.1" data-path="../APPFST/CommonState.html">
             
-                <a href="../APPFST/通用状态.html">
+                <a href="../APPFST/CommonState.html">
             
                     
                     通用状态
@@ -311,9 +311,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.2.3.1" data-path="通用状态-游戏.html">
+        <li class="chapter " data-level="1.2.2.3.1" data-path="CommonStateGame.html">
             
-                <a href="通用状态-游戏.html">
+                <a href="CommonStateGame.html">
             
                     
                     通用状态-游戏
@@ -324,9 +324,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2.3.2" data-path="通用状态-玩家.html">
+        <li class="chapter active" data-level="1.2.2.3.2" data-path="CommonStatePlayer.html">
             
-                <a href="通用状态-玩家.html">
+                <a href="CommonStatePlayer.html">
             
                     
                     通用状态-玩家
@@ -337,9 +337,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.2.3.3" data-path="你画我猜.html">
+        <li class="chapter " data-level="1.2.2.3.3" data-path="DrawGuess.html">
             
-                <a href="你画我猜.html">
+                <a href="DrawGuess.html">
             
                     
                     你画我猜
@@ -886,7 +886,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../.." >你画我猜</a>
+        <a href="../../.." >通用状态-玩家</a>
     </h1>
 </div>
 
@@ -903,116 +903,198 @@
                                 
                                 <p>#</p>
 <p><img src="../../Resource/logo.png" alt="SUD"></p>
-<h2 id="&#x4F60;&#x753B;&#x6211;&#x731C;">&#x4F60;&#x753B;&#x6211;&#x731C;</h2>
+<h2 id="&#x901A;&#x7528;&#x72B6;&#x6001;-&#x73A9;&#x5BB6;">&#x901A;&#x7528;&#x72B6;&#x6001;-&#x73A9;&#x5BB6;</h2>
 <blockquote>
 <p>Tips</p>
 <ol>
-<li>SudMGP&#x4FDD;&#x8BC1;&#x72B6;&#x6001;&#x6709;&#x5E8F;&#x4E32;&#x884C;&#x4ECE;MG&#x5230;&#x8FBE;APP&#xFF1B;</li>
+<li>SDK&#x4FDD;&#x8BC1;&#x72B6;&#x6001;&#x6709;&#x5E8F;&#x4E32;&#x884C;&#x4ECE;MG&#x5230;&#x8FBE;APP&#xFF1B;</li>
 <li>&#x53EF;&#x91CD;&#x590D;&#x901A;&#x77E5;&#xFF0C;&#x65E0;&#x9700;&#x4FDD;&#x8BC1;&#x901A;&#x77E5;&#x6B21;&#x6570;&#xFF1B;</li>
-<li>&#x901A;&#x77E5;&#x540E;SudMGP&#x4F1A;&#x6309;state&#x503C;&#x7F13;&#x5B58;&#x6700;&#x65B0;&#x4E00;&#x6B21;&#x7684;data&#x503C;&#xFF0C;&#x4F9B;APP&#x968F;&#x65F6;&#x4E3B;&#x52A8;&#x83B7;&#x53D6;&#xFF1B;</li>
+<li>&#x901A;&#x77E5;&#x540E;SDK&#x4F1A;&#x6309;UID&#x548C;state&#x503C;&#x7F13;&#x5B58;&#x6700;&#x65B0;&#x4E00;&#x6B21;&#x7684;data&#x503C;&#xFF0C;&#x4F9B;APP&#x968F;&#x65F6;&#x4E3B;&#x52A8;&#x83B7;&#x53D6;&#xFF1B;</li>
+<li>MG&#x4F1A;&#x901A;&#x77E5;&#x623F;&#x95F4;&#x5185;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#xFF08;&#x5305;&#x62EC;&#x6240;&#x6709;&#x73A9;&#x5BB6;&#x548C;&#x6240;&#x6709;OB&#xFF09;&#x7684;&#x72B6;&#x6001;&#xFF0C;APP&#x53EF;&#x6309;&#x9700;&#x5904;&#x7406;&#x5C55;&#x73B0;&#xFF1B;</li>
+<li>ISudFSMMSG void onPlayerStateChange(ISudFSMStateHandle handle, String userId, String state, String dataJson);</li>
 </ol>
 </blockquote>
-<h3 id="1-&#x9009;&#x8BCD;&#x4E2D;&#x72B6;&#x6001;&#xFF08;&#x5DF2;&#x4FEE;&#x6539;&#xFF09;">1. &#x9009;&#x8BCD;&#x4E2D;&#x72B6;&#x6001;&#xFF08;&#x5DF2;&#x4FEE;&#x6539;&#xFF09;</h3>
+<h1 id="&#x72B6;&#x6001;&#x8F6C;&#x6362;&#x8BF4;&#x660E;">&#x72B6;&#x6001;&#x8F6C;&#x6362;&#x8BF4;&#x660E;</h1>
+<p><img src="../../Resource/Client/gamestate.png" alt="&#x72B6;&#x6001;&#x8F6C;&#x6362;&#x8BF4;&#x660E;"></p>
+<h3 id="0-&#x6D4B;&#x8BD5;&#x72B6;&#x6001;">0. &#x6D4B;&#x8BD5;&#x72B6;&#x6001;</h3>
 <ul>
-<li><p>&#x6700;&#x4F4E;&#x7248;&#x672C;: v1.1.30.xx</p>
-</li>
-<li><p>state</p>
-</li>
+<li>state</li>
 </ul>
-<pre><code>mg_dg_selecting
+<pre><code>mg_common_player_hello_fsm
 </code></pre><ul>
 <li>data</li>
 </ul>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;isSelecting&quot;</span>: <span class="hljs-literal">true</span>    <span class="hljs-comment">// bool &#x7C7B;&#x578B; true&#xFF1A;&#x6B63;&#x5728;&#x9009;&#x8BCD;&#x4E2D;&#xFF0C;false: &#x4E0D;&#x5728;&#x9009;&#x8BCD;&#x4E2D;</span>
+    <span class="hljs-string">&quot;msg&quot;</span>: <span class="hljs-string">&quot;Hello FSM from MG player!&quot;</span>
 }
 </code></pre>
 <ul>
 <li>&#x8BF4;&#x660E;</li>
 </ul>
-<pre><code class="lang-txt">&#x9009;&#x8BCD;&#x4E2D;&#xFF0C;&#x5934;&#x50CF;&#x6B63;&#x4E0B;&#x65B9;
-</code></pre>
-<h3 id="2-&#x4F5C;&#x753B;&#x4E2D;&#x72B6;&#x6001;&#xFF08;&#x5DF2;&#x4FEE;&#x6539;&#xFF09;">2. &#x4F5C;&#x753B;&#x4E2D;&#x72B6;&#x6001;&#xFF08;&#x5DF2;&#x4FEE;&#x6539;&#xFF09;</h3>
+<pre><code>&#x7528;&#x4E8E;&#x72B6;&#x6001;&#x6D4B;&#x8BD5;&#x3002;
+</code></pre><h3 id="1&#x52A0;&#x5165;&#x72B6;&#x6001;&#xFF08;&#x5DF2;&#x4FEE;&#x6539;&#xFF09;">1.&#x52A0;&#x5165;&#x72B6;&#x6001;&#xFF08;&#x5DF2;&#x4FEE;&#x6539;&#xFF09;</h3>
 <ul>
-<li><p>&#x6700;&#x4F4E;&#x7248;&#x672C;: v1.1.30.xx</p>
-</li>
-<li><p>state</p>
-</li>
+<li>&#x6700;&#x4F4E;&#x7248;&#x672C;: v1.1.30.xx</li>
+<li>state</li>
 </ul>
-<pre><code>mg_dg_painting
+<pre><code>mg_common_player_in
 </code></pre><ul>
 <li>data</li>
 </ul>
 <pre><code class="lang-json">{
-    isPainting: <span class="hljs-literal">true</span> <span class="hljs-comment">// true: &#x7ED8;&#x753B;&#x4E2D;&#xFF0C;false: &#x53D6;&#x6D88;&#x7ED8;&#x753B;</span>
+    <span class="hljs-string">&quot;isIn&quot;</span>: <span class="hljs-literal">true</span>,           <span class="hljs-comment">// true &#x5DF2;&#x52A0;&#x5165;&#xFF0C;false &#x672A;&#x52A0;&#x5165;;</span>
+    <span class="hljs-string">&quot;teamId&quot;</span>:<span class="hljs-number">1</span>,           <span class="hljs-comment">// &#x52A0;&#x5165;&#x54EA;&#x652F;&#x961F;&#x4F0D;;</span>
+    <span class="hljs-string">&quot;reason&quot;</span>: <span class="hljs-number">0</span>,          <span class="hljs-comment">// &#x5F53;isIn==false&#x65F6;&#x6709;&#x6548;&#xFF1B;0 &#x4E3B;&#x52A8;&#x9000;&#x51FA;&#xFF0C;1 &#x88AB;&#x8E22;;&#xFF08;reason&#x9ED8;&#x8BA4;-1&#xFF0C;&#x65E0;&#x610F;&#x4E49;&#x4FBF;&#x4E8E;&#x5904;&#x7406;&#xFF09;</span>
+    <span class="hljs-string">&quot;kickUID&quot;</span>:<span class="hljs-string">&quot;&quot;</span>          <span class="hljs-comment">// &#x5F53;reason==1&#x65F6;&#x6709;&#x6548;&#xFF1B;kickUID&#x4E3A;&#x8E22;&#x4EBA;&#x7684;&#x7528;&#x6237;uid&#xFF1B;&#x5224;&#x65AD;&#x88AB;&#x8E22;&#x7684;&#x4EBA;&#x662F;&#x672C;&#x4EBA;&#x6761;&#x4EF6;(onPlayerStateChange(userId==kickedUID == selfUID)&#xFF1B;&#xFF08;kickUID&#x9ED8;&#x8BA4;&quot;&quot;&#xFF0C;&#x65E0;&#x610F;&#x4E49;&#x4FBF;&#x4E8E;&#x5904;&#x7406;&#xFF09;</span>
 }
 </code></pre>
 <ul>
 <li>&#x8BF4;&#x660E;</li>
 </ul>
-<pre><code class="lang-txt">&#x4F5C;&#x753B;&#x4E2D;&#xFF0C;&#x5934;&#x50CF;&#x6B63;&#x4E0B;&#x65B9;
-</code></pre>
-<h3 id="3-&#x663E;&#x793A;&#x9519;&#x8BEF;&#x7B54;&#x6848;&#x72B6;&#x6001;&#xFF08;&#x5DF2;&#x4FEE;&#x6539;&#xFF09;">3. &#x663E;&#x793A;&#x9519;&#x8BEF;&#x7B54;&#x6848;&#x72B6;&#x6001;&#xFF08;&#x5DF2;&#x4FEE;&#x6539;&#xFF09;</h3>
+<pre><code>&#x7528;&#x6237;&#x662F;&#x5426;&#x52A0;&#x5165;&#x6E38;&#x620F;&#xFF1B;
+&#x6E38;&#x620F;&#x5F00;&#x59CB;&#x540E;&#xFF0C;&#x672A;&#x52A0;&#x5165;&#x7684;&#x7528;&#x6237;&#x4E3A;OB&#x89C6;&#x89D2;&#x3002;
+</code></pre><h3 id="2&#x51C6;&#x5907;&#x72B6;&#x6001;&#xFF08;&#x5DF2;&#x4FEE;&#x6539;&#xFF09;">2.&#x51C6;&#x5907;&#x72B6;&#x6001;&#xFF08;&#x5DF2;&#x4FEE;&#x6539;&#xFF09;</h3>
 <ul>
-<li><p>&#x6700;&#x4F4E;&#x7248;&#x672C;: v1.1.30.xx</p>
-</li>
-<li><p>state</p>
-</li>
+<li>&#x6700;&#x4F4E;&#x7248;&#x672C;: v1.1.30.xx</li>
+<li>state</li>
 </ul>
-<pre><code>mg_dg_erroranswer
+<pre><code>mg_common_player_ready
 </code></pre><ul>
 <li>data</li>
 </ul>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;msg&quot;</span>: <span class="hljs-string">&quot;&#x9519;&#x8BEF;&#x7B54;&#x6848;&quot;</span> <span class="hljs-comment">// &#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;&#xFF0C;&#x5C55;&#x793A;&#x9519;&#x8BEF;&#x7B54;&#x6848;</span>
+    <span class="hljs-string">&quot;isReady&quot;</span>: <span class="hljs-literal">true</span>      <span class="hljs-comment">// true &#x5DF2;&#x51C6;&#x5907;&#xFF0C;false &#x672A;&#x51C6;&#x5907;</span>
 }
 </code></pre>
 <ul>
 <li>&#x8BF4;&#x660E;</li>
 </ul>
-<pre><code class="lang-txt">&#x9519;&#x8BEF;&#x7684;&#x7B54;&#x6848;&#xFF0C;&#x6700;&#x591A;6&#x4E2D;&#x6587;&#xFF0C;&#x5934;&#x50CF;&#x6B63;&#x4E0B;&#x65B9;
-</code></pre>
-<h3 id="4-&#x663E;&#x793A;&#x603B;&#x79EF;&#x5206;&#x72B6;&#x6001;&#xFF08;&#x5DF2;&#x4FEE;&#x6539;&#xFF09;">4. &#x663E;&#x793A;&#x603B;&#x79EF;&#x5206;&#x72B6;&#x6001;&#xFF08;&#x5DF2;&#x4FEE;&#x6539;&#xFF09;</h3>
+<pre><code>&#x7528;&#x6237;&#x662F;&#x5426;&#x51C6;&#x5907;&#x3002;
+</code></pre><h3 id="3&#x961F;&#x957F;&#x72B6;&#x6001;&#xFF08;&#x5DF2;&#x4FEE;&#x6539;&#xFF09;">3.&#x961F;&#x957F;&#x72B6;&#x6001;&#xFF08;&#x5DF2;&#x4FEE;&#x6539;&#xFF09;</h3>
 <ul>
-<li><p>&#x6700;&#x4F4E;&#x7248;&#x672C;: v1.1.30.xx</p>
-</li>
-<li><p>state</p>
-</li>
+<li>&#x6700;&#x4F4E;&#x7248;&#x672C;: v1.1.30.xx</li>
+<li>state</li>
 </ul>
-<pre><code>mg_dg_totalscore
+<pre><code>mg_common_player_captain
 </code></pre><ul>
 <li>data</li>
 </ul>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;msg&quot;</span>: <span class="hljs-string">&quot;10&quot;</span> <span class="hljs-comment">// &#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B; &#x603B;&#x79EF;&#x5206;</span>
+    <span class="hljs-string">&quot;isCaptain&quot;</span>: <span class="hljs-literal">true</span>   <span class="hljs-comment">// true &#x662F;&#x961F;&#x957F;&#xFF0C;false &#x4E0D;&#x662F;&#x961F;&#x957F;&#xFF1B;</span>
 }
 </code></pre>
 <ul>
 <li>&#x8BF4;&#x660E;</li>
 </ul>
-<pre><code class="lang-txt">&#x603B;&#x79EF;&#x5206;&#xFF0C;&#x4F4D;&#x4E8E;&#x5934;&#x50CF;&#x53F3;&#x4E0A;&#x89D2;
-</code></pre>
-<h3 id="5-&#x672C;&#x6B21;&#x83B7;&#x5F97;&#x79EF;&#x5206;&#x72B6;&#x6001;&#xFF08;&#x5DF2;&#x4FEE;&#x6539;&#xFF09;">5. &#x672C;&#x6B21;&#x83B7;&#x5F97;&#x79EF;&#x5206;&#x72B6;&#x6001;&#xFF08;&#x5DF2;&#x4FEE;&#x6539;&#xFF09;</h3>
+<pre><code>&#x7528;&#x6237;&#x662F;&#x5426;&#x4E3A;&#x961F;&#x957F;&#xFF0C;&#x961F;&#x957F;&#x5728;&#x6E38;&#x620F;&#x4E2D;&#x4F1A;&#x6709;&#x5F00;&#x59CB;&#x6E38;&#x620F;&#x7684;&#x6743;&#x5229;&#x3002;
+</code></pre><h3 id="4&#x6E38;&#x620F;&#x72B6;&#x6001;&#xFF08;&#x5DF2;&#x4FEE;&#x6539;&#xFF09;">4.&#x6E38;&#x620F;&#x72B6;&#x6001;&#xFF08;&#x5DF2;&#x4FEE;&#x6539;&#xFF09;</h3>
 <ul>
-<li><p>&#x6700;&#x4F4E;&#x7248;&#x672C;: v1.1.30.xx</p>
-</li>
-<li><p>state</p>
-</li>
+<li>&#x6700;&#x4F4E;&#x7248;&#x672C;: v1.1.30.xx</li>
+<li>state</li>
 </ul>
-<pre><code>mg_dg_score
+<pre><code>mg_common_player_playing
 </code></pre><ul>
 <li>data</li>
 </ul>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;msg&quot;</span>: <span class="hljs-string">&quot;10&quot;</span>    <span class="hljs-comment">// string&#x7C7B;&#x578B;&#xFF0C;&#x5C55;&#x793A;&#x672C;&#x6B21;&#x83B7;&#x5F97;&#x79EF;&#x5206;</span>
+    <span class="hljs-string">&quot;isPlaying&quot;</span>: <span class="hljs-literal">true</span>,  <span class="hljs-comment">// true &#x6E38;&#x620F;&#x4E2D;&#xFF0C;false &#x672A;&#x5728;&#x6E38;&#x620F;&#x4E2D;&#xFF1B;</span>
+    <span class="hljs-string">&quot;gameRoundId&quot;</span>: <span class="hljs-string">&quot;12345699&quot;</span>, <span class="hljs-comment">// &#x672C;&#x8F6E;&#x6E38;&#x620F;id&#xFF0C;&#x5F53;isPlaying==true&#x65F6;&#x6709;&#x6548; </span>
+    <span class="hljs-string">&quot;reason&quot;</span>: <span class="hljs-number">0</span>,           <span class="hljs-comment">// &#x5F53;isPlaying==false&#x65F6;&#x6709;&#x6548;&#xFF1B;isPlaying=false, 0:&#x672C;&#x5C40;&#x6E38;&#x620F;&#x6B63;&#x5E38;&#x7ED3;&#x675F; 1:&#x63D0;&#x524D;&#x7ED3;&#x675F;&#x672C;&#x5C40;&#x6E38;&#x620F;&#xFF08;&#x73A9;&#x5BB6;&#x81EA;&#x5DF1;&#x4E0D;&#x73A9;&#x4E86;&#xFF09;2:&#x63D0;&#x524D;&#x7ED3;&#x675F;&#x672C;&#x5C40;&#x6E38;&#x620F;&#xFF08;&#x65E0;&#x771F;&#x4EBA;&#xFF0C;&#x53EA;&#x6709;&#x673A;&#x5668;&#x4EBA;&#xFF09;&#xFF0C;&#x6682;&#x4E0D;&#x652F;&#x6301; 3:&#x63D0;&#x524D;&#x7ED3;&#x675F;&#x672C;&#x5C40;&#x6E38;&#x620F;&#xFF08;&#x6240;&#x6709;&#x4EBA;&#x90FD;&#x4E0D;&#x73A9;&#x4E86;&#xFF09;&#xFF1B;&#xFF08;reason&#x9ED8;&#x8BA4;-1&#xFF0C;&#x65E0;&#x610F;&#x4E49;&#x4FBF;&#x4E8E;&#x5904;&#x7406;&#xFF09;</span>
+    <span class="hljs-string">&quot;spaceMax&quot;</span>: <span class="hljs-literal">true</span> <span class="hljs-comment">// true &#x5EFA;&#x8BAE;&#x5C3D;&#x91CF;&#x6536;&#x7F29;&#x539F;&#x751F;UI&#xFF0C;&#x7ED9;&#x6E38;&#x620F;&#x7559;&#x51FA;&#x5C3D;&#x91CF;&#x5927;&#x7684;&#x64CD;&#x4F5C;&#x7A7A;&#x95F4; false &#x521D;&#x59CB;&#x72B6;&#x6001;&#xFF1B;</span>
+}
+</code></pre>
+<h3 id="reason&#x53C2;&#x6570;&#x8BF4;&#x660E;">reason&#x53C2;&#x6570;&#x8BF4;&#x660E;</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">reason</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th style="text-align:left">&#x6570;&#x503C;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+<th>&#x8EAB;&#x4EFD;</th>
+<th>&#x64CD;&#x4F5C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">reason</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">&#x672C;&#x5C40;&#x6E38;&#x620F;&#x6B63;&#x5E38;&#x7ED3;&#x675F;</td>
+<td>&#x73A9;&#x5BB6;</td>
+<td>&#x672C;&#x5C40;&#x6E38;&#x620F;&#x6B63;&#x5E38;&#x7ED3;&#x675F;</td>
+</tr>
+<tr>
+<td style="text-align:left">reason</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">&#x63D0;&#x524D;&#x7ED3;&#x675F;&#x672C;&#x5C40;&#x6E38;&#x620F;&#xFF08;&#x73A9;&#x5BB6;&#x81EA;&#x5DF1;&#x4E0D;&#x73A9;&#x4E86;&#xFF09;</td>
+<td>&#x73A9;&#x5BB6;</td>
+<td>APP&#x53D1;&#x72B6;&#x6001;:app_common_self_playing isPlaying=false</td>
+</tr>
+<tr>
+<td style="text-align:left">reason</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">&#x63D0;&#x524D;&#x7ED3;&#x675F;&#x672C;&#x5C40;&#x6E38;&#x620F;&#xFF08;&#x65E0;&#x771F;&#x4EBA;&#xFF0C;&#x53EA;&#x6709;&#x673A;&#x5668;&#x4EBA;&#xFF09;</td>
+<td>&#x73A9;&#x5BB6;</td>
+<td>&#x6682;&#x4E0D;&#x652F;&#x6301;</td>
+</tr>
+<tr>
+<td style="text-align:left">reason</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">&#x63D0;&#x524D;&#x7ED3;&#x675F;&#x672C;&#x5C40;&#x6E38;&#x620F;&#xFF08;&#x6240;&#x6709;&#x4EBA;&#x90FD;&#x4E0D;&#x73A9;&#x4E86;&#xFF09;</td>
+<td>&#x73A9;&#x5BB6;+&#x961F;&#x957F;</td>
+<td>APP&#x53D1;&#x72B6;&#x6001;:app_common_self_end</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>&#x8BF4;&#x660E;</li>
+</ul>
+<pre><code>&#x7528;&#x6237;&#x6E38;&#x620F;&#x72B6;&#x6001;&#xFF0C;&#x5982;&#x679C;&#x7528;&#x6237;&#x5728;&#x6E38;&#x620F;&#x4E2D;&#xFF0C;&#x5EFA;&#x8BAE;&#xFF1A;
+a.&#x7A7A;&#x51FA;&#x5C4F;&#x5E55;&#x4E2D;&#x5FC3;&#x533A;&#xFF1A;
+&#x5173;&#x95ED;&#x5168;&#x5C4F;&#x793C;&#x7269;&#x7279;&#x6548;&#xFF1B;
+b.&#x90E8;&#x5206;&#x5F3A;&#x64CD;&#x4F5C;&#x7C7B;&#x5C0F;&#x6E38;&#x620F;&#xFF08;spaceMax&#x4E3A;true&#xFF09;&#xFF0C;&#x5C3D;&#x91CF;&#x6536;&#x7F29;&#x539F;&#x751F;UI&#xFF0C;&#x7ED9;&#x6E38;&#x620F;&#x7559;&#x51FA;&#x5C3D;&#x91CF;&#x5927;&#x7684;&#x64CD;&#x4F5C;&#x7A7A;&#x95F4;&#xFF1A;
+&#x6536;&#x7F29;&#x516C;&#x5C4F;&#xFF1B;
+&#x6536;&#x7F29;&#x9EA6;&#x4F4D;&#xFF1B;
+&#x5982;&#x679C;&#x4E0D;&#x5728;&#x6E38;&#x620F;&#x4E2D;&#xFF0C;&#x5219;&#x6062;&#x590D;&#x3002;
+</code></pre><h3 id="6&#x73A9;&#x5BB6;&#x6362;&#x6E38;&#x620F;&#x4F4D;&#x72B6;&#x6001;">6.&#x73A9;&#x5BB6;&#x6362;&#x6E38;&#x620F;&#x4F4D;&#x72B6;&#x6001;</h3>
+<ul>
+<li>&#x6700;&#x4F4E;&#x7248;&#x672C;: v1.1.30.xx</li>
+<li>state</li>
+</ul>
+<pre><code>mg_common_player_change_seat
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;preSeatIndex&quot;</span>: <span class="hljs-number">1</span>,    <span class="hljs-comment">// &#x6362;&#x4F4D;&#x524D;&#x7684;&#x6E38;&#x620F;&#x4F4D;(&#x5EA7;&#x4F4D;&#x53F7;)</span>
+  <span class="hljs-string">&quot;currentSeatIndex&quot;</span>: <span class="hljs-number">1</span>        <span class="hljs-comment">// &#x6362;&#x4F4D;&#x6210;&#x529F;&#x540E;&#x7684;&#x6E38;&#x620F;&#x4F4D;(&#x5EA7;&#x4F4D;&#x53F7;)</span>
 }
 </code></pre>
 <ul>
 <li>&#x8BF4;&#x660E;</li>
 </ul>
-<pre><code class="lang-txt">&#x672C;&#x6B21;&#x79EF;&#x5206;&#xFF0C;&#x5934;&#x50CF;&#x6B63;&#x4E0B;&#x65B9;
+<pre><code>&#x73A9;&#x5BB6;&#x6362;&#x5EA7;&#x4F4D;
+</code></pre><h3 id="7-&#x6E38;&#x620F;&#x901A;&#x77E5;app&#x70B9;&#x51FB;&#x73A9;&#x5BB6;&#x5934;&#x50CF;&#xFF08;2022-02-09&#x65B0;&#x589E;&#xFF0C;&#x73B0;&#x5728;&#x53EA;&#x652F;&#x6301;&#x98DE;&#x884C;&#x68CB;ludo&#xFF0C;&#x4EC5;&#x7528;&#x4E8E;&#x6E38;&#x620F;&#x573A;&#x666F;&#x4E2D;&#x7684;&#x73A9;&#x5BB6;&#x5934;&#x50CF;&#xFF09;">7. &#x6E38;&#x620F;&#x901A;&#x77E5;app&#x70B9;&#x51FB;&#x73A9;&#x5BB6;&#x5934;&#x50CF;&#xFF08;2022-02-09&#x65B0;&#x589E;&#xFF0C;&#x73B0;&#x5728;&#x53EA;&#x652F;&#x6301;&#x98DE;&#x884C;&#x68CB;ludo&#xFF0C;&#x4EC5;&#x7528;&#x4E8E;&#x6E38;&#x620F;&#x573A;&#x666F;&#x4E2D;&#x7684;&#x73A9;&#x5BB6;&#x5934;&#x50CF;&#xFF09;</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_self_click_game_player_icon
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;&#x7528;&#x6237;id&quot;</span>    <span class="hljs-comment">// &#x88AB;&#x70B9;&#x51FB;&#x5934;&#x50CF;&#x7684;&#x7528;&#x6237;id</span>
+}
 </code></pre>
-
+<ul>
+<li>&#x8BF4;&#x660E;</li>
+</ul>
+<pre><code>&#x6E38;&#x620F;&#x901A;&#x77E5;app&#x70B9;&#x51FB;&#x73A9;&#x5BB6;&#x5934;&#x50CF;
+</code></pre>
       <script>
         var pathname = window.location.pathname
         top.postMessage({pathname},  "*"); 
@@ -1044,12 +1126,12 @@
 
             
                 
-                <a href="通用状态-玩家.html" class="navigation navigation-prev " aria-label="Previous page: 通用状态-玩家">
+                <a href="CommonStateGame.html" class="navigation navigation-prev " aria-label="Previous page: 通用状态-游戏">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../SDK/" class="navigation navigation-next " aria-label="Next page: 客户端SDK下载">
+                <a href="DrawGuess.html" class="navigation navigation-next " aria-label="Next page: 你画我猜">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1060,7 +1142,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"你画我猜","level":"1.2.2.3.3","depth":4,"next":{"title":"客户端SDK下载","level":"1.2.3","depth":2,"path":"app/Client/SDK/README.md","ref":"app/Client/SDK/README.md","articles":[]},"previous":{"title":"通用状态-玩家","level":"1.2.2.3.2","depth":4,"path":"app/Client/MGFSM/通用状态-玩家.md","ref":"app/Client/MGFSM/通用状态-玩家.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-CN","gitbook":"*"},"file":{"path":"app/Client/MGFSM/你画我猜.md","mtime":"2022-04-15T03:19:30.850Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-15T03:20:30.301Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
+            gitbook.page.hasChanged({"page":{"title":"通用状态-玩家","level":"1.2.2.3.2","depth":4,"next":{"title":"你画我猜","level":"1.2.2.3.3","depth":4,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]},"previous":{"title":"通用状态-游戏","level":"1.2.2.3.1","depth":4,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-CN","gitbook":"*"},"file":{"path":"app/Client/MGFSM/CommonStatePlayer.md","mtime":"2022-04-15T09:49:42.785Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-15T09:50:19.224Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
         });
     </script>
 </div>

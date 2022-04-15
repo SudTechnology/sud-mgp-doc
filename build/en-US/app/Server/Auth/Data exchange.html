@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Obtain game information · GitBook</title>
+        <title>Data exchange · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Obtain the report information of game.html" />
+    <link rel="next" href="../Server_Change_Log.html" />
     
     
-    <link rel="prev" href="Obtain the game list.html" />
+    <link rel="prev" href="Authentication.html" />
     
 
     </head>
@@ -683,9 +683,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.4" data-path="./">
+        <li class="chapter " data-level="2.1.4" data-path="../ServerSDKAPI/">
             
-                <a href="./">
+                <a href="../ServerSDKAPI/">
             
                     
                     SDK service API
@@ -697,9 +697,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1.4.1" data-path="Obtain the game list.html">
+        <li class="chapter " data-level="2.1.4.1" data-path="../ServerSDKAPI/Obtain the game list.html">
             
-                <a href="Obtain the game list.html">
+                <a href="../ServerSDKAPI/Obtain the game list.html">
             
                     
                     Obtain the game list
@@ -710,9 +710,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.1.4.2" data-path="Obtain game information.html">
+        <li class="chapter " data-level="2.1.4.2" data-path="../ServerSDKAPI/Obtain game information.html">
             
-                <a href="Obtain game information.html">
+                <a href="../ServerSDKAPI/Obtain game information.html">
             
                     
                     Obtain game information
@@ -723,9 +723,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.4.3" data-path="Obtain the report information of game.html">
+        <li class="chapter " data-level="2.1.4.3" data-path="../ServerSDKAPI/Obtain the report information of game.html">
             
-                <a href="Obtain the report information of game.html">
+                <a href="../ServerSDKAPI/Obtain the report information of game.html">
             
                     
                     Obtain the report information of game
@@ -736,9 +736,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.4.4" data-path="Obtain the report information of game by page.html">
+        <li class="chapter " data-level="2.1.4.4" data-path="../ServerSDKAPI/Obtain the report information of game by page.html">
             
-                <a href="Obtain the report information of game by page.html">
+                <a href="../ServerSDKAPI/Obtain the report information of game by page.html">
             
                     
                     Obtain the report information of game by page
@@ -749,9 +749,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.4.5" data-path="Obtain server-end API configurations.html">
+        <li class="chapter " data-level="2.1.4.5" data-path="../ServerSDKAPI/Obtain server-end API configurations.html">
             
-                <a href="Obtain server-end API configurations.html">
+                <a href="../ServerSDKAPI/Obtain server-end API configurations.html">
             
                     
                     Obtain server-end API configurations
@@ -793,9 +793,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.7" data-path="../Auth/">
+        <li class="chapter " data-level="2.1.7" data-path="./">
             
-                <a href="../Auth/">
+                <a href="./">
             
                     
                     JWT authentication
@@ -807,9 +807,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1.7.1" data-path="../Auth/Authentication.html">
+        <li class="chapter " data-level="2.1.7.1" data-path="Authentication.html">
             
-                <a href="../Auth/Authentication.html">
+                <a href="Authentication.html">
             
                     
                     Authentication
@@ -820,9 +820,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.7.2" data-path="../Auth/Data exchange.html">
+        <li class="chapter active" data-level="2.1.7.2" data-path="Data exchange.html">
             
-                <a href="../Auth/Data exchange.html">
+                <a href="Data exchange.html">
             
                     
                     Data exchange
@@ -886,7 +886,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../.." >Obtain game information</a>
+        <a href="../../.." >Data exchange</a>
     </h1>
 </div>
 
@@ -903,273 +903,6 @@
                                 
                                 <p>#</p>
 <p><img src="../../Resource/logo.png" alt="SUD"></p>
-<h2 id="description">Description</h2>
-<ul>
-<li>Access the server end and obtain the game information based on <strong>app_id</strong>, <strong>app_secret</strong>, and <strong>mg_id</strong>. We recommend that the client accesses the Sud server directly. Data is locally cached.</li>
-</ul>
-<h2 id="request-url">Request URL</h2>
-<ul>
-<li>Test environment: For more information about the API address, see the <strong>get_mg_info</strong> field in <a href="Obtain%20server-end%20API%20configurations.md">Obtain server-end API configurations</a>.</li>
-<li>Production environment: For more information about the API address, see the <strong>get_mg_info</strong> field in <a href="Obtain%20server-end%20API%20configurations.md">Obtain server-end API configurations</a>.</li>
-</ul>
-<h2 id="request-method">Request method</h2>
-<ul>
-<li>https</li>
-<li>POST</li>
-<li>Parameters are in JSON format and included in the request body.</li>
-<li>Content-Type: application/json needs to be added to the header.</li>
-</ul>
-<h2 id="request-parameters">Request parameters</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Required</th>
-<th style="text-align:left">Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">app_id</td>
-<td style="text-align:left">Yes</td>
-<td style="text-align:left">string</td>
-<td>The app ID.</td>
-</tr>
-<tr>
-<td style="text-align:left">app_secret</td>
-<td style="text-align:left">Yes</td>
-<td style="text-align:left">string</td>
-<td>The app secret key.</td>
-</tr>
-<tr>
-<td style="text-align:left">mg_id</td>
-<td style="text-align:left">Yes</td>
-<td style="text-align:left">string</td>
-<td>The game ID.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="sample-requests">Sample requests</h2>
-<pre><code class="lang-json">{
-    <span class="hljs-string">&quot;app_id&quot;</span>:<span class="hljs-string">&quot;1461564080052506636&quot;</span>,
-    <span class="hljs-string">&quot;app_secret&quot;</span>:<span class="hljs-string">&quot;xJL0HU9ailVSGInqPyNK3Ev3qNHReRbR&quot;</span>,
-    <span class="hljs-string">&quot;mg_id&quot;</span>:<span class="hljs-string">&quot;1461227817776713818&quot;</span>
-}
-</code></pre>
-<h2 id="response-parameters">Response parameters</h2>
-<ul>
-<li>BaseResp</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Required</th>
-<th style="text-align:left">Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">ret_code</td>
-<td style="text-align:left">Yes</td>
-<td style="text-align:left">int</td>
-<td>The response code.</td>
-</tr>
-<tr>
-<td style="text-align:left">ret_msg</td>
-<td style="text-align:left">Yes</td>
-<td style="text-align:left">string</td>
-<td>The response information.</td>
-</tr>
-<tr>
-<td style="text-align:left">data</td>
-<td style="text-align:left">Yes</td>
-<td style="text-align:left">AppServerGetMgInfoResp</td>
-<td>The response data.</td>
-</tr>
-<tr>
-<td style="text-align:left">app_id</td>
-<td style="text-align:left">Yes</td>
-<td style="text-align:left">string</td>
-<td>The app ID.</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>AppServerGetMgInfoResp</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Required</th>
-<th style="text-align:left">Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">mg_info</td>
-<td style="text-align:left">Yes</td>
-<td style="text-align:left">MgInfo</td>
-<td>Game information. For more information, see &quot;MgInfo&quot;.</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>MgInfo</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Required</th>
-<th style="text-align:left">Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">mg_id</td>
-<td style="text-align:left">Yes</td>
-<td style="text-align:left">long</td>
-<td>The game ID.</td>
-</tr>
-<tr>
-<td style="text-align:left">mg_id_str</td>
-<td style="text-align:left">Yes</td>
-<td style="text-align:left">string</td>
-<td>Fields compatible with the numeric game ID. Use this field for the nodejs service.</td>
-</tr>
-<tr>
-<td style="text-align:left">name</td>
-<td style="text-align:left">Yes</td>
-<td style="text-align:left">json</td>
-<td>The game name.</td>
-</tr>
-<tr>
-<td style="text-align:left">desc</td>
-<td style="text-align:left">Yes</td>
-<td style="text-align:left">json</td>
-<td>The game description.</td>
-</tr>
-<tr>
-<td style="text-align:left">thumbnail332x332</td>
-<td style="text-align:left">Yes</td>
-<td style="text-align:left">json</td>
-<td>The URL of the image. The image size is 332 x 332 pixels.</td>
-</tr>
-<tr>
-<td style="text-align:left">thumbnail192x192</td>
-<td style="text-align:left">Yes</td>
-<td style="text-align:left">json</td>
-<td>The URL of the image. The image size is 192 x 192 pixels.</td>
-</tr>
-<tr>
-<td style="text-align:left">thumbnail128x128</td>
-<td style="text-align:left">Yes</td>
-<td style="text-align:left">json</td>
-<td>The URL of the image. The image size is 128 x 128 pixels.</td>
-</tr>
-<tr>
-<td style="text-align:left">thumbnail80x80</td>
-<td style="text-align:left">Yes</td>
-<td style="text-align:left">json</td>
-<td>The URL of the image. The image size is 80 x 80 pixels.</td>
-</tr>
-<tr>
-<td style="text-align:left">big_loading_pic</td>
-<td style="text-align:left">Yes</td>
-<td style="text-align:left">json</td>
-<td>The URL of the background image.</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>GameMode</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Required</th>
-<th style="text-align:left">Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">mode</td>
-<td style="text-align:left">Yes</td>
-<td style="text-align:left">int</td>
-<td>The mode ID.</td>
-</tr>
-<tr>
-<td style="text-align:left">count</td>
-<td style="text-align:left">Yes</td>
-<td style="text-align:left">list</td>
-<td>The number of users required by the game. Valid values: <strong>0</strong>: the minimum number of users; <strong>1</strong>: the maximum number of users.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="sample-responses">Sample responses</h2>
-<pre><code class="lang-json">{
-    <span class="hljs-string">&quot;ret_code&quot;</span>: <span class="hljs-number">0</span>,
-    <span class="hljs-string">&quot;ret_msg&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
-    <span class="hljs-string">&quot;data&quot;</span>: {
-        <span class="hljs-string">&quot;mg_info&quot;</span>: {
-            <span class="hljs-string">&quot;mg_id&quot;</span>: <span class="hljs-number">1461227817776713818</span>,
-            <span class="hljs-string">&quot;mg_id_str&quot;</span>: <span class="hljs-string">&quot;1461227817776713818&quot;</span>,
-            <span class="hljs-string">&quot;name&quot;</span>: {
-                <span class="hljs-string">&quot;default&quot;</span>: <span class="hljs-string">&quot;&#x78B0;&#x78B0;&#x8F66;&quot;</span>,
-                <span class="hljs-string">&quot;zh-HK&quot;</span>: <span class="hljs-string">&quot;&#x78B0;&#x78B0;&#x8F66;&quot;</span>,
-                <span class="hljs-string">&quot;zh-CN&quot;</span>: <span class="hljs-string">&quot;&#x78B0;&#x78B0;&#x8F66;&quot;</span>
-            },
-            <span class="hljs-string">&quot;desc&quot;</span>: {
-                <span class="hljs-string">&quot;default&quot;</span>: <span class="hljs-string">&quot;&#x78B0;&#x78B0;&#x6211;&#x6700;&#x5F3A;&quot;</span>,
-                <span class="hljs-string">&quot;zh-HK&quot;</span>: <span class="hljs-string">&quot;&#x78B0;&#x78B0;&#x6211;&#x6700;&#x5F3A;&quot;</span>,
-                <span class="hljs-string">&quot;zh-CN&quot;</span>: <span class="hljs-string">&quot;&#x78B0;&#x78B0;&#x6211;&#x6700;&#x5F3A;&quot;</span>
-            },
-            <span class="hljs-string">&quot;thumbnail332x332&quot;</span>: {
-                <span class="hljs-string">&quot;default&quot;</span>: <span class="hljs-string">&quot;https://sim-sud-static.sudden.ltd/game/bumper/332.png&quot;</span>,
-                <span class="hljs-string">&quot;zh-HK&quot;</span>: <span class="hljs-string">&quot;https://sim-sud-static.sudden.ltd/game/bumper/332.png&quot;</span>,
-                <span class="hljs-string">&quot;zh-CN&quot;</span>: <span class="hljs-string">&quot;https://sim-sud-static.sudden.ltd/game/bumper/332.png&quot;</span>
-            },
-            <span class="hljs-string">&quot;thumbnail192x192&quot;</span>: {
-                <span class="hljs-string">&quot;default&quot;</span>: <span class="hljs-string">&quot;https://sim-sud-static.sudden.ltd/game/bumper/192.png&quot;</span>,
-                <span class="hljs-string">&quot;zh-HK&quot;</span>: <span class="hljs-string">&quot;https://sim-sud-static.sudden.ltd/game/bumper/192.png&quot;</span>,
-                <span class="hljs-string">&quot;zh-CN&quot;</span>: <span class="hljs-string">&quot;https://sim-sud-static.sudden.ltd/game/bumper/192.png&quot;</span>
-            },
-            <span class="hljs-string">&quot;thumbnail128x128&quot;</span>: {
-                <span class="hljs-string">&quot;default&quot;</span>: <span class="hljs-string">&quot;https://sim-sud-static.sudden.ltd/game/bumper/128.png&quot;</span>,
-                <span class="hljs-string">&quot;zh-HK&quot;</span>: <span class="hljs-string">&quot;https://sim-sud-static.sudden.ltd/game/bumper/128.png&quot;</span>,
-                <span class="hljs-string">&quot;zh-CN&quot;</span>: <span class="hljs-string">&quot;https://sim-sud-static.sudden.ltd/game/bumper/128.png&quot;</span>
-            },
-            <span class="hljs-string">&quot;thumbnail80x80&quot;</span>: {
-                <span class="hljs-string">&quot;default&quot;</span>: <span class="hljs-string">&quot;https://sim-sud-static.sudden.ltd/game/bumper/80.png&quot;</span>,
-                <span class="hljs-string">&quot;zh-HK&quot;</span>: <span class="hljs-string">&quot;https://sim-sud-static.sudden.ltd/game/bumper/80.png&quot;</span>,
-                <span class="hljs-string">&quot;zh-CN&quot;</span>: <span class="hljs-string">&quot;https://sim-sud-static.sudden.ltd/game/bumper/80.png&quot;</span>
-            },
-            <span class="hljs-string">&quot;big_loading_pic&quot;</span>: {
-                <span class="hljs-string">&quot;default&quot;</span>: <span class="hljs-string">&quot;https://sim-sud-static.sudden.ltd/game/bumper/bg.jpg&quot;</span>,
-                <span class="hljs-string">&quot;zh-HK&quot;</span>: <span class="hljs-string">&quot;https://sim-sud-static.sudden.ltd/game/bumper/bg.jpg&quot;</span>,
-                <span class="hljs-string">&quot;zh-CN&quot;</span>: <span class="hljs-string">&quot;https://sim-sud-static.sudden.ltd/game/bumper/bg.jpg&quot;</span>
-            },
-            <span class="hljs-string">&quot;game_mode_list&quot;</span>: [
-                {
-                    <span class="hljs-string">&quot;mode&quot;</span>: <span class="hljs-number">1</span>,
-                    <span class="hljs-string">&quot;count&quot;</span>: [
-                        <span class="hljs-number">1</span>,
-                        <span class="hljs-number">6</span>
-                    ]
-                }
-            ]
-        }
-    }
-}
-</code></pre>
 
       <script>
         var pathname = window.location.pathname
@@ -1202,12 +935,12 @@
 
             
                 
-                <a href="Obtain the game list.html" class="navigation navigation-prev " aria-label="Previous page: Obtain the game list">
+                <a href="Authentication.html" class="navigation navigation-prev " aria-label="Previous page: Authentication">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Obtain the report information of game.html" class="navigation navigation-next " aria-label="Next page: Obtain the report information of game">
+                <a href="../Server_Change_Log.html" class="navigation navigation-next " aria-label="Next page: Server changelog">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1218,7 +951,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Obtain game information","level":"2.1.4.2","depth":3,"next":{"title":"Obtain the report information of game","level":"2.1.4.3","depth":3,"path":"app/Server/ServerSDKAPI/Obtain the report information of game.md","ref":"app/Server/ServerSDKAPI/Obtain the report information of game.md","articles":[]},"previous":{"title":"Obtain the game list","level":"2.1.4.1","depth":3,"path":"app/Server/ServerSDKAPI/Obtain the game list.md","ref":"app/Server/ServerSDKAPI/Obtain the game list.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en-US","gitbook":"*"},"file":{"path":"app/Server/ServerSDKAPI/Obtain game information.md","mtime":"2022-04-15T03:19:30.828Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-15T09:50:19.224Z"},"basePath":"../../..","book":{"language":"en-US"}});
+            gitbook.page.hasChanged({"page":{"title":"Data exchange","level":"2.1.7.2","depth":3,"next":{"title":"Server changelog","level":"2.1.8","depth":2,"path":"app/Server/Server_Change_Log.md","ref":"app/Server/Server_Change_Log.md","articles":[]},"previous":{"title":"Authentication","level":"2.1.7.1","depth":3,"path":"app/Server/Auth/Authentication.md","ref":"app/Server/Auth/Authentication.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en-US","gitbook":"*"},"file":{"path":"app/Server/Auth/Data exchange.md","mtime":"2022-04-15T09:49:42.786Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-15T09:50:19.224Z"},"basePath":"../../..","book":{"language":"en-US"}});
         });
     </script>
 </div>
