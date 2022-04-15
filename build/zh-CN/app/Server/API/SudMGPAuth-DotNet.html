@@ -1,0 +1,1442 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-CN" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>C# .Net · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../HttpsCallback/" />
+    
+    
+    <link rel="prev" href="SudMGPAuth-Node.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    SudMGP互动小游戏接入平台文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../Client/">
+            
+                <a href="../../Client/">
+            
+                    
+                    客户端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../Client/StartUp.html">
+            
+                <a href="../../Client/StartUp.html">
+            
+                    
+                    客户端快速接入
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../Client/StartUp-iOS.html">
+            
+                <a href="../../Client/StartUp-iOS.html">
+            
+                    
+                    iOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../Client/StartUp-Android.html">
+            
+                <a href="../../Client/StartUp-Android.html">
+            
+                    
+                    Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../Client/">
+            
+                <a href="../../Client/">
+            
+                    
+                    客户端文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../Client/API/">
+            
+                <a href="../../Client/API/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.1" data-path="../../Client/API/SudMGP.html">
+            
+                <a href="../../Client/API/SudMGP.html">
+            
+                    
+                    SudMGP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.2" data-path="../../Client/API/ISudFSTAPP.html">
+            
+                <a href="../../Client/API/ISudFSTAPP.html">
+            
+                    
+                    ISudFSTAPP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.3" data-path="../../Client/API/ISudFSMMG.html">
+            
+                <a href="../../Client/API/ISudFSMMG.html">
+            
+                    
+                    ISudFSMMG
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.3.1" data-path="../../Client/API/ISudFSMMG/onGetGameCfg.html">
+            
+                <a href="../../Client/API/ISudFSMMG/onGetGameCfg.html">
+            
+                    
+                    onGetGameCfg
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.3.2" data-path="../../Client/API/ISudFSMMG/onGetGameViewInfo.html">
+            
+                <a href="../../Client/API/ISudFSMMG/onGetGameViewInfo.html">
+            
+                    
+                    onGetGameViewInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../Client/APPFST/">
+            
+                <a href="../../Client/APPFST/">
+            
+                    
+                    APP状态转换器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1" data-path="../../Client/APPFST/通用状态.html">
+            
+                <a href="../../Client/APPFST/通用状态.html">
+            
+                    
+                    通用状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../Client/MGFSM/">
+            
+                <a href="../../Client/MGFSM/">
+            
+                    
+                    MG状态机
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="../../Client/MGFSM/通用状态-游戏.html">
+            
+                <a href="../../Client/MGFSM/通用状态-游戏.html">
+            
+                    
+                    通用状态-游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.2" data-path="../../Client/MGFSM/通用状态-玩家.html">
+            
+                <a href="../../Client/MGFSM/通用状态-玩家.html">
+            
+                    
+                    通用状态-玩家
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.3" data-path="../../Client/MGFSM/你画我猜.html">
+            
+                <a href="../../Client/MGFSM/你画我猜.html">
+            
+                    
+                    你画我猜
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../Client/SDK/">
+            
+                <a href="../../Client/SDK/">
+            
+                    
+                    客户端SDK下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../Client/Demo/">
+            
+                <a href="../../Client/Demo/">
+            
+                    
+                    客户端Demo下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../Client/Languages/">
+            
+                <a href="../../Client/Languages/">
+            
+                    
+                    游戏多语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../Client/ChangeLog.html">
+            
+                <a href="../../Client/ChangeLog.html">
+            
+                    
+                    更新日志(SudMGP和游戏)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    服务端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../StartUp.html">
+            
+                <a href="../StartUp.html">
+            
+                    
+                    服务端快速接入
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="../StartUp-Java.html">
+            
+                <a href="../StartUp-Java.html">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="../StartUp-Go.html">
+            
+                <a href="../StartUp-Go.html">
+            
+                    
+                    Go
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="../StartUp-Node.html">
+            
+                <a href="../StartUp-Node.html">
+            
+                    
+                    Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.4" data-path="../StartUp-Dotnet.html">
+            
+                <a href="../StartUp-Dotnet.html">
+            
+                    
+                    C# .Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    服务端文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1.1" data-path="SudMGPAuth-Java.html">
+            
+                <a href="SudMGPAuth-Java.html">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.1.2" data-path="SudMGPAuth-Go.html">
+            
+                <a href="SudMGPAuth-Go.html">
+            
+                    
+                    Go
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.1.3" data-path="SudMGPAuth-Node.html">
+            
+                <a href="SudMGPAuth-Node.html">
+            
+                    
+                    Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.2.1.4" data-path="SudMGPAuth-DotNet.html">
+            
+                <a href="SudMGPAuth-DotNet.html">
+            
+                    
+                    C# .Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="../HttpsCallback/">
+            
+                <a href="../HttpsCallback/">
+            
+                    
+                    Https服务回调
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.2.1" data-path="../HttpsCallback/get_sstoken.html">
+            
+                <a href="../HttpsCallback/get_sstoken.html">
+            
+                    
+                    get_sstoken
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2.2" data-path="../HttpsCallback/update_sstoken.html">
+            
+                <a href="../HttpsCallback/update_sstoken.html">
+            
+                    
+                    update_sstoken
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2.3" data-path="../HttpsCallback/get_user_info.html">
+            
+                <a href="../HttpsCallback/get_user_info.html">
+            
+                    
+                    get_user_info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2.4" data-path="../HttpsCallback/report_game_info.html">
+            
+                <a href="../HttpsCallback/report_game_info.html">
+            
+                    
+                    report_game_info
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../SDK/">
+            
+                <a href="../SDK/">
+            
+                    
+                    服务端SDK下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../ServerSDKAPI/">
+            
+                <a href="../ServerSDKAPI/">
+            
+                    
+                    SDK服务API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.1" data-path="../ServerSDKAPI/获取游戏列表.html">
+            
+                <a href="../ServerSDKAPI/获取游戏列表.html">
+            
+                    
+                    获取游戏列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2" data-path="../ServerSDKAPI/获取游戏信息.html">
+            
+                <a href="../ServerSDKAPI/获取游戏信息.html">
+            
+                    
+                    获取游戏信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.3" data-path="../ServerSDKAPI/获取游戏上报信息.html">
+            
+                <a href="../ServerSDKAPI/获取游戏上报信息.html">
+            
+                    
+                    获取游戏上报信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.4" data-path="../ServerSDKAPI/分页获取房间内游戏上报信息.html">
+            
+                <a href="../ServerSDKAPI/分页获取房间内游戏上报信息.html">
+            
+                    
+                    分页获取房间内游戏上报信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5" data-path="../ServerSDKAPI/获取服务端接口API配置.html">
+            
+                <a href="../ServerSDKAPI/获取服务端接口API配置.html">
+            
+                    
+                    获取服务端接口API配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../Demo/">
+            
+                <a href="../Demo/">
+            
+                    
+                    服务端Demo下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../ErrorCode.html">
+            
+                <a href="../ErrorCode.html">
+            
+                    
+                    服务端错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../Auth/">
+            
+                <a href="../Auth/">
+            
+                    
+                    JWT鉴权
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.7.1" data-path="../Auth/鉴权.html">
+            
+                <a href="../Auth/鉴权.html">
+            
+                    
+                    鉴权
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7.2" data-path="../Auth/数据交换.html">
+            
+                <a href="../Auth/数据交换.html">
+            
+                    
+                    数据交换
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../Server_Change_Log.html">
+            
+                <a href="../Server_Change_Log.html">
+            
+                    
+                    服务端更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >C# .Net</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>#</p>
+<p><img src="../../Resource/logo.png" alt="SUD"></p>
+<h2 id="sudmgpauth-dotnet">SudMGPAuth Dotnet</h2>
+<pre><code class="lang-text">private readonly SudMgpAuth _sudMgpAuth = new SudMGPAuth(APP_ID, APP_SECRET);
+
+public class SudMGPAuth {
+
+    public SudCode GetCode(string uid);
+
+    public SudCode GetCode(string uid, long expireDuration);
+
+    public SudSsToken GetSsToken(string uid);
+
+    public SudSsToken GetSsToken(string uid, long expireDuration);
+
+    public SudUid GetUidByCode(string code);
+
+    public SudUid GetUidBySSToken(string ssToken);
+
+    public ErrorCodeEnum VerifyCode(string code);
+
+    public ErrorCodeEnum VerifySSToken(string ssToken);
+
+}
+
+/// &lt;summary&gt;
+///     &#x9519;&#x8BEF;&#x7801;&#x4FE1;&#x606F;&#x5B9A;&#x4E49;
+/// &lt;/summary&gt;
+public enum ErrorCodeEnum
+{
+    /// &lt;summary&gt;
+    ///     &#x6210;&#x529F;
+    /// &lt;/summary&gt;
+    Success = 0,
+
+    /// &lt;summary&gt;
+    ///     Token&#x521B;&#x5EFA;&#x5931;&#x8D25;
+    /// &lt;/summary&gt;
+    TokenCreateFailed = 1001,
+
+    /// &lt;summary&gt;
+    ///     Token&#x6821;&#x9A8C;&#x5931;&#x8D25;
+    /// &lt;/summary&gt;
+    TokenVerifyFailed = 1002,
+
+    /// &lt;summary&gt;
+    ///     Token&#x6821;&#x9A8C;&#x5931;&#x8D25;
+    /// &lt;/summary&gt;
+    TokenDecodeFailed = 1003,
+
+    /// &lt;summary&gt;
+    ///     Token&#x975E;&#x6CD5;
+    /// &lt;/summary&gt;
+    TokenInvalid = 1004,
+
+    /// &lt;summary&gt;
+    ///     Token&#x8FC7;&#x671F;
+    /// &lt;/summary&gt;
+    TokenExpired = 1005,
+
+    /// &lt;summary&gt;
+    ///     &#x672A;&#x77E5;&#x9519;&#x8BEF;
+    /// &lt;/summary&gt;
+    Undefine = 9999
+}
+</code></pre>
+<h3 id="sudmgpauthgetcode">SudMgpAuth.GetCode</h3>
+<ul>
+<li>&#x8BF4;&#x660E;</li>
+</ul>
+<pre><code class="lang-txt">&#x83B7;&#x53D6;&#x77ED;&#x671F;&#x4EE4;&#x724C;Code&#xFF0C;&#x9ED8;&#x8BA4;&#x65F6;&#x957F;2&#x5C0F;&#x65F6;
+</code></pre>
+<ul>
+<li>&#x53C2;&#x6570;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">uid</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x7528;&#x6237;id&#xFF0C;&#x9700;&#x5168;&#x5C40;&#x552F;&#x4E00;&#xFF0C;&#x4E3A;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x5B89;&#x5168;&#xFF0C;&#x53EF;&#x901A;&#x8FC7;&#x81EA;&#x5DF1;&#x7684;UID&#x54C8;&#x5E0C;&#x51FA;&#x865A;&#x62DF;UID</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>&#x8FD4;&#x56DE;&#x503C;(SudCode)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">code</td>
+<td style="text-align:left">string</td>
+<td>&#x6839;&#x636E;UID&#x751F;&#x6210;&#x7684;&#x77ED;&#x671F;&#x4EE4;&#x724C;Code</td>
+</tr>
+<tr>
+<td style="text-align:left">expireDate</td>
+<td style="text-align:left">long</td>
+<td>&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x6233;&#xFF08;&#x6BEB;&#x79D2;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sudmgpauthgetcode">SudMgpAuth.GetCode</h3>
+<ul>
+<li>&#x8BF4;&#x660E;</li>
+</ul>
+<pre><code class="lang-txt">&#x83B7;&#x53D6;&#x77ED;&#x671F;&#x4EE4;&#x724C;Code&#xFF0C;&#x81EA;&#x5B9A;&#x4E49;&#x65F6;&#x957F;
+</code></pre>
+<ul>
+<li>&#x53C2;&#x6570;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">uid</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x7528;&#x6237;id&#xFF0C;&#x9700;&#x5168;&#x5C40;&#x552F;&#x4E00;&#xFF0C;&#x4E3A;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x5B89;&#x5168;&#xFF0C;&#x53EF;&#x901A;&#x8FC7;&#x81EA;&#x5DF1;&#x7684;UID&#x54C8;&#x5E0C;&#x51FA;&#x865A;&#x62DF;UID</td>
+</tr>
+<tr>
+<td style="text-align:left">expireDuration</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">long</td>
+<td>&#x77ED;&#x671F;&#x4EE4;&#x724C;Code&#x8FC7;&#x671F;&#x65F6;&#x957F;&#xFF08;&#x6BEB;&#x79D2;&#x6570;&#xFF09;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;1&#x5C0F;&#x65F6;&#xFF1A;3600000, &#x6700;&#x77ED;&#x9650;&#x5236;&#x534A;&#x5C0F;&#x65F6;&#xFF0C;&#x5C0F;&#x4E8E;&#x534A;&#x5C0F;&#x65F6;&#x4F1A;&#x4F7F;&#x7528;&#x534A;&#x5C0F;&#x65F6;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>&#x8FD4;&#x56DE;&#x503C;(SudCode)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">code</td>
+<td style="text-align:left">string</td>
+<td>&#x6839;&#x636E;UID&#x751F;&#x6210;&#x7684;&#x77ED;&#x671F;&#x4EE4;&#x724C;Code</td>
+</tr>
+<tr>
+<td style="text-align:left">expireDate</td>
+<td style="text-align:left">long</td>
+<td>&#x77ED;&#x671F;&#x4EE4;&#x724C;Code&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x6233;&#xFF08;&#x6BEB;&#x79D2;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sudmgpauthgetsstoken">SudMgpAuth.GetSsToken</h3>
+<ul>
+<li>&#x8BF4;&#x660E;</li>
+</ul>
+<pre><code class="lang-txt">&#x901A;&#x8FC7;UID&#x83B7;&#x53D6;&#x957F;&#x671F;&#x4EE4;&#x724C;SSToken&#xFF0C;SSToken&#x4E3A;&#x5C0F;&#x6E38;&#x620F;&#x670D;&#x52A1;&#x7AEF;&#x4E0E;&#x4E1A;&#x52A1;&#x670D;&#x52A1;&#x7AEF;&#x6570;&#x636E;&#x4EA4;&#x6362;&#x7684;&#x4EE4;&#x724C;
+</code></pre>
+<ul>
+<li>&#x53C2;&#x6570;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">uid</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x7528;&#x6237;id&#xFF0C;&#x9700;&#x5168;&#x5C40;&#x552F;&#x4E00;&#xFF0C;&#x53EF;&#x901A;&#x8FC7;&#x77ED;&#x671F;&#x4EE4;&#x724C;Code&#x83B7;&#x5F97;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>&#x8FD4;&#x56DE;&#x503C;(SudSSToken)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">token</td>
+<td style="text-align:left">string</td>
+<td>&#x6839;&#x636E;UID&#x751F;&#x6210;&#x7684;&#x957F;&#x671F;&#x4EE4;&#x724C;SSToken</td>
+</tr>
+<tr>
+<td style="text-align:left">expireDate</td>
+<td style="text-align:left">long</td>
+<td>&#x957F;&#x671F;&#x4EE4;&#x724C;SSToken&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x6233;&#xFF08;&#x6BEB;&#x79D2;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sudmgpauthgetsstoken">SudMgpAuth.GetSsToken</h3>
+<ul>
+<li>&#x8BF4;&#x660E;</li>
+</ul>
+<pre><code class="lang-txt">&#x901A;&#x8FC7;UID&#x83B7;&#x53D6;&#x957F;&#x671F;&#x4EE4;&#x724C;SSToken&#xFF0C;SSToken&#x4E3A;&#x5C0F;&#x6E38;&#x620F;&#x670D;&#x52A1;&#x7AEF;&#x4E0E;&#x4E1A;&#x52A1;&#x670D;&#x52A1;&#x7AEF;&#x6570;&#x636E;&#x4EA4;&#x6362;&#x7684;&#x4EE4;&#x724C;&#xFF0C;&#x81EA;&#x5B9A;&#x4E49;&#x65F6;&#x957F;
+</code></pre>
+<ul>
+<li>&#x53C2;&#x6570;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">uid</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x7528;&#x6237;id&#xFF0C;&#x9700;&#x5168;&#x5C40;&#x552F;&#x4E00;&#xFF0C;&#x53EF;&#x901A;&#x8FC7;&#x77ED;&#x671F;&#x4EE4;&#x724C;Code&#x83B7;&#x5F97;</td>
+</tr>
+<tr>
+<td style="text-align:left">expireDuration</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">long</td>
+<td>&#x957F;&#x671F;&#x4EE4;&#x724C;SSToken&#x8FC7;&#x671F;&#x65F6;&#x957F;&#xFF08;&#x6BEB;&#x79D2;&#x6570;&#xFF09;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;1&#x5C0F;&#x65F6;&#xFF1A;3600000, &#x6700;&#x77ED;&#x9650;&#x5236;2&#x5C0F;&#x65F6;&#xFF0C;&#x5C0F;&#x4E8E;2&#x5C0F;&#x65F6;&#x4F1A;&#x4F7F;&#x7528;2&#x5C0F;&#x65F6;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>&#x8FD4;&#x56DE;&#x503C;(SudSSToken)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">token</td>
+<td style="text-align:left">string</td>
+<td>&#x6839;&#x636E;UID&#x751F;&#x6210;&#x7684;&#x957F;&#x671F;&#x4EE4;&#x724C;SSToken</td>
+</tr>
+<tr>
+<td style="text-align:left">expireDate</td>
+<td style="text-align:left">long</td>
+<td>&#x957F;&#x671F;&#x4EE4;&#x724C;SSToken&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x6233;&#xFF08;&#x6BEB;&#x79D2;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sudmgpauthgetuidbycode">SudMgpAuth.GetUidByCode</h3>
+<ul>
+<li>&#x8BF4;&#x660E;</li>
+</ul>
+<pre><code class="lang-txt">&#x901A;&#x8FC7;&#x77ED;&#x671F;&#x4EE4;&#x724C;Code&#x83B7;&#x5F97;UID
+</code></pre>
+<ul>
+<li>&#x53C2;&#x6570;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">code</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x77ED;&#x671F;&#x4EE4;&#x724C;Code</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>&#x8FD4;&#x56DE;&#x503C;(SudUid)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">uid</td>
+<td style="text-align:left">string</td>
+<td>&#x7528;&#x6237;ID&#xFF0C;&#x4ECE;&#x77ED;&#x671F;&#x4EE4;&#x724C;Code&#x4E2D;&#x83B7;&#x53D6;</td>
+</tr>
+<tr>
+<td style="text-align:left">isSuccess</td>
+<td style="text-align:left">bool</td>
+<td>&#x662F;&#x5426;&#x6210;&#x529F;</td>
+</tr>
+<tr>
+<td style="text-align:left">errorCode</td>
+<td style="text-align:left">int</td>
+<td>&#x670D;&#x52A1;&#x7AEF;sdk&#x9519;&#x8BEF;&#x7801;&#xFF0C;isSuccess&#x4E3A;false&#x65F6;&#x8FD4;&#x56DE;&#xFF0C;&#x9700;&#x900F;&#x4F20;&#x5230;&#x6E38;&#x620F;&#x670D;&#x52A1;&#x5668;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sudmgpauthgetuidbysstoken">SudMgpAuth.GetUidBySsToken</h3>
+<ul>
+<li>&#x8BF4;&#x660E;</li>
+</ul>
+<pre><code class="lang-txt">&#x901A;&#x8FC7;&#x957F;&#x671F;&#x4EE4;&#x724C;SSToken&#x83B7;&#x5F97;UID
+</code></pre>
+<ul>
+<li>&#x53C2;&#x6570;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ssToken</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x957F;&#x671F;&#x4EE4;&#x724C;SSToken</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>&#x8FD4;&#x56DE;&#x503C;(SudUid)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">uid</td>
+<td style="text-align:left">string</td>
+<td>&#x7528;&#x6237;ID&#xFF0C;&#x4ECE;&#x957F;&#x671F;&#x4EE4;&#x724C;SSToken&#x4E2D;&#x83B7;&#x53D6;</td>
+</tr>
+<tr>
+<td style="text-align:left">isSuccess</td>
+<td style="text-align:left">bool</td>
+<td>&#x662F;&#x5426;&#x6210;&#x529F;</td>
+</tr>
+<tr>
+<td style="text-align:left">errorCode</td>
+<td style="text-align:left">int</td>
+<td>&#x670D;&#x52A1;&#x7AEF;sdk&#x9519;&#x8BEF;&#x7801;&#xFF0C;isSuccess&#x4E3A;false&#x65F6;&#x8FD4;&#x56DE;&#xFF0C;&#x9700;&#x900F;&#x4F20;&#x5230;&#x6E38;&#x620F;&#x670D;&#x52A1;&#x5668;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sudmgpauthverifycode">SudMgpAuth.VerifyCode</h3>
+<ul>
+<li>&#x8BF4;&#x660E;</li>
+</ul>
+<pre><code class="lang-txt">&#x6821;&#x9A8C;&#x77ED;&#x671F;&#x4EE4;&#x724C;Code&#x6709;&#x6548;&#x6027;
+</code></pre>
+<ul>
+<li>&#x53C2;&#x6570;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">code</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x77ED;&#x671F;&#x4EE4;&#x724C;Code</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>&#x8FD4;&#x56DE;&#x503C;(ErrorCodeEnum): &#x89C1;&#x201C;&#x9519;&#x8BEF;&#x7801;&#x4FE1;&#x606F;&#x5B9A;&#x4E49;&#x201D;</li>
+</ul>
+<h3 id="sudmgpauthverifysstoken">SudMgpAuth.VerifySsToken</h3>
+<ul>
+<li>&#x8BF4;&#x660E;</li>
+</ul>
+<pre><code class="lang-txt">&#x6821;&#x9A8C;&#x957F;&#x671F;&#x4EE4;&#x724C;SSToken&#x6709;&#x6548;&#x6027;
+</code></pre>
+<ul>
+<li>&#x53C2;&#x6570;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ssToken</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x957F;&#x671F;&#x4EE4;&#x724C;SSToken</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>&#x8FD4;&#x56DE;&#x503C;(ErrorCodeEnum): &#x89C1;&#x201C;&#x9519;&#x8BEF;&#x7801;&#x4FE1;&#x606F;&#x5B9A;&#x4E49;&#x201D;</li>
+</ul>
+
+      <script>
+        var pathname = window.location.pathname
+        top.postMessage({pathname},  "*"); 
+        console.log("发送页面数据完毕")
+      </script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="SudMGPAuth-Node.html" class="navigation navigation-prev " aria-label="Previous page: Node">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../HttpsCallback/" class="navigation navigation-next " aria-label="Next page: Https服务回调">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"C# .Net","level":"2.1.2.1.4","depth":4,"next":{"title":"Https服务回调","level":"2.1.2.2","depth":3,"path":"app/Server/HttpsCallback/README.md","ref":"app/Server/HttpsCallback/README.md","articles":[{"title":"get_sstoken","level":"2.1.2.2.1","depth":4,"path":"app/Server/HttpsCallback/get_sstoken.md","ref":"app/Server/HttpsCallback/get_sstoken.md","articles":[]},{"title":"update_sstoken","level":"2.1.2.2.2","depth":4,"path":"app/Server/HttpsCallback/update_sstoken.md","ref":"app/Server/HttpsCallback/update_sstoken.md","articles":[]},{"title":"get_user_info","level":"2.1.2.2.3","depth":4,"path":"app/Server/HttpsCallback/get_user_info.md","ref":"app/Server/HttpsCallback/get_user_info.md","articles":[]},{"title":"report_game_info","level":"2.1.2.2.4","depth":4,"path":"app/Server/HttpsCallback/report_game_info.md","ref":"app/Server/HttpsCallback/report_game_info.md","articles":[]}]},"previous":{"title":"Node","level":"2.1.2.1.3","depth":4,"path":"app/Server/API/SudMGPAuth-Node.md","ref":"app/Server/API/SudMGPAuth-Node.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-CN","gitbook":"*"},"file":{"path":"app/Server/API/SudMGPAuth-DotNet.md","mtime":"2022-04-15T03:19:30.901Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-15T03:20:30.301Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
