@@ -14,9 +14,9 @@
 
     - Copy **SudMGP.aar** to the **SudMgpExample-Android/app/libs** directory, as shown in the following figure:
 
-        
 
-        ![SUD](../Resource/Client/libaar.png)
+ 
+   ![SUD](../Resource/Client/libaar.png)
 
     - Add the configurations required by the SDK to the **SudMgpExample-Android/app/build.gradle** file.
 
