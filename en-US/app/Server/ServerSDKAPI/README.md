@@ -4,9 +4,13 @@
 
 ## SDK service API
 
-- [获取游戏列表](获取游戏列表.md)
-- [获取游戏信息](获取游戏信息.md)
-- [获取游戏上报信息](获取游戏上报信息.md)
-- [分页获取房间内游戏上报信息](分页获取房间内游戏上报信息.md)
-- [获取服务端接口API配置](获取服务端接口API配置.md)
+- [Obtain the game list](Obtain the game list.md)
+
+- [Obtain game information](Obtain game information.md)
+
+- [Obtain the report information of game](Obtain the report information of game.md)
+
+- [Obtain the report information of game by page](Obtain the report information of game by page.md)
+
+- [Obtain server-end API configurations](Obtain server-end API configurations.md)
 
