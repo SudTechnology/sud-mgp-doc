@@ -1,0 +1,1390 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-CN" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>分页获取房间内游戏上报信息 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ObtainServerEndAPIConfigurations.html" />
+    
+    
+    <link rel="prev" href="ObtainTheReportInformationOfGame.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    SudMGP互动小游戏接入平台文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../Client/">
+            
+                <a href="../../Client/">
+            
+                    
+                    客户端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../Client/StartUp.html">
+            
+                <a href="../../Client/StartUp.html">
+            
+                    
+                    客户端快速接入
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../Client/StartUp-iOS.html">
+            
+                <a href="../../Client/StartUp-iOS.html">
+            
+                    
+                    iOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../Client/StartUp-Android.html">
+            
+                <a href="../../Client/StartUp-Android.html">
+            
+                    
+                    Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../Client/">
+            
+                <a href="../../Client/">
+            
+                    
+                    客户端文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../Client/API/">
+            
+                <a href="../../Client/API/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.1" data-path="../../Client/API/SudMGP.html">
+            
+                <a href="../../Client/API/SudMGP.html">
+            
+                    
+                    SudMGP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.2" data-path="../../Client/API/ISudFSTAPP.html">
+            
+                <a href="../../Client/API/ISudFSTAPP.html">
+            
+                    
+                    ISudFSTAPP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.3" data-path="../../Client/API/ISudFSMMG.html">
+            
+                <a href="../../Client/API/ISudFSMMG.html">
+            
+                    
+                    ISudFSMMG
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.3.1" data-path="../../Client/API/ISudFSMMG/onGetGameCfg.html">
+            
+                <a href="../../Client/API/ISudFSMMG/onGetGameCfg.html">
+            
+                    
+                    onGetGameCfg
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.3.2" data-path="../../Client/API/ISudFSMMG/onGetGameViewInfo.html">
+            
+                <a href="../../Client/API/ISudFSMMG/onGetGameViewInfo.html">
+            
+                    
+                    onGetGameViewInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../Client/APPFST/">
+            
+                <a href="../../Client/APPFST/">
+            
+                    
+                    APP状态转换器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1" data-path="../../Client/APPFST/CommonState.html">
+            
+                <a href="../../Client/APPFST/CommonState.html">
+            
+                    
+                    通用状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../Client/MGFSM/">
+            
+                <a href="../../Client/MGFSM/">
+            
+                    
+                    MG状态机
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="../../Client/MGFSM/CommonStateGame.html">
+            
+                <a href="../../Client/MGFSM/CommonStateGame.html">
+            
+                    
+                    通用状态-游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.2" data-path="../../Client/MGFSM/CommonStatePlayer.html">
+            
+                <a href="../../Client/MGFSM/CommonStatePlayer.html">
+            
+                    
+                    通用状态-玩家
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.3" data-path="../../Client/MGFSM/DrawGuess.html">
+            
+                <a href="../../Client/MGFSM/DrawGuess.html">
+            
+                    
+                    你画我猜
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../Client/SDK/">
+            
+                <a href="../../Client/SDK/">
+            
+                    
+                    客户端SDK下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../Client/Demo/">
+            
+                <a href="../../Client/Demo/">
+            
+                    
+                    客户端Demo下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../Client/Languages/">
+            
+                <a href="../../Client/Languages/">
+            
+                    
+                    游戏多语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../Client/ChangeLog.html">
+            
+                <a href="../../Client/ChangeLog.html">
+            
+                    
+                    更新日志(SudMGP和游戏)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    服务端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../StartUp.html">
+            
+                <a href="../StartUp.html">
+            
+                    
+                    服务端快速接入
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="../StartUp-Java.html">
+            
+                <a href="../StartUp-Java.html">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="../StartUp-Go.html">
+            
+                <a href="../StartUp-Go.html">
+            
+                    
+                    Go
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="../StartUp-Node.html">
+            
+                <a href="../StartUp-Node.html">
+            
+                    
+                    Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.4" data-path="../StartUp-Dotnet.html">
+            
+                <a href="../StartUp-Dotnet.html">
+            
+                    
+                    C# .Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    服务端文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="../API/">
+            
+                <a href="../API/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1.1" data-path="../API/SudMGPAuth-Java.html">
+            
+                <a href="../API/SudMGPAuth-Java.html">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.1.2" data-path="../API/SudMGPAuth-Go.html">
+            
+                <a href="../API/SudMGPAuth-Go.html">
+            
+                    
+                    Go
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.1.3" data-path="../API/SudMGPAuth-Node.html">
+            
+                <a href="../API/SudMGPAuth-Node.html">
+            
+                    
+                    Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.1.4" data-path="../API/SudMGPAuth-DotNet.html">
+            
+                <a href="../API/SudMGPAuth-DotNet.html">
+            
+                    
+                    C# .Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="../HttpsCallback/">
+            
+                <a href="../HttpsCallback/">
+            
+                    
+                    Https服务回调
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.2.1" data-path="../HttpsCallback/get_sstoken.html">
+            
+                <a href="../HttpsCallback/get_sstoken.html">
+            
+                    
+                    get_sstoken
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2.2" data-path="../HttpsCallback/update_sstoken.html">
+            
+                <a href="../HttpsCallback/update_sstoken.html">
+            
+                    
+                    update_sstoken
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2.3" data-path="../HttpsCallback/get_user_info.html">
+            
+                <a href="../HttpsCallback/get_user_info.html">
+            
+                    
+                    get_user_info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2.4" data-path="../HttpsCallback/report_game_info.html">
+            
+                <a href="../HttpsCallback/report_game_info.html">
+            
+                    
+                    report_game_info
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../SDK/">
+            
+                <a href="../SDK/">
+            
+                    
+                    服务端SDK下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    SDK服务API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.1" data-path="ObtainTheGameList.html">
+            
+                <a href="ObtainTheGameList.html">
+            
+                    
+                    获取游戏列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2" data-path="ObtainGameInformation.html">
+            
+                <a href="ObtainGameInformation.html">
+            
+                    
+                    获取游戏信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.3" data-path="ObtainTheReportInformationOfGame.html">
+            
+                <a href="ObtainTheReportInformationOfGame.html">
+            
+                    
+                    获取游戏上报信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.4.4" data-path="ObtainTheReportInformationOfGameByPage.html">
+            
+                <a href="ObtainTheReportInformationOfGameByPage.html">
+            
+                    
+                    分页获取房间内游戏上报信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5" data-path="ObtainServerEndAPIConfigurations.html">
+            
+                <a href="ObtainServerEndAPIConfigurations.html">
+            
+                    
+                    获取服务端接口API配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../Demo/">
+            
+                <a href="../Demo/">
+            
+                    
+                    服务端Demo下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../ErrorCode.html">
+            
+                <a href="../ErrorCode.html">
+            
+                    
+                    服务端错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../Auth/">
+            
+                <a href="../Auth/">
+            
+                    
+                    JWT鉴权
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.7.1" data-path="../Auth/Authentication.html">
+            
+                <a href="../Auth/Authentication.html">
+            
+                    
+                    鉴权
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7.2" data-path="../Auth/Data%20exchange.md">
+            
+                <span>
+            
+                    
+                    数据交换
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../Server_Change_Log.html">
+            
+                <a href="../Server_Change_Log.html">
+            
+                    
+                    服务端更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >分页获取房间内游戏上报信息</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>#</p>
+<p><img src="../../Resource/logo.png" alt="SUD"></p>
+<h2 id="&#x7B80;&#x8981;&#x63CF;&#x8FF0;">&#x7B80;&#x8981;&#x63CF;&#x8FF0;</h2>
+<ul>
+<li>&#x63A5;&#x5165;&#x670D;&#x52A1;&#x7AEF;&#x6839;&#x636E;AppId&#xFF0C;AppSecret, RoomId, PageNo, PageSize &#x5206;&#x9875;&#x83B7;&#x53D6;&#x623F;&#x95F4;&#x5185;&#x6E38;&#x620F;&#x4E0A;&#x62A5;&#x4FE1;&#x606F;</li>
+<li>&#xFF08;&#x6E38;&#x620F;&#x6570;&#x636E;&#x4FE1;&#x606F;&#x6682;&#x65F6;&#x4EC5;&#x5B58;24&#x5C0F;&#x65F6;&#x5185;&#xFF09;</li>
+</ul>
+<h2 id="&#x8BF7;&#x6C42;url">&#x8BF7;&#x6C42;URL</h2>
+<ul>
+<li>&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#xFF1A;&#x63A5;&#x53E3;&#x5730;&#x5740;&#x8BE6;&#x89C1;<a href="Obtain%20server-end%20API%20configurations.md">&#x83B7;&#x53D6;&#x670D;&#x52A1;&#x7AEF;API&#x914D;&#x7F6E;</a>&#x4E2D;get_game_report_info_page&#x5B57;&#x6BB5;</li>
+<li>&#x751F;&#x4EA7;&#x73AF;&#x5883;&#xFF1A;&#x63A5;&#x53E3;&#x5730;&#x5740;&#x8BE6;&#x89C1;<a href="Obtain%20server-end%20API%20configurations.md">&#x83B7;&#x53D6;&#x670D;&#x52A1;&#x7AEF;API&#x914D;&#x7F6E;</a>&#x4E2D;get_game_report_info_page&#x5B57;&#x6BB5;</li>
+</ul>
+<h2 id="&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;">&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;</h2>
+<ul>
+<li>https</li>
+<li>POST</li>
+<li>&#x53C2;&#x6570;&#x4E3A;Json&#x683C;&#x5F0F;&#xFF0C;&#x653E;&#x5728;body&#x5185;</li>
+<li>Header&#x4E2D;&#x9700;&#x8981;&#x6DFB;&#x52A0;&#xFF1A;Content-Type: application/json</li>
+</ul>
+<h2 id="&#x8BF7;&#x6C42;&#x53C2;&#x6570;">&#x8BF7;&#x6C42;&#x53C2;&#x6570;</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">app_id</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>app_id</td>
+</tr>
+<tr>
+<td style="text-align:left">app_secret</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>app_secret</td>
+</tr>
+<tr>
+<td style="text-align:left">room_id</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x623F;&#x95F4;ID</td>
+</tr>
+<tr>
+<td style="text-align:left">page_no</td>
+<td style="text-align:left">&#x5426;</td>
+<td style="text-align:left">int32</td>
+<td>&#x9875;&#x7801;&#xFF08;&#x9ED8;&#x8BA4;&#x503C;: 0&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">page_size</td>
+<td style="text-align:left">&#x5426;</td>
+<td style="text-align:left">int32</td>
+<td>&#x9875;&#x6570;&#xFF08;&#x9ED8;&#x8BA4;&#x503C;: 5, &#x6700;&#x5927;&#x503C;: 10&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x8BF7;&#x6C42;&#x793A;&#x4F8B;">&#x8BF7;&#x6C42;&#x793A;&#x4F8B;</h2>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;app_id&quot;</span>: <span class="hljs-string">&quot;1461564080052506636&quot;</span>,
+  <span class="hljs-string">&quot;app_secret&quot;</span>: <span class="hljs-string">&quot;xJL0HU9ailVSGInqPyNK3Ev3qNHReRbR&quot;</span>,
+  <span class="hljs-string">&quot;room_id&quot;</span>: <span class="hljs-string">&quot;9009&quot;</span>,
+  <span class="hljs-string">&quot;page_no&quot;</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-string">&quot;page_size&quot;</span>: <span class="hljs-number">10</span>
+}
+</code></pre>
+<h2 id="&#x8FD4;&#x56DE;&#x53C2;&#x6570;">&#x8FD4;&#x56DE;&#x53C2;&#x6570;</h2>
+<ul>
+<li>BaseResp</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ret_code</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">int</td>
+<td>&#x54CD;&#x5E94;&#x7801;</td>
+</tr>
+<tr>
+<td style="text-align:left">ret_msg</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x54CD;&#x5E94;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td style="text-align:left">data</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">List&lt; GameReportInfo &gt;</td>
+<td>&#x54CD;&#x5E94;&#x6570;&#x636E;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>GameReportInfo</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">game_round_id</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x6E38;&#x620F;&#x5C40;ID</td>
+</tr>
+<tr>
+<td style="text-align:left">report_info</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">map</td>
+<td>&#x4E0A;&#x62A5;&#x4FE1;&#x606F;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>report_info &#x952E;&#x503C;&#x5BF9;&#x5E94;&#x8868;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x952E;&#x540D;</th>
+<th style="text-align:left">&#x503C;&#x7C7B;&#x578B;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">game_start</td>
+<td style="text-align:left">game_start_object</td>
+<td style="text-align:left">&#x6218;&#x6597;&#x5F00;&#x59CB;&#x901A;&#x77E5;</td>
+</tr>
+<tr>
+<td style="text-align:left">game_settle</td>
+<td style="text-align:left">game_settle_object</td>
+<td style="text-align:left">&#x6218;&#x6597;&#x7ED3;&#x7B97;&#x901A;&#x77E5;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>game_start_object</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">mg_id</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">int64</td>
+<td>&#x6E38;&#x620F;id</td>
+</tr>
+<tr>
+<td style="text-align:left">mg_id_str</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x5C0F;&#x6E38;&#x620F;id&#x6570;&#x503C;&#x578B;&#x517C;&#x5BB9;&#x5B57;&#x6BB5;&#xFF08;nodejs&#x670D;&#x52A1;&#x8BF7;&#x4F7F;&#x7528;&#x5F53;&#x524D;&#x5B57;&#x6BB5;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">room_id</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x63A5;&#x5165;&#x65B9;&#x623F;&#x95F4;id</td>
+</tr>
+<tr>
+<td style="text-align:left">game_mode</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">int32</td>
+<td>&#x6E38;&#x620F;&#x6A21;&#x5F0F;</td>
+</tr>
+<tr>
+<td style="text-align:left">game_round_id</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x672C;&#x5C40;&#x6E38;&#x620F;&#x7684;id &#xFF08;&#x91CD;&#x590D;&#x4E0A;&#x62A5;&#xFF0C;&#x4F7F;&#x7528;&#x8BE5;&#x5B57;&#x6BB5;&#x53BB;&#x91CD;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">battle_start_at</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">int32</td>
+<td>&#x6218;&#x6597;&#x5F00;&#x59CB;&#x65F6;&#x95F4;&#xFF08;&#x79D2;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">players</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">player_object</td>
+<td>player_object &#x6570;&#x7EC4;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>player_object</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">uid</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x63A5;&#x5165;&#x65B9;uid&#xFF0C;&#x673A;&#x5668;&#x4EBA;&#x4E3A;&#x7A7A;&#x5B57;&#x7B26;</td>
+</tr>
+<tr>
+<td style="text-align:left">is_ai</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">int32</td>
+<td>0:&#x666E;&#x901A;&#x7528;&#x6237;&#xFF0C;1:&#x673A;&#x5668;&#x4EBA;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>game_settle_object</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">mg_id</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">int64</td>
+<td>&#x6E38;&#x620F;id</td>
+</tr>
+<tr>
+<td style="text-align:left">mg_id_str</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x5C0F;&#x6E38;&#x620F;id&#x6570;&#x503C;&#x578B;&#x517C;&#x5BB9;&#x5B57;&#x6BB5;&#xFF08;nodejs&#x670D;&#x52A1;&#x8BF7;&#x4F7F;&#x7528;&#x5F53;&#x524D;&#x5B57;&#x6BB5;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">room_id</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x63A5;&#x5165;&#x65B9;&#x623F;&#x95F4;id</td>
+</tr>
+<tr>
+<td style="text-align:left">game_mode</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">int32</td>
+<td>&#x6E38;&#x620F;&#x6A21;&#x5F0F;</td>
+</tr>
+<tr>
+<td style="text-align:left">game_round_id</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x672C;&#x5C40;&#x6E38;&#x620F;&#x7684;id &#xFF08;&#x91CD;&#x590D;&#x4E0A;&#x62A5;&#xFF0C;&#x4F7F;&#x7528;&#x8BE5;&#x5B57;&#x6BB5;&#x53BB;&#x91CD;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">battle_start_at</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">int32</td>
+<td>&#x6218;&#x6597;&#x5F00;&#x59CB;&#x65F6;&#x95F4;&#xFF08;&#x79D2;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">battle_end_at</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">int32</td>
+<td>&#x6218;&#x6597;&#x7ED3;&#x675F;&#x65F6;&#x95F4;&#xFF08;&#x79D2;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">battle_duration</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">int32</td>
+<td>&#x6218;&#x6597;&#x603B;&#x65F6;&#x95F4;&#xFF08;&#x79D2;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">results</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">player_result_object</td>
+<td>player_result_object &#x6570;&#x7EC4;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>player_result_object</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">uid</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x63A5;&#x5165;&#x65B9;uid&#xFF0C;&#x673A;&#x5668;&#x4EBA;&#x4E3A;&#x7A7A;&#x5B57;&#x7B26;</td>
+</tr>
+<tr>
+<td style="text-align:left">rank</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">int32</td>
+<td>&#x6392;&#x540D;&#x4ECE;1&#x5F00;&#x59CB;&#xFF0C;&#x5E73;&#x5C40;&#x6392;&#x540D;&#x76F8;&#x540C;</td>
+</tr>
+<tr>
+<td style="text-align:left">is_escaped</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">int32</td>
+<td>0:&#x6B63;&#x5E38;&#xFF0C;1:&#x9003;&#x8DD1;</td>
+</tr>
+<tr>
+<td style="text-align:left">is_ai</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">int32</td>
+<td>0:&#x666E;&#x901A;&#x7528;&#x6237;&#xFF0C;1:&#x673A;&#x5668;&#x4EBA;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x8FD4;&#x56DE;&#x793A;&#x4F8B;">&#x8FD4;&#x56DE;&#x793A;&#x4F8B;</h2>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;ret_code&quot;</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-string">&quot;ret_msg&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+  <span class="hljs-string">&quot;data&quot;</span>: [
+    {
+      <span class="hljs-string">&quot;game_round_id&quot;</span>: <span class="hljs-string">&quot;ce56b6lzi1a7-cqhuiaj1wlh6-cpgxupfcpbrg&quot;</span>,
+      <span class="hljs-string">&quot;report_info&quot;</span>: {
+        <span class="hljs-string">&quot;game_start&quot;</span>: {
+          <span class="hljs-string">&quot;mg_id&quot;</span>: <span class="hljs-number">1472142559912517631</span>,
+          <span class="hljs-string">&quot;room_id&quot;</span>: <span class="hljs-string">&quot;9009&quot;</span>,
+          <span class="hljs-string">&quot;mg_id_str&quot;</span>: <span class="hljs-string">&quot;1472142559912517633&quot;</span>,
+          <span class="hljs-string">&quot;players&quot;</span>: [
+            {
+              <span class="hljs-string">&quot;is_ai&quot;</span>: <span class="hljs-number">0</span>,
+              <span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;515b8e0b&quot;</span>
+            },
+            {
+              <span class="hljs-string">&quot;is_ai&quot;</span>: <span class="hljs-number">0</span>,
+              <span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;09d032dd&quot;</span>
+            }
+          ],
+          <span class="hljs-string">&quot;game_mode&quot;</span>: <span class="hljs-number">1</span>,
+          <span class="hljs-string">&quot;game_round_id&quot;</span>: <span class="hljs-string">&quot;ce56b6lzi1a7-cqhuiaj1wlh6-cpgxupfcpbrg&quot;</span>,
+          <span class="hljs-string">&quot;battle_start_at&quot;</span>: <span class="hljs-number">1642500300</span>
+        }
+      }
+    },
+    {
+      <span class="hljs-string">&quot;game_round_id&quot;</span>: <span class="hljs-string">&quot;ce56b6lzi1a7-cqhuiaj1wlh6-cpgxupfcpbrf&quot;</span>,
+      <span class="hljs-string">&quot;report_info&quot;</span>: {
+        <span class="hljs-string">&quot;game_start&quot;</span>: {
+          <span class="hljs-string">&quot;mg_id&quot;</span>: <span class="hljs-number">1472142559912517631</span>,
+          <span class="hljs-string">&quot;room_id&quot;</span>: <span class="hljs-string">&quot;9009&quot;</span>,
+          <span class="hljs-string">&quot;mg_id_str&quot;</span>: <span class="hljs-string">&quot;1472142559912517633&quot;</span>,
+          <span class="hljs-string">&quot;players&quot;</span>: [
+            {
+              <span class="hljs-string">&quot;is_ai&quot;</span>: <span class="hljs-number">0</span>,
+              <span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;515b8e0b&quot;</span>
+            },
+            {
+              <span class="hljs-string">&quot;is_ai&quot;</span>: <span class="hljs-number">0</span>,
+              <span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;09d032dd&quot;</span>
+            }
+          ],
+          <span class="hljs-string">&quot;game_mode&quot;</span>: <span class="hljs-number">1</span>,
+          <span class="hljs-string">&quot;game_round_id&quot;</span>: <span class="hljs-string">&quot;ce56b6lzi1a7-cqhuiaj1wlh6-cpgxupfcpbrf&quot;</span>,
+          <span class="hljs-string">&quot;battle_start_at&quot;</span>: <span class="hljs-number">1642500300</span>
+        }
+      }
+    }
+  ]
+}
+</code></pre>
+
+      <script>
+        var pathname = window.location.pathname
+        top.postMessage({pathname},  "*"); 
+        console.log("发送页面数据完毕")
+      </script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ObtainTheReportInformationOfGame.html" class="navigation navigation-prev " aria-label="Previous page: 获取游戏上报信息">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ObtainServerEndAPIConfigurations.html" class="navigation navigation-next " aria-label="Next page: 获取服务端接口API配置">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"分页获取房间内游戏上报信息","level":"2.1.4.4","depth":3,"next":{"title":"获取服务端接口API配置","level":"2.1.4.5","depth":3,"path":"app/Server/ServerSDKAPI/ObtainServerEndAPIConfigurations.md","ref":"app/Server/ServerSDKAPI/ObtainServerEndAPIConfigurations.md","articles":[]},"previous":{"title":"获取游戏上报信息","level":"2.1.4.3","depth":3,"path":"app/Server/ServerSDKAPI/ObtainTheReportInformationOfGame.md","ref":"app/Server/ServerSDKAPI/ObtainTheReportInformationOfGame.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-CN","gitbook":"*"},"file":{"path":"app/Server/ServerSDKAPI/ObtainTheReportInformationOfGameByPage.md","mtime":"2022-04-15T10:23:59.169Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-18T07:22:38.940Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
