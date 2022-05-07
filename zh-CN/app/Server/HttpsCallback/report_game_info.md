@@ -24,8 +24,8 @@
 |:----|:---|:-----|-----|
 |report_type |是  |string |上报类型  |
 |report_msg |是  |object |上报数据对象  |
-|uid |是  |string |接入方队长用户id （鉴权使用）  |
-|ss_token  |是  |string |接入方队长用户ss_token （鉴权使用）   |
+|uid |是  |string |接入方队长用户id （鉴权使用） ，请求get_user_info 接口返回uid参数 |
+|ss_token  |是  |string |接入方队长用户ss_token （鉴权使用），请求get_sstoken 接口返回ss_token参数  |
 
 ##### report_type 参数对应表
 
