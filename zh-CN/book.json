@@ -1,3 +1,4 @@
 {
-  "plugins": ["page"]
+  "plugins": ["page"],
+  "language" : "zh-hans"
 }
