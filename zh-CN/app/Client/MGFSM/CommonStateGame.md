@@ -572,3 +572,26 @@ mg_common_self_headphone
 ```
 游戏通知app耳机（听筒，喇叭）状态
 ```
+
+### 20. App通用状态操作错误码（2022-05-10新增）
+
+- state
+
+```
+mg_common_app_self_x_resp_error_code
+```
+
+- data
+
+```json
+{
+  "state": "app_common_self_playing",   // App通用状态
+  "errorCode": 0	// 
+}
+```
+
+- 说明
+
+```
+App通用状态操作接
+```
