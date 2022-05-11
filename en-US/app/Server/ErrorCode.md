@@ -102,3 +102,38 @@
 |105106 | **get_user_info** agency error. | The game agency server needs to check the data. |
 | 105107 | **update_sstoken sdk** agency error. The returned HTTP state code is not **200**. | The game agency server needs to check the data. |
 | 105108 | **update_sstoken** agency error. | The game agency server needs to check the data. |
+
+### Game business error codes
+| Error code | Error information | Remarks |
+|----|----|-----------------------------------------------|
+| 0 | Success. ||
+| 100100 | Login Error ||
+| 100200 | Join room error |state=app_common_self_in, isIn=true|
+| 100201 | Room cannot be added during battle| |
+| 100202 | Room is full| |
+| 100203 | Repeat Join | |
+| 100204 | Someone at the location | |
+| 100300 | Exit error | |
+| 100301 | Not in game slot | |
+| 100302 | Can't exit in ready or game state | |
+| 100400 | Preparation error | |
+| 100401 | Cancel preparation error | |
+| 100500 | Start game error | |
+| 100501 | Game Started | |
+| 100502 | Only the captain can start the game| |
+| 100503 | Someone is not ready | |
+| 100504 | Not enough people to start the game | |
+| 100600 | Kick error | |
+| 100601 | Captains can kick people | |
+| 100602 | Can't kick people in the battle room | |
+| 100603 | Can't kick myself| |
+| 100700 | Change captain error | |
+| 100800 | Escape Error | |
+| 100801 | The game is over when you escape| |
+| 100802 | The player is no longer in the game when fleeing | |
+| 100900 | Dissolution error | |
+| 100901 | The game is over when disbanding| |
+| 100902 | The captain can be disbanded| |
+| 101000 | Switch game mode error | |
+| 101001 | The game mode cannot be switched during the game | |
+| 101002 | Only the captain can switch the game mode | |

@@ -585,8 +585,8 @@ mg_common_app_common_self_x_resp
 
 ```json
 {
-  "state": "app_common_self_playing",   // 字段必填,App通用状态
-  "resultCode": 0,	// 字段必填，参考 https://docs.sud.tech/zh-CN/app/Server/ErrorCode.html
+  "state": "app_common_self_playing",   // 字段必填, 参考：游戏业务错误 https://docs.sud.tech/zh-CN/app/Client/APPFST/CommonState.html
+  "resultCode": 0,	// 字段必填，参考：游戏业务错误 https://docs.sud.tech/zh-CN/app/Server/ErrorCode.html
   "isIn": true, // 当state=app_common_self_in时，字段必填
   "isReady": true, // 当state=app_common_self_ready时，字段必填
   "isPlaying": true, // 当state=app_common_self_playing时，字段必填

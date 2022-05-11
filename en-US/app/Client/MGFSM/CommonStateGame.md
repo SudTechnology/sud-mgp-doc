@@ -552,7 +552,7 @@ mg_common_self_microphone
 Indicates that the game notifies the app of the microphone state.
 ```
 
-### 19. Headset (receiver and speaker) (added on March 4, 2022)
+### 19. Headphone (receiver and speaker) (added on March 4, 2022)
 
 - state
 
@@ -564,7 +564,7 @@ mg_common_self_headphone
 
 ```json
 {
-	"isOn": true	// Headset state (receiver and speaker). Valid values: true: the headset is turned on, and the app enables RTC stream push; false: the headset is turned off, and the app disables RTC stream push.
+	"isOn": true	// Headphone state (receiver and speaker). Valid values: true: the headset is turned on, and the app enables RTC stream push; false: the headset is turned off, and the app disables RTC stream push.
 }
 ```
 
@@ -572,4 +572,33 @@ mg_common_self_headphone
 
 ```
 Indicates that the game notifies the app of the headset state (receiver and speaker).
+```
+
+### 20. app_common_self_x response error code（added on May 10, 2022）
+
+- state
+
+```
+mg_common_app_common_self_x_resp
+```
+
+- data
+
+```json
+{
+  "state": "app_common_self_playing",   // Field required, refer to: https://docs.sud.tech/zh-CN/app/Client/APPFST/CommonState.html
+  "resultCode": 0,	// Field required，refer to: https://docs.sud.tech/zh-CN/app/Server/ErrorCode.html
+  "isIn": true, // When state=app_common_self_in, the field is required
+  "isReady": true, // When state=app_common_self_ready, the field is required
+  "isPlaying": true, // When state=app_common_self_playing, the field is required
+  "reportGameInfoExtras": "", // When state=app_common_self_playing, the field is required
+  "curCaptainUID": "", // When state=app_common_self_captain, the field is required
+  "kickedUID": "" //When state=app_common_self_kick, the field is required
+}
+```
+
+- Description
+
+```
+App Common state operation error result callback state (Note: only the resultCode != 0 is called back)
 ```
