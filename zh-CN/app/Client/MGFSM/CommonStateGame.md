@@ -573,25 +573,31 @@ mg_common_self_headphone
 游戏通知app耳机（听筒，喇叭）状态
 ```
 
-### 20. App通用状态操作错误码（2022-05-10新增）
+### 20. App通用状态操作结果错误码（2022-05-10新增）
 
 - state
 
 ```
-mg_common_app_self_x_resp_error_code
+mg_common_app_common_self_x_resp
 ```
 
 - data
 
 ```json
 {
-  "state": "app_common_self_playing",   // App通用状态
-  "errorCode": 0	// 
+  "resultCode": 0,	// 必填参数，参考 https://docs.sud.tech/zh-CN/app/Server/ErrorCode.html
+  "state": "app_common_self_playing",   // 字段必填,App通用状态
+  "isIn": true, // 当state=app_common_self_in时，字段必填
+  "isReady": true, // 当state=app_common_self_ready时，字段必填
+  "isPlaying": true, // 当state=app_common_self_playing时，字段必填
+  "reportGameInfoExtras": "", // 当state=app_common_self_playing时，字段必填
+  "curCaptainUID": "", // 当state=app_common_self_captain时，字段必填
+  "kickedUID": "" // 当state=app_common_self_kick时，字段必填
 }
 ```
 
 - 说明
 
 ```
-App通用状态操作接
+App通用状态操作错误结果回调状态（注：只回调错误结果）
 ```

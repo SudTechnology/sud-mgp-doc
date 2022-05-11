@@ -239,7 +239,7 @@ app_common_self_seat
 每次变更（上麦/下麦/移麦）通知一次；
 ```
 
-### 9. 麦克风状态
+### 9. 麦克风状态（depreated 已废弃v1.1.30.xx）
 
 - state
 
