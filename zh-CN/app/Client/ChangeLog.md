@@ -1,5 +1,110 @@
 # SudMGP和游戏 更新日志
 
+## v1.1.52.xx (2022-05-16)
+**Android:**
+- [SudMGP-Android-v1.1.52.545（dynamic SDK）](https://github.com/SudTechnology/sud-mgp-android/releases)
+- [SudMGP-Android-v1.1.52.545-static（static SDK）](https://github.com/SudTechnology/sud-mgp-android/releases)
+- [HelloSud-Android-v1.1.52.545](https://github.com/SudTechnology/hello-sud-android/releases)
+
+**iOS:**
+- [SudMGP-iOS-v1.1.52.514](https://github.com/SudTechnology/sud-mgp-ios/releases)
+- [HelloSud-iOS-v1.1.52.514](https://github.com/SudTechnology/hello-sud-ios/releases)
+
+**新增功能:**
+- ISudFSMMG新增loadMG的进度回调void onGameLoadingProgress(int stage, int retCode, int progress);
+- APP自定义游戏加载进度展示，相关接口1.SudMGP.getCfg().setShowCustomLoading(true) 2.ISudFSMMG::onGameLoadingProgress 3.失败重试ISudFSTAPP::reloadMG；
+- SudMGP新增setReportStatsEventListener接口；
+- Android新增静态SDK，针对Google Play上架审核政策，目前动态SDK Google Play上架是可以的；
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 中文改成英文；
+
+**Bug修复:**
+- Android修复调用destroyMG时，偶现ANR问题（老版本SDK不用替换，SDK会动态更新，新版本的游戏运行时引擎）；
+
+## v1.1.51.xx (2022-04-09)
+**Android:**
+- [SudMGP-Android-v1.1.51.485](https://github.com/SudTechnology/sud-mgp-android/releases)
+- [HelloSud-Android-v1.1.47.437](https://github.com/SudTechnology/hello-sud-android/releases)
+
+**新增功能:**
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 无；
+
+**Bug修复:**
+- Android修复路径兼容问题；
+
+## v1.1.50.xx (2022-04-01)
+**Android:**
+- [SudMGP-Android-v1.1.50.475](https://github.com/SudTechnology/sud-mgp-android/releases)
+- [HelloSud-Android-v1.1.47.437](https://github.com/SudTechnology/hello-sud-android/releases)
+
+**iOS:**
+- [SudMGP-iOS-v1.1.50.475](https://github.com/SudTechnology/sud-mgp-ios/releases)
+- [HelloSud-iOS-v1.1.47.437](https://github.com/SudTechnology/hello-sud-ios/releases)
+
+**新增功能:**
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 无；
+
+**Bug修复:**
+- Android修复游戏运行时引擎，子view和父view宽度不一致问题；
+- iOS修复游戏运行时引擎，子view和父view宽度不一致问题；
+
+## v1.1.49.xx (2022-03-10)
+**Android:**
+- [SudMGP-Android-v1.1.49.467](https://github.com/SudTechnology/sud-mgp-android/releases)
+- [HelloSud-Android-v1.1.47.437](https://github.com/SudTechnology/hello-sud-android/releases)
+
+**iOS:**
+- [SudMGP-iOS-v1.1.49.451](https://github.com/SudTechnology/sud-mgp-ios/releases)
+- [HelloSud-iOS-v1.1.47.437](https://github.com/SudTechnology/hello-sud-ios/releases)
+
+**新增功能:**
+- SDK增加透传参数的能力，部分新功能上线，APP不需要更新SDK；
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 无；
+
+**Bug修复:**
+- iOS修复进度条10%不隐藏偶现的体验问题；
+
+
+## v1.1.47.xx (2022-03-03)
+**Android:**
+- [SudMGP-Android-v1.1.47.449](https://github.com/SudTechnology/sud-mgp-android/releases)
+- [HelloSud-Android-v1.1.47.437](https://github.com/SudTechnology/hello-sud-android/releases)
+
+**iOS:**
+- [SudMGP-iOS-v1.1.47.437](https://github.com/SudTechnology/sud-mgp-ios/releases)
+- [HelloSud-iOS-v1.1.47.437](https://github.com/SudTechnology/hello-sud-ios/releases)
+
+**新增功能:**
+- 支持阿语、波斯语，RTL显示；
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 无；
+
+**Bug修复:**
+- 无；
+
 ## v1.1.46.xx (2022-03-02)
 **Android:**
 - [SudMGP-Android-v1.1.46.449](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.46.449)

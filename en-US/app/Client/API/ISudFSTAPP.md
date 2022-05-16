@@ -79,6 +79,11 @@ public interface ISudFSTAPP {
      * The dataLength parameter must be a valid data length, otherwise the accuracy will be affected.
      */
     void pushAudio(ByteBuffer data, int dataLength);
+
+    /**
+     * Game failed to load, reload
+     */
+    void reloadMG();
 }
 ```
 
@@ -129,4 +134,6 @@ The length of audio slices must be integers that can be divided evenly by 100. F
 - (void)pushAudio:(NSData *)data;
 @end
 
+/// Game failed to load, reload
+- (void)reloadMG;
 ```

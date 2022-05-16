@@ -79,6 +79,11 @@ public interface ISudFSTAPP {
      * dataLength一定要是有效数据长度，否则精确性有影响
      */
     void pushAudio(ByteBuffer data, int dataLength);
+    
+    /**
+     * 游戏加载失败，重新加载
+     */
+    void reloadMG();
 }
 ```
 
@@ -127,6 +132,9 @@ public interface ISudFSTAPP {
 /// 100ms必须是音频切片长度的整数倍。切片长度可以是：10ms, 20ms, 50ms, 100ms
 /// @param data pcm数据
 - (void)pushAudio:(NSData *)data;
+
+/// 游戏加载失败，重新加载
+- (void)reloadMG;
 @end
 
 ```

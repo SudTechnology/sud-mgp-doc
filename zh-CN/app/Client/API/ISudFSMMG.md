@@ -17,7 +17,16 @@ public interface ISudFSMMG {
     void onGameLog(String dataJson);
 
     /**
-     * 游戏开始
+     * 游戏加载进度(loadMG)
+     * @param stage 阶段：start=1,loading=2,end=3
+     * @param retCode 错误码：0成功
+     * @param progress 进度：[0, 100]
+     * 最低版本：v1.1.52.xx
+     */
+    void onGameLoadingProgress(int stage, int retCode, int progress);
+  
+    /**
+     * 游戏开始（游戏长连接建立完成）
      * 最低版本：v1.1.30.xx
      */
     void onGameStarted();

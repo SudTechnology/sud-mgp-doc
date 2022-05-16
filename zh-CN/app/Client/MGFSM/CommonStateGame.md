@@ -600,4 +600,5 @@ mg_common_app_common_self_x_resp
 
 ```
 App通用状态操作错误结果回调状态（注：只回调错误结果）
+目前只支持app_common_self_playing
 ```

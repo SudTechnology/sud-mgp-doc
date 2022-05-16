@@ -17,6 +17,15 @@ public interface ISudFSMMG {
     void onGameLog(String dataJson);
 
     /**
+     * Game loading progress (loadMG)
+     * @param stage stage: start=1,loading=2,end=3
+     * @param retCode Error code: 0 success
+     * @param progress progress: [0, 100]
+     * Minimum version: v1.1.52.xx
+     */
+    void onGameLoadingProgress(int stage, int retCode, int progress);
+  
+    /**
      * Start game.
      * Earliest version: V1.1.30.xx.
      */

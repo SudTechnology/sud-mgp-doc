@@ -13,6 +13,14 @@ public class SudMGP {
     public static String getVersion();
 
     /**
+     * 获取SDK版本别名
+     * @return 示例:"v1.1.35.286-et"
+     */
+    public static String getVersionAlias() {
+        return Version.kVersionAlias;
+    }
+
+    /**
      * 获取配置 最低支持版本v1.1.46.449
      * @return ISudCfg
      */
@@ -60,6 +68,19 @@ public class SudMGP {
      */
     public static boolean destroyMG(ISudFSTAPP fstApp);
 
+    /**
+     * 设置统计上报userId
+     * @param userId
+     */
+    public static void setUserId(String userId);
+
+    /**
+     * 设置统计上报回调，回调在UI/Main线程
+     * @param listener
+     * @return
+     */
+    public static boolean setReportStatsEventListener(ISudListenerReportStatsEvent listener);
+        
     /**
      * 设置日志等级
      * @param logLevel
@@ -142,6 +163,19 @@ public class SudMGP {
  * @return boolean
  */
 + (bool)destroyMG:(id<ISudFSTAPP>_Nonnull) fstAPP;
+
+/**
+ * 设置统计上报userId
+ * @param userId
+ */
++ (void)setUserId:(NSString*)userId;
+
+/**
+ * 设置统计上报回调，回调在UI/Main线程
+ * @param listener 回调
+ * @return
+ */
++ (bool)setReportStatsEventListener:(ISudListenerReportStatsEvent)listener;
 
 /**
  * 设置日志等级

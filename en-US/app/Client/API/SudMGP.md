@@ -13,8 +13,16 @@ public class SudMGP {
     public static String getVersion();
 
     /**
-     * Obtain the configuration. Earliest version: V1.1.46.449
+     * Get SDK version alias
+     * @return Example: "v1.1.52.xx-et"
+     * Minimum version: v1.1.52.xx
+     */
+    public static String getVersionAlias();
+
+    /**
+     * Obtain the configuration.
      * @return ISudCfg
+     * Minimum version: V1.1.46.xx
      */
     public static ISudCfg getCfg();
     
@@ -61,6 +69,19 @@ public class SudMGP {
     public static boolean destroyMG(ISudFSTAPP fstApp);
 
     /**
+     * Set statistics reporting userId
+     * @param userId
+     */
+    public static void setUserId(String userId);
+
+    /**
+     * Set statistics reporting callback on UI or Main Thread
+     * @param listener
+     * @return
+     */
+    public static boolean setReportStatsEventListener(ISudListenerReportStatsEvent listener);
+    
+    /**
      * Set log level.
      * @param logLevel
      */
@@ -85,6 +106,12 @@ public class SudMGP {
  * @return Example: "1.1.35.286"
  */
 + (NSString*_Nonnull)getVersion;
+
+/**
+ * 获取SDK版本别名
+ * @return 示例:"v1.1.35.286-et"
+ */
++ (NSString*_Nonnull)getVersionAlias;
 
 /**
  * Obtain the configuration. Earliest version: V1.1.46.449
@@ -142,6 +169,19 @@ public class SudMGP {
  * @return boolean
  */
 + (bool)destroyMG:(id<ISudFSTAPP>_Nonnull) fstAPP;
+
+/**
+  * Set statistics reporting userId
+  * @param userId
+  */
++ (void)setUserId:(NSString*)userId;
+
+/**
+  * Set statistics reporting callback on UI or Main Thread
+  * @param listener callback
+  * @return
+  */
++ (bool)setReportStatsEventListener:(ISudListenerReportStatsEvent)listener;
 
 /**
  * Set log level.

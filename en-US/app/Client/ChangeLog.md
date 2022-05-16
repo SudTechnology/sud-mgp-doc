@@ -1,5 +1,85 @@
 # SudMGP和游戏 更新日志
 
+## v1.1.51.xx (2022-04-09)
+**Android:**
+- [SudMGP-Android-v1.1.51.485](https://github.com/SudTechnology/sud-mgp-android/releases)
+- [HelloSud-Android-v1.1.47.437](https://github.com/SudTechnology/hello-sud-android/releases)
+
+**新增功能:**
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 无；
+
+**Bug修复:**
+- Android修复路径兼容问题；
+
+## v1.1.50.xx (2022-04-01)
+**Android:**
+- [SudMGP-Android-v1.1.50.475](https://github.com/SudTechnology/sud-mgp-android/releases)
+- [HelloSud-Android-v1.1.47.437](https://github.com/SudTechnology/hello-sud-android/releases)
+
+**iOS:**
+- [SudMGP-iOS-v1.1.50.475](https://github.com/SudTechnology/sud-mgp-ios/releases)
+- [HelloSud-iOS-v1.1.47.437](https://github.com/SudTechnology/hello-sud-ios/releases)
+
+**新增功能:**
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 无；
+
+**Bug修复:**
+- Android修复游戏运行时引擎，子view和父view宽度不一致问题；
+- iOS修复游戏运行时引擎，子view和父view宽度不一致问题；
+
+## v1.1.49.xx (2022-03-10)
+**Android:**
+- [SudMGP-Android-v1.1.49.467](https://github.com/SudTechnology/sud-mgp-android/releases)
+- [HelloSud-Android-v1.1.47.437](https://github.com/SudTechnology/hello-sud-android/releases)
+
+**iOS:**
+- [SudMGP-iOS-v1.1.49.451](https://github.com/SudTechnology/sud-mgp-ios/releases)
+- [HelloSud-iOS-v1.1.47.437](https://github.com/SudTechnology/hello-sud-ios/releases)
+
+**新增功能:**
+- SDK增加透传参数的能力，部分新功能上线，APP不需要更新SDK；
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 无；
+
+**Bug修复:**
+- iOS修复进度条10%不隐藏偶现的体验问题；
+
+
+## v1.1.47.xx (2022-03-03)
+**Android:**
+- [SudMGP-Android-v1.1.47.449](https://github.com/SudTechnology/sud-mgp-android/releases)
+- [HelloSud-Android-v1.1.47.437](https://github.com/SudTechnology/hello-sud-android/releases)
+
+**iOS:**
+- [SudMGP-iOS-v1.1.47.437](https://github.com/SudTechnology/sud-mgp-ios/releases)
+- [HelloSud-iOS-v1.1.47.437](https://github.com/SudTechnology/hello-sud-ios/releases)
+
+**新增功能:**
+- 支持阿语、波斯语，RTL显示；
+
+**修改功能:**
+- 无
+
+**优化内容:**
+- 无；
+
+**Bug修复:**
+- 无；
+
 ## v1.1.46.xx (2022-03-02)
 **Android:**
 - [SudMGP-Android-v1.1.46.449](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.46.449)
@@ -176,7 +256,7 @@
 ## v1.1.37.xx (2022-01-08)
 **Android:**
 - 无
-**iOS:**
+  **iOS:**
 - [SudMGP-iOS-v1.1.37.331](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.37.331)
 - [HelloSud-iOS-v1.1.35.311](https://github.com/SudTechnology/hello-sud-ios/releases)
 
@@ -278,7 +358,7 @@
 - 优化断线重连状态通知的完整性和一致性；
 - 优化排名算法，相同积分则相同排名；
 - 优化段位升级算法，不再扣除奖杯；
-- 优化调整分享按钮位置； 
+- 优化调整分享按钮位置；
 - 优化游戏位的默认头像；
 
 **Bug修复:**
@@ -399,10 +479,10 @@
 
 **修改功能:**
 - 无
-  
+
 **优化内容:**
 - [优化onGetGameCfg文档](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/API/ISudFSMMG/onGetGameCfg.md)
-  
+
 **Bug修复:**
 - 无
 
@@ -420,10 +500,10 @@
 
 **修改功能:**
 - 无
-  
+
 **优化内容:**
 - 无
-  
+
 **Bug修复:**
 - 修复Android SDK initSDK Activity持有问题；
 
@@ -442,12 +522,12 @@
 
 **修改功能:**
 - [onGetGameCfg](https://github.com/SudTechnology/sud-mgp-doc/blob/main/Client/API/ISudFSMMG/onGetGameCfg.md)，ui中的jion_btn 改为join_btn , cancel_btn 改为 cancel_join_btn
-  
+
 **优化内容:**
 - 优化部分游戏的国际化多语言修改；
 - 兼容服务端修改；
 - 优化代码；
-  
+
 **Bug修复:**
 - 修复iOS内存释放；
 
@@ -469,12 +549,12 @@
 - iOS SDK使用SudMGP.xcframework方式出包;
 - 修改appId生成规则；
 - 修改mgId类型，int改成int64；
-  
+
 **优化内容:**
 - 优化代码结构；
 - 优化Loading UI；
 - 优化首次下载包体积；
-  
+
 **Bug修复:**
 - 修复状态栏，改成默认不隐藏；
 - 修复已知bug；
