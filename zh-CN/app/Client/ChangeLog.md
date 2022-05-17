@@ -2,13 +2,12 @@
 
 ## v1.1.52.xx (2022-05-16)
 **Android:**
-- [SudMGP-Android-v1.1.52.550（dynamic SDK）](https://github.com/SudTechnology/sud-mgp-android/releases)
-- [SudMGP-Android-v1.1.52.550-static（static SDK）](https://github.com/SudTechnology/sud-mgp-android/releases)
-- [HelloSud-Android-v1.1.52.550](https://github.com/SudTechnology/hello-sud-android/releases)
+- [SudMGP-Android-v1.1.52.554（dynamic SDK）](https://github.com/SudTechnology/sud-mgp-android/releases)
+- [HelloSud-Android-v1.1.52.554](https://github.com/SudTechnology/hello-sud-android/releases)
 
 **iOS:**
-- [SudMGP-iOS-v1.1.52.523](https://github.com/SudTechnology/sud-mgp-ios/releases)
-- [HelloSud-iOS-v1.1.52.523](https://github.com/SudTechnology/hello-sud-ios/releases)
+- [SudMGP-iOS-v1.1.52.527](https://github.com/SudTechnology/sud-mgp-ios/releases)
+- [HelloSud-iOS-v1.1.52.527](https://github.com/SudTechnology/hello-sud-ios/releases)
 
 **新增功能:**
 - ISudFSMMG新增loadMG的进度回调void onGameLoadingProgress(int stage, int retCode, int progress);

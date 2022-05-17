@@ -34,6 +34,10 @@
   
 - [HelloSud-iOS](https://github.com/SudTechnology/hello-sud-ios/releases)
 
+- [HelloSudPlus-Android](https://github.com/SudTechnology/hello-sud-plus-android/tree/develop)
+
+- [HelloSudPlus-iOS](https://github.com/SudTechnology/hello-sud-plus-ios/tree/develop)
+
 ## 游戏多语言
 - [游戏多语言](Client/Languages/README.md) loadMG language参数
 

@@ -24,15 +24,19 @@
 - [Changelog(SudMGP and Game)](app/Client/ChangeLog.md)
 ## Download the client SDK
 
-- [SudMGP-Android-v1.1.46.449](https://github.com/SudTechnology/sud-mgp-android/releases/tag/v1.1.46.449)
-  
-- [SudMGP-iOS-v1.1.46.432](https://github.com/SudTechnology/sud-mgp-ios/releases/tag/v1.1.46.432)
+- [SudMGP-Android](https://github.com/SudTechnology/sud-mgp-android/releases)
+
+- [SudMGP-iOS](https://github.com/SudTechnology/sud-mgp-ios/releases)
   
 
 ## Download the client demo
-- [HelloSud-Android-v1.1.46.449](https://github.com/SudTechnology/hello-sud-android/releases/tag/v1.1.46.449)
-  
-- [HelloSud-iOS-v1.1.46.432](https://github.com/SudTechnology/hello-sud-ios/releases/tag/v1.1.46.432)
+- [HelloSud-Android](https://github.com/SudTechnology/hello-sud-android/releases)
+
+- [HelloSud-iOS](https://github.com/SudTechnology/hello-sud-ios/releases)
+
+- [HelloSudPlus-Android](https://github.com/SudTechnology/hello-sud-plus-android/tree/develop)
+
+- [HelloSudPlus-iOS](https://github.com/SudTechnology/hello-sud-plus-ios/tree/develop)
 
 ## Multiple languages for game
 - [Multiple Languages for Game](app/Client/Languages/README.md) loadMG language parameters
