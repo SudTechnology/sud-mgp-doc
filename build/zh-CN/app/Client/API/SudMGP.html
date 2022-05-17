@@ -912,6 +912,14 @@
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">getVersion</span><span class="hljs-params">()</span></span>;
 
     <span class="hljs-comment">/**
+     * &#x83B7;&#x53D6;SDK&#x7248;&#x672C;&#x522B;&#x540D;
+     * <span class="hljs-doctag">@return</span> &#x793A;&#x4F8B;:&quot;v1.1.35.286-et&quot;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">getVersionAlias</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> Version.kVersionAlias;
+    }
+
+    <span class="hljs-comment">/**
      * &#x83B7;&#x53D6;&#x914D;&#x7F6E; &#x6700;&#x4F4E;&#x652F;&#x6301;&#x7248;&#x672C;v1.1.46.449
      * <span class="hljs-doctag">@return</span> ISudCfg
      */</span>
@@ -958,6 +966,19 @@
      * <span class="hljs-doctag">@return</span>
      */</span>
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">destroyMG</span><span class="hljs-params">(ISudFSTAPP fstApp)</span></span>;
+
+    <span class="hljs-comment">/**
+     * &#x8BBE;&#x7F6E;&#x7EDF;&#x8BA1;&#x4E0A;&#x62A5;userId
+     * <span class="hljs-doctag">@param</span> userId
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setUserId</span><span class="hljs-params">(String userId)</span></span>;
+
+    <span class="hljs-comment">/**
+     * &#x8BBE;&#x7F6E;&#x7EDF;&#x8BA1;&#x4E0A;&#x62A5;&#x56DE;&#x8C03;&#xFF0C;&#x56DE;&#x8C03;&#x5728;UI/Main&#x7EBF;&#x7A0B;
+     * <span class="hljs-doctag">@param</span> listener
+     * <span class="hljs-doctag">@return</span>
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">setReportStatsEventListener</span><span class="hljs-params">(ISudListenerReportStatsEvent listener)</span></span>;
 
     <span class="hljs-comment">/**
      * &#x8BBE;&#x7F6E;&#x65E5;&#x5FD7;&#x7B49;&#x7EA7;
@@ -1040,6 +1061,19 @@
 + (bool)destroyMG:(id&lt;ISudFSTAPP&gt;_Nonnull) fstAPP;
 
 /**
+ * &#x8BBE;&#x7F6E;&#x7EDF;&#x8BA1;&#x4E0A;&#x62A5;userId
+ * @param userId
+ */
++ (void)setUserId:(NSString*)userId;
+
+/**
+ * &#x8BBE;&#x7F6E;&#x7EDF;&#x8BA1;&#x4E0A;&#x62A5;&#x56DE;&#x8C03;&#xFF0C;&#x56DE;&#x8C03;&#x5728;UI/Main&#x7EBF;&#x7A0B;
+ * @param listener &#x56DE;&#x8C03;
+ * @return
+ */
++ (bool)setReportStatsEventListener:(ISudListenerReportStatsEvent)listener;
+
+/**
  * &#x8BBE;&#x7F6E;&#x65E5;&#x5FD7;&#x7B49;&#x7EA7;
  * @param logLevel &#x8F93;&#x51FA;log&#x7684;&#x7B49;&#x7EA7;,LogVERBOSE,LogDEBUG,LogINFO &#x89C1;ISudLogger.h
  */
@@ -1105,7 +1139,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"SudMGP","level":"1.2.2.1.1","depth":4,"next":{"title":"ISudFSTAPP","level":"1.2.2.1.2","depth":4,"path":"app/Client/API/ISudFSTAPP.md","ref":"app/Client/API/ISudFSTAPP.md","articles":[]},"previous":{"title":"API","level":"1.2.2.1","depth":3,"path":"app/Client/API/README.md","ref":"app/Client/API/README.md","articles":[{"title":"SudMGP","level":"1.2.2.1.1","depth":4,"path":"app/Client/API/SudMGP.md","ref":"app/Client/API/SudMGP.md","articles":[]},{"title":"ISudFSTAPP","level":"1.2.2.1.2","depth":4,"path":"app/Client/API/ISudFSTAPP.md","ref":"app/Client/API/ISudFSTAPP.md","articles":[]},{"title":"ISudFSMMG","level":"1.2.2.1.3","depth":4,"path":"app/Client/API/ISudFSMMG.md","ref":"app/Client/API/ISudFSMMG.md","articles":[{"title":"onGetGameCfg","level":"1.2.2.1.3.1","depth":5,"path":"app/Client/API/ISudFSMMG/onGetGameCfg.md","ref":"app/Client/API/ISudFSMMG/onGetGameCfg.md","articles":[]},{"title":"onGetGameViewInfo","level":"1.2.2.1.3.2","depth":5,"path":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","ref":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","articles":[]}]}]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Client/API/SudMGP.md","mtime":"2022-04-15T09:49:42.498Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-07T08:44:46.454Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
+            gitbook.page.hasChanged({"page":{"title":"SudMGP","level":"1.2.2.1.1","depth":4,"next":{"title":"ISudFSTAPP","level":"1.2.2.1.2","depth":4,"path":"app/Client/API/ISudFSTAPP.md","ref":"app/Client/API/ISudFSTAPP.md","articles":[]},"previous":{"title":"API","level":"1.2.2.1","depth":3,"path":"app/Client/API/README.md","ref":"app/Client/API/README.md","articles":[{"title":"SudMGP","level":"1.2.2.1.1","depth":4,"path":"app/Client/API/SudMGP.md","ref":"app/Client/API/SudMGP.md","articles":[]},{"title":"ISudFSTAPP","level":"1.2.2.1.2","depth":4,"path":"app/Client/API/ISudFSTAPP.md","ref":"app/Client/API/ISudFSTAPP.md","articles":[]},{"title":"ISudFSMMG","level":"1.2.2.1.3","depth":4,"path":"app/Client/API/ISudFSMMG.md","ref":"app/Client/API/ISudFSMMG.md","articles":[{"title":"onGetGameCfg","level":"1.2.2.1.3.1","depth":5,"path":"app/Client/API/ISudFSMMG/onGetGameCfg.md","ref":"app/Client/API/ISudFSMMG/onGetGameCfg.md","articles":[]},{"title":"onGetGameViewInfo","level":"1.2.2.1.3.2","depth":5,"path":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","ref":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","articles":[]}]}]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Client/API/SudMGP.md","mtime":"2022-05-17T04:00:18.012Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-17T04:01:56.604Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
         });
     </script>
 </div>
