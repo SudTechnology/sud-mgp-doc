@@ -97,6 +97,10 @@ dataJsonResp = {
 |ui.game_bg.hide  |No  |bool |Indicates whether to hide the background images, including the lobby and the game scene. Valid values: **false**: show the images; **true**: hide the images. The parameter is set to **false** by default.|
 |ui.block_change_seat  |No  |json |The feature to disable the seat change. (Currently supported by Ludo only.)|
 |ui.block_change_seat.custom  |No  |bool |Indicates whether to disable the seat change feature. Valid values: **false**: player seats can be changed; **true**: player seats cannot be changed. The parameter is set to **false** by default.|
+|ui.game_setting_select_pnl  |否  |json |大厅中的玩法选择设置面板   |
+|ui.game_setting_select_pnl.hide  |否  |bool |是否隐藏大厅中的玩法选择设置面板（false: 显示； true: 隐藏，默认为false）   |
+|ui.game_managed_image  |否  |json |游戏中的托管图标   |
+|ui.game_managed_image.hide  |否  |bool |是否隐藏游戏中的托管图标（false: 显示； true: 隐藏，默认为false）   |
 
 
 ### Response parameters
@@ -182,6 +186,12 @@ dataJsonResp = {
         },
 		"block_change_seat": {
 			"custom": false
+		},
+		"game_setting_select_pnl": {
+			"hide": false
+		},
+		"game_managed_image": {
+			"hide": false
 		}
     }
 }
