@@ -204,7 +204,8 @@ mg_common_game_settle
             "award": 100,           // 奖励
             "score": 100,           // 积分
             "isEscaped": 1,         // 逃跑
-            "killerId": "杀自己的玩家id"    // 杀自己的玩家id
+            "killerId": "杀自己的玩家id",    // 杀自己的玩家id
+            "isAI": 0               // 是否是AI玩家
         }
     ]
 }

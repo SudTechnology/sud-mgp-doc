@@ -205,7 +205,8 @@ mg_common_game_settle
             "award": 100,           // Award.
             "score": 100,           // Points.
             "isEscaped": 1,         // Whether the player has escaped.
-            "killerId": "ID of the player who killed other players."    // ID of the player who killed himself/herself.
+            "killerId": "ID of the player who killed other players." ,   // ID of the player who killed himself/herself.
+            "isAI": 0               // Whether is a AI player
         }
     ]
 }

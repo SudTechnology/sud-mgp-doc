@@ -103,7 +103,8 @@ app_common_self_playing
 ```json
 {
     "isPlaying": true, // Indicates whether a user starts playing a game. Valid values: true: the user starts playing; false: the user ends playing.
-    "reportGameInfoExtras": "Transparently passed parameters." // This parameter is of the string type. The HTTPS service calls back the report_game_info parameter. The maximum value length is 1024 bytes. A longer value will be truncated. (This parameter is available since February 11, 2022.)
+    "reportGameInfoExtras": "Transparently passed parameters.", // This parameter is of the string type. The HTTPS service calls back the report_game_info parameter. The maximum value length is 1024 bytes. A longer value will be truncated. (This parameter is available since February 11, 2022.)
+	"reportGameInfoKey": "Transparently passed parameters key."		// String type, with a maximum length of 64 bytes. The server of the access party can query the data of a game according to this field
 }
 ```
 
@@ -377,4 +378,60 @@ app_common_game_sound_volume
 
 ```
 A user sets the volume level for a game.
+```
+
+### 15. setting game mode（Added on May 10, 2022）
+
+- state
+
+```
+app_common_game_setting_select_info
+```
+
+- data
+
+```json
+{
+	"ludo": {			// game name
+        "mode": 0,      // mode: rece，0: fast, 1: classic;
+        "chessNum": 2,  // chessNum  2: 2 chess; 4: 4 chess;
+        "item": 0       // item 1: has prop, 0: no prop
+    },
+}
+```
+
+- Description
+
+```
+setting game mode
+```
+
+### 16. add AI players in the game（Added on May 11, 2022）
+
+- state
+
+```
+app_common_game_add_ai_players
+```
+
+- data
+
+```json
+{
+	"aiPlayers": [
+        {
+                "userId":"",
+                "avatar":"",
+                "name":"",
+                "gender":"male"		// 性别 male: male, female: female
+        }
+    ],
+	"isReady": 1 // Is the robot automatically ready after joining 1：aotu preparation, 0: No automatic preparation;  The default is 1
+}
+```
+
+- 说明
+
+```
+add AI players in the game
 ```
