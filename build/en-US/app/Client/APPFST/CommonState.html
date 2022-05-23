@@ -985,7 +985,8 @@ Correct processes:
 </ul>
 <pre><code class="lang-json">{
     <span class="hljs-string">&quot;isPlaying&quot;</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">// Indicates whether a user starts playing a game. Valid values: true: the user starts playing; false: the user ends playing.</span>
-    <span class="hljs-string">&quot;reportGameInfoExtras&quot;</span>: <span class="hljs-string">&quot;Transparently passed parameters.&quot;</span> <span class="hljs-comment">// This parameter is of the string type. The HTTPS service calls back the report_game_info parameter. The maximum value length is 1024 bytes. A longer value will be truncated. (This parameter is available since February 11, 2022.)</span>
+    <span class="hljs-string">&quot;reportGameInfoExtras&quot;</span>: <span class="hljs-string">&quot;Transparently passed parameters.&quot;</span>, <span class="hljs-comment">// This parameter is of the string type. The HTTPS service calls back the report_game_info parameter. The maximum value length is 1024 bytes. A longer value will be truncated. (This parameter is available since February 11, 2022.)</span>
+    <span class="hljs-string">&quot;reportGameInfoKey&quot;</span>: <span class="hljs-string">&quot;Transparently passed parameters key.&quot;</span>        <span class="hljs-comment">// String type, with a maximum length of 64 bytes. The server of the access party can query the data of a game according to this field</span>
 }
 </code></pre>
 <ul>
@@ -1194,6 +1195,50 @@ Restore the keyword hitting state when the keyword in the game is updated.
 <li>Description</li>
 </ul>
 <pre><code>A user sets the volume level for a game.
+</code></pre><h3 id="15-setting-game-mode&#xFF08;added-on-may-10-2022&#xFF09;">15. setting game mode&#xFF08;Added on May 10, 2022&#xFF09;</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>app_common_game_setting_select_info
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;ludo&quot;</span>: {            <span class="hljs-comment">// game name</span>
+        <span class="hljs-string">&quot;mode&quot;</span>: <span class="hljs-number">0</span>,      <span class="hljs-comment">// mode: rece&#xFF0C;0: fast, 1: classic;</span>
+        <span class="hljs-string">&quot;chessNum&quot;</span>: <span class="hljs-number">2</span>,  <span class="hljs-comment">// chessNum  2: 2 chess; 4: 4 chess;</span>
+        <span class="hljs-string">&quot;item&quot;</span>: <span class="hljs-number">0</span>       <span class="hljs-comment">// item 1: has prop, 0: no prop</span>
+    },
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>setting game mode
+</code></pre><h3 id="16-add-ai-players-in-the-game&#xFF08;added-on-may-11-2022&#xFF09;">16. add AI players in the game&#xFF08;Added on May 11, 2022&#xFF09;</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>app_common_game_add_ai_players
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;aiPlayers&quot;</span>: [
+        {
+                <span class="hljs-string">&quot;userId&quot;</span>:<span class="hljs-string">&quot;&quot;</span>,
+                <span class="hljs-string">&quot;avatar&quot;</span>:<span class="hljs-string">&quot;&quot;</span>,
+                <span class="hljs-string">&quot;name&quot;</span>:<span class="hljs-string">&quot;&quot;</span>,
+                <span class="hljs-string">&quot;gender&quot;</span>:<span class="hljs-string">&quot;male&quot;</span>        <span class="hljs-comment">// &#x6027;&#x522B; male: male, female: female</span>
+        }
+    ],
+    <span class="hljs-string">&quot;isReady&quot;</span>: <span class="hljs-number">1</span> <span class="hljs-comment">// Is the robot automatically ready after joining 1&#xFF1A;aotu preparation, 0: No automatic preparation;  The default is 1</span>
+}
+</code></pre>
+<ul>
+<li>&#x8BF4;&#x660E;</li>
+</ul>
+<pre><code>add AI players in the game
 </code></pre>
       <script>
         var pathname = window.location.pathname
@@ -1242,7 +1287,7 @@ Restore the keyword hitting state when the keyword in the game is updated.
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"General state","level":"1.2.2.2.1","depth":4,"next":{"title":"MG FSM","level":"1.2.2.3","depth":3,"path":"app/Client/MGFSM/README.md","ref":"app/Client/MGFSM/README.md","articles":[{"title":"General state - Game","level":"1.2.2.3.1","depth":4,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},{"title":"General state - Player","level":"1.2.2.3.2","depth":4,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},{"title":"DrawGuess","level":"1.2.2.3.3","depth":4,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]}]},"previous":{"title":"App FST","level":"1.2.2.2","depth":3,"path":"app/Client/APPFST/README.md","ref":"app/Client/APPFST/README.md","articles":[{"title":"General state","level":"1.2.2.2.1","depth":4,"path":"app/Client/APPFST/CommonState.md","ref":"app/Client/APPFST/CommonState.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en-US","gitbook":"*"},"file":{"path":"app/Client/APPFST/CommonState.md","mtime":"2022-04-15T09:49:42.789Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-19T08:17:11.976Z"},"basePath":"../../..","book":{"language":"en-US"}});
+            gitbook.page.hasChanged({"page":{"title":"General state","level":"1.2.2.2.1","depth":4,"next":{"title":"MG FSM","level":"1.2.2.3","depth":3,"path":"app/Client/MGFSM/README.md","ref":"app/Client/MGFSM/README.md","articles":[{"title":"General state - Game","level":"1.2.2.3.1","depth":4,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},{"title":"General state - Player","level":"1.2.2.3.2","depth":4,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},{"title":"DrawGuess","level":"1.2.2.3.3","depth":4,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]}]},"previous":{"title":"App FST","level":"1.2.2.2","depth":3,"path":"app/Client/APPFST/README.md","ref":"app/Client/APPFST/README.md","articles":[{"title":"General state","level":"1.2.2.2.1","depth":4,"path":"app/Client/APPFST/CommonState.md","ref":"app/Client/APPFST/CommonState.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en-US","gitbook":"*"},"file":{"path":"app/Client/APPFST/CommonState.md","mtime":"2022-05-23T09:14:07.753Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-23T09:14:37.168Z"},"basePath":"../../..","book":{"language":"en-US"}});
         });
     </script>
 </div>
