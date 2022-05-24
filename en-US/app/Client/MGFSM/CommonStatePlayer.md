@@ -194,3 +194,119 @@ mg_common_self_click_game_player_icon
 ```
 Indicates that the game notifies the app of tapping a player's avatar.
 ```
+
+
+### 7. Click the player's Avatar on the game notification app
+
+- state
+
+```
+mg_common_self_click_game_player_icon
+```
+
+- data
+
+```json
+{
+	"uid": "用户id"	// ID of the user whose avatar is tapped.
+}
+```
+
+- Description
+
+```
+ Click the player's Avatar on the game notification app
+```
+
+
+### 8. Game notification app player death status (added on April 24, 2022)
+
+- state
+
+```
+mg_common_self_die_status
+```
+
+- data
+
+```json
+{
+	"uid": "player id",	// player id
+	"isDeath": true,  // Whether the player is dead: true: dead, false: not dead; Default false
+}
+```
+
+- Description
+
+```
+Game notification app player death status
+```
+
+### 9. Game notification app player's turn  (added on April 24, 2022)
+
+- state
+
+```
+mg_common_self_turn_status
+```
+
+- data
+
+```json
+{
+	"uid": "player id",	// player id
+	"isTurn": true,  // Whether it's the player's turn to take the shot true: it's the shot round of the above uid player, false: it's not the shot round of the above uid player; Default false
+}
+```
+
+- Description
+
+```
+ Game notification app player's turn 
+```
+
+### 10. Game notification app player selection status (added on April 24, 2022)
+
+- state
+
+```
+mg_common_self_select_status
+```
+
+- data
+
+```json
+{
+	"uid": "player id",		// player id
+	"isSelected": true,  // Whether the player selects true: selected, false: not selected; Default false
+}
+```
+
+- Description
+
+```
+ Game notification app player selection status
+```
+
+
+### 11. The game notifies the app layer of the remaining time of the current game (added on May 23, 2022, and UMO takes effect at present)
+
+- state
+
+```
+mg_common_game_countdown_time
+```
+
+- data
+
+```json
+{
+	"countdown": 123 // Time remaining in seconds
+}
+```
+
+- Description
+
+```
+The game notifies the app layer of the remaining time of the current game
+```

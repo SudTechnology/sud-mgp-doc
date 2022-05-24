@@ -626,25 +626,3 @@ mg_common_game_add_ai_players
 ```
 Whether the game notifies the app layer to add the accompanying robot successfully
 ```
-
-### 22. The game notifies the app layer of the remaining time of the current game (added on May 23, 2022, and UMO takes effect at present)
-
-- state
-
-```
-mg_common_game_countdown_time
-```
-
-- data
-
-```json
-{
-	"countdown": 123 // Time remaining in seconds
-}
-```
-
-- Description
-
-```
-The game notifies the app layer of the remaining time of the current game
-```

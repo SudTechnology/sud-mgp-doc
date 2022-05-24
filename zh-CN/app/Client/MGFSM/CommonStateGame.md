@@ -627,25 +627,3 @@ mg_common_game_add_ai_players
 ```
 游戏通知app层添加陪玩机器人是否成功
 ```
-
-### 22. 游戏通知app层当前游戏剩余时间（2022-05-23新增，目前UMO生效）
-
-- state
-
-```
-mg_common_game_countdown_time
-```
-
-- data
-
-```json
-{
-	"countdown": 123 // 剩余时间，单位为秒
-}
-```
-
-- 说明
-
-```
-游戏通知app层当前游戏剩余时间
-```
