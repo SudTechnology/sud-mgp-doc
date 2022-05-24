@@ -101,6 +101,10 @@ dataJsonResp = {
 |ui.game_setting_select_pnl.hide  |No  |bool |Indicates whether to disable the game mode setting panel  Valid values: **false**: show; **true**: hide, The parameter is set to **false** by default   |
 |ui.game_managed_image  |No  |json |The feature to disable the auto managed icon show on player   |
 |ui.game_managed_image.hide  |No  |bool |Indicates whether to disable auto managed icon show on player  Valid values: **false**: show; **false**: hide,  The parameter is set to **false** by default   |
+|ui.game_table_image  |No  |json |The feature to disable the game table image |
+|ui.game_table_image.hide  |No  |bool |Indicates whether to disable the game table image  Valid values: **false**: show; **false**: hide,  The parameter is set to **false** by default   |
+|ui.game_countdown_time  |No  |json |The feature to disable the game countdown |
+|ui.game_countdown_time.hide  |No  |bool |Indicates whether to disable the game countdown  Valid values: **false**: show; **false**: hide,  The parameter is set to **false** by default |
 
 
 ### Response parameters
@@ -192,7 +196,13 @@ dataJsonResp = {
 		},
 		"game_managed_image": {
 			"hide": false
-		}
+		},
+        "game_table_iamge": {
+            "hide": false
+        },
+        "game_countdown_time": {
+            "hide": false
+        }
     }
 }
 ```

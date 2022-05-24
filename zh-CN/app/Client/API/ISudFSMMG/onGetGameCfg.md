@@ -101,6 +101,10 @@ dataJsonResp = {
 |ui.game_setting_select_pnl.hide  |否  |bool |是否隐藏大厅中的玩法选择设置面板（false: 显示； true: 隐藏，默认为false）   |
 |ui.game_managed_image  |否  |json |游戏中的托管图标   |
 |ui.game_managed_image.hide  |否  |bool |是否隐藏游戏中的托管图标（false: 显示； true: 隐藏，默认为false）   |
+|ui.game_table_image  |否  |json |游戏中牌桌背景图  （注：只对某些带牌桌类游戏有作用） |
+|ui.game_table_image.hide  |否  |bool |是否隐藏游戏牌桌背景图（false: 显示； true: 隐藏，默认为false）   |
+|ui.game_countdown_time  |否  |json |游戏中游戏倒计时显示  （注：现在只针对umo生效） |
+|ui.game_countdown_time.hide  |否  |bool |是否隐藏游戏中游戏倒计时显示（false: 显示； true: 隐藏，默认为false）   |
 
 
 ### 返回示例
@@ -192,7 +196,13 @@ dataJsonResp = {
 		},
 		"game_managed_image": {
 			"hide": false
-		}
+		},
+        "game_table_iamge": {
+            "hide": false
+        },
+        "game_countdown_time": {
+            "hide": false
+        }
     }
 }
 ```

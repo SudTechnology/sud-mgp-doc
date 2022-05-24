@@ -603,3 +603,48 @@ mg_common_app_common_self_x_resp
 ```
 App Common state operation error result callback state (Note: only the resultCode != 0 is called back)
 ```
+
+### 21. Whether the game notifies the app layer of the success of adding the robot players (added on May 17, 2022)
+
+- state
+
+```
+mg_common_game_add_ai_players
+```
+
+- data
+
+```json
+{
+	"resultCode": 0, // Return code 0: successful, non-0: unsuccessful
+	"userIds": ["123", ...] // Successfully added to the playerid list
+}
+```
+
+- Description
+
+```
+Whether the game notifies the app layer to add the accompanying robot successfully
+```
+
+### 22. The game notifies the app layer of the remaining time of the current game (added on May 23, 2022, and UMO takes effect at present)
+
+- state
+
+```
+mg_common_game_countdown_time
+```
+
+- data
+
+```json
+{
+	"countdown": 123 // Time remaining in seconds
+}
+```
+
+- Description
+
+```
+The game notifies the app layer of the remaining time of the current game
+```
