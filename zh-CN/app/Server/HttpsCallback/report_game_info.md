@@ -153,15 +153,14 @@
 |ret_code|是|int32|错误码，0:成功，其他表示错误|
 |ret_msg|是|string|错误信息|
 |sdk_error_code|否|int32|sdk错误码，0:成功，其他表示错误|
-|data|是|object|data数据|
+|data|否|json|data数据，如果有值务必是json格式|
 
 ## 返回示例
 
 ```json
 {
     "ret_code": 0,// 0:成功，其他表示错误
-    "ret_msg": "",
-    "data": {}
+    "ret_msg": ""
 }
 ```
 
