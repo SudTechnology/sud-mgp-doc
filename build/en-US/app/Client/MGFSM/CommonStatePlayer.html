@@ -1097,6 +1097,89 @@ If the user exits the game, restore the space allocation.
 <li>Description</li>
 </ul>
 <pre><code>Indicates that the game notifies the app of tapping a player&apos;s avatar.
+</code></pre><h3 id="7-click-the-players-avatar-on-the-game-notification-app">7. Click the player&apos;s Avatar on the game notification app</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_self_click_game_player_icon
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;&#x7528;&#x6237;id&quot;</span>    <span class="hljs-comment">// ID of the user whose avatar is tapped.</span>
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code> Click the player&apos;s Avatar on the game notification app
+</code></pre><h3 id="8-game-notification-app-player-death-status-added-on-april-24-2022">8. Game notification app player death status (added on April 24, 2022)</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_self_die_status
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;player id&quot;</span>,    <span class="hljs-comment">// player id</span>
+    <span class="hljs-string">&quot;isDeath&quot;</span>: <span class="hljs-literal">true</span>,  <span class="hljs-comment">// Whether the player is dead: true: dead, false: not dead; Default false</span>
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>Game notification app player death status
+</code></pre><h3 id="9-game-notification-app-players-turn--added-on-april-24-2022">9. Game notification app player&apos;s turn  (added on April 24, 2022)</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_self_turn_status
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;player id&quot;</span>,    <span class="hljs-comment">// player id</span>
+    <span class="hljs-string">&quot;isTurn&quot;</span>: <span class="hljs-literal">true</span>,  <span class="hljs-comment">// Whether it&apos;s the player&apos;s turn to take the shot true: it&apos;s the shot round of the above uid player, false: it&apos;s not the shot round of the above uid player; Default false</span>
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code> Game notification app player&apos;s turn
+</code></pre><h3 id="10-game-notification-app-player-selection-status-added-on-april-24-2022">10. Game notification app player selection status (added on April 24, 2022)</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_self_select_status
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;player id&quot;</span>,        <span class="hljs-comment">// player id</span>
+    <span class="hljs-string">&quot;isSelected&quot;</span>: <span class="hljs-literal">true</span>,  <span class="hljs-comment">// Whether the player selects true: selected, false: not selected; Default false</span>
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code> Game notification app player selection status
+</code></pre><h3 id="11-the-game-notifies-the-app-layer-of-the-remaining-time-of-the-current-game-added-on-may-23-2022-and-umo-takes-effect-at-present">11. The game notifies the app layer of the remaining time of the current game (added on May 23, 2022, and UMO takes effect at present)</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_game_countdown_time
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;countdown&quot;</span>: <span class="hljs-number">123</span> <span class="hljs-comment">// Time remaining in seconds</span>
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>The game notifies the app layer of the remaining time of the current game
 </code></pre>
       <script>
         var pathname = window.location.pathname
@@ -1145,7 +1228,7 @@ If the user exits the game, restore the space allocation.
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"General state - Player","level":"1.2.2.3.2","depth":4,"next":{"title":"DrawGuess","level":"1.2.2.3.3","depth":4,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]},"previous":{"title":"General state - Game","level":"1.2.2.3.1","depth":4,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en-US","gitbook":"*"},"file":{"path":"app/Client/MGFSM/CommonStatePlayer.md","mtime":"2022-04-15T09:49:42.788Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-24T07:07:24.531Z"},"basePath":"../../..","book":{"language":"en-US"}});
+            gitbook.page.hasChanged({"page":{"title":"General state - Player","level":"1.2.2.3.2","depth":4,"next":{"title":"DrawGuess","level":"1.2.2.3.3","depth":4,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]},"previous":{"title":"General state - Game","level":"1.2.2.3.1","depth":4,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en-US","gitbook":"*"},"file":{"path":"app/Client/MGFSM/CommonStatePlayer.md","mtime":"2022-05-26T04:04:04.886Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-26T04:06:05.696Z"},"basePath":"../../..","book":{"language":"en-US"}});
         });
     </script>
 </div>
