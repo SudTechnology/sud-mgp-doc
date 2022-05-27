@@ -153,7 +153,7 @@
 | ret_code | Yes | int32 | The error code. Valid values: **0**: the request is successful; other values: the request is failed. |
 | ret_msg | Yes | string | The error information. |
 | sdk_error_code | No | int32 | The SDK error code. Valid values: **0**: the request is successful; other values: the request is failed. |
-| data | Yes | object | Data. |
+|data|No|json|If there is a value, it must be in json format|
 
 ## Sample responses
 
@@ -161,7 +161,6 @@
 {
     "ret_code": 0,// Valid values: 0: the request is successful; other values: the request is failed.
     "ret_msg": "",
-    "data": {}
 }
 ```
 

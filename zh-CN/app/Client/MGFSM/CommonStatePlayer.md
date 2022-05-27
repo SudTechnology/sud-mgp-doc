@@ -191,3 +191,96 @@ mg_common_self_click_game_player_icon
 ```
 游戏通知app点击玩家头像
 ```
+
+
+### 8. 游戏通知app玩家死亡状态（2022-04-24新增）
+
+- state
+
+```
+mg_common_self_die_status
+```
+
+- data
+
+```json
+{
+	"uid": "用户id",	// 用户id
+	"isDeath": true,  // 玩家是否死亡 true:死亡, false: 未死亡；默认 false
+}
+```
+
+- 说明
+
+```
+游戏通知app玩家死亡状态
+```
+
+### 9. 游戏通知app轮到玩家出手状态（2022-04-24新增）
+
+- state
+
+```
+mg_common_self_turn_status
+```
+
+- data
+
+```json
+{
+	"uid": "用户id",	// 用户id
+	"isTurn": true,  // 是否轮到玩家出手 true:是上面uid玩家的出手回合, false: 不是上面uid玩家的出手回合；默认false
+}
+```
+
+- 说明
+
+```
+游戏通知app轮到玩家出手状态
+```
+
+### 10. 游戏通知app玩家选择状态（2022-04-24新增）
+
+- state
+
+```
+mg_common_self_select_status
+```
+
+- data
+
+```json
+{
+	"uid": "用户id",		// 用户id
+	"isSelected": true,  // 玩家是否选择 true:选择, false: 未选择； 默认false
+}
+```
+
+- 说明
+
+```
+游戏通知app玩家选择状态
+```
+
+
+### 11. 游戏通知app层当前游戏剩余时间（2022-05-23新增，目前UMO生效）
+
+- state
+
+```
+mg_common_game_countdown_time
+```
+
+- data
+
+```json
+{
+	"countdown": 123 // 剩余时间，单位为秒
+}
+```
+
+- 说明
+
+```
+游戏通知app层当前游戏剩余时间
+```

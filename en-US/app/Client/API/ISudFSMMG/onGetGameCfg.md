@@ -97,6 +97,14 @@ dataJsonResp = {
 |ui.game_bg.hide  |No  |bool |Indicates whether to hide the background images, including the lobby and the game scene. Valid values: **false**: show the images; **true**: hide the images. The parameter is set to **false** by default.|
 |ui.block_change_seat  |No  |json |The feature to disable the seat change. (Currently supported by Ludo only.)|
 |ui.block_change_seat.custom  |No  |bool |Indicates whether to disable the seat change feature. Valid values: **false**: player seats can be changed; **true**: player seats cannot be changed. The parameter is set to **false** by default.|
+|ui.game_setting_select_pnl  |No  |json |The feature to disable the game mode setting panel   |
+|ui.game_setting_select_pnl.hide  |No  |bool |Indicates whether to disable the game mode setting panel  Valid values: **false**: show; **true**: hide, The parameter is set to **false** by default   |
+|ui.game_managed_image  |No  |json |The feature to disable the auto managed icon show on player   |
+|ui.game_managed_image.hide  |No  |bool |Indicates whether to disable auto managed icon show on player  Valid values: **false**: show; **false**: hide,  The parameter is set to **false** by default   |
+|ui.game_table_image  |No  |json |The feature to disable the game table image |
+|ui.game_table_image.hide  |No  |bool |Indicates whether to disable the game table image  Valid values: **false**: show; **false**: hide,  The parameter is set to **false** by default   |
+|ui.game_countdown_time  |No  |json |The feature to disable the game countdown |
+|ui.game_countdown_time.hide  |No  |bool |Indicates whether to disable the game countdown  Valid values: **false**: show; **false**: hide,  The parameter is set to **false** by default |
 
 
 ### Response parameters
@@ -182,7 +190,19 @@ dataJsonResp = {
         },
 		"block_change_seat": {
 			"custom": false
-		}
+		},
+		"game_setting_select_pnl": {
+			"hide": false
+		},
+		"game_managed_image": {
+			"hide": false
+		},
+        "game_table_iamge": {
+            "hide": false
+        },
+        "game_countdown_time": {
+            "hide": false
+        }
     }
 }
 ```
