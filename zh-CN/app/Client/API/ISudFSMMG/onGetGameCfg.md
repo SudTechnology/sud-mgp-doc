@@ -105,6 +105,8 @@ dataJsonResp = {
 |ui.game_table_image.hide  |否  |bool |是否隐藏游戏牌桌背景图（false: 显示； true: 隐藏，默认为false）   |
 |ui.game_countdown_time  |否  |json |游戏中游戏倒计时显示  （注：现在只针对umo生效） |
 |ui.game_countdown_time.hide  |否  |bool |是否隐藏游戏中游戏倒计时显示（false: 显示； true: 隐藏，默认为false）   |
+|ui.game_selected_tips  |否  |json |游戏中所选择的玩法提示文字  （注：现在只针对ludo生效） |
+|ui.game_selected_tips.hide  |否  |bool |是否隐藏游戏中所选择的玩法提示文字显示（false: 显示； true: 隐藏，默认为false）   |
 
 
 ### 返回示例
@@ -201,6 +203,9 @@ dataJsonResp = {
             "hide": false
         },
         "game_countdown_time": {
+            "hide": false
+        },
+        "game_selected_tips": {
             "hide": false
         }
     }

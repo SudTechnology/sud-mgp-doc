@@ -105,6 +105,8 @@ dataJsonResp = {
 |ui.game_table_image.hide  |No  |bool |Indicates whether to disable the game table image  Valid values: **false**: show; **false**: hide,  The parameter is set to **false** by default   |
 |ui.game_countdown_time  |No  |json |The feature to disable the game countdown |
 |ui.game_countdown_time.hide  |No  |bool |Indicates whether to disable the game countdown  Valid values: **false**: show; **false**: hide,  The parameter is set to **false** by default |
+|ui.game_selected_tips  |否  |json |The feature to disable th prompt text of play method selected in the game  (Currently supported by Ludo only.) |
+|ui.game_selected_tips.hide  |否  |bool |Indicates whether to disable the prompt text of play method selected in the game  Valid values: **false**: show; **false**: hide,  The parameter is set to **false** by default |
 
 
 ### Response parameters
@@ -201,6 +203,9 @@ dataJsonResp = {
             "hide": false
         },
         "game_countdown_time": {
+            "hide": false
+        },
+        "game_selected_tips": {
             "hide": false
         }
     }
