@@ -30,13 +30,18 @@
   
 
 ## 客户端Demo下载
+
+- [QuickStart-Android 全新接入Demo](https://github.com/SudTechnology/hello-sud-plus-android/tree/master/project/QuickStart)
+
+- [QuickStart-iOS 全新接入Demo](https://github.com/SudTechnology/hello-sud-plus-ios/tree/master/project/QuickStart)
+
 - [HelloSud-Android](https://github.com/SudTechnology/hello-sud-android/releases)
   
 - [HelloSud-iOS](https://github.com/SudTechnology/hello-sud-ios/releases)
 
-- [HelloSudPlus-Android](https://github.com/SudTechnology/hello-sud-plus-android/tree/develop)
+- [HelloSudPlus-Android 展示多业务场景](https://github.com/SudTechnology/hello-sud-plus-android/tree/master)
 
-- [HelloSudPlus-iOS](https://github.com/SudTechnology/hello-sud-plus-ios/tree/develop)
+- [HelloSudPlus-iOS 展示多业务场景](https://github.com/SudTechnology/hello-sud-plus-ios/tree/master)
 
 ## 游戏多语言
 - [游戏多语言](Client/Languages/README.md) loadMG language参数

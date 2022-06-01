@@ -30,13 +30,17 @@
   
 
 ## Download the client demo
+- [QuickStart-Android New Demo](https://github.com/SudTechnology/hello-sud-plus-android/tree/master/project/QuickStart)
+
+- [QuickStart-iOS New Demo](https://github.com/SudTechnology/hello-sud-plus-ios/tree/master/project/QuickStart)
+
 - [HelloSud-Android](https://github.com/SudTechnology/hello-sud-android/releases)
 
 - [HelloSud-iOS](https://github.com/SudTechnology/hello-sud-ios/releases)
 
-- [HelloSudPlus-Android](https://github.com/SudTechnology/hello-sud-plus-android/tree/develop)
+- [HelloSudPlus-Android Business Scene](https://github.com/SudTechnology/hello-sud-plus-android/tree/master)
 
-- [HelloSudPlus-iOS](https://github.com/SudTechnology/hello-sud-plus-ios/tree/develop)
+- [HelloSudPlus-iOS Business Scene](https://github.com/SudTechnology/hello-sud-plus-ios/tree/master)
 
 ## Multiple languages for game
 - [Multiple Languages for Game](app/Client/Languages/README.md) loadMG language parameters
