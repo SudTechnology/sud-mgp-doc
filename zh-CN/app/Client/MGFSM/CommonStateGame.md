@@ -204,7 +204,8 @@ mg_common_game_settle
             "award": 100,           // 奖励
             "score": 100,           // 积分
             "isEscaped": 1,         // 逃跑
-            "killerId": "杀自己的玩家id"    // 杀自己的玩家id
+            "killerId": "杀自己的玩家id",    // 杀自己的玩家id
+            "isAI": 0               // 是否是AI玩家
         }
     ]
 }
@@ -601,4 +602,28 @@ mg_common_app_common_self_x_resp
 ```
 App通用状态操作错误结果回调状态（注：只回调错误结果）
 目前只支持app_common_self_playing
+```
+
+
+### 21. 游戏通知app层添加陪玩机器人是否成功（2022-05-17新增）
+
+- state
+
+```
+mg_common_game_add_ai_players
+```
+
+- data
+
+```json
+{
+	"resultCode": 0, //返回码 0：成功，非0：不成功
+	"userIds": ["123", ...] // 加入成功的playerId列表
+}
+```
+
+- 说明
+
+```
+游戏通知app层添加陪玩机器人是否成功
 ```

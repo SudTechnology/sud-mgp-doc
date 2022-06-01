@@ -9,7 +9,7 @@
 
 ## SDK环境要求
 
-- 支持JKD 1.8或其以上版本
+- 支持JDK 1.8或其以上版本
 - 需要联系Sud.Tech为业务分配 `appId`、 `appKey`、 `appSecret`
 
 ## 集成流程

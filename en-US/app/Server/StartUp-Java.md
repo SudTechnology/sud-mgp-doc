@@ -9,7 +9,7 @@
 
 ## SDK environment requirements
 
-- JKD 1.8 or later
+- JDK 1.8 or later
 - Contact Sud.Tech to allocate `appId`, `appKey`, and `appSecret` for your service.
 
 ## Integration process

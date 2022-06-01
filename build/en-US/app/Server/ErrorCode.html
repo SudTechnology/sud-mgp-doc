@@ -1367,6 +1367,173 @@
 </tr>
 </tbody>
 </table>
+<h3 id="game-business-error-codes">Game business error codes</h3>
+<table>
+<thead>
+<tr>
+<th>Error code</th>
+<th>Error information</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Success.</td>
+<td></td>
+</tr>
+<tr>
+<td>100100</td>
+<td>Login Error</td>
+<td></td>
+</tr>
+<tr>
+<td>100200</td>
+<td>Join room error</td>
+<td>state=app_common_self_in, isIn=true</td>
+</tr>
+<tr>
+<td>100201</td>
+<td>Room cannot be added during battle</td>
+<td></td>
+</tr>
+<tr>
+<td>100202</td>
+<td>Room is full</td>
+<td></td>
+</tr>
+<tr>
+<td>100203</td>
+<td>Repeat Join</td>
+<td></td>
+</tr>
+<tr>
+<td>100204</td>
+<td>Someone at the location</td>
+<td></td>
+</tr>
+<tr>
+<td>100300</td>
+<td>Exit error</td>
+<td></td>
+</tr>
+<tr>
+<td>100301</td>
+<td>Not in game slot</td>
+<td></td>
+</tr>
+<tr>
+<td>100302</td>
+<td>Can&apos;t exit in ready or game state</td>
+<td></td>
+</tr>
+<tr>
+<td>100400</td>
+<td>Preparation error</td>
+<td></td>
+</tr>
+<tr>
+<td>100401</td>
+<td>Cancel preparation error</td>
+<td></td>
+</tr>
+<tr>
+<td>100500</td>
+<td>Start game error</td>
+<td></td>
+</tr>
+<tr>
+<td>100501</td>
+<td>Game Started</td>
+<td></td>
+</tr>
+<tr>
+<td>100502</td>
+<td>Only the captain can start the game</td>
+<td></td>
+</tr>
+<tr>
+<td>100503</td>
+<td>Someone is not ready</td>
+<td></td>
+</tr>
+<tr>
+<td>100504</td>
+<td>Not enough people to start the game</td>
+<td></td>
+</tr>
+<tr>
+<td>100600</td>
+<td>Kick error</td>
+<td></td>
+</tr>
+<tr>
+<td>100601</td>
+<td>Captains can kick people</td>
+<td></td>
+</tr>
+<tr>
+<td>100602</td>
+<td>Can&apos;t kick people in the battle room</td>
+<td></td>
+</tr>
+<tr>
+<td>100603</td>
+<td>Can&apos;t kick myself</td>
+<td></td>
+</tr>
+<tr>
+<td>100700</td>
+<td>Change captain error</td>
+<td></td>
+</tr>
+<tr>
+<td>100800</td>
+<td>Escape Error</td>
+<td></td>
+</tr>
+<tr>
+<td>100801</td>
+<td>The game is over when you escape</td>
+<td></td>
+</tr>
+<tr>
+<td>100802</td>
+<td>The player is no longer in the game when fleeing</td>
+<td></td>
+</tr>
+<tr>
+<td>100900</td>
+<td>Dissolution error</td>
+<td></td>
+</tr>
+<tr>
+<td>100901</td>
+<td>The game is over when disbanding</td>
+<td></td>
+</tr>
+<tr>
+<td>100902</td>
+<td>The captain can be disbanded</td>
+<td></td>
+</tr>
+<tr>
+<td>101000</td>
+<td>Switch game mode error</td>
+<td></td>
+</tr>
+<tr>
+<td>101001</td>
+<td>The game mode cannot be switched during the game</td>
+<td></td>
+</tr>
+<tr>
+<td>101002</td>
+<td>Only the captain can switch the game mode</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
       <script>
         var pathname = window.location.pathname
@@ -1415,7 +1582,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Server error codes","level":"2.1.6","depth":2,"next":{"title":"JWT authentication","level":"2.1.7","depth":2,"path":"app/Server/Auth/README.md","ref":"app/Server/Auth/README.md","articles":[{"title":"Authentication","level":"2.1.7.1","depth":3,"path":"app/Server/Auth/Authentication.md","ref":"app/Server/Auth/Authentication.md","articles":[]},{"title":"Data exchange","level":"2.1.7.2","depth":3,"path":"app/Server/Auth/Data exchange.md","ref":"app/Server/Auth/Data exchange.md","articles":[]}]},"previous":{"title":"Download the server-end demo","level":"2.1.5","depth":2,"path":"app/Server/Demo/README.md","ref":"app/Server/Demo/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en-US","gitbook":"*"},"file":{"path":"app/Server/ErrorCode.md","mtime":"2022-04-15T03:19:30.821Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-07T08:44:46.454Z"},"basePath":"../..","book":{"language":"en-US"}});
+            gitbook.page.hasChanged({"page":{"title":"Server error codes","level":"2.1.6","depth":2,"next":{"title":"JWT authentication","level":"2.1.7","depth":2,"path":"app/Server/Auth/README.md","ref":"app/Server/Auth/README.md","articles":[{"title":"Authentication","level":"2.1.7.1","depth":3,"path":"app/Server/Auth/Authentication.md","ref":"app/Server/Auth/Authentication.md","articles":[]},{"title":"Data exchange","level":"2.1.7.2","depth":3,"path":"app/Server/Auth/Data exchange.md","ref":"app/Server/Auth/Data exchange.md","articles":[]}]},"previous":{"title":"Download the server-end demo","level":"2.1.5","depth":2,"path":"app/Server/Demo/README.md","ref":"app/Server/Demo/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en-US","gitbook":"*"},"file":{"path":"app/Server/ErrorCode.md","mtime":"2022-05-17T04:00:18.011Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-26T04:06:05.696Z"},"basePath":"../..","book":{"language":"en-US"}});
         });
     </script>
 </div>

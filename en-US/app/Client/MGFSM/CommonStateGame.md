@@ -205,7 +205,8 @@ mg_common_game_settle
             "award": 100,           // Award.
             "score": 100,           // Points.
             "isEscaped": 1,         // Whether the player has escaped.
-            "killerId": "ID of the player who killed other players."    // ID of the player who killed himself/herself.
+            "killerId": "ID of the player who killed other players." ,   // ID of the player who killed himself/herself.
+            "isAI": 0               // Whether is a AI player
         }
     ]
 }
@@ -601,4 +602,27 @@ mg_common_app_common_self_x_resp
 
 ```
 App Common state operation error result callback state (Note: only the resultCode != 0 is called back)
+```
+
+### 21. Whether the game notifies the app layer of the success of adding the robot players (added on May 17, 2022)
+
+- state
+
+```
+mg_common_game_add_ai_players
+```
+
+- data
+
+```json
+{
+	"resultCode": 0, // Return code 0: successful, non-0: unsuccessful
+	"userIds": ["123", ...] // Successfully added to the playerid list
+}
+```
+
+- Description
+
+```
+Whether the game notifies the app layer to add the accompanying robot successfully
 ```

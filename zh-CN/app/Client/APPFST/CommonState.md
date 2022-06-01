@@ -102,8 +102,9 @@ app_common_self_playing
 
 ```json
 {
-    "isPlaying": true, // true 开始游戏，false 结束游戏
-    "reportGameInfoExtras": "透传的参数"    // string类型，Https服务回调report_game_info参数，最大长度1024字节，超过则截断（2022-02-11支持）
+	"isPlaying": true, // true 开始游戏，false 结束游戏
+	"reportGameInfoExtras": "透传参数",		// string类型，Https服务回调report_game_info参数，最大长度1024字节，超过则截断（2022-01-21）
+	"reportGameInfoKey": "透传参数key"		// string类型，最大长度64字节，接入方服务端，可以根据这个字段来查询一局游戏的数据
 }
 ```
 
@@ -378,4 +379,60 @@ app_common_game_sound_volume
 
 ```
 设置游戏的音量大小
+```
+
+### 15. 设置游戏玩法选项（2022-05-10新增）
+
+- state
+
+```
+app_common_game_setting_select_info
+```
+
+- data
+
+```json
+{
+	"ludo": {			// 游戏名称
+        "mode": 0,      // mode: 默认赛制，0: 快速, 1: 经典;
+        "chessNum": 2,  // chessNum: 默认棋子数量, 2: 对应2颗棋子; 4: 对应4颗棋子;
+        "item": 0       // item: 默认道具, 1: 有道具, 0: 没有道具
+    },
+}
+```
+
+- 说明
+
+```
+设置游戏玩法选项
+```
+
+### 16. 设置游戏中的AI玩家（2022-05-11新增）
+
+- state
+
+```
+app_common_game_add_ai_players
+```
+
+- data
+
+```json
+{
+	"aiPlayers": [
+        {
+                "userId":"",	// 玩家id
+                "avatar":"",	// 头像url
+                "name":"",		// 名字
+                "gender":"male"		// 性别 male：男，female：女
+        }
+    ],
+	"isReady": 1 // 机器人加入后是否自动准备 1：自动准备，0：不自动准备 默认为1
+}
+```
+
+- 说明
+
+```
+设置游戏中的AI玩家
 ```

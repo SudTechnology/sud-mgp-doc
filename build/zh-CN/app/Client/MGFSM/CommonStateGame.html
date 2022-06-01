@@ -1294,7 +1294,8 @@ SDK&#x4EC5;&#x4F1A;&#x7F13;&#x5B58;&#x6700;&#x65B0;&#x4E00;&#x6761;&#x3002;
             <span class="hljs-string">&quot;award&quot;</span>: <span class="hljs-number">100</span>,           <span class="hljs-comment">// &#x5956;&#x52B1;</span>
             <span class="hljs-string">&quot;score&quot;</span>: <span class="hljs-number">100</span>,           <span class="hljs-comment">// &#x79EF;&#x5206;</span>
             <span class="hljs-string">&quot;isEscaped&quot;</span>: <span class="hljs-number">1</span>,         <span class="hljs-comment">// &#x9003;&#x8DD1;</span>
-            <span class="hljs-string">&quot;killerId&quot;</span>: <span class="hljs-string">&quot;&#x6740;&#x81EA;&#x5DF1;&#x7684;&#x73A9;&#x5BB6;id&quot;</span>    <span class="hljs-comment">// &#x6740;&#x81EA;&#x5DF1;&#x7684;&#x73A9;&#x5BB6;id</span>
+            <span class="hljs-string">&quot;killerId&quot;</span>: <span class="hljs-string">&quot;&#x6740;&#x81EA;&#x5DF1;&#x7684;&#x73A9;&#x5BB6;id&quot;</span>,    <span class="hljs-comment">// &#x6740;&#x81EA;&#x5DF1;&#x7684;&#x73A9;&#x5BB6;id</span>
+            <span class="hljs-string">&quot;isAI&quot;</span>: <span class="hljs-number">0</span>               <span class="hljs-comment">// &#x662F;&#x5426;&#x662F;AI&#x73A9;&#x5BB6;</span>
         }
     ]
 }
@@ -1582,6 +1583,47 @@ SDK&#x4EC5;&#x4F1A;&#x7F13;&#x5B58;&#x6700;&#x65B0;&#x4E00;&#x6761;&#x3002;
 <li>&#x8BF4;&#x660E;</li>
 </ul>
 <pre><code>&#x6E38;&#x620F;&#x901A;&#x77E5;app&#x8033;&#x673A;&#xFF08;&#x542C;&#x7B52;&#xFF0C;&#x5587;&#x53ED;&#xFF09;&#x72B6;&#x6001;
+</code></pre><h3 id="20-app&#x901A;&#x7528;&#x72B6;&#x6001;&#x64CD;&#x4F5C;&#x7ED3;&#x679C;&#x9519;&#x8BEF;&#x7801;&#xFF08;2022-05-10&#x65B0;&#x589E;&#xFF09;">20. App&#x901A;&#x7528;&#x72B6;&#x6001;&#x64CD;&#x4F5C;&#x7ED3;&#x679C;&#x9519;&#x8BEF;&#x7801;&#xFF08;2022-05-10&#x65B0;&#x589E;&#xFF09;</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_app_common_self_x_resp
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;state&quot;</span>: <span class="hljs-string">&quot;app_common_self_playing&quot;</span>,   <span class="hljs-comment">// &#x5B57;&#x6BB5;&#x5FC5;&#x586B;, &#x53C2;&#x8003;&#xFF1A;&#x6E38;&#x620F;&#x4E1A;&#x52A1;&#x9519;&#x8BEF; https://docs.sud.tech/zh-CN/app/Client/APPFST/CommonState.html</span>
+  <span class="hljs-string">&quot;resultCode&quot;</span>: <span class="hljs-number">0</span>,    <span class="hljs-comment">// &#x5B57;&#x6BB5;&#x5FC5;&#x586B;&#xFF0C;&#x53C2;&#x8003;&#xFF1A;&#x6E38;&#x620F;&#x4E1A;&#x52A1;&#x9519;&#x8BEF; https://docs.sud.tech/zh-CN/app/Server/ErrorCode.html</span>
+  <span class="hljs-string">&quot;isIn&quot;</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">// &#x5F53;state=app_common_self_in&#x65F6;&#xFF0C;&#x5B57;&#x6BB5;&#x5FC5;&#x586B;</span>
+  <span class="hljs-string">&quot;isReady&quot;</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">// &#x5F53;state=app_common_self_ready&#x65F6;&#xFF0C;&#x5B57;&#x6BB5;&#x5FC5;&#x586B;</span>
+  <span class="hljs-string">&quot;isPlaying&quot;</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">// &#x5F53;state=app_common_self_playing&#x65F6;&#xFF0C;&#x5B57;&#x6BB5;&#x5FC5;&#x586B;</span>
+  <span class="hljs-string">&quot;reportGameInfoExtras&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-comment">// &#x5F53;state=app_common_self_playing&#x65F6;&#xFF0C;&#x5B57;&#x6BB5;&#x5FC5;&#x586B;</span>
+  <span class="hljs-string">&quot;curCaptainUID&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-comment">// &#x5F53;state=app_common_self_captain&#x65F6;&#xFF0C;&#x5B57;&#x6BB5;&#x5FC5;&#x586B;</span>
+  <span class="hljs-string">&quot;kickedUID&quot;</span>: <span class="hljs-string">&quot;&quot;</span> <span class="hljs-comment">// &#x5F53;state=app_common_self_kick&#x65F6;&#xFF0C;&#x5B57;&#x6BB5;&#x5FC5;&#x586B;</span>
+}
+</code></pre>
+<ul>
+<li>&#x8BF4;&#x660E;</li>
+</ul>
+<pre><code>App&#x901A;&#x7528;&#x72B6;&#x6001;&#x64CD;&#x4F5C;&#x9519;&#x8BEF;&#x7ED3;&#x679C;&#x56DE;&#x8C03;&#x72B6;&#x6001;&#xFF08;&#x6CE8;&#xFF1A;&#x53EA;&#x56DE;&#x8C03;&#x9519;&#x8BEF;&#x7ED3;&#x679C;&#xFF09;
+&#x76EE;&#x524D;&#x53EA;&#x652F;&#x6301;app_common_self_playing
+</code></pre><h3 id="21-&#x6E38;&#x620F;&#x901A;&#x77E5;app&#x5C42;&#x6DFB;&#x52A0;&#x966A;&#x73A9;&#x673A;&#x5668;&#x4EBA;&#x662F;&#x5426;&#x6210;&#x529F;&#xFF08;2022-05-17&#x65B0;&#x589E;&#xFF09;">21. &#x6E38;&#x620F;&#x901A;&#x77E5;app&#x5C42;&#x6DFB;&#x52A0;&#x966A;&#x73A9;&#x673A;&#x5668;&#x4EBA;&#x662F;&#x5426;&#x6210;&#x529F;&#xFF08;2022-05-17&#x65B0;&#x589E;&#xFF09;</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_game_add_ai_players
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;resultCode&quot;</span>: <span class="hljs-number">0</span>, <span class="hljs-comment">//&#x8FD4;&#x56DE;&#x7801; 0&#xFF1A;&#x6210;&#x529F;&#xFF0C;&#x975E;0&#xFF1A;&#x4E0D;&#x6210;&#x529F;</span>
+    <span class="hljs-string">&quot;userIds&quot;</span>: [<span class="hljs-string">&quot;123&quot;</span>, ...] <span class="hljs-comment">// &#x52A0;&#x5165;&#x6210;&#x529F;&#x7684;playerId&#x5217;&#x8868;</span>
+}
+</code></pre>
+<ul>
+<li>&#x8BF4;&#x660E;</li>
+</ul>
+<pre><code>&#x6E38;&#x620F;&#x901A;&#x77E5;app&#x5C42;&#x6DFB;&#x52A0;&#x966A;&#x73A9;&#x673A;&#x5668;&#x4EBA;&#x662F;&#x5426;&#x6210;&#x529F;
 </code></pre>
       <script>
         var pathname = window.location.pathname
@@ -1630,7 +1672,7 @@ SDK&#x4EC5;&#x4F1A;&#x7F13;&#x5B58;&#x6700;&#x65B0;&#x4E00;&#x6761;&#x3002;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"通用状态-游戏","level":"1.2.2.3.1","depth":4,"next":{"title":"通用状态-玩家","level":"1.2.2.3.2","depth":4,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},"previous":{"title":"MG状态机","level":"1.2.2.3","depth":3,"path":"app/Client/MGFSM/README.md","ref":"app/Client/MGFSM/README.md","articles":[{"title":"通用状态-游戏","level":"1.2.2.3.1","depth":4,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},{"title":"通用状态-玩家","level":"1.2.2.3.2","depth":4,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},{"title":"你画我猜","level":"1.2.2.3.3","depth":4,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Client/MGFSM/CommonStateGame.md","mtime":"2022-04-15T09:49:42.785Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-07T08:44:46.454Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
+            gitbook.page.hasChanged({"page":{"title":"通用状态-游戏","level":"1.2.2.3.1","depth":4,"next":{"title":"通用状态-玩家","level":"1.2.2.3.2","depth":4,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},"previous":{"title":"MG状态机","level":"1.2.2.3","depth":3,"path":"app/Client/MGFSM/README.md","ref":"app/Client/MGFSM/README.md","articles":[{"title":"通用状态-游戏","level":"1.2.2.3.1","depth":4,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},{"title":"通用状态-玩家","level":"1.2.2.3.2","depth":4,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},{"title":"你画我猜","level":"1.2.2.3.3","depth":4,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Client/MGFSM/CommonStateGame.md","mtime":"2022-05-26T04:04:04.887Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-26T04:06:05.696Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
         });
     </script>
 </div>

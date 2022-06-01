@@ -97,6 +97,16 @@ dataJsonResp = {
 |ui.game_bg.hide  |否  |bool |是否隐藏背景图，包括大厅和战斗（false: 显示； true: 隐藏，默认为false）   |
 |ui.block_change_seat  |否  |json |自定义阻止换座位（目前仅支持飞行棋）  |
 |ui.block_change_seat.custom  |否  |bool |自定义阻止换座位（false: 可以换座位； true: 不可以换座位；默认为false）   |
+|ui.game_setting_select_pnl  |否  |json |大厅中的玩法选择设置面板   |
+|ui.game_setting_select_pnl.hide  |否  |bool |是否隐藏大厅中的玩法选择设置面板（false: 显示； true: 隐藏，默认为false）   |
+|ui.game_managed_image  |否  |json |游戏中的托管图标   |
+|ui.game_managed_image.hide  |否  |bool |是否隐藏游戏中的托管图标（false: 显示； true: 隐藏，默认为false）   |
+|ui.game_table_image  |否  |json |游戏中牌桌背景图  （注：只对某些带牌桌类游戏有作用） |
+|ui.game_table_image.hide  |否  |bool |是否隐藏游戏牌桌背景图（false: 显示； true: 隐藏，默认为false）   |
+|ui.game_countdown_time  |否  |json |游戏中游戏倒计时显示  （注：现在只针对umo生效） |
+|ui.game_countdown_time.hide  |否  |bool |是否隐藏游戏中游戏倒计时显示（false: 显示； true: 隐藏，默认为false）   |
+|ui.game_selected_tips  |否  |json |游戏中所选择的玩法提示文字  （注：现在只针对ludo生效） |
+|ui.game_selected_tips.hide  |否  |bool |是否隐藏游戏中所选择的玩法提示文字显示（false: 显示； true: 隐藏，默认为false）   |
 
 
 ### 返回示例
@@ -182,7 +192,22 @@ dataJsonResp = {
         },
 		"block_change_seat": {
 			"custom": false
-		}
+		},
+		"game_setting_select_pnl": {
+			"hide": false
+		},
+		"game_managed_image": {
+			"hide": false
+		},
+        "game_table_iamge": {
+            "hide": false
+        },
+        "game_countdown_time": {
+            "hide": false
+        },
+        "game_selected_tips": {
+            "hide": false
+        }
     }
 }
 ```
