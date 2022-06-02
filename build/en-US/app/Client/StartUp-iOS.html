@@ -904,43 +904,34 @@
                                 <p>#</p>
 <p><img src="../Resource/logo.png" alt="SUD"></p>
 <h2 id="quick-start-for-ios">Quick start for iOS</h2>
-<ol>
-<li><p>Contact Sud.Tech to obtain <code>appId</code>, <code>appKey</code>, <code>appSecret</code> for your service.</p>
-</li>
-<li><p>Download the iOS SDK <a href="https://github.com/SudTechnology/sud-mgp-ios/releases" target="_blank">SudMGP.xcframework</a> and the demo project <a href="https://github.com/SudTechnology/hello-sud-ios/releases" target="_blank">HelloSud-iOS.zip</a>.</p>
-</li>
-<li><p>Import the SDK into the project.</p>
-<p> In the following example, Xcode 13.0 and the HelloSud-iOS project are used, and the programming language is Objective-C.</p>
-<ul>
-<li><p>Copy <strong>SudMGP.xcframework</strong> to the <strong>GameSDK</strong> folder.</p>
-</li>
-<li><p>Open Xcode, select <strong>TARGETS</strong> &gt; <strong>HelloSud-iOS</strong>. Then select <strong>Build Settings</strong> on the right, search for <strong>Enable Bitcode</strong>, and set it to <strong>No</strong>.</p>
-</li>
-<li><p>Select <strong>TARGETS</strong> &gt; <strong>HelloSud-iOS</strong>, and then select <strong>Build Phases</strong>.</p>
-</li>
-<li><p>Drag <strong>SudMGP.xcframework</strong> to <strong>Link Binary With Libraries</strong>.</p>
-</li>
-<li><p>Select <strong>General</strong> and set <strong>SudMGP.xcframework</strong> to <strong>Embed &amp; Sign</strong> in <strong>Frameworks, Libraries, and Embedded Content</strong>.</p>
-<p>  The following figures show the operation steps.</p>
-<p>  <img src="../Resource/Client/bitcode.png" alt="SUD"></p>
-<p>  <img src="../Resource/Client/target.png" alt="SUD"></p>
-<p>  <img src="../Resource/Client/emed.png" alt="SUD"></p>
-</li>
-</ul>
-</li>
-<li><p>Initialize the <a href="API/SudMGP.html">SudMGP</a>. For details, see &quot;HelloSud-iOS&quot;.</p>
-</li>
-<li><p>Load the game using the <a href="API/SudMGP.html">SudMGP</a>. For details, see &quot;HelloSud-iOS&quot;.</p>
-</li>
-<li><p>Optional: Implement <a href="API/ISudFSMMG.html"><code>ISudFSMMG</code></a> to respond to the MG finite state machine (FSM). For details, see &quot;HelloSud-iOS&quot;.</p>
-</li>
-<li><p>Optional: Implement <a href="API/ISudFSTAPP.html"><code>ISudFSTAPP</code></a> to send states from the app to the app finite state transducer (FST). For details, see &quot;HelloSud-iOS&quot;.</p>
-</li>
-<li><p>Deinitialize the <a href="API/SudMGP.html">SudMGP</a>. For details, see &quot;HelloSud-iOS&quot;.</p>
-</li>
-<li><p>API call sequence diagram.</p>
-</li>
-</ol>
+<h3 id="1-contact-sudtech-to-obtain-appid-appkey-appsecret-for-your-service">1. Contact Sud.Tech to obtain <code>appId</code>, <code>appKey</code>, <code>appSecret</code> for your service.</h3>
+<h3 id="2-download-the-ios-sdk-sudmgpxcframework-and-the-new-demo-quickstart-ios-the-demo-project-hellosud-ioszip">2. Download the iOS SDK <a href="https://github.com/SudTechnology/sud-mgp-ios/releases" target="_blank">SudMGP.xcframework</a> and the new Demo <a href="https://github.com/SudTechnology/hello-sud-plus-ios/tree/master/project/QuickStart" target="_blank">QuickStart-iOS</a>, the demo project <a href="https://github.com/SudTechnology/hello-sud-ios/releases" target="_blank">HelloSud-iOS.zip</a>.</h3>
+<h3 id="3-import-the-sdk-into-the-project">3. Import the SDK into the project.</h3>
+<pre><code>In the following example, Xcode 13.0 and the HelloSud-iOS project are used, and the programming language is Objective-C.
+
+- Copy **SudMGP.xcframework** to the **GameSDK** folder.
+
+- Open Xcode, select **TARGETS** &gt; **HelloSud-iOS**. Then select **Build Settings** on the right, search for **Enable Bitcode**, and set it to **No**.
+
+- Select **TARGETS** &gt; **HelloSud-iOS**, and then select **Build Phases**.
+
+- Drag **SudMGP.xcframework** to **Link Binary With Libraries**.
+
+- Select **General** and set **SudMGP.xcframework** to **Embed &amp; Sign** in **Frameworks, Libraries, and Embedded Content**.
+
+    The following figures show the operation steps.
+
+    ![SUD](../Resource/Client/bitcode.png)
+
+    ![SUD](../Resource/Client/target.png)
+
+    ![SUD](../Resource/Client/emed.png)
+</code></pre><h3 id="4-initialize-the-sudmgp-for-details-see-quickstart-ios">4. Initialize the <a href="API/SudMGP.html">SudMGP</a>. For details, see <a href="https://github.com/SudTechnology/hello-sud-plus-ios/tree/master/project/QuickStart" target="_blank">QuickStart-iOS</a></h3>
+<h3 id="5-load-the-game-using-the-sudmgp-for-details-see-quickstart-ios">5. Load the game using the <a href="API/SudMGP.html">SudMGP</a>. For details, see <a href="https://github.com/SudTechnology/hello-sud-plus-ios/tree/master/project/QuickStart" target="_blank">QuickStart-iOS</a></h3>
+<h3 id="6-optional-implement-isudfsmmg-to-respond-to-the-mg-finite-state-machine-fsm-for-details-see-quickstart-ios">6. Optional: Implement <a href="API/ISudFSMMG.html"><code>ISudFSMMG</code></a> to respond to the MG finite state machine (FSM). For details, see <a href="https://github.com/SudTechnology/hello-sud-plus-ios/tree/master/project/QuickStart" target="_blank">QuickStart-iOS</a></h3>
+<h3 id="7-optional-implement-isudfstapp-to-send-states-from-the-app-to-the-app-finite-state-transducer-fst-for-details-see-quickstart-ios">7. Optional: Implement <a href="API/ISudFSTAPP.html"><code>ISudFSTAPP</code></a> to send states from the app to the app finite state transducer (FST). For details, see <a href="https://github.com/SudTechnology/hello-sud-plus-ios/tree/master/project/QuickStart" target="_blank">QuickStart-iOS</a></h3>
+<h3 id="8-deinitialize-the-sudmgp-for-details-see-quickstart-ios">8. Deinitialize the <a href="API/SudMGP.html">SudMGP</a>. For details, see <a href="https://github.com/SudTechnology/hello-sud-plus-ios/tree/master/project/QuickStart" target="_blank">QuickStart-iOS</a></h3>
+<h3 id="9-call-sequence-diagram-of-app-cient-and-sudmgp">9. Call sequence diagram of APP Cient and SudMGP</h3>
 <p><img src="../Resource/Client/sdk_api_sd.png" alt="api"></p>
 
       <script>
@@ -990,7 +981,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"iOS","level":"1.2.1.1","depth":3,"next":{"title":"Android","level":"1.2.1.2","depth":3,"path":"app/Client/StartUp-Android.md","ref":"app/Client/StartUp-Android.md","articles":[]},"previous":{"title":"Client quick start","level":"1.2.1","depth":2,"path":"app/Client/StartUp.md","ref":"app/Client/StartUp.md","articles":[{"title":"iOS","level":"1.2.1.1","depth":3,"path":"app/Client/StartUp-iOS.md","ref":"app/Client/StartUp-iOS.md","articles":[]},{"title":"Android","level":"1.2.1.2","depth":3,"path":"app/Client/StartUp-Android.md","ref":"app/Client/StartUp-Android.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en-US","gitbook":"*"},"file":{"path":"app/Client/StartUp-iOS.md","mtime":"2022-04-15T09:49:42.494Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-26T04:06:05.696Z"},"basePath":"../..","book":{"language":"en-US"}});
+            gitbook.page.hasChanged({"page":{"title":"iOS","level":"1.2.1.1","depth":3,"next":{"title":"Android","level":"1.2.1.2","depth":3,"path":"app/Client/StartUp-Android.md","ref":"app/Client/StartUp-Android.md","articles":[]},"previous":{"title":"Client quick start","level":"1.2.1","depth":2,"path":"app/Client/StartUp.md","ref":"app/Client/StartUp.md","articles":[{"title":"iOS","level":"1.2.1.1","depth":3,"path":"app/Client/StartUp-iOS.md","ref":"app/Client/StartUp-iOS.md","articles":[]},{"title":"Android","level":"1.2.1.2","depth":3,"path":"app/Client/StartUp-Android.md","ref":"app/Client/StartUp-Android.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en-US","gitbook":"*"},"file":{"path":"app/Client/StartUp-iOS.md","mtime":"2022-06-02T01:55:47.641Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-02T01:57:13.293Z"},"basePath":"../..","book":{"language":"en-US"}});
         });
     </script>
 </div>
