@@ -6,7 +6,7 @@
 
 ### 1. 需要联系Sud.Tech为业务分配 `appId`、 `appKey`、 `appSecret`
 
-### 2. 下载 iOS SDK [SudMGP.xcframework](https://github.com/SudTechnology/sud-mgp-ios/releases) 和 Demo工程 [QuickStart-iOS](https://github.com/SudTechnology/hello-sud-plus-ios/tree/master/project/QuickStart) ， 旧接入Demo[HelloSud-iOS.zip](https://github.com/SudTechnology/hello-sud-ios/releases)
+### 2. 下载 iOS SDK [SudMGP.xcframework](https://github.com/SudTechnology/sud-mgp-ios/releases) 和 新接入Demo工程 [QuickStart-iOS](https://github.com/SudTechnology/hello-sud-plus-ios/tree/master/project/QuickStart) ， 接入Demo[HelloSud-iOS.zip](https://github.com/SudTechnology/hello-sud-ios/releases)
 
 ### 3. 在工程中引入SDK：
 

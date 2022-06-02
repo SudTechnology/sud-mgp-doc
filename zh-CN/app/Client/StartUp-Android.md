@@ -6,7 +6,7 @@
 
 ### 1. 需要联系Sud.Tech为业务分配 `appId`、 `appKey`、 `appSecret`
 
-### 2. 下载 [Android SDK SudMGP.aar](https://github.com/SudTechnology/sud-mgp-android/releases) 和 全新Demo工程 [QuickStart](https://github.com/SudTechnology/hello-sud-plus-android/tree/master/project/QuickStart), 接入Demo [HelloSud-Android.zip](https://github.com/SudTechnology/hello-sud-android/releases)
+### 2. 下载 [Android SDK SudMGP.aar](https://github.com/SudTechnology/sud-mgp-android/releases) 和 新接入Demo工程 [QuickStart](https://github.com/SudTechnology/hello-sud-plus-android/tree/master/project/QuickStart), 接入Demo [HelloSud-Android.zip](https://github.com/SudTechnology/hello-sud-android/releases)
 
 ### 3. 在工程中引入SDK：
 
