@@ -904,52 +904,42 @@
                                 <p>#</p>
 <p><img src="../Resource/logo.png" alt="SUD"></p>
 <h2 id="android-&#x5FEB;&#x901F;&#x5F00;&#x59CB;">Android &#x5FEB;&#x901F;&#x5F00;&#x59CB;</h2>
-<ol>
-<li><p>&#x9700;&#x8981;&#x8054;&#x7CFB;Sud.Tech&#x4E3A;&#x4E1A;&#x52A1;&#x5206;&#x914D; <code>appId</code>&#x3001; <code>appKey</code>&#x3001; <code>appSecret</code></p>
-</li>
-<li><p>&#x4E0B;&#x8F7D; <a href="https://github.com/SudTechnology/sud-mgp-android/releases" target="_blank">Android SDK SudMGP.aar</a> &#x548C; Demo&#x5DE5;&#x7A0B; <a href="https://github.com/SudTechnology/hello-sud-android/releases" target="_blank">HelloSud-Android.zip</a></p>
-</li>
-<li><p>&#x5728;&#x5DE5;&#x7A0B;&#x4E2D;&#x5F15;&#x5165;SDK&#xFF1A;</p>
-<p> &#x4EE5;Android Studio 4.2&#xFF0C;Gradle 6.7.1&#xFF0C;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;Java&#xFF0C;&#x5DE5;&#x7A0B;SudMgpExample-Android&#x4E3A;&#x4F8B;&#xFF1A;</p>
-<ul>
-<li><p>&#x5C06; <code>SudMGP.aar</code> &#x62F7;&#x8D1D;&#x5230;SudMgpExample-Android/app/libs&#x76EE;&#x5F55;</p>
-<p>  &#x5982;&#x4E0B;&#x56FE;&#xFF1A;</p>
-<p>  <img src="../Resource/Client/libaar.png" alt="SUD"></p>
-</li>
-<li><p>&#x7F16;&#x8F91;SudMgpExample-Android/app/build.gradle&#xFF0C;&#x589E;&#x52A0;SDK&#x9700;&#x8981;&#x7684;&#x914D;&#x7F6E;</p>
-<pre><code class="lang-groovy">  repositories {
-      <span class="hljs-comment">// &#x52A0;&#x8F7D;&#x6E38;&#x620F;SDK libs&#x8DEF;&#x5F84;</span>
-      flatDir {
-          dirs <span class="hljs-string">&apos;../app/libs&apos;</span>
-      }
-  }
-  dependencies {
-      <span class="hljs-comment">// &#x52A0;&#x8F7D;&#x6E38;&#x620F;SDK aar</span>
-      implementation fileTree(<span class="hljs-string">include:</span> [<span class="hljs-string">&apos;*.jar&apos;</span>, <span class="hljs-string">&quot;*.aar&quot;</span>], <span class="hljs-string">dir:</span> <span class="hljs-string">&apos;libs&apos;</span>)
-      <span class="hljs-comment">// SudMGP&#x9700;&#x5F15;&#x5165;okhttp</span>
-      implementation <span class="hljs-string">&apos;com.squareup.okhttp3:okhttp:4.9.2&apos;</span>
+<h3 id="1-&#x9700;&#x8981;&#x8054;&#x7CFB;sudtech&#x4E3A;&#x4E1A;&#x52A1;&#x5206;&#x914D;-appid&#x3001;-appkey&#x3001;-appsecret">1. &#x9700;&#x8981;&#x8054;&#x7CFB;Sud.Tech&#x4E3A;&#x4E1A;&#x52A1;&#x5206;&#x914D; <code>appId</code>&#x3001; <code>appKey</code>&#x3001; <code>appSecret</code></h3>
+<h3 id="2-&#x4E0B;&#x8F7D;-android-sdk-sudmgpaar-&#x548C;-&#x5168;&#x65B0;demo&#x5DE5;&#x7A0B;-quickstart-&#x63A5;&#x5165;demo-hellosud-androidzip">2. &#x4E0B;&#x8F7D; <a href="https://github.com/SudTechnology/sud-mgp-android/releases" target="_blank">Android SDK SudMGP.aar</a> &#x548C; &#x5168;&#x65B0;Demo&#x5DE5;&#x7A0B; <a href="https://github.com/SudTechnology/hello-sud-plus-android/tree/master/project/QuickStart" target="_blank">QuickStart</a>, &#x63A5;&#x5165;Demo <a href="https://github.com/SudTechnology/hello-sud-android/releases" target="_blank">HelloSud-Android.zip</a></h3>
+<h3 id="3-&#x5728;&#x5DE5;&#x7A0B;&#x4E2D;&#x5F15;&#x5165;sdk&#xFF1A;">3. &#x5728;&#x5DE5;&#x7A0B;&#x4E2D;&#x5F15;&#x5165;SDK&#xFF1A;</h3>
+<pre><code>&#x4EE5;Android Studio 4.2&#xFF0C;Gradle 6.7.1&#xFF0C;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;Java&#xFF0C;&#x5DE5;&#x7A0B;HelloSud-Android&#x4E3A;&#x4F8B;&#xFF1A;
 
-      ......
-  }
-</code></pre>
-</li>
-</ul>
-</li>
-<li><p>&#x521D;&#x59CB;&#x5316; <a href="API/SudMGP.html">SudMGP</a> &#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x53C2;&#x8003;HelloSud-Android</p>
-</li>
-<li><p>&#x5BF9;&#x63A5; <a href="API/SudMGP.html">SudMGP</a> &#x76F8;&#x5173;&#x751F;&#x547D;&#x5468;&#x671F;&#x56DE;&#x8C03;&#xFF0C;&#x8BB2;&#x6E38;&#x620F;View&#x52A0;&#x5165;&#x5230;&#x539F;&#x751F;&#x5E03;&#x5C40;&#x4E2D;&#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x53C2;&#x8003;HelloSud-Android</p>
-</li>
-<li><p>&#x901A;&#x8FC7; <a href="API/SudMGP.html">SudMGP</a> &#x52A0;&#x8F7D;&#x5C0F;&#x6E38;&#x620F;&#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x53C2;&#x8003;HelloSud-Android</p>
-</li>
-<li><p>&#x53EF;&#x9009;&#xFF1A;&#x5B9E;&#x73B0; <a href="API/ISudFSMMG.html">ISudFSMMG</a> &#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x53C2;&#x8003;HelloSud-Android</p>
-</li>
-<li><p>&#x53EF;&#x9009;&#xFF1A;&#x5B9E;&#x73B0; <a href="API/ISudFSTAPP.html">ISudFSTAPP</a> &#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x53C2;&#x8003;HelloSud-Android</p>
-</li>
-<li><p>&#x53CD;&#x521D;&#x59CB;&#x5316; <a href="API/SudMGP.html">SudMGP</a> &#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x53C2;&#x8003;HelloSud-Android</p>
-</li>
-<li><p>API&#x8C03;&#x7528;&#x65F6;&#x5E8F;&#x56FE;</p>
-</li>
-</ol>
+- &#x5C06; `SudMGP.aar` &#x62F7;&#x8D1D;&#x5230;SudMgpExample-Android/app/libs&#x76EE;&#x5F55;
+
+    &#x5982;&#x4E0B;&#x56FE;&#xFF1A;
+
+    ![SUD](../Resource/Client/libaar.png)
+
+- &#x7F16;&#x8F91;SudMgpExample-Android/app/build.gradle&#xFF0C;&#x589E;&#x52A0;SDK&#x9700;&#x8981;&#x7684;&#x914D;&#x7F6E;
+
+    ```groovy
+    repositories {
+        // &#x52A0;&#x8F7D;&#x6E38;&#x620F;SDK libs&#x8DEF;&#x5F84;
+        flatDir {
+            dirs &apos;../app/libs&apos;
+        }
+    }
+    dependencies {
+        // &#x52A0;&#x8F7D;&#x6E38;&#x620F;SDK aar
+        implementation fileTree(include: [&apos;*.jar&apos;, &quot;*.aar&quot;], dir: &apos;libs&apos;)
+        // SudMGP&#x9700;&#x5F15;&#x5165;okhttp
+        implementation &apos;com.squareup.okhttp3:okhttp:4.9.2&apos;
+
+        ......
+    }
+    ```
+</code></pre><h3 id="4-&#x521D;&#x59CB;&#x5316;-sudmgp-&#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x53C2;&#x8003;quickstart">4. &#x521D;&#x59CB;&#x5316; <a href="API/SudMGP.html">SudMGP</a> &#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x53C2;&#x8003;<a href="https://github.com/SudTechnology/hello-sud-plus-android/tree/master/project/QuickStart" target="_blank">QuickStart</a></h3>
+<h3 id="5-&#x5BF9;&#x63A5;-sudmgp-&#x76F8;&#x5173;&#x751F;&#x547D;&#x5468;&#x671F;&#x56DE;&#x8C03;&#xFF0C;&#x8BB2;&#x6E38;&#x620F;view&#x52A0;&#x5165;&#x5230;&#x539F;&#x751F;&#x5E03;&#x5C40;&#x4E2D;&#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x53C2;&#x8003;quickstart">5. &#x5BF9;&#x63A5; <a href="API/SudMGP.html">SudMGP</a> &#x76F8;&#x5173;&#x751F;&#x547D;&#x5468;&#x671F;&#x56DE;&#x8C03;&#xFF0C;&#x8BB2;&#x6E38;&#x620F;View&#x52A0;&#x5165;&#x5230;&#x539F;&#x751F;&#x5E03;&#x5C40;&#x4E2D;&#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x53C2;&#x8003;<a href="https://github.com/SudTechnology/hello-sud-plus-android/tree/master/project/QuickStart" target="_blank">QuickStart</a></h3>
+<h3 id="6-&#x901A;&#x8FC7;-sudmgp-&#x52A0;&#x8F7D;&#x5C0F;&#x6E38;&#x620F;&#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x53C2;&#x8003;quickstart">6. &#x901A;&#x8FC7; <a href="API/SudMGP.html">SudMGP</a> &#x52A0;&#x8F7D;&#x5C0F;&#x6E38;&#x620F;&#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x53C2;&#x8003;<a href="https://github.com/SudTechnology/hello-sud-plus-android/tree/master/project/QuickStart" target="_blank">QuickStart</a></h3>
+<h3 id="7-&#x53EF;&#x9009;&#xFF1A;&#x5B9E;&#x73B0;-isudfsmmg-&#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x53C2;&#x8003;quickstart">7. &#x53EF;&#x9009;&#xFF1A;&#x5B9E;&#x73B0; <a href="API/ISudFSMMG.html">ISudFSMMG</a> &#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x53C2;&#x8003;<a href="https://github.com/SudTechnology/hello-sud-plus-android/tree/master/project/QuickStart" target="_blank">QuickStart</a></h3>
+<h3 id="8-&#x53EF;&#x9009;&#xFF1A;&#x5B9E;&#x73B0;-isudfstapp-&#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x53C2;&#x8003;quickstart">8. &#x53EF;&#x9009;&#xFF1A;&#x5B9E;&#x73B0; <a href="API/ISudFSTAPP.html">ISudFSTAPP</a> &#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x53C2;&#x8003;<a href="https://github.com/SudTechnology/hello-sud-plus-android/tree/master/project/QuickStart" target="_blank">QuickStart</a></h3>
+<h3 id="9-&#x9500;&#x6BC1;&#x6E38;&#x620F;-sudmgp-&#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x53C2;&#x8003;quickstart">9. &#x9500;&#x6BC1;&#x6E38;&#x620F; <a href="API/SudMGP.html">SudMGP</a> &#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x53C2;&#x8003;<a href="https://github.com/SudTechnology/hello-sud-plus-android/tree/master/project/QuickStart" target="_blank">QuickStart</a></h3>
+<h3 id="10-api&#x8C03;&#x7528;&#x65F6;&#x5E8F;&#x56FE;">10. API&#x8C03;&#x7528;&#x65F6;&#x5E8F;&#x56FE;</h3>
 <p><img src="../Resource/Client/sdk_api_sd.png" alt="api"></p>
 
       <script>
@@ -999,7 +989,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Android","level":"1.2.1.2","depth":3,"next":{"title":"客户端文档","level":"1.2.2","depth":2,"path":"app/Client/README.md","ref":"app/Client/README.md","articles":[{"title":"API","level":"1.2.2.1","depth":3,"path":"app/Client/API/README.md","ref":"app/Client/API/README.md","articles":[{"title":"SudMGP","level":"1.2.2.1.1","depth":4,"path":"app/Client/API/SudMGP.md","ref":"app/Client/API/SudMGP.md","articles":[]},{"title":"ISudFSTAPP","level":"1.2.2.1.2","depth":4,"path":"app/Client/API/ISudFSTAPP.md","ref":"app/Client/API/ISudFSTAPP.md","articles":[]},{"title":"ISudFSMMG","level":"1.2.2.1.3","depth":4,"path":"app/Client/API/ISudFSMMG.md","ref":"app/Client/API/ISudFSMMG.md","articles":[{"title":"onGetGameCfg","level":"1.2.2.1.3.1","depth":5,"path":"app/Client/API/ISudFSMMG/onGetGameCfg.md","ref":"app/Client/API/ISudFSMMG/onGetGameCfg.md","articles":[]},{"title":"onGetGameViewInfo","level":"1.2.2.1.3.2","depth":5,"path":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","ref":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","articles":[]}]}]},{"title":"APP状态转换器","level":"1.2.2.2","depth":3,"path":"app/Client/APPFST/README.md","ref":"app/Client/APPFST/README.md","articles":[{"title":"通用状态","level":"1.2.2.2.1","depth":4,"path":"app/Client/APPFST/CommonState.md","ref":"app/Client/APPFST/CommonState.md","articles":[]}]},{"title":"MG状态机","level":"1.2.2.3","depth":3,"path":"app/Client/MGFSM/README.md","ref":"app/Client/MGFSM/README.md","articles":[{"title":"通用状态-游戏","level":"1.2.2.3.1","depth":4,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},{"title":"通用状态-玩家","level":"1.2.2.3.2","depth":4,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},{"title":"你画我猜","level":"1.2.2.3.3","depth":4,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]}]}]},"previous":{"title":"iOS","level":"1.2.1.1","depth":3,"path":"app/Client/StartUp-iOS.md","ref":"app/Client/StartUp-iOS.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Client/StartUp-Android.md","mtime":"2022-04-15T09:49:42.503Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-26T04:06:05.696Z"},"basePath":"../..","book":{"language":"zh-CN"}});
+            gitbook.page.hasChanged({"page":{"title":"Android","level":"1.2.1.2","depth":3,"next":{"title":"客户端文档","level":"1.2.2","depth":2,"path":"app/Client/README.md","ref":"app/Client/README.md","articles":[{"title":"API","level":"1.2.2.1","depth":3,"path":"app/Client/API/README.md","ref":"app/Client/API/README.md","articles":[{"title":"SudMGP","level":"1.2.2.1.1","depth":4,"path":"app/Client/API/SudMGP.md","ref":"app/Client/API/SudMGP.md","articles":[]},{"title":"ISudFSTAPP","level":"1.2.2.1.2","depth":4,"path":"app/Client/API/ISudFSTAPP.md","ref":"app/Client/API/ISudFSTAPP.md","articles":[]},{"title":"ISudFSMMG","level":"1.2.2.1.3","depth":4,"path":"app/Client/API/ISudFSMMG.md","ref":"app/Client/API/ISudFSMMG.md","articles":[{"title":"onGetGameCfg","level":"1.2.2.1.3.1","depth":5,"path":"app/Client/API/ISudFSMMG/onGetGameCfg.md","ref":"app/Client/API/ISudFSMMG/onGetGameCfg.md","articles":[]},{"title":"onGetGameViewInfo","level":"1.2.2.1.3.2","depth":5,"path":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","ref":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","articles":[]}]}]},{"title":"APP状态转换器","level":"1.2.2.2","depth":3,"path":"app/Client/APPFST/README.md","ref":"app/Client/APPFST/README.md","articles":[{"title":"通用状态","level":"1.2.2.2.1","depth":4,"path":"app/Client/APPFST/CommonState.md","ref":"app/Client/APPFST/CommonState.md","articles":[]}]},{"title":"MG状态机","level":"1.2.2.3","depth":3,"path":"app/Client/MGFSM/README.md","ref":"app/Client/MGFSM/README.md","articles":[{"title":"通用状态-游戏","level":"1.2.2.3.1","depth":4,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},{"title":"通用状态-玩家","level":"1.2.2.3.2","depth":4,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},{"title":"你画我猜","level":"1.2.2.3.3","depth":4,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]}]}]},"previous":{"title":"iOS","level":"1.2.1.1","depth":3,"path":"app/Client/StartUp-iOS.md","ref":"app/Client/StartUp-iOS.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Client/StartUp-Android.md","mtime":"2022-06-02T01:55:47.643Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-02T01:57:13.293Z"},"basePath":"../..","book":{"language":"zh-CN"}});
         });
     </script>
 </div>

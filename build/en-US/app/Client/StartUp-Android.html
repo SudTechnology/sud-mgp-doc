@@ -904,19 +904,13 @@
                                 <p>#</p>
 <p><img src="../Resource/logo.png" alt="SUD"></p>
 <h2 id="quick-start-for-android">Quick start for Android</h2>
-<ol>
-<li><p>Contact Sud.Tech to obtain <code>appId</code>, <code>appKey</code>, <code>appSecret</code> for your service.</p>
-</li>
-<li><p>Download <a href="https://github.com/SudTechnology/sud-mgp-android/releases" target="_blank">Android SDK SudMGP.aar</a> and the demo project <a href="https://github.com/SudTechnology/hello-sud-android/releases" target="_blank">HelloSud-Android.zip</a>.</p>
-</li>
-<li><p>Import the SDK into the project.</p>
-<p> In the following example, Android Studio 4.2, Gradle 6.7.1, and the SudMgpExample-Android project are used, and the programming language is Java:</p>
-<ul>
-<li>Copy <strong>SudMGP.aar</strong> to the <strong>SudMgpExample-Android/app/libs</strong> directory, as shown in the following figure:</li>
-</ul>
-</li>
-</ol>
-<p>   <img src="../Resource/Client/libaar.png" alt="SUD"></p>
+<h3 id="1-contact-sudtech-to-obtain-appid-appkey-appsecret-for-your-service">1. Contact Sud.Tech to obtain <code>appId</code>, <code>appKey</code>, <code>appSecret</code> for your service.</h3>
+<h3 id="2-download-android-sdk-sudmgpaar-and-the-new-demo-quickstart-the-demo-project-hellosud-androidzip">2. Download <a href="https://github.com/SudTechnology/sud-mgp-android/releases" target="_blank">Android SDK SudMGP.aar</a> and the new Demo <a href="https://github.com/SudTechnology/hello-sud-plus-android/tree/master/project/QuickStart" target="_blank">QuickStart</a>, the demo project <a href="https://github.com/SudTechnology/hello-sud-android/releases" target="_blank">HelloSud-Android.zip</a>.</h3>
+<h3 id="3-import-the-sdk-into-the-project">3. Import the SDK into the project.</h3>
+<pre><code>In the following example, Android Studio 4.2, Gradle 6.7.1, and the SudMgpExample-Android project are used, and the programming language is Java:
+
+- Copy **SudMGP.aar** to the **SudMgpExample-Android/app/libs** directory, as shown in the following figure:
+</code></pre><p>   <img src="../Resource/Client/libaar.png" alt="SUD"></p>
 <pre><code>- Add the configurations required by the SDK to the **SudMgpExample-Android/app/build.gradle** file.
 
     ```groovy
@@ -935,23 +929,14 @@
         ......
     }
     ```
-</code></pre><ol>
-<li><p>Initialize the <a href="API/SudMGP.html">SudMGP</a>. For details, see &quot;HelloSud-Android&quot;.</p>
-</li>
-<li><p>Integrate lifecycle callbacks of the <a href="API/SudMGP.html">SudMGP</a> and add the game view to the native layout. For details, see &quot;HelloSud-Android&quot;.</p>
-</li>
-<li><p>Load the game using the <a href="API/SudMGP.html">SudMGP</a>. For details, see &quot;HelloSud-Android&quot;.</p>
-</li>
-<li><p>Optional: Implement <a href="API/ISudFSMMG.html"><code>ISudFSMMG</code></a>. For details, see &quot;HelloSud-Android&quot;.</p>
-</li>
-<li><p>Optional: Implement <a href="API/ISudFSTAPP.html"><code>ISudFSTAPP</code></a>. For details, see &quot;HelloSud-Android&quot;.</p>
-</li>
-<li><p>Deinitialize the <a href="API/SudMGP.html">SudMGP</a>. For details, see &quot;HelloSud-Android&quot;.</p>
-</li>
-<li><p>API call sequence diagram.</p>
-<p><img src="../Resource/Client/sdk_api_sd.png" alt="api"></p>
-</li>
-</ol>
+</code></pre><h3 id="4-initialize-the-sudmgp-for-details-see-quickstart">4. Initialize the <a href="API/SudMGP.html">SudMGP</a>. For details, see <a href="https://github.com/SudTechnology/hello-sud-plus-android/tree/master/project/QuickStart" target="_blank">QuickStart</a>.</h3>
+<h3 id="5-integrate-lifecycle-callbacks-of-the-sudmgp-and-add-the-game-view-to-the-native-layout-for-details-see-quickstart">5. Integrate lifecycle callbacks of the <a href="API/SudMGP.html">SudMGP</a> and add the game view to the native layout. For details, see <a href="https://github.com/SudTechnology/hello-sud-plus-android/tree/master/project/QuickStart" target="_blank">QuickStart</a>.</h3>
+<h3 id="6-load-the-game-using-the-sudmgp-for-details-see-quickstart">6. Load the game using the <a href="API/SudMGP.html">SudMGP</a>. For details, see <a href="https://github.com/SudTechnology/hello-sud-plus-android/tree/master/project/QuickStart" target="_blank">QuickStart</a>.</h3>
+<h3 id="7-optional-implement-isudfsmmg-for-details-see-quickstart">7. Optional: Implement <a href="API/ISudFSMMG.html"><code>ISudFSMMG</code></a>. For details, see <a href="https://github.com/SudTechnology/hello-sud-plus-android/tree/master/project/QuickStart" target="_blank">QuickStart</a>.</h3>
+<h3 id="8-optional-implement-isudfstapp-for-details-see-quickstart">8. Optional: Implement <a href="API/ISudFSTAPP.html"><code>ISudFSTAPP</code></a>. For details, see <a href="https://github.com/SudTechnology/hello-sud-plus-android/tree/master/project/QuickStart" target="_blank">QuickStart</a>.</h3>
+<h3 id="9-destroy-game-with-the-sudmgp-for-details-see-quickstart">9. Destroy Game with the <a href="API/SudMGP.html">SudMGP</a>. For details, see <a href="https://github.com/SudTechnology/hello-sud-plus-android/tree/master/project/QuickStart" target="_blank">QuickStart</a>.</h3>
+<h3 id="10-call-sequence-diagram-of-app-cient-and-sudmgp">10. Call sequence diagram of APP Cient and SudMGP</h3>
+<p>   <img src="../Resource/Client/sdk_api_sd.png" alt="api"></p>
 
       <script>
         var pathname = window.location.pathname
@@ -1000,7 +985,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Android","level":"1.2.1.2","depth":3,"next":{"title":"Client documentation","level":"1.2.2","depth":2,"path":"app/Client/README.md","ref":"app/Client/README.md","articles":[{"title":"API","level":"1.2.2.1","depth":3,"path":"app/Client/API/README.md","ref":"app/Client/API/README.md","articles":[{"title":"SudMGP","level":"1.2.2.1.1","depth":4,"path":"app/Client/API/SudMGP.md","ref":"app/Client/API/SudMGP.md","articles":[]},{"title":"ISudFSTAPP","level":"1.2.2.1.2","depth":4,"path":"app/Client/API/ISudFSTAPP.md","ref":"app/Client/API/ISudFSTAPP.md","articles":[]},{"title":"ISudFSMMG","level":"1.2.2.1.3","depth":4,"path":"app/Client/API/ISudFSMMG.md","ref":"app/Client/API/ISudFSMMG.md","articles":[{"title":"onGetGameCfg","level":"1.2.2.1.3.1","depth":5,"path":"app/Client/API/ISudFSMMG/onGetGameCfg.md","ref":"app/Client/API/ISudFSMMG/onGetGameCfg.md","articles":[]},{"title":"onGetGameViewInfo","level":"1.2.2.1.3.2","depth":5,"path":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","ref":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","articles":[]}]}]},{"title":"App FST","level":"1.2.2.2","depth":3,"path":"app/Client/APPFST/README.md","ref":"app/Client/APPFST/README.md","articles":[{"title":"General state","level":"1.2.2.2.1","depth":4,"path":"app/Client/APPFST/CommonState.md","ref":"app/Client/APPFST/CommonState.md","articles":[]}]},{"title":"MG FSM","level":"1.2.2.3","depth":3,"path":"app/Client/MGFSM/README.md","ref":"app/Client/MGFSM/README.md","articles":[{"title":"General state - Game","level":"1.2.2.3.1","depth":4,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},{"title":"General state - Player","level":"1.2.2.3.2","depth":4,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},{"title":"DrawGuess","level":"1.2.2.3.3","depth":4,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]}]}]},"previous":{"title":"iOS","level":"1.2.1.1","depth":3,"path":"app/Client/StartUp-iOS.md","ref":"app/Client/StartUp-iOS.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en-US","gitbook":"*"},"file":{"path":"app/Client/StartUp-Android.md","mtime":"2022-04-15T09:49:42.493Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-26T04:06:05.696Z"},"basePath":"../..","book":{"language":"en-US"}});
+            gitbook.page.hasChanged({"page":{"title":"Android","level":"1.2.1.2","depth":3,"next":{"title":"Client documentation","level":"1.2.2","depth":2,"path":"app/Client/README.md","ref":"app/Client/README.md","articles":[{"title":"API","level":"1.2.2.1","depth":3,"path":"app/Client/API/README.md","ref":"app/Client/API/README.md","articles":[{"title":"SudMGP","level":"1.2.2.1.1","depth":4,"path":"app/Client/API/SudMGP.md","ref":"app/Client/API/SudMGP.md","articles":[]},{"title":"ISudFSTAPP","level":"1.2.2.1.2","depth":4,"path":"app/Client/API/ISudFSTAPP.md","ref":"app/Client/API/ISudFSTAPP.md","articles":[]},{"title":"ISudFSMMG","level":"1.2.2.1.3","depth":4,"path":"app/Client/API/ISudFSMMG.md","ref":"app/Client/API/ISudFSMMG.md","articles":[{"title":"onGetGameCfg","level":"1.2.2.1.3.1","depth":5,"path":"app/Client/API/ISudFSMMG/onGetGameCfg.md","ref":"app/Client/API/ISudFSMMG/onGetGameCfg.md","articles":[]},{"title":"onGetGameViewInfo","level":"1.2.2.1.3.2","depth":5,"path":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","ref":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","articles":[]}]}]},{"title":"App FST","level":"1.2.2.2","depth":3,"path":"app/Client/APPFST/README.md","ref":"app/Client/APPFST/README.md","articles":[{"title":"General state","level":"1.2.2.2.1","depth":4,"path":"app/Client/APPFST/CommonState.md","ref":"app/Client/APPFST/CommonState.md","articles":[]}]},{"title":"MG FSM","level":"1.2.2.3","depth":3,"path":"app/Client/MGFSM/README.md","ref":"app/Client/MGFSM/README.md","articles":[{"title":"General state - Game","level":"1.2.2.3.1","depth":4,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},{"title":"General state - Player","level":"1.2.2.3.2","depth":4,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},{"title":"DrawGuess","level":"1.2.2.3.3","depth":4,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]}]}]},"previous":{"title":"iOS","level":"1.2.1.1","depth":3,"path":"app/Client/StartUp-iOS.md","ref":"app/Client/StartUp-iOS.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en-US","gitbook":"*"},"file":{"path":"app/Client/StartUp-Android.md","mtime":"2022-06-02T01:55:47.641Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-02T01:57:13.293Z"},"basePath":"../..","book":{"language":"en-US"}});
         });
     </script>
 </div>
