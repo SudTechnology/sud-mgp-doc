@@ -132,11 +132,11 @@
 <details>
     <summary>解答</summary>
 
-    1. 游戏View，APP理解成Android 和 iOS 原生View就好；
+    1. 游戏View，当成是Android 和 iOS 原生View；
 
     2. 游戏View，可以全屏，也可以固定尺寸大小；
 
-    3. 游戏View，大小撑满APP给的父View（GameViewContainer）；
+    3. 游戏View，大小铺满APP给的父View（GameViewContainer）；
 
 4. 游戏通过ISudFSMMG的[onGetGameViewInfo](../API/ISudFSMMG/onGetGameViewInfo.md)回调，获取游戏安全区(交互操作)
    ![GameCfg](../../Resource/Client/gameview.png)；
