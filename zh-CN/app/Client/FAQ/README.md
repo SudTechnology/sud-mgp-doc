@@ -86,11 +86,11 @@
        void onPlayerStateChange(ISudFSMStateHandle handle, String userId, String state, String dataJson);
 </details>
 
-### 问题 2004: SudMGP是否支持同时运行两个游戏？
+### 问题 2004: SudMGP是否支持同时运行两个游戏实例？
 <details>
     <summary>解答</summary>
 
-    1. 不支持同时运行两个游戏；
+    1. 不支持同时运行两个游戏实例；
 
     2. SudMGP的loadMG和destroyMG必须配对使用；
 
