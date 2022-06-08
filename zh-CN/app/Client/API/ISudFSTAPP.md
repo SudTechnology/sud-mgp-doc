@@ -89,7 +89,7 @@ public interface ISudFSTAPP {
 
 ## iOS
 
-```objective-c
+```objc
 @protocol ISudFSTAPP <NSObject>
 
 /// 获取游戏View

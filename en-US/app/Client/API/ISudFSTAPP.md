@@ -89,7 +89,7 @@ public interface ISudFSTAPP {
 
 ## iOS
 
-```objective-c
+```objc
 @protocol ISudFSTAPP <NSObject>
 
 /// Obtain the game view information.

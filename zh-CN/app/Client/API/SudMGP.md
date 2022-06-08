@@ -98,7 +98,7 @@ public class SudMGP {
 
 ## iOS
 
-```objective-c
+```objc
 @interface SudMGP : NSObject
 
 /**
