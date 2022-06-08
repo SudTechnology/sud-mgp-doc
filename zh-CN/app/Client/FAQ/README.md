@@ -13,14 +13,16 @@
 1. 请检查接口输入参数是否正确（mgId是64bit类型）；
 2. 请查看Android Studio 或 XCode 控制台日志信息，错误码字段result_code、sdk_error_code、retCode数值；
 3. 请将问题描述、视频、截图、控制台日志（文件）等信息，发送给我们的技术支持同学，帮您分析和解答；
-   
+
 [错误码 速查列表](https://docs.sud.tech/zh-CN/app/Server/ErrorCode.html)
 
 ### 问 1003: HelloSudPlus体验demo下载（展示多业务场景）
 Android
+
 ![Android](../../Resource/Client/hello_sudplus_android.png)
 
 iPhone
+
 ![iPhone](../../Resource/Client/hello_sudplus_iphone.png)
 
 # 2. SudMGP接口
@@ -36,18 +38,19 @@ iPhone
 4. 如果想知道调用结果是否失败，可以接 App通用状态操作结果错误码， [mg_common_app_common_self_x_resp](../MGFSM/CommonStateGame.md)；
 
 ### 问 2003: 关于游戏回调APP时，ISudFSMStateHandle handle参数？
-   1. 有ISudFSMStateHandle handle的地方，APP必须调用handle.success，否则会导致C++层回调对象内存泄漏；
-   2. 游戏向App 获取xx信息，则APP需要handle.success带具体参数；
+1. 有ISudFSMStateHandle handle的地方，APP必须调用handle.success，否则会导致C++层回调对象内存泄漏；
+2. 游戏向App 获取xx信息，则APP需要handle.success带具体参数；
    ```java
    void onGetGameViewInfo(ISudFSMStateHandle handle, String dataJson);
    void onGetGameCfg(ISudFSMStateHandle handle, String dataJson);
    ```
-   3. 游戏向App 通知状态信息，则APP只需要handle.success("{}")；
+3. 游戏向App 通知状态信息，则APP只需要handle.success("{}")；
    ```java
    void onExpireCode(ISudFSMStateHandle handle, String dataJson);
    void onGameStateChange(ISudFSMStateHandle handle, String state, String dataJson);
    void onPlayerStateChange(ISudFSMStateHandle handle, String userId, String state, String dataJson);
    ```
+
 ### 问 2004: SudMGP是否支持同时运行两个游戏实例？
 1. 不支持同时运行两个游戏实例；
 2. SudMGP的loadMG和destroyMG必须配对使用；
@@ -68,7 +71,7 @@ iPhone
 2. 加载进度通知ISudFSMMG::onGameLoadingProgress(int stage, int retCode, int progress);
 3. 加载失败，APP调用重试接口ISudFSTAPP::reloadMG()；
 4. SudMGP SDK 最低版本v1.1.52.xx
-   
+
 下载 [SudMGP-Android](https://github.com/SudTechnology/sud-mgp-android/releases)
 
 下载 [SudMGP-iOS](https://github.com/SudTechnology/sud-mgp-ios/releases)
@@ -78,7 +81,8 @@ iPhone
 2. 游戏View，可以全屏，也可以固定尺寸大小；
 3. 游戏View，大小铺满APP给的父View（GameViewContainer）；
 4. 游戏通过ISudFSMMG的[onGetGameViewInfo](../API/ISudFSMMG/onGetGameViewInfo.md)回调，获取游戏安全区(交互操作)
-   ![GameCfg](../../Resource/Client/gameview.png)；
+
+![GameCfg](../../Resource/Client/gameview.png)
 
 ### 问 3004: 游戏UI元素是否支持隐藏，按钮点击事件是否支持拦截？
 1. 支持隐藏游戏UI元素；
@@ -96,7 +100,7 @@ iPhone
    具体示例：开始游戏按钮
 
 第一步 [onGetGameCfg(IFSMStateHandle handle, String dataJson)](/API/ISudFSMMG/onGetGameCfg.md)
-   
+
    ```java
    data = {
       "gameMode":1,    // 每个游戏默认模式是1，不填是1
@@ -117,7 +121,7 @@ iPhone
 1. 支持多语言本地化；
 2. 支持提供翻译添加，需要联系Sud商务；
 3. SudMGP.loadMG的language参数；例如：zh-CN、en-US；
-   
+
 [游戏多语言](../Languages/README.md)
 
 [SudMGP.loadMG的language参数](../API/SudMGP.md)
@@ -125,16 +129,16 @@ iPhone
 ### 问 3007: APP什么时候可以调用游戏ISudFSTAPP.notifyStateChange接口？
 1. APP收到回调ISudFSMMG.onGameStarted后，可以调用ISudFSTAPP.notifyStateChange接口；
 2. onGameStarted，表示游戏已开始（游戏长连接建立完成）；
-   
+
 [onGameStarted](../API/ISudFSMMG.md)
 3. 用户在游戏的角色状态转化，只能从"当前状态" 转换到 "邻近状态"；
-   
+
 ![GameCfg](../../Resource/Client/gamestate.png)
-   
+
 ### 问 3008: 每一局游戏如何透传APP自定义参数和自定义查询Key？
 1. APP调用ISudFSTAPP.notifyStateChange(state, dataJson)
 2. state=app_common_self_playing 和 dataJson.isPlaying=true
-   
+
    ```json
    {
       "isPlaying": true, // true 开始游戏，false 结束游戏
@@ -146,7 +150,7 @@ iPhone
 
 # 4. 兼容性解决方案
 
-### 问 4001: 如何解决Android软件盘弹起时，导致游戏View整体上移？
+### 问 4001: 如何解决Android软键盘弹起时，导致游戏View整体上移？
 1. AndroidManifest.xml android:windowSoftInputMode="adjustResize"；
 2. 在ISudFSMMG回调onGameStarted时，调用setSoftInputMode设置；
    ```java
@@ -154,7 +158,7 @@ iPhone
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE | WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
     }
    ```
-   
+
 # 5. 游戏个性化状态
 
 ### 问 5001: 狼人杀，如何实现语音版本（天黑请闭眼，几号玩家发言）？
@@ -177,5 +181,5 @@ iPhone
 3. 显示错误答案状态
 4. 显示总积分状态
 5. 本次获得积分状态
-   
+
 [你画我猜 状态](../MGFSM/CommonStateGame.md)

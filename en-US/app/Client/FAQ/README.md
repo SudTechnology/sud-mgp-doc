@@ -18,9 +18,11 @@
 
 ### 问 1003: HelloSudPlus体验demo下载（展示多业务场景）
 Android
+
 ![Android](../../Resource/Client/hello_sudplus_android.png)
 
 iPhone
+
 ![iPhone](../../Resource/Client/hello_sudplus_iphone.png)
 
 # 2. SudMGP接口
@@ -48,6 +50,7 @@ iPhone
    void onGameStateChange(ISudFSMStateHandle handle, String state, String dataJson);
    void onPlayerStateChange(ISudFSMStateHandle handle, String userId, String state, String dataJson);
    ```
+
 ### 问 2004: SudMGP是否支持同时运行两个游戏实例？
 1. 不支持同时运行两个游戏实例；
 2. SudMGP的loadMG和destroyMG必须配对使用；
@@ -78,7 +81,8 @@ iPhone
 2. 游戏View，可以全屏，也可以固定尺寸大小；
 3. 游戏View，大小铺满APP给的父View（GameViewContainer）；
 4. 游戏通过ISudFSMMG的[onGetGameViewInfo](../API/ISudFSMMG/onGetGameViewInfo.md)回调，获取游戏安全区(交互操作)
-   ![GameCfg](../../Resource/Client/gameview.png)；
+   
+![GameCfg](../../Resource/Client/gameview.png)
 
 ### 问 3004: 游戏UI元素是否支持隐藏，按钮点击事件是否支持拦截？
 1. 支持隐藏游戏UI元素；
@@ -146,7 +150,7 @@ iPhone
 
 # 4. 兼容性解决方案
 
-### 问 4001: 如何解决Android软件盘弹起时，导致游戏View整体上移？
+### 问 4001: 如何解决Android软键盘弹起时，导致游戏View整体上移？
 1. AndroidManifest.xml android:windowSoftInputMode="adjustResize"；
 2. 在ISudFSMMG回调onGameStarted时，调用setSoftInputMode设置；
    ```java
