@@ -9,6 +9,7 @@
     * [Client documentation](app/Client/README.md)
         * [API](app/Client/API/README.md)
             * [SudMGP](app/Client/API/SudMGP.md)
+            * [ISudCfg](app/Client/API/ISudCfg.md)
             * [ISudFSTAPP](app/Client/API/ISudFSTAPP.md)
             * [ISudFSMMG](app/Client/API/ISudFSMMG.md)
                 * [onGetGameCfg](app/Client/API/ISudFSMMG/onGetGameCfg.md)

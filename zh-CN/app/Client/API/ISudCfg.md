@@ -1,4 +1,4 @@
-#
+# 
 
 ![SUD](../../Resource/logo.png)
 
@@ -61,7 +61,7 @@ public interface ISudCfg {
 
 ## iOS
 
-```objectivec
+```objective-c
 @protocol ISudCfg <NSObject>
 /// 获取加载游戏时，是否显示游戏背景图
 /// @return true:显示 false:隐藏 默认:显示true

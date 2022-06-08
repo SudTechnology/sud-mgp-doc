@@ -1,10 +1,10 @@
-#
+# 
 
 ![SUD](../../Resource/logo.png)
 
 ## Android
 
-````java
+```java
 public interface ISudCfg {
     /**
      * Get the game background image when loading the game
@@ -57,11 +57,11 @@ public interface ISudCfg {
      */
     String getEmbeddedMGPkgPath(long mgId);
 }
-````
+```
 
 ##iOS
 
-````objectivec
+```objective-c
 @protocol ISudCfg <NSObject>
 /// Get the game background image when loading the game
 /// @return true: show false: hide Default: show true
@@ -100,4 +100,4 @@ public interface ISudCfg {
 /// Minimum version: v1.1.52.xx
 - (NSString *)getEmbeddedMGPkgPath:(int64_t) mgId;
 @end
-````
+```
