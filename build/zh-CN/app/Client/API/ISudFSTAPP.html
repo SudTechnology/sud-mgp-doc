@@ -60,7 +60,7 @@
     <link rel="next" href="ISudFSMMG.html" />
     
     
-    <link rel="prev" href="SudMGP.html" />
+    <link rel="prev" href="ISudCfg.html" />
     
 
     </head>
@@ -202,7 +202,20 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.2.1.2" data-path="ISudFSTAPP.html">
+        <li class="chapter " data-level="1.2.2.1.2" data-path="ISudCfg.html">
+            
+                <a href="ISudCfg.html">
+            
+                    
+                    ISudCfg
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2.1.3" data-path="ISudFSTAPP.html">
             
                 <a href="ISudFSTAPP.html">
             
@@ -215,7 +228,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2.1.3" data-path="ISudFSMMG.html">
+        <li class="chapter " data-level="1.2.2.1.4" data-path="ISudFSMMG.html">
             
                 <a href="ISudFSMMG.html">
             
@@ -229,7 +242,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.2.1.3.1" data-path="ISudFSMMG/onGetGameCfg.html">
+        <li class="chapter " data-level="1.2.2.1.4.1" data-path="ISudFSMMG/onGetGameCfg.html">
             
                 <a href="ISudFSMMG/onGetGameCfg.html">
             
@@ -242,7 +255,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2.1.3.2" data-path="ISudFSMMG/onGetGameViewInfo.html">
+        <li class="chapter " data-level="1.2.2.1.4.2" data-path="ISudFSMMG/onGetGameViewInfo.html">
             
                 <a href="ISudFSMMG/onGetGameViewInfo.html">
             
@@ -386,7 +399,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5" data-path="../Languages/">
+        <li class="chapter " data-level="1.2.5" data-path="../FAQ/">
+            
+                <a href="../FAQ/">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Languages/">
             
                 <a href="../Languages/">
             
@@ -399,7 +425,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.6" data-path="../ChangeLog.html">
+        <li class="chapter " data-level="1.2.7" data-path="../ChangeLog.html">
             
                 <a href="../ChangeLog.html">
             
@@ -989,52 +1015,52 @@
 }
 </code></pre>
 <h2 id="ios">iOS</h2>
-<pre><code class="lang-objective-c">@protocol ISudFSTAPP &lt;NSObject&gt;
+<pre><code class="lang-objc"><span class="hljs-class"><span class="hljs-keyword">@protocol</span> <span class="hljs-title">ISudFSTAPP</span> &lt;<span class="hljs-title">NSObject</span>&gt;</span>
 
-/// &#x83B7;&#x53D6;&#x6E38;&#x620F;View
-/// @return UIView
-- (UIView *)getGameView;
+<span class="hljs-comment">/// &#x83B7;&#x53D6;&#x6E38;&#x620F;View</span>
+<span class="hljs-comment">/// @return UIView</span>
+- (<span class="hljs-built_in">UIView</span> *)getGameView;
 
-/// &#x9500;&#x6BC1;&#x6E38;&#x620F;
-/// @return boolean
-- (bool)destroyMG;
+<span class="hljs-comment">/// &#x9500;&#x6BC1;&#x6E38;&#x620F;</span>
+<span class="hljs-comment">/// @return boolean</span>
+- (<span class="hljs-keyword">bool</span>)destroyMG;
 
-/// &#x66F4;&#x65B0;&#x77ED;&#x671F;&#x4EE4;&#x724C;code
-/// @param code &#x77ED;&#x671F;&#x4EE4;&#x724C;code
-/// @param listener &#x56DE;&#x8C03;&#x53EA;&#x8868;&#x793A;APP&#x72B6;&#x6001;&#x901A;&#x77E5;&#x5230;&#x4E86;&#x5C0F;&#x6E38;&#x620F;&#xFF0C;&#x4E0D;&#x8868;&#x793A;&#x5C0F;&#x6E38;&#x620F;&#x6267;&#x884C;&#x4E86;&#x522B;&#x7684;&#x903B;&#x8F91;&#x4EE3;&#x7801;&#xFF08;&#x6BD4;&#x5982;&#xFF1A;&#x6E38;&#x620F;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#xFF09;&#xFF0C;&#x4E00;&#x822C;&#x4F20;null&#x3002;
-- (void)updateCode:(NSString *) code listener:(ISudListenerNotifyStateChange) listener;
+<span class="hljs-comment">/// &#x66F4;&#x65B0;&#x77ED;&#x671F;&#x4EE4;&#x724C;code</span>
+<span class="hljs-comment">/// @param code &#x77ED;&#x671F;&#x4EE4;&#x724C;code</span>
+<span class="hljs-comment">/// @param listener &#x56DE;&#x8C03;&#x53EA;&#x8868;&#x793A;APP&#x72B6;&#x6001;&#x901A;&#x77E5;&#x5230;&#x4E86;&#x5C0F;&#x6E38;&#x620F;&#xFF0C;&#x4E0D;&#x8868;&#x793A;&#x5C0F;&#x6E38;&#x620F;&#x6267;&#x884C;&#x4E86;&#x522B;&#x7684;&#x903B;&#x8F91;&#x4EE3;&#x7801;&#xFF08;&#x6BD4;&#x5982;&#xFF1A;&#x6E38;&#x620F;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#xFF09;&#xFF0C;&#x4E00;&#x822C;&#x4F20;null&#x3002;</span>
+- (<span class="hljs-keyword">void</span>)updateCode:(<span class="hljs-built_in">NSString</span> *) code listener:(ISudListenerNotifyStateChange) listener;
 
-/// &#x83B7;&#x53D6;&#x6E38;&#x620F;&#x72B6;&#x6001;
-/// @param state state
-/// @return json
-- (NSString*)getGameState:(NSString*) state;
+<span class="hljs-comment">/// &#x83B7;&#x53D6;&#x6E38;&#x620F;&#x72B6;&#x6001;</span>
+<span class="hljs-comment">/// @param state state</span>
+<span class="hljs-comment">/// @return json</span>
+- (<span class="hljs-built_in">NSString</span>*)getGameState:(<span class="hljs-built_in">NSString</span>*) state;
 
-/// &#x83B7;&#x53D6;&#x73A9;&#x5BB6;&#x72B6;&#x6001;
-/// @param userId userId
-/// @param state state
-/// @return json
-- (NSString*)getPlayerState:(NSString*) userId state:(NSString*) state;
+<span class="hljs-comment">/// &#x83B7;&#x53D6;&#x73A9;&#x5BB6;&#x72B6;&#x6001;</span>
+<span class="hljs-comment">/// @param userId userId</span>
+<span class="hljs-comment">/// @param state state</span>
+<span class="hljs-comment">/// @return json</span>
+- (<span class="hljs-built_in">NSString</span>*)getPlayerState:(<span class="hljs-built_in">NSString</span>*) userId state:(<span class="hljs-built_in">NSString</span>*) state;
 
-/// APP&#x72B6;&#x6001;&#x901A;&#x77E5;&#x7ED9;&#x5C0F;&#x6E38;&#x620F;
-/// @param state state
-/// @param dataJson example: {&quot;key&quot;: &quot;value&quot;}
-/// @param listener &#x56DE;&#x8C03;&#x53EA;&#x8868;&#x793A;APP&#x72B6;&#x6001;&#x901A;&#x77E5;&#x5230;&#x4E86;&#x5C0F;&#x6E38;&#x620F;&#xFF0C;&#x4E0D;&#x8868;&#x793A;&#x5C0F;&#x6E38;&#x620F;&#x6267;&#x884C;&#x4E86;&#x522B;&#x7684;&#x903B;&#x8F91;&#x4EE3;&#x7801;&#xFF08;&#x6BD4;&#x5982;&#xFF1A;&#x6E38;&#x620F;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#xFF09;&#xFF0C;&#x4E00;&#x822C;&#x4F20;null&#x3002;
-- (void)notifyStateChange:(const NSString *)state dataJson:(NSString *)dataJson listener:(ISudListenerNotifyStateChange) listener;
+<span class="hljs-comment">/// APP&#x72B6;&#x6001;&#x901A;&#x77E5;&#x7ED9;&#x5C0F;&#x6E38;&#x620F;</span>
+<span class="hljs-comment">/// @param state state</span>
+<span class="hljs-comment">/// @param dataJson example: {&quot;key&quot;: &quot;value&quot;}</span>
+<span class="hljs-comment">/// @param listener &#x56DE;&#x8C03;&#x53EA;&#x8868;&#x793A;APP&#x72B6;&#x6001;&#x901A;&#x77E5;&#x5230;&#x4E86;&#x5C0F;&#x6E38;&#x620F;&#xFF0C;&#x4E0D;&#x8868;&#x793A;&#x5C0F;&#x6E38;&#x620F;&#x6267;&#x884C;&#x4E86;&#x522B;&#x7684;&#x903B;&#x8F91;&#x4EE3;&#x7801;&#xFF08;&#x6BD4;&#x5982;&#xFF1A;&#x6E38;&#x620F;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#xFF09;&#xFF0C;&#x4E00;&#x822C;&#x4F20;null&#x3002;</span>
+- (<span class="hljs-keyword">void</span>)notifyStateChange:(<span class="hljs-keyword">const</span> <span class="hljs-built_in">NSString</span> *)state dataJson:(<span class="hljs-built_in">NSString</span> *)dataJson listener:(ISudListenerNotifyStateChange) listener;
 
-/// &#x7EE7;&#x7EED;&#x6E38;&#x620F;
-- (void) playMG;
+<span class="hljs-comment">/// &#x7EE7;&#x7EED;&#x6E38;&#x620F;</span>
+- (<span class="hljs-keyword">void</span>) playMG;
 
-/// &#x6682;&#x505C;&#x6E38;&#x620F;
-- (void) pauseMG;
+<span class="hljs-comment">/// &#x6682;&#x505C;&#x6E38;&#x620F;</span>
+- (<span class="hljs-keyword">void</span>) pauseMG;
 
-/// &#x4F20;&#x5165;&#x7684;&#x97F3;&#x9891;&#x5207;&#x7247;&#x6570;&#x636E;&#x5FC5;&#x987B;&#x662F;&#xFF1A;PCM&#x683C;&#x5F0F;&#xFF0C;&#x91C7;&#x6837;&#x7387;&#xFF1A;16000&#xFF0C; &#x91C7;&#x6837;&#x4F4D;&#x6570;&#xFF1A;16&#xFF0C; &#x58F0;&#x9053;&#x6570;&#xFF1A; MONO
-/// 100ms&#x5FC5;&#x987B;&#x662F;&#x97F3;&#x9891;&#x5207;&#x7247;&#x957F;&#x5EA6;&#x7684;&#x6574;&#x6570;&#x500D;&#x3002;&#x5207;&#x7247;&#x957F;&#x5EA6;&#x53EF;&#x4EE5;&#x662F;&#xFF1A;10ms, 20ms, 50ms, 100ms
-/// @param data pcm&#x6570;&#x636E;
-- (void)pushAudio:(NSData *)data;
+<span class="hljs-comment">/// &#x4F20;&#x5165;&#x7684;&#x97F3;&#x9891;&#x5207;&#x7247;&#x6570;&#x636E;&#x5FC5;&#x987B;&#x662F;&#xFF1A;PCM&#x683C;&#x5F0F;&#xFF0C;&#x91C7;&#x6837;&#x7387;&#xFF1A;16000&#xFF0C; &#x91C7;&#x6837;&#x4F4D;&#x6570;&#xFF1A;16&#xFF0C; &#x58F0;&#x9053;&#x6570;&#xFF1A; MONO</span>
+<span class="hljs-comment">/// 100ms&#x5FC5;&#x987B;&#x662F;&#x97F3;&#x9891;&#x5207;&#x7247;&#x957F;&#x5EA6;&#x7684;&#x6574;&#x6570;&#x500D;&#x3002;&#x5207;&#x7247;&#x957F;&#x5EA6;&#x53EF;&#x4EE5;&#x662F;&#xFF1A;10ms, 20ms, 50ms, 100ms</span>
+<span class="hljs-comment">/// @param data pcm&#x6570;&#x636E;</span>
+- (<span class="hljs-keyword">void</span>)pushAudio:(<span class="hljs-built_in">NSData</span> *)data;
 
-/// &#x6E38;&#x620F;&#x52A0;&#x8F7D;&#x5931;&#x8D25;&#xFF0C;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;
-- (void)reloadMG;
-@end
+<span class="hljs-comment">/// &#x6E38;&#x620F;&#x52A0;&#x8F7D;&#x5931;&#x8D25;&#xFF0C;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;</span>
+- (<span class="hljs-keyword">void</span>)reloadMG;
+<span class="hljs-keyword">@end</span>
 </code></pre>
 
       <script>
@@ -1068,7 +1094,7 @@
 
             
                 
-                <a href="SudMGP.html" class="navigation navigation-prev " aria-label="Previous page: SudMGP">
+                <a href="ISudCfg.html" class="navigation navigation-prev " aria-label="Previous page: ISudCfg">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -1084,7 +1110,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ISudFSTAPP","level":"1.2.2.1.2","depth":4,"next":{"title":"ISudFSMMG","level":"1.2.2.1.3","depth":4,"path":"app/Client/API/ISudFSMMG.md","ref":"app/Client/API/ISudFSMMG.md","articles":[{"title":"onGetGameCfg","level":"1.2.2.1.3.1","depth":5,"path":"app/Client/API/ISudFSMMG/onGetGameCfg.md","ref":"app/Client/API/ISudFSMMG/onGetGameCfg.md","articles":[]},{"title":"onGetGameViewInfo","level":"1.2.2.1.3.2","depth":5,"path":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","ref":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","articles":[]}]},"previous":{"title":"SudMGP","level":"1.2.2.1.1","depth":4,"path":"app/Client/API/SudMGP.md","ref":"app/Client/API/SudMGP.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Client/API/ISudFSTAPP.md","mtime":"2022-05-17T04:00:18.012Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-02T01:57:13.293Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
+            gitbook.page.hasChanged({"page":{"title":"ISudFSTAPP","level":"1.2.2.1.3","depth":4,"next":{"title":"ISudFSMMG","level":"1.2.2.1.4","depth":4,"path":"app/Client/API/ISudFSMMG.md","ref":"app/Client/API/ISudFSMMG.md","articles":[{"title":"onGetGameCfg","level":"1.2.2.1.4.1","depth":5,"path":"app/Client/API/ISudFSMMG/onGetGameCfg.md","ref":"app/Client/API/ISudFSMMG/onGetGameCfg.md","articles":[]},{"title":"onGetGameViewInfo","level":"1.2.2.1.4.2","depth":5,"path":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","ref":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","articles":[]}]},"previous":{"title":"ISudCfg","level":"1.2.2.1.2","depth":4,"path":"app/Client/API/ISudCfg.md","ref":"app/Client/API/ISudCfg.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Client/API/ISudFSTAPP.md","mtime":"2022-06-08T02:16:45.421Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-08T02:16:52.361Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
         });
     </script>
 </div>

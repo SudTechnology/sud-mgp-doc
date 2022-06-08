@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>API · GitBook</title>
+        <title>ISudCfg · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="SudMGP.html" />
+    <link rel="next" href="ISudFSTAPP.html" />
     
     
-    <link rel="prev" href="../" />
+    <link rel="prev" href="SudMGP.html" />
     
 
     </head>
@@ -175,7 +175,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.2.2.1" data-path="./">
+        <li class="chapter " data-level="1.2.2.1" data-path="./">
             
                 <a href="./">
             
@@ -202,7 +202,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2.1.2" data-path="ISudCfg.html">
+        <li class="chapter active" data-level="1.2.2.1.2" data-path="ISudCfg.html">
             
                 <a href="ISudCfg.html">
             
@@ -912,7 +912,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../.." >API</a>
+        <a href="../../.." >ISudCfg</a>
     </h1>
 </div>
 
@@ -927,25 +927,102 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>#</p>
+                                <h1 id=""> </h1>
 <p><img src="../../Resource/logo.png" alt="SUD"></p>
-<h2 id="api">API</h2>
-<ul>
-<li><h3 id="sudmgp"><a href="SudMGP.html">SudMGP</a></h3>
-</li>
-<li><h3 id="isudcfg"><a href="ISudCfg.html">ISudCfg</a></h3>
-</li>
-<li><h3 id="isudfstapp"><a href="ISudFSTAPP.html">ISudFSTAPP</a></h3>
-<ul>
-<li><h4 id="ongetgameviewinfo"><a href="ISudFSMMG/onGetGameViewInfo.html">onGetGameViewInfo</a></h4>
-</li>
-<li><h4 id="ongetgamecfg"><a href="ISudFSMMG/onGetGameCfg.html">onGetGameCfg</a></h4>
-</li>
-</ul>
-</li>
-<li><h3 id="isudfsmmg"><a href="ISudFSMMG.html">ISudFSMMG</a></h3>
-</li>
-</ul>
+<h2 id="android">Android</h2>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">ISudCfg</span> </span>{
+    <span class="hljs-comment">/**
+     * &#x83B7;&#x53D6;&#x52A0;&#x8F7D;&#x6E38;&#x620F;&#x65F6;&#xFF0C;&#x662F;&#x5426;&#x663E;&#x793A;&#x6E38;&#x620F;&#x80CC;&#x666F;&#x56FE;
+     * <span class="hljs-doctag">@return</span> true:&#x663E;&#x793A; false:&#x9690;&#x85CF; &#x9ED8;&#x8BA4;:&#x663E;&#x793A;true
+     * &#x6700;&#x4F4E;&#x7248;&#x672C;&#xFF1A;v1.1.46.xx
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">getShowLoadingGameBg</span><span class="hljs-params">()</span></span>;
+
+    <span class="hljs-comment">/**
+     * &#x8BBE;&#x7F6E;&#x52A0;&#x8F7D;&#x6E38;&#x620F;&#x65F6;&#xFF0C;&#x662F;&#x5426;&#x663E;&#x793A;&#x6E38;&#x620F;&#x80CC;&#x666F;&#x56FE;
+     * <span class="hljs-doctag">@param</span> show true:&#x663E;&#x793A; false:&#x9690;&#x85CF;
+     * &#x6700;&#x4F4E;&#x7248;&#x672C;&#xFF1A;v1.1.46.xx
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setShowLoadingGameBg</span><span class="hljs-params">(<span class="hljs-keyword">boolean</span> show)</span></span>;
+
+    <span class="hljs-comment">/**
+     * &#x83B7;&#x53D6;&#x52A0;&#x8F7D;&#x6E38;&#x620F;&#x65F6;&#xFF0C;&#x662F;&#x5426;&#x8981;&#x663E;&#x793A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;Loading&#x6548;&#x679C;
+     * <span class="hljs-doctag">@return</span> true:&#x663E;&#x793A; false:SDK&#x9ED8;&#x8BA4;Loading&#x6548;&#x679C; &#x9ED8;&#x8BA4;:&#x663E;&#x793A;SDK&#x9ED8;&#x8BA4;Loading&#x6548;&#x679C;
+     * &#x6700;&#x4F4E;&#x7248;&#x672C;&#xFF1A;v1.1.52.xx
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">getShowCustomLoading</span><span class="hljs-params">()</span></span>;
+
+    <span class="hljs-comment">/**
+     * &#x8BBE;&#x7F6E;&#x52A0;&#x8F7D;&#x6E38;&#x620F;&#x65F6;&#xFF0C;&#x662F;&#x5426;&#x8981;&#x663E;&#x793A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;Loading&#x6548;&#x679C;
+     * <span class="hljs-doctag">@param</span> show true:&#x81EA;&#x5B9A;&#x4E49; false:SDK&#x9ED8;&#x8BA4;Loading&#x6548;&#x679C;
+     * &#x6700;&#x4F4E;&#x7248;&#x672C;&#xFF1A;v1.1.52.xx
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setShowCustomLoading</span><span class="hljs-params">(<span class="hljs-keyword">boolean</span> show)</span></span>;
+
+    <span class="hljs-comment">/**
+     * &#x6DFB;&#x52A0;&#x6E38;&#x620F;&#x5D4C;&#x5165;&#x5305;&#x8DEF;&#x5F84;
+     * <span class="hljs-doctag">@param</span> mgId &#x6E38;&#x620F;id
+     * <span class="hljs-doctag">@param</span> mgPath &#x6E38;&#x620F;&#x8DEF;&#x5F84;&#xFF0C;app assets&#x8DEF;&#x5F84;&#x4E0B;
+     * &#x6700;&#x4F4E;&#x7248;&#x672C;&#xFF1A;v1.1.52.xx
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addEmbeddedMGPkg</span><span class="hljs-params">(<span class="hljs-keyword">long</span> mgId, String mgPath)</span></span>;
+
+    <span class="hljs-comment">/**
+     * &#x79FB;&#x9664;&#x6E38;&#x620F;&#x5D4C;&#x5165;&#x5305;
+     * <span class="hljs-doctag">@param</span> mgId
+     * &#x6700;&#x4F4E;&#x7248;&#x672C;&#xFF1A;v1.1.52.xx
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">removeEmbeddedMGPkg</span><span class="hljs-params">(<span class="hljs-keyword">long</span> mgId)</span></span>;
+
+    <span class="hljs-comment">/**
+     * &#x83B7;&#x53D6;&#x6E38;&#x620F;&#x5D4C;&#x5165;&#x5305;&#x8DEF;&#x5F84;
+     * <span class="hljs-doctag">@param</span> mgId
+     * <span class="hljs-doctag">@return</span> mgPath
+     * &#x6700;&#x4F4E;&#x7248;&#x672C;&#xFF1A;v1.1.52.xx
+     */</span>
+    <span class="hljs-function">String <span class="hljs-title">getEmbeddedMGPkgPath</span><span class="hljs-params">(<span class="hljs-keyword">long</span> mgId)</span></span>;
+}
+</code></pre>
+<h2 id="ios">iOS</h2>
+<pre><code class="lang-objc"><span class="hljs-class"><span class="hljs-keyword">@protocol</span> <span class="hljs-title">ISudCfg</span> &lt;<span class="hljs-title">NSObject</span>&gt;</span>
+<span class="hljs-comment">/// &#x83B7;&#x53D6;&#x52A0;&#x8F7D;&#x6E38;&#x620F;&#x65F6;&#xFF0C;&#x662F;&#x5426;&#x663E;&#x793A;&#x6E38;&#x620F;&#x80CC;&#x666F;&#x56FE;</span>
+<span class="hljs-comment">/// @return true:&#x663E;&#x793A; false:&#x9690;&#x85CF; &#x9ED8;&#x8BA4;:&#x663E;&#x793A;true</span>
+<span class="hljs-comment">/// &#x6700;&#x4F4E;&#x7248;&#x672C;&#xFF1A;v1.1.46.xx</span>
+-(<span class="hljs-built_in">BOOL</span>) getShowLoadingGameBg;
+
+<span class="hljs-comment">/// &#x8BBE;&#x7F6E;&#x52A0;&#x8F7D;&#x6E38;&#x620F;&#x65F6;&#xFF0C;&#x662F;&#x5426;&#x663E;&#x793A;&#x6E38;&#x620F;&#x80CC;&#x666F;&#x56FE;</span>
+<span class="hljs-comment">/// @param show true:&#x663E;&#x793A; false:&#x9690;&#x85CF;</span>
+<span class="hljs-comment">/// &#x6700;&#x4F4E;&#x7248;&#x672C;&#xFF1A;v1.1.46.xx</span>
+-(<span class="hljs-keyword">void</span>) setShowLoadingGameBg:(<span class="hljs-built_in">BOOL</span>) show;
+
+<span class="hljs-comment">/// &#x83B7;&#x53D6;&#x52A0;&#x8F7D;&#x6E38;&#x620F;&#x65F6;&#xFF0C;&#x662F;&#x5426;&#x8981;&#x663E;&#x793A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;Loading&#x6548;&#x679C;</span>
+<span class="hljs-comment">/// @return true:&#x663E;&#x793A; false:SDK&#x9ED8;&#x8BA4;Loading&#x6548;&#x679C; &#x9ED8;&#x8BA4;:&#x663E;&#x793A;SDK&#x9ED8;&#x8BA4;Loading&#x6548;&#x679C;</span>
+<span class="hljs-comment">/// &#x6700;&#x4F4E;&#x7248;&#x672C;&#xFF1A;v1.1.52.xx</span>
+- (<span class="hljs-built_in">BOOL</span>)getShowCustomLoading;
+
+<span class="hljs-comment">/// &#x8BBE;&#x7F6E;&#x52A0;&#x8F7D;&#x6E38;&#x620F;&#x65F6;&#xFF0C;&#x662F;&#x5426;&#x8981;&#x663E;&#x793A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;Loading&#x6548;&#x679C;</span>
+<span class="hljs-comment">/// @param show true:&#x81EA;&#x5B9A;&#x4E49; false:SDK&#x9ED8;&#x8BA4;Loading&#x6548;&#x679C;</span>
+<span class="hljs-comment">/// &#x6700;&#x4F4E;&#x7248;&#x672C;&#xFF1A;v1.1.52.xx</span>
+- (<span class="hljs-keyword">void</span>)setShowCustomLoading:(<span class="hljs-built_in">BOOL</span>) show;
+
+<span class="hljs-comment">/// &#x6DFB;&#x52A0;&#x6E38;&#x620F;&#x5D4C;&#x5165;&#x5305;&#x8DEF;&#x5F84;</span>
+<span class="hljs-comment">/// @param mgId &#x6E38;&#x620F;id</span>
+<span class="hljs-comment">/// @param mgPath &#x6E38;&#x620F;&#x8DEF;&#x5F84;&#xFF0C;app assets&#x8DEF;&#x5F84;&#x4E0B;</span>
+<span class="hljs-comment">/// &#x6700;&#x4F4E;&#x7248;&#x672C;&#xFF1A;v1.1.52.xx</span>
+- (<span class="hljs-keyword">void</span>)addEmbeddedMGPkg:(int64_t) mgId mgPath:(<span class="hljs-built_in">NSString</span>*) mgPath;
+
+<span class="hljs-comment">/// &#x79FB;&#x9664;&#x6E38;&#x620F;&#x5D4C;&#x5165;&#x5305;</span>
+<span class="hljs-comment">/// @param mgId</span>
+<span class="hljs-comment">/// &#x6700;&#x4F4E;&#x7248;&#x672C;&#xFF1A;v1.1.52.xx</span>
+- (<span class="hljs-keyword">void</span>)removeEmbeddedMGPkg:(int64_t) mgId;
+
+<span class="hljs-comment">/// &#x83B7;&#x53D6;&#x6E38;&#x620F;&#x5D4C;&#x5165;&#x5305;&#x8DEF;&#x5F84;</span>
+<span class="hljs-comment">/// @param mgId</span>
+<span class="hljs-comment">/// @return mgPath</span>
+<span class="hljs-comment">/// &#x6700;&#x4F4E;&#x7248;&#x672C;&#xFF1A;v1.1.52.xx</span>
+- (<span class="hljs-built_in">NSString</span> *)getEmbeddedMGPkgPath:(int64_t) mgId;
+<span class="hljs-keyword">@end</span>
+</code></pre>
 
       <script>
         var pathname = window.location.pathname
@@ -978,12 +1055,12 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 客户端文档">
+                <a href="SudMGP.html" class="navigation navigation-prev " aria-label="Previous page: SudMGP">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="SudMGP.html" class="navigation navigation-next " aria-label="Next page: SudMGP">
+                <a href="ISudFSTAPP.html" class="navigation navigation-next " aria-label="Next page: ISudFSTAPP">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -994,7 +1071,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"API","level":"1.2.2.1","depth":3,"next":{"title":"SudMGP","level":"1.2.2.1.1","depth":4,"path":"app/Client/API/SudMGP.md","ref":"app/Client/API/SudMGP.md","articles":[]},"previous":{"title":"客户端文档","level":"1.2.2","depth":2,"path":"app/Client/README.md","ref":"app/Client/README.md","articles":[{"title":"API","level":"1.2.2.1","depth":3,"path":"app/Client/API/README.md","ref":"app/Client/API/README.md","articles":[{"title":"SudMGP","level":"1.2.2.1.1","depth":4,"path":"app/Client/API/SudMGP.md","ref":"app/Client/API/SudMGP.md","articles":[]},{"title":"ISudCfg","level":"1.2.2.1.2","depth":4,"path":"app/Client/API/ISudCfg.md","ref":"app/Client/API/ISudCfg.md","articles":[]},{"title":"ISudFSTAPP","level":"1.2.2.1.3","depth":4,"path":"app/Client/API/ISudFSTAPP.md","ref":"app/Client/API/ISudFSTAPP.md","articles":[]},{"title":"ISudFSMMG","level":"1.2.2.1.4","depth":4,"path":"app/Client/API/ISudFSMMG.md","ref":"app/Client/API/ISudFSMMG.md","articles":[{"title":"onGetGameCfg","level":"1.2.2.1.4.1","depth":5,"path":"app/Client/API/ISudFSMMG/onGetGameCfg.md","ref":"app/Client/API/ISudFSMMG/onGetGameCfg.md","articles":[]},{"title":"onGetGameViewInfo","level":"1.2.2.1.4.2","depth":5,"path":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","ref":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","articles":[]}]}]},{"title":"APP状态转换器","level":"1.2.2.2","depth":3,"path":"app/Client/APPFST/README.md","ref":"app/Client/APPFST/README.md","articles":[{"title":"通用状态","level":"1.2.2.2.1","depth":4,"path":"app/Client/APPFST/CommonState.md","ref":"app/Client/APPFST/CommonState.md","articles":[]}]},{"title":"MG状态机","level":"1.2.2.3","depth":3,"path":"app/Client/MGFSM/README.md","ref":"app/Client/MGFSM/README.md","articles":[{"title":"通用状态-游戏","level":"1.2.2.3.1","depth":4,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},{"title":"通用状态-玩家","level":"1.2.2.3.2","depth":4,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},{"title":"你画我猜","level":"1.2.2.3.3","depth":4,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]}]}]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Client/API/README.md","mtime":"2022-05-17T04:00:18.012Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-08T02:16:52.361Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
+            gitbook.page.hasChanged({"page":{"title":"ISudCfg","level":"1.2.2.1.2","depth":4,"next":{"title":"ISudFSTAPP","level":"1.2.2.1.3","depth":4,"path":"app/Client/API/ISudFSTAPP.md","ref":"app/Client/API/ISudFSTAPP.md","articles":[]},"previous":{"title":"SudMGP","level":"1.2.2.1.1","depth":4,"path":"app/Client/API/SudMGP.md","ref":"app/Client/API/SudMGP.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Client/API/ISudCfg.md","mtime":"2022-06-08T02:16:45.420Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-08T02:16:52.361Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
         });
     </script>
 </div>
