@@ -21,6 +21,7 @@
             * [你画我猜](app/Client/MGFSM/DrawGuess.md)
     * [客户端SDK下载](app/Client/SDK/README.md)
     * [客户端Demo下载](app/Client/Demo/README.md)
+    * [FAQ](app/Client/FAQ/README.md)
     * [游戏多语言](app/Client/Languages/README.md)
     * [更新日志(SudMGP和游戏)](app/Client/ChangeLog.md)
 

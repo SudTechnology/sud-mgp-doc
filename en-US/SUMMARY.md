@@ -21,10 +21,10 @@
             * [DrawGuess](app/Client/MGFSM/DrawGuess.md)
     * [Download the client SDK](app/Client/SDK/README.md)
     * [Download the client demo](app/Client/Demo/README.md)
+    * [FAQ](app/Client/FAQ/README.md)
     * [Multiple languages for game](app/Client/Languages/README.md)
     * [Changelog(SudMGP and Game)](app/Client/ChangeLog.md)
-
-
+    
 * [Server](app/Server/README.md)
     * [Server quick start](app/Server/StartUp.md)
         * [Java](app/Server/StartUp-Java.md)

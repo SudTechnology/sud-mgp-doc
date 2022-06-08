@@ -18,3 +18,6 @@
 - [General state - Game](MGFSM/CommonStateGame.md)
 - [General state - Player](MGFSM/CommonStatePlayer.md)
 - [DrawGuess](MGFSM/DrawGuess.md)
+
+### FAQ
+- [FAQ](FAQ/README.md)

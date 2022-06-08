@@ -42,6 +42,9 @@
 
 - [HelloSudPlus-iOS Business Scene](https://github.com/SudTechnology/hello-sud-plus-ios/tree/master)
 
+## FAQ
+- [FAQ](app/Client/FAQ/README.md)
+
 ## Multiple languages for game
 - [Multiple Languages for Game](app/Client/Languages/README.md) loadMG language parameters
 

@@ -18,3 +18,6 @@
 - [通用状态-游戏](MGFSM/CommonStateGame.md)
 - [通用状态-玩家](MGFSM/CommonStatePlayer.md)
 - [你画我猜](MGFSM/DrawGuess.md)
+
+### FAQ
+- [FAQ](FAQ/README.md)

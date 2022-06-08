@@ -43,8 +43,11 @@
 
 - [HelloSudPlus-iOS 展示多业务场景](https://github.com/SudTechnology/hello-sud-plus-ios/tree/master)
 
+## FAQ
+- [FAQ](app/Client/FAQ/README.md)
+
 ## 游戏多语言
-- [游戏多语言](Client/Languages/README.md) loadMG language参数
+- [游戏多语言](app/Client/Languages/README.md) loadMG language参数
 
 > Tips
 >
