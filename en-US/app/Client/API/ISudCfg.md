@@ -61,7 +61,7 @@ public interface ISudCfg {
 
 ##iOS
 
-```objective-c
+```objc
 @protocol ISudCfg <NSObject>
 /// Get the game background image when loading the game
 /// @return true: show false: hide Default: show true

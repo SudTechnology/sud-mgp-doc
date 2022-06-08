@@ -85,7 +85,7 @@ public interface ISudFSMMG {
 
 ## iOS
 
-```objectivec
+```objc
 @protocol ISudFSMMG <NSObject>
 
 /**
