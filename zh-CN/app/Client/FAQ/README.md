@@ -12,7 +12,7 @@
 ### 问 1002: 如何快速定位和解决接入过程中遇到的问题？
 1. 请检查接口输入参数是否正确（mgId是64bit类型）；
 2. 请查看Android Studio 或 XCode 控制台日志信息，错误码字段result_code、sdk_error_code、retCode数值；
-3. 请将问题描述、视频、截图、控制台日志（文件）等信息，发送给我们的技术支持同学，帮您分析和解答；
+3. 请将问题描述、视频、截图、控制台日志（文件）等信息，发送给我们的技术支持同学，协助您分析和解答；
 
 [错误码 速查列表](https://docs.sud.tech/zh-CN/app/Server/ErrorCode.html)
 
