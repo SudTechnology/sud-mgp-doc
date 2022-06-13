@@ -9,7 +9,7 @@
 
 2. After a state notification, the SDK caches the latest **data** value based on the **state** value for the MG to proactively obtain it at anytime.
 3. The app only needs to notify a user of their own state, and the MG will broadcast and synchronize it to all peer users.
-4. The `ISudFSTAPP notifyStateChange(state, dataJson)` API is used.
+4. The `ISudFSTAPP void notifyStateChange(String state, String dataJson, ISudListenerNotifyStateChange listener)` API is used.
 
 [TOC]
 

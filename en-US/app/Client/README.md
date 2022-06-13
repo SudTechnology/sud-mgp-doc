@@ -11,12 +11,12 @@
   - [onGetGameCfg](API/ISudFSMMG/onGetGameCfg.md)
   - [onGetGameViewInfo](API/ISudFSMMG/onGetGameViewInfo.md)
   
-### App FST
-- [General state](APPFST/CommonState.md)
+### App FST ISudFSTAPP
+- [General state notifyStateChange](APPFST/CommonState.md)
 
-### MG FSM
-- [General state - Game](MGFSM/CommonStateGame.md)
-- [General state - Player](MGFSM/CommonStatePlayer.md)
+### MG FSM ISudFSMMG
+- [General state - Game onGameStateChange](MGFSM/CommonStateGame.md)
+- [General state - Player onPlayerStateChange](MGFSM/CommonStatePlayer.md)
 - [DrawGuess](MGFSM/DrawGuess.md)
 
 ### FAQ

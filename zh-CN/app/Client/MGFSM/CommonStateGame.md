@@ -12,10 +12,6 @@
 > 3. 通知后SudMGP保证状态有序串行从MG到达APP；会按state值缓存最新一次的data值，供APP随时主动获取；
 > 4. ISudFSMMG void onGameStateChange(ISudFSMStateHandle handle, String state, String dataJson)；
 
-#状态转换说明
-
-![状态转换说明](../../Resource/Client/gamestate.png)
-
 ### 0. 测试状态
 
 - state

@@ -11,10 +11,6 @@
 > 4. MG会通知房间内每个用户（包括所有玩家和所有OB）的状态，APP可按需处理展现；
 > 5. ISudFSMMSG void onPlayerStateChange(ISudFSMStateHandle handle, String userId, String state, String dataJson);
 
-#状态转换说明
-
-![状态转换说明](../../Resource/Client/gamestate.png)
-
 ### 0. 测试状态
 
 - state

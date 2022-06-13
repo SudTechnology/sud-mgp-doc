@@ -17,12 +17,7 @@
 [错误码 速查列表](https://docs.sud.tech/zh-CN/app/Server/ErrorCode.html)
 
 ### 问 1003: HelloSudPlus体验demo下载（展示多业务场景）
-Android
-
 ![Android](../../Resource/Client/hello_sudplus_android.png)
-
-iPhone
-
 ![iPhone](../../Resource/Client/hello_sudplus_iphone.png)
 
 # 2. SudMGP接口

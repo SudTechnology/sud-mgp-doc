@@ -14,10 +14,6 @@
 >
 > 4. ISudFSMMSG void onPlayerStateChange(ISudFSMStateHandle handle, String userId, String state, String dataJson);
 
-# State transduction description
-
-![State transduction description](../../Resource/Client/gamestate.png)
-
 ### 0. Testing
 
 - state
