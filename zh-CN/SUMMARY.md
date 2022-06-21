@@ -16,6 +16,7 @@
                 * [onGetGameViewInfo](app/Client/API/ISudFSMMG/onGetGameViewInfo.md)
         * [APP状态转换器 ISudFSTAPP](app/Client/APPFST/README.md)
             * [通用状态 notifyStateChange](app/Client/APPFST/CommonState.md)
+            * [元宇宙砂砂舞 notifyStateChange](app/Client/APPFST/CommonStateForDisco.md)
         * [MG状态机 ISudFSMMG](app/Client/MGFSM/README.md)
             * [通用状态-游戏 onGameStateChange](app/Client/MGFSM/CommonStateGame.md)
             * [通用状态-玩家 onPlayerStateChange](app/Client/MGFSM/CommonStatePlayer.md)
