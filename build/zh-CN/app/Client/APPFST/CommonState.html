@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>通用状态 · GitBook</title>
+        <title>通用状态 notifyStateChange · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -283,7 +283,7 @@
                 <a href="./">
             
                     
-                    APP状态转换器
+                    APP状态转换器 ISudFSTAPP
             
                 </a>
             
@@ -297,7 +297,7 @@
                 <a href="CommonState.html">
             
                     
-                    通用状态
+                    通用状态 notifyStateChange
             
                 </a>
             
@@ -315,7 +315,7 @@
                 <a href="../MGFSM/">
             
                     
-                    MG状态机
+                    MG状态机 ISudFSMMG
             
                 </a>
             
@@ -329,7 +329,7 @@
                 <a href="../MGFSM/CommonStateGame.html">
             
                     
-                    通用状态-游戏
+                    通用状态-游戏 onGameStateChange
             
                 </a>
             
@@ -342,7 +342,7 @@
                 <a href="../MGFSM/CommonStatePlayer.html">
             
                     
-                    通用状态-玩家
+                    通用状态-玩家 onPlayerStateChange
             
                 </a>
             
@@ -912,7 +912,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../.." >通用状态</a>
+        <a href="../../.." >通用状态 notifyStateChange</a>
     </h1>
 </div>
 
@@ -937,7 +937,7 @@
 <li>&#x53EF;&#x91CD;&#x590D;&#x901A;&#x77E5;&#xFF0C;&#x65E0;&#x9700;&#x4FDD;&#x8BC1;&#x901A;&#x77E5;&#x6B21;&#x6570;&#xFF1B;</li>
 <li>&#x901A;&#x77E5;&#x540E;SDK&#x4F1A;&#x6309;state&#x503C;&#x7F13;&#x5B58;&#x6700;&#x65B0;&#x4E00;&#x6B21;&#x7684;data&#x503C;&#xFF0C;&#x4F9B;MG&#x968F;&#x65F6;&#x4E3B;&#x52A8;&#x83B7;&#x53D6;&#xFF1B;</li>
 <li>APP&#x4EC5;&#x9700;&#x901A;&#x77E5;&#x7528;&#x6237;&#x81EA;&#x5DF1;&#x7684;&#x72B6;&#x6001;&#xFF0C;MG&#x670D;&#x52A1;&#x4F1A;&#x8D1F;&#x8D23;&#x5E7F;&#x64AD;&#x5E76;&#x540C;&#x6B65;&#x5230;&#x5404;&#x5BF9;&#x7AEF;&#xFF1B;</li>
-<li>ISudFSTAPP notifyStateChange(state, dataJson)&#x4F7F;&#x7528;&#xFF1B;</li>
+<li>ISudFSTAPP void notifyStateChange(String state, String dataJson, ISudListenerNotifyStateChange listener)&#x4F7F;&#x7528;&#xFF1B;</li>
 </ol>
 </blockquote>
 <p>[TOC]</p>
@@ -1298,12 +1298,12 @@ b.&#x90E8;&#x5206;&#x5F3A;&#x64CD;&#x4F5C;&#x7C7B;&#x5C0F;&#x6E38;&#x620F;&#xFF0
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: APP状态转换器">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: APP状态转换器 ISudFSTAPP">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../MGFSM/" class="navigation navigation-next " aria-label="Next page: MG状态机">
+                <a href="../MGFSM/" class="navigation navigation-next " aria-label="Next page: MG状态机 ISudFSMMG">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1314,7 +1314,7 @@ b.&#x90E8;&#x5206;&#x5F3A;&#x64CD;&#x4F5C;&#x7C7B;&#x5C0F;&#x6E38;&#x620F;&#xFF0
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"通用状态","level":"1.2.2.2.1","depth":4,"next":{"title":"MG状态机","level":"1.2.2.3","depth":3,"path":"app/Client/MGFSM/README.md","ref":"app/Client/MGFSM/README.md","articles":[{"title":"通用状态-游戏","level":"1.2.2.3.1","depth":4,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},{"title":"通用状态-玩家","level":"1.2.2.3.2","depth":4,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},{"title":"你画我猜","level":"1.2.2.3.3","depth":4,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]}]},"previous":{"title":"APP状态转换器","level":"1.2.2.2","depth":3,"path":"app/Client/APPFST/README.md","ref":"app/Client/APPFST/README.md","articles":[{"title":"通用状态","level":"1.2.2.2.1","depth":4,"path":"app/Client/APPFST/CommonState.md","ref":"app/Client/APPFST/CommonState.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Client/APPFST/CommonState.md","mtime":"2022-05-23T09:14:07.753Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-09T03:54:44.650Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
+            gitbook.page.hasChanged({"page":{"title":"通用状态 notifyStateChange","level":"1.2.2.2.1","depth":4,"next":{"title":"MG状态机 ISudFSMMG","level":"1.2.2.3","depth":3,"path":"app/Client/MGFSM/README.md","ref":"app/Client/MGFSM/README.md","articles":[{"title":"通用状态-游戏 onGameStateChange","level":"1.2.2.3.1","depth":4,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},{"title":"通用状态-玩家 onPlayerStateChange","level":"1.2.2.3.2","depth":4,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},{"title":"你画我猜","level":"1.2.2.3.3","depth":4,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]}]},"previous":{"title":"APP状态转换器 ISudFSTAPP","level":"1.2.2.2","depth":3,"path":"app/Client/APPFST/README.md","ref":"app/Client/APPFST/README.md","articles":[{"title":"通用状态 notifyStateChange","level":"1.2.2.2.1","depth":4,"path":"app/Client/APPFST/CommonState.md","ref":"app/Client/APPFST/CommonState.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Client/APPFST/CommonState.md","mtime":"2022-06-21T03:36:58.377Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-21T03:39:14.606Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
         });
     </script>
 </div>
