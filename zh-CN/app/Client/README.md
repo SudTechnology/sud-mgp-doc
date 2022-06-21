@@ -13,6 +13,7 @@
   
 ### APP状态控制器 ISudFSTAPP
 - [通用状态 notifyStateChange](APPFST/CommonState.md)
+- [元宇宙莎莎舞 notifyStateChange](APPFST/CommonStateForDisco.md)
 
 ### MG状态机 ISudFSMMG
 - [通用状态-游戏 onGameStateChange](MGFSM/CommonStateGame.md)
