@@ -623,3 +623,25 @@ mg_common_game_add_ai_players
 ```
 游戏通知app层添加陪玩机器人是否成功
 ```
+
+### 22. 游戏通知app层添当前网络连接状态（2022-06-21新增）
+
+- state
+
+```
+mg_common_game_network_state
+```
+
+- data
+
+```json
+{
+	"state": 1,	// 0:closed, 1: connected
+}
+```
+
+- 说明
+
+```
+游戏通知app层添当前网络连接状态
+```

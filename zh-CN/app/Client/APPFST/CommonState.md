@@ -436,3 +436,25 @@ app_common_game_add_ai_players
 ```
 设置游戏中的AI玩家
 ```
+
+### 17. app在收到游戏断开连接通知后，通知游戏重试连接（2022-06-21新增，暂时支持ludo）
+
+- state
+
+```
+app_common_game_reconnect
+```
+
+- data
+
+```json
+{
+	
+}
+```
+
+- 说明
+
+```
+通知游戏重试连接
+```

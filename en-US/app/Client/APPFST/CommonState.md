@@ -430,8 +430,30 @@ app_common_game_add_ai_players
 }
 ```
 
-- 说明
+- Description
 
 ```
 add AI players in the game
+```
+
+### 17. After receiving the game disconnect notification, the app notifies the game to retry the connection (added on June 21, 2022, Ludo is temporarily supported)
+
+- state
+
+```
+app_common_game_reconnect
+```
+
+- data
+
+```json
+{
+	
+}
+```
+
+- Description
+
+```
+Notify game to retry connection
 ```
