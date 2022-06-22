@@ -4,7 +4,7 @@
 
 ## 简要描述
 
-- 接入服务端根据app_id，app_secret，mg_id 获取小游戏信息，建议server对server拉取，本地缓存！！！
+- 根据app_id，app_secret，mg_id 获取小游戏信息，建议由服务端进行拉取，并在本地缓存。
 
 ## 请求URL
 

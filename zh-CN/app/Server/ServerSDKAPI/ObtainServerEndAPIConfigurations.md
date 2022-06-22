@@ -4,7 +4,7 @@
 
 ## 简要描述
 
-- 接入方服务端根据app_id，app_secret获取服务端接口API配置文件
+- 服务端根据app_id，app_secret获取服务端接口API配置文件，建议由服务端进行拉取，并在本地缓存（可以定时拉取接口地址，建议间隔时间1天或者更长时间，或者访问接口失败时候刷新）。
 
 ## 请求URL
 
@@ -64,10 +64,10 @@ func main() {
 
 | 参数名                       | 类型     | 说明                   |
 |:--------------------------|:-------|----------------------|
-| get_mg_list               | string | 游戏接入服务端拉取游戏列表接口地址    |
-| get_mg_info               | string | 游戏接入服务端拉取游戏信息接口地址    |
-| get_game_report_info      | string | 游戏接入服务端查询游戏局信息接口地址   |
-| get_game_report_info_page | string | 游戏接入服务端分页查询游戏局信息接口地址 |
+| get_mg_list               | string | 拉取游戏列表接口地址（服务端使用）    |
+| get_mg_info               | string | 拉取游戏信息接口地址（服务端使用）    |
+| get_game_report_info      | string | 查询游戏局信息接口地址（服务端使用）   |
+| get_game_report_info_page | string | 分页查询游戏局信息接口地址（服务端使用） |
 
 ## 返回示例
 
