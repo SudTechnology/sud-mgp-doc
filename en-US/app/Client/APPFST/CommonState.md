@@ -9,7 +9,7 @@
 
 2. After a state notification, the SDK caches the latest **data** value based on the **state** value for the MG to proactively obtain it at anytime.
 3. The app only needs to notify a user of their own state, and the MG will broadcast and synchronize it to all peer users.
-4. The `ISudFSTAPP notifyStateChange(state, dataJson)` API is used.
+4. The `ISudFSTAPP void notifyStateChange(String state, String dataJson, ISudListenerNotifyStateChange listener)` API is used.
 
 [TOC]
 
@@ -430,8 +430,30 @@ app_common_game_add_ai_players
 }
 ```
 
-- 说明
+- Description
 
 ```
 add AI players in the game
+```
+
+### 17. After receiving the game disconnect notification, the app notifies the game to retry the connection (added on June 21, 2022, Ludo is temporarily supported)
+
+- state
+
+```
+app_common_game_reconnect
+```
+
+- data
+
+```json
+{
+	
+}
+```
+
+- Description
+
+```
+Notify game to retry connection
 ```

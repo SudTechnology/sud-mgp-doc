@@ -9,7 +9,7 @@
 2. 可重复通知，无需保证通知次数；
 3. 通知后SDK会按state值缓存最新一次的data值，供MG随时主动获取；
 4. APP仅需通知用户自己的状态，MG服务会负责广播并同步到各对端；
-5. ISudFSTAPP notifyStateChange(state, dataJson)使用；
+5. ISudFSTAPP void notifyStateChange(String state, String dataJson, ISudListenerNotifyStateChange listener)使用；
 
 [TOC]
 
@@ -435,4 +435,26 @@ app_common_game_add_ai_players
 
 ```
 设置游戏中的AI玩家
+```
+
+### 17. app在收到游戏断开连接通知后，通知游戏重试连接（2022-06-21新增，暂时支持ludo）
+
+- state
+
+```
+app_common_game_reconnect
+```
+
+- data
+
+```json
+{
+	
+}
+```
+
+- 说明
+
+```
+通知游戏重试连接
 ```

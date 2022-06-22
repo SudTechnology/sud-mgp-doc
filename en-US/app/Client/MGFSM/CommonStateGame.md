@@ -13,10 +13,6 @@
 >
 > 3. ISudFSMMG void onGameStateChange(ISudFSMStateHandle handle, String state, String dataJson);
 
-# State transduction description
-
-![State transduction description](../../Resource/Client/gamestate.png)
-
 ### 0. Testing
 
 - state
@@ -625,4 +621,26 @@ mg_common_game_add_ai_players
 
 ```
 Whether the game notifies the app layer to add the accompanying robot successfully
+```
+
+### 22. The game notifies the app layer to add the current network connection status (added on June 21, 2022)
+
+- state
+
+```
+mg_common_game_network_state
+```
+
+- data
+
+```json
+{
+	"state": 1,	// 0:closed, 1: connected
+}
+```
+
+- Description
+
+```
+The game notifies the app layer to add the current network connection status
 ```

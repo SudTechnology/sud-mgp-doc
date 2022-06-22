@@ -12,10 +12,6 @@
 > 3. 通知后SudMGP保证状态有序串行从MG到达APP；会按state值缓存最新一次的data值，供APP随时主动获取；
 > 4. ISudFSMMG void onGameStateChange(ISudFSMStateHandle handle, String state, String dataJson)；
 
-#状态转换说明
-
-![状态转换说明](../../Resource/Client/gamestate.png)
-
 ### 0. 测试状态
 
 - state
@@ -626,4 +622,26 @@ mg_common_game_add_ai_players
 
 ```
 游戏通知app层添加陪玩机器人是否成功
+```
+
+### 22. 游戏通知app层添当前网络连接状态（2022-06-21新增）
+
+- state
+
+```
+mg_common_game_network_state
+```
+
+- data
+
+```json
+{
+	"state": 1,	// 0:closed, 1: connected
+}
+```
+
+- 说明
+
+```
+游戏通知app层添当前网络连接状态
 ```
