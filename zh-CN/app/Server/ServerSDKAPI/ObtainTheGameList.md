@@ -14,7 +14,7 @@
 ## 请求方式
 - 传输协议：HTTPS
 - 请求方法：POST
-- 参数为Json格式，放在body内
+- 参数为Json格式，放在body内（见请求示例）
 - Header中需要添加：Content-Type: application/json
 
 ## 请求参数
