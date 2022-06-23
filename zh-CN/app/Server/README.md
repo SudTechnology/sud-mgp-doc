@@ -44,6 +44,9 @@
 
 - [获取服务端接口API配置](ServerSDKAPI/ObtainServerEndAPIConfigurations.md)
 
+- [上报每局游戏消耗货币信息](ServerSDKAPI/.md)
+
+- [查询游戏上报信息](ServerSDKAPI/.md)
 
 ### JWT最佳实践：基于客户端登陆态的服务器鉴权与数据交换
 
