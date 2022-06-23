@@ -10,7 +10,7 @@
 
 - ### 准备
 
-接入方需要提前准备 应用id(app_id), 应用密钥(app_secret)
+应用id(app_id), 应用密钥(app_secret)
 
 - ### 构造签名串
 
@@ -96,9 +96,9 @@ public class AuthorizationHeaderTest {
   public static void main(String[] args) {
     // 应用ID
     String appId = "";
-    // 请求时间戳（接入方发送请求的时间戳）
+    // 请求时间戳（发送请求的时间戳）
     String timestamp = "";
-    // 随机字符串 (接入方自定义随机字符串)
+    // 随机字符串 (自定义随机字符串)
     String nonce = "";
     // 签名值
     String signature = "";
