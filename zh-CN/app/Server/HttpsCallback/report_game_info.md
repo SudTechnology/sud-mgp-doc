@@ -41,7 +41,7 @@
 |mg_id |是  |int64 |游戏id |
 |mg_id_str |是  |string |小游戏id数值型兼容字段（nodejs服务请使用当前字段） |
 |room_id |是 |string |接入方房间id  |
-|game_mode  |是 |int32 |游戏模式  |
+|game_mode  |是 |int32 |游戏模式，设定游戏的一些功能(参与游戏的人数，出手时间，特定的玩法)  |
 |game_round_id |是 |string |本局游戏的id （重复上报，使用该字段去重） |
 |battle_start_at |是 |int32 |战斗开始时间（秒）  |
 |players |是 |player_object |player_object 数组 |
