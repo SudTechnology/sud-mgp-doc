@@ -50,8 +50,8 @@ func main() {
 ```
 
 ## 请求方式
-- https
-- GET
+- 传输协议：HTTPS
+- 请求方法：GET
 - Header中需要添加：Content-Type: application/json
 
 ## 请求参数
