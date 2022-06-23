@@ -5,7 +5,8 @@
 ## 简要描述
 
 - 接入服务端根据AppId，AppSecret, GameRoundId, ReportType 获取游戏上报信息
-- （游戏数据信息暂时仅存24小时内）
+- 游戏数据信息暂时仅存24小时内
+- 当前接口针对每个appid请求限制频率为10次/秒
 
 ## 请求URL
 
