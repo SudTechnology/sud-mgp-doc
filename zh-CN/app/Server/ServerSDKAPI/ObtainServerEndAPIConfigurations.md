@@ -68,6 +68,8 @@ func main() {
 | get_mg_info               | string | 拉取游戏信息接口地址（服务端使用）    |
 | get_game_report_info      | string | 查询游戏局信息接口地址（服务端使用）   |
 | get_game_report_info_page | string | 分页查询游戏局信息接口地址（服务端使用） |
+| query_game_report_info    | string | 查询游戏上报信息接口地址（服务端使用）  |
+| report_game_round_bill    | string | 上报每局游戏消耗货币信息（服务端使用）  |
 
 ## 返回示例
 
@@ -77,7 +79,9 @@ func main() {
     "get_mg_list": "",
     "get_mg_info": "",
     "get_game_report_info": "",
-    "get_game_report_info_page": ""
+    "get_game_report_info_page": "",
+    "query_game_report_info": "",
+    "report_game_round_bill": ""
   }
 }
 ```
