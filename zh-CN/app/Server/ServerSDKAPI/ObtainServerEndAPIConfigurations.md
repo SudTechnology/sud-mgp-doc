@@ -14,6 +14,7 @@
 ## app服务签名实现方式
 - app服务签名基于hmac算法生成，密码为app_secret，以app_id作为数据进行加密生成
 #### Java示例代码：
+
 ```java
 import cn.hutool.crypto.digest.HMac;
 import cn.hutool.crypto.digest.HmacAlgorithm;
@@ -30,7 +31,9 @@ class Test {
     }
 }
 ```
+
 #### Go示例代码
+
 ```go
 package main
 
