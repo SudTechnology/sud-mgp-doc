@@ -19,6 +19,7 @@
 - [通用状态-游戏 onGameStateChange](MGFSM/CommonStateGame.md)
 - [通用状态-玩家 onPlayerStateChange](MGFSM/CommonStatePlayer.md)
 - [你画我猜](MGFSM/DrawGuess.md)
+- [元宇宙砂砂舞](MGFSM/Disco.md)
 
 ### FAQ
 - [FAQ](FAQ/README.md)

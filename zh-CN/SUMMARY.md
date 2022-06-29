@@ -21,6 +21,7 @@
             * [通用状态-游戏 onGameStateChange](app/Client/MGFSM/CommonStateGame.md)
             * [通用状态-玩家 onPlayerStateChange](app/Client/MGFSM/CommonStatePlayer.md)
             * [你画我猜](app/Client/MGFSM/DrawGuess.md)
+            * [元宇宙砂砂舞](app/Client/MGFSM/Disco.md)
     * [客户端SDK下载](app/Client/SDK/README.md)
     * [客户端Demo下载](app/Client/Demo/README.md)
     * [FAQ](app/Client/FAQ/README.md)
