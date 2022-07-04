@@ -19,7 +19,7 @@
 - Header中需要添加：认证请求头 Authorization
 
 ## 请求头 [Authorization]
-- [认证请求头Authorization实现方式](认证请求头Authorization说明.md)
+- [认证请求头Authorization实现方式](AuthorizationDescription.md)
 
 ## 请求参数
 
