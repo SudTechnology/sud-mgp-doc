@@ -13,7 +13,9 @@
 
 ## app服务签名实现方式
 - app服务签名基于hmac算法生成，密码为app_secret，以app_id作为数据进行加密生成
+
 #### Java示例代码：
+
 ```java
 import cn.hutool.crypto.digest.HMac;
 import cn.hutool.crypto.digest.HmacAlgorithm;
@@ -30,7 +32,9 @@ class Test {
     }
 }
 ```
+
 #### Go示例代码
+
 ```go
 package main
 
@@ -50,8 +54,8 @@ func main() {
 ```
 
 ## 请求方式
-- https
-- GET
+- 传输协议：HTTPS
+- 请求方法：GET
 - Header中需要添加：Content-Type: application/json
 
 ## 请求参数
@@ -68,6 +72,8 @@ func main() {
 | get_mg_info               | string | 拉取游戏信息接口地址（服务端使用）    |
 | get_game_report_info      | string | 查询游戏局信息接口地址（服务端使用）   |
 | get_game_report_info_page | string | 分页查询游戏局信息接口地址（服务端使用） |
+| query_game_report_info    | string | 查询游戏上报信息接口地址（服务端使用）  |
+| report_game_round_bill    | string | 上报每局游戏消耗货币信息（服务端使用）  |
 
 ## 返回示例
 
@@ -77,7 +83,9 @@ func main() {
     "get_mg_list": "",
     "get_mg_info": "",
     "get_game_report_info": "",
-    "get_game_report_info_page": ""
+    "get_game_report_info_page": "",
+    "query_game_report_info": "",
+    "report_game_round_bill": ""
   }
 }
 ```

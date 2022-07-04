@@ -12,10 +12,10 @@
 - 生产环境：接口地址详见[获取服务端API配置](ObtainServerEndAPIConfigurations.md)中get_mg_list字段
 
 ## 请求方式
-- https
-- POST
-- 参数为Json格式，放在body内
-- Header中需要添加：Content-Type: application/json
+- 传输协议：HTTPS
+- 请求方法：POST
+- 参数以body传递，格式为json（见请求示例）
+- Header中需要添加：Content-Type: application/json;charset=utf-8
 
 ## 请求参数
 
