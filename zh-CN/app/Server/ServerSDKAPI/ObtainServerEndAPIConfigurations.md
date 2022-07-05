@@ -66,14 +66,14 @@ func main() {
 
 ## 返回参数
 
-| 参数名                       | 类型     | 说明                   |
-|:--------------------------|:-------|----------------------|
-| get_mg_list               | string | 拉取游戏列表接口地址（服务端使用）    |
-| get_mg_info               | string | 拉取游戏信息接口地址（服务端使用）    |
-| get_game_report_info      | string | 查询游戏局信息接口地址（服务端使用）   |
-| get_game_report_info_page | string | 分页查询游戏局信息接口地址（服务端使用） |
-| query_game_report_info    | string | 查询游戏上报信息接口地址（服务端使用）  |
-| report_game_round_bill    | string | 上报每局游戏消耗货币信息（服务端使用）  |
+| 参数名                       | 类型     | 说明                            |
+|:--------------------------|:-------|-------------------------------|
+| get_mg_list               | string | 拉取游戏列表接口地址（服务端使用）             |
+| get_mg_info               | string | 拉取游戏信息接口地址（服务端使用）             |
+| get_game_report_info      | string | 查询游戏局信息接口地址（服务端使用）            |
+| get_game_report_info_page | string | 分页查询游戏局信息接口地址（服务端使用）          |
+| query_game_report_info    | string | 根据自定义游戏局ID查询游戏上报信息接口地址（服务端使用） |
+| report_game_round_bill    | string | 上报每局游戏消耗货币信息（服务端使用）           |
 
 ## 返回示例
 
