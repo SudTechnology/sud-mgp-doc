@@ -4,7 +4,8 @@
 
 ## 简要描述
 
-- 接入服务端根据AppId，AppSecret 获取小游戏列表，建议server对server拉取，本地缓存！！！
+- 根据app_id，app_secret获取当前app关联的小游戏列表，建议由服务端进行拉取，并在本地缓存
+- 当前接口针对每个app_id请求限制频率为10次/秒
 
 ## 请求URL
 

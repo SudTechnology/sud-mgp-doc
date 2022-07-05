@@ -4,12 +4,12 @@
 
 ## 简要描述
 
-- 服务端根据app_id，app_secret获取服务端接口API配置文件，建议由服务端进行拉取，并在本地缓存（可以定时拉取接口地址，建议间隔时间1天或者更长时间，或者访问接口失败时候刷新）。
+- 根据app_id，app_secret获取服务端接口API配置文件，建议由服务端进行拉取，并在本地缓存（可以定时拉取接口地址，建议间隔时间1天或者更长时间，或者访问接口失败时候刷新）
 
 ## 请求URL
 
 - 测试环境：https://sim-asc.sudden.ltd/[app服务签名]
-- 生产环境：https://asc.sudden.ltd/[app服务签名]，生产环境暂时为按需开通，请联系SUD！
+- 生产环境：https://asc.sudden.ltd/[app服务签名]
 
 ## app服务签名实现方式
 - app服务签名基于hmac算法生成，密码为app_secret，以app_id作为数据进行加密生成

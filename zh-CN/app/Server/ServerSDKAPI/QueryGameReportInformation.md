@@ -5,7 +5,7 @@
 ## 简要描述
 
 - 服务端根据game_round_id, report_game_info_key（自定义业务局ID）, filter_types查询游戏上报信息
-- 当前接口针对每个appid请求限制频率为10次/秒
+- 当前接口针对每个app_id请求限制频率为10次/秒
 
 ## 请求URL
 

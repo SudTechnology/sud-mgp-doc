@@ -4,9 +4,8 @@
 
 ## 简要描述
 
-- 接入服务端根据AppId，AppSecret, RoomId, PageNo, PageSize 分页获取房间内游戏上报信息
-- 游戏数据信息暂时仅存24小时内
-- 当前接口针对每个appid请求限制频率为10次/秒
+- 服务端根据app_id，app_secret, room_id, page_no, page_size 分页获取房间内游戏上报信息
+- 当前接口针对每个app_id请求限制频率为10次/秒
 
 ## 请求URL
 
