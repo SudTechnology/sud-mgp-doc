@@ -53,6 +53,20 @@ func main() {
 }
 ```
 
+#### Node示例代码
+
+```js
+const Crypto = require('crypto');
+
+function main() {
+    let key = 'appSecret';
+    let data = 'appId';
+    let hmac = Crypto.createHmac('md5', key);
+    let sign = hmac.update(data).digest('hex');
+    console.log(sign);
+}
+```
+
 ## 请求方式
 - 传输协议：HTTPS
 - 请求方法：GET
