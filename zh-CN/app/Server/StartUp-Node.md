@@ -14,9 +14,17 @@
 
 ## 集成流程
 
-1. 项目导入包 npm install -d
+1. NPM配置
+- 建议创建一个公司github通用账号(user—>setting->Developer settings->Personal access tokens->Generate new token), 生成一个用以Npm包的Token,权限配置如图<br/>
+  ![image](https://user-images.githubusercontent.com/92836734/178459371-7347ad20-a0b5-45e3-b021-a7fb6013ac9f.png)
 
-2. 使用[SudMGPAuth](./API/SudMGPAuth-Node.md)提供的API实现以下回调接口，供小游戏服务鉴权和获取用户基本信息，可参考Demo
+- 在项目工程根目录新建.npmrc文件，并配置<br/>
+  //npm.pkg.github.com/:_authToken=用以Npm包的Token <br/>
+  @sudtechnology:registry=https://npm.pkg.github.com/
+
+2. 项目导入包: npm install @sudtechnology/sud-mgp-auth-node
+
+3. 使用[SudMGPAuth](./API/SudMGPAuth-Node.md)提供的API实现以下回调接口，供小游戏服务鉴权和获取用户基本信息，可参考Demo
 
     - [get_sstoken](./HttpsCallback/get_sstoken.md)
 
