@@ -6,6 +6,7 @@
     * [客户端快速接入](app/Client/StartUp.md)
         * [iOS](app/Client/StartUp-iOS.md)
         * [Android](app/Client/StartUp-Android.md)
+        * [Web](app/Client/StartUp-Web.md)
     * [客户端文档](app/Client/README.md)
         * [API](app/Client/API/README.md)
             * [SudMGP](app/Client/API/SudMGP.md)
