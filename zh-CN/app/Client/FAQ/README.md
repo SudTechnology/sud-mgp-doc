@@ -153,6 +153,11 @@
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE | WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
     }
    ```
+   
+### 问 4002: 如何解决在iOS上，声网RTC和腾讯云RTC上麦时，导致游戏内的音乐播放不了？
+iPhone具备两套系统音量类型，即“通话音量”和“媒体音量”。系统音量类型必须是“媒体音量”时，游戏内的音乐才可以正常播放。上麦前，需要切换至“媒体音量”
+声网： 调用setAudioProfile:scenario:，scenario传AUDIO_SCENARIO_GAME_STREAMING或AUDIO_SCENARIO_MEETING，参考https://docs.agora.io/cn/Voice/faq/system_volume
+腾讯云：调用[TRTCCloud setSystemVolumeType:TRTCSystemVolumeTypeMedia]，参考https://liteav.sdk.qcloud.com/doc/api/zh-cn/group__TRTCCloudDef__ios.html#gaac0cd0da9dd789dcec4ba16471006f23
 
 # 5. 游戏个性化状态
 
