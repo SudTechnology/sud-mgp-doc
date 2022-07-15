@@ -154,12 +154,15 @@
     }
    ```
    
-### 问 4002: 如何解决在iOS上，声网RTC和腾讯云RTC上麦时，导致游戏内的音乐播放不了？
-iPhone具备两套系统音量类型，即“通话音量”和“媒体音量”。系统音量类型必须是“媒体音量”时，游戏内的音乐才可以正常播放。上麦前，需要切换至“媒体音量”
+### 问 4002: 如何解决在iOS上，RTC上麦时，有时导致游戏内的音乐播放不了？
+iPhone具备两套系统音量类型，“通话音量”和“媒体音量”。上麦前，需要切换至“媒体音量”，游戏内的音乐才可以正常播放。 
+1. 声网：调用setAudioProfile:scenario:，scenario传AUDIO_SCENARIO_GAME_STREAMING或AUDIO_SCENARIO_MEETING，参考https://docs.agora.io/cn/Voice/faq/system_volume
+2. 腾讯云：调用[TRTCCloud setSystemVolumeType:TRTCSystemVolumeTypeMedia]，参考https://liteav.sdk.qcloud.com/doc/api/zh-cn/group__TRTCCloudDef__ios.html#gaac0cd0da9dd789dcec4ba16471006f23
 
-声网： 调用setAudioProfile:scenario:，scenario传AUDIO_SCENARIO_GAME_STREAMING或AUDIO_SCENARIO_MEETING，参考https://docs.agora.io/cn/Voice/faq/system_volume
+### 问 4003: 在iOS上，退出游戏房间时，同时调用RTC的destroy和SudMGP SDK的destroyMG，有时会出现rtc与openal的不兼容问题，堆栈中会出现AURemoteIO和OpenAL符号
+有的小游戏使用openAL播放音效，底层封装AudioUnit混音，如果RTC的destroy方法异步调用[AVAudioSession setCategory:error:]方法，会使AudioUnit线程去copy无效的音频buffer，出现rtc与游戏音效底层openal的不兼容问题。
+在调用RTC的destroy方法后，同步调用[AVAudioSession setCategory:error:]，能够解决这个问题，category推荐传系统默认SoloAmbient
 
-腾讯云：调用[TRTCCloud setSystemVolumeType:TRTCSystemVolumeTypeMedia]，参考https://liteav.sdk.qcloud.com/doc/api/zh-cn/group__TRTCCloudDef__ios.html#gaac0cd0da9dd789dcec4ba16471006f23
 
 # 5. 游戏个性化状态
 
