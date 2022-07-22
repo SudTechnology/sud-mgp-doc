@@ -91,8 +91,10 @@ dataJsonResp = {
 |ui.game_help_btn  |No  |json |The **Help** button in the game.|
 |ui.game_help_btn.hide  |No  |bool |Indicates whether to hide the **Help** button in the game. Valid values: **false**: show the button; **true**: hide the button. The parameter is set to **false** by default.|
 |ui.game_settle_close_btn  |No  |json |The **Close** button on the post-game screen.|
+|ui.game_settle_close_btn.hide  |No  |bool |Indicates whether to hide the **Close** button. Valid values: **false**: show the button; **true**: hide the button. The parameter is set to **false** by default. |
 |ui.game_settle_close_btn.custom  |No  |bool |Indicates whether players can close the post-game screen and go back to the lobby by tapping the **Close** button on the post-game screen. Valid values: **false**: players are allowed to close the post-game screen and go back to the lobby by tapping the **Close** button based on the game processing logic; **true**: the game notifies the app of the user tap. The parameter is set to **false** by default.|
 |ui.game_settle_again_btn  |No  |json |The **Play Again** button on the post-game screen.|
+|ui.game_settle_again_btn.hide  |No  |bool |Indicates whether to hide the **Play Again** button. Valid values: **false**: show the button; **true**: hide the button. The parameter is set to **false** by default. |
 |ui.game_settle_again_btn.custom  |No  |bool |Indicates whether players can play again by tapping the **Play Again** button on the post-game screen. Valid values: **false**: the post-game screen is closed and players go back to the lobby with a Ready state; **true**: the game notifies the app of the user tap. The parameter is set to **false** by default.|
 |ui.game_bg.hide  |No  |bool |Indicates whether to hide the background images, including the lobby and the game scene. Valid values: **false**: show the images; **true**: hide the images. The parameter is set to **false** by default.|
 |ui.block_change_seat  |No  |json |The feature to disable the seat change. (Currently supported by Ludo only.)|
@@ -182,9 +184,11 @@ dataJsonResp = {
             "hide":false
         }
         "game_settle_close_btn": {
+            "hide": false,
             "custom": false
         },
         "game_settle_again_btn": {
+            "hide": false,
             "custom": false
         },
         "game_bg": {

@@ -91,8 +91,10 @@ dataJsonResp = {
 |ui.game_help_btn  |否  |json |战斗场景中的『帮助』按钮   |
 |ui.game_help_btn.hide  |否  |bool |是否隐藏战斗场景中的『帮助』按钮（false: 显示； true: 隐藏，默认为false）   |
 |ui.game_settle_close_btn  |否  |json |结算界面中的『关闭』按钮   |
+|ui.game_settle_close_btn.hide  |否  |bool |是否隐藏结算界面中的『关闭』按钮（false: 显示； true: 隐藏，默认为true）   |
 |ui.game_settle_close_btn.custom  |否  |bool |结算界面中的『关闭』按钮抛事件（false: 关闭结算界面返回大厅； true: 游戏通知app按钮点击事件，并关闭结算界面返回大厅；默认为false）   |
 |ui.game_settle_again_btn  |否  |json |结算界面中的『再来一局』按钮   |
+|ui.game_settle_again_btn.hide  |否  |bool |是否隐藏结算界面中的『再来一局』按钮（false: 显示； true: 隐藏，默认为true）   |
 |ui.game_settle_again_btn.custom  |否  |bool |结算界面中的『再来一局』按钮抛事件（false: 关闭结算界面返回大厅并将玩家设置为准备状态； true: 游戏通知app按钮点击事件，并关闭结算界面返回大厅（不将玩家设置为准备状态）；默认为false）   |
 |ui.game_bg.hide  |否  |bool |是否隐藏背景图，包括大厅和战斗（false: 显示； true: 隐藏，默认为false）   |
 |ui.block_change_seat  |否  |json |自定义阻止换座位（目前仅支持飞行棋）  |
@@ -182,9 +184,11 @@ dataJsonResp = {
             "hide":false
         }
         "game_settle_close_btn": {
+            "hide": false,
             "custom": false
         },
         "game_settle_again_btn": {
+            "hide": false,
             "custom": false
         },
         "game_bg": {
