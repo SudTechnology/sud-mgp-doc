@@ -81,6 +81,7 @@
 |role |否 |int32|0:表示没有角色信息，玩家在游戏中的角色 [游戏role 说明](game/GameRole.md)|
 |score |否 |int32|玩家当前局得到的分数 |
 |is_win |否 |int32|结果 0:表示没有信息，1:输，2:赢，3:平局|
+|award |否 |int32|奖励 |
 
 ## game_start 请求示例
 ```json
