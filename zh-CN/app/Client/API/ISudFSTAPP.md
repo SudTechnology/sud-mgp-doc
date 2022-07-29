@@ -138,3 +138,46 @@ public interface ISudFSTAPP {
 @end
 
 ```
+
+
+## Web
+
+```javascript
+interface ISudFSTAPP {
+
+    /**
+     * 获取游戏View
+     * @return
+     */
+    getGameView();
+
+    /**
+     * 销毁游戏
+     * @return
+     */
+    destroyMG(): boolean;
+    /**
+     * 更新code
+     * @param code
+     * @param listener
+     */
+    updateCode(code: string, listener: ISudListenerNotifyStateChange): void;
+
+    /**
+     * APP状态通知给小游戏
+     * @param state
+     * @param dataJson example: {"key": "value"}
+     */
+     notifyStateChange(
+      state: string,
+      dataJson: string,
+      listener: ISudListenerNotifyStateChange
+    ): void;
+    
+    /**
+     * 游戏加载失败，重新加载
+     */
+    reloadMG(): void;
+}
+```
+

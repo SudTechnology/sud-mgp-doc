@@ -59,6 +59,7 @@ public interface ISudCfg {
 }
 ```
 
+
 ## iOS
 
 ```objc
@@ -100,4 +101,39 @@ public interface ISudCfg {
 /// 最低版本：v1.1.52.xx
 - (NSString *)getEmbeddedMGPkgPath:(int64_t) mgId;
 @end
+```
+
+
+## Web
+
+```javascript
+interface ISudCfg {
+  /**
+   * 获取加载游戏时，是否显示游戏背景图
+   * @return true:显示 false:隐藏 默认:显示true
+   * 最低版本：v1.1.46.xx
+   */
+  getShowLoadingGameBg(): boolean;
+
+  /**
+   * 设置加载游戏时，是否显示游戏背景图
+   * @param show true:显示 false:隐藏
+   * 最低版本：v1.1.46.xx
+   */
+  setShowLoadingGameBg(show: boolean): void;
+
+  /**
+   * 获取加载游戏时，是否要显示自定义的Loading效果
+   * @return true:显示 false:SDK默认Loading效果 默认:显示SDK默认Loading效果
+   * 最低版本：v1.1.52.xx
+   */
+  getShowCustomLoading(): boolean;
+
+  /**
+   * 设置加载游戏时，是否要显示自定义的Loading效果
+   * @param show true:自定义 false:SDK默认Loading效果
+   * 最低版本：v1.1.52.xx
+   */
+  setShowCustomLoading(show: boolean): void;
+}
 ```

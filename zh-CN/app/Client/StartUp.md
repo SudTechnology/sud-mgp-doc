@@ -10,6 +10,9 @@
 
 - [iOS](./StartUp-iOS.md)
 
+- [Web](./StartUp-Web.md)
+
+
 ### API
 
 - [SudMGP](API/SudMGP.md)

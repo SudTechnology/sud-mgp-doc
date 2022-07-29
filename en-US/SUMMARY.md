@@ -6,6 +6,7 @@
     * [Client quick start](app/Client/StartUp.md)
         * [iOS](app/Client/StartUp-iOS.md)
         * [Android](app/Client/StartUp-Android.md)
+        * [Web](app/Client/StartUp-Web.md)
     * [Client documentation](app/Client/README.md)
         * [API](app/Client/API/README.md)
             * [SudMGP](app/Client/API/SudMGP.md)

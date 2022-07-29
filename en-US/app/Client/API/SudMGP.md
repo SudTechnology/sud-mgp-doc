@@ -200,6 +200,103 @@ public class SudMGP {
 @end
 ```
 
+
+## Web
+
+```javascript
+class SudMGP {
+    /**
+     * 获取SDK版本
+     * @return
+     */
+    public static getVersion(): string
+
+    /**
+     * 获取SDK版本别名
+     * @return 示例:"v1.1.35.286-et"
+     */
+    public static getVersionAlias(): string {
+      return Version.kVersionAlias
+    }
+
+    /**
+     * 获取配置 最低支持版本v1.1.46.449
+     * @return ISudCfg
+     */
+    public static getSudCfg(): ISudCfg
+    
+    /**
+     * 初始化SDK
+     * @param appId
+     * @param appKey
+     * @param bundleId // 域名 origin
+     * @param isTestEnv
+     * @param listener
+     */
+    public static initSDK(appId: string, appKey: string, bundleId: string, isTestEnv: boolean,listener: ISudListenerInitSDK): void
+
+    /**
+     * 反初始化SDK
+     * @param listener
+     */
+    public static void uninitSDK(listener: ISudListenerUninitSDK): void
+    
+    /**
+     * 获取游戏列表
+     * @param listener
+     */
+    public static void getMGList(listener: ISudListenerGetMGList): void
+
+    /**
+     * 加载游戏
+     * @param userId
+     * @param roomId
+     * @param code
+     * @param mgId
+     * @param language
+     * @param fsmMG
+     * @param rootElm 要挂载的元素
+     * @return
+     */
+    public static ISudFSTAPP loadMG(
+      userId: string,
+      roomId: string,
+      code: string,
+      mgId: string,
+      language: string,
+      fsmMg: ISudFSMMG,
+      rootElm: HTMLElement
+     ): ISudFSTAPP | null
+
+    /**
+     * 销毁游戏
+     * @param fstApp
+     * @return
+     */
+     public static destroyMG(fstApp: ISudFSTAPP): boolean
+
+    /**
+     * 设置统计上报userId
+     * @param userId
+     */
+    public static setUserId(userId: string): void
+
+    /**
+     * 设置日志等级
+     * @param logLevel
+     */
+    public static setLogLevel(logLevel: number): void
+
+    /**
+     * 设置接管日志
+     * @param logger
+     */
+     public static setLogger(logger: ISudLogger): void
+
+}
+```
+
+
 ## API call sequence diagram.
 
 ![api](../../Resource/Client/sdk_api_sd.png)
