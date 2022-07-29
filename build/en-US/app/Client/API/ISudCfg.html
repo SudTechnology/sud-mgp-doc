@@ -156,6 +156,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.2.1.3" data-path="../StartUp-Web.html">
+            
+                <a href="../StartUp-Web.html">
+            
+                    
+                    Web
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -1016,6 +1029,37 @@
 - (<span class="hljs-built_in">NSString</span> *)getEmbeddedMGPkgPath:(int64_t) mgId;
 <span class="hljs-keyword">@end</span>
 </code></pre>
+<h2 id="web">Web</h2>
+<pre><code class="lang-javascript">interface ISudCfg {
+  <span class="hljs-comment">/**
+   * &#x83B7;&#x53D6;&#x52A0;&#x8F7D;&#x6E38;&#x620F;&#x65F6;&#xFF0C;&#x662F;&#x5426;&#x663E;&#x793A;&#x6E38;&#x620F;&#x80CC;&#x666F;&#x56FE;
+   * @return true:&#x663E;&#x793A; false:&#x9690;&#x85CF; &#x9ED8;&#x8BA4;:&#x663E;&#x793A;true
+   * &#x6700;&#x4F4E;&#x7248;&#x672C;&#xFF1A;v1.1.46.xx
+   */</span>
+  getShowLoadingGameBg(): boolean;
+
+  <span class="hljs-comment">/**
+   * &#x8BBE;&#x7F6E;&#x52A0;&#x8F7D;&#x6E38;&#x620F;&#x65F6;&#xFF0C;&#x662F;&#x5426;&#x663E;&#x793A;&#x6E38;&#x620F;&#x80CC;&#x666F;&#x56FE;
+   * @param show true:&#x663E;&#x793A; false:&#x9690;&#x85CF;
+   * &#x6700;&#x4F4E;&#x7248;&#x672C;&#xFF1A;v1.1.46.xx
+   */</span>
+  setShowLoadingGameBg(show: boolean): <span class="hljs-keyword">void</span>;
+
+  <span class="hljs-comment">/**
+   * &#x83B7;&#x53D6;&#x52A0;&#x8F7D;&#x6E38;&#x620F;&#x65F6;&#xFF0C;&#x662F;&#x5426;&#x8981;&#x663E;&#x793A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;Loading&#x6548;&#x679C;
+   * @return true:&#x663E;&#x793A; false:SDK&#x9ED8;&#x8BA4;Loading&#x6548;&#x679C; &#x9ED8;&#x8BA4;:&#x663E;&#x793A;SDK&#x9ED8;&#x8BA4;Loading&#x6548;&#x679C;
+   * &#x6700;&#x4F4E;&#x7248;&#x672C;&#xFF1A;v1.1.52.xx
+   */</span>
+  getShowCustomLoading(): boolean;
+
+  <span class="hljs-comment">/**
+   * &#x8BBE;&#x7F6E;&#x52A0;&#x8F7D;&#x6E38;&#x620F;&#x65F6;&#xFF0C;&#x662F;&#x5426;&#x8981;&#x663E;&#x793A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;Loading&#x6548;&#x679C;
+   * @param show true:&#x81EA;&#x5B9A;&#x4E49; false:SDK&#x9ED8;&#x8BA4;Loading&#x6548;&#x679C;
+   * &#x6700;&#x4F4E;&#x7248;&#x672C;&#xFF1A;v1.1.52.xx
+   */</span>
+  setShowCustomLoading(show: boolean): <span class="hljs-keyword">void</span>;
+}
+</code></pre>
 
       <script>
         var pathname = window.location.pathname
@@ -1064,7 +1108,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ISudCfg","level":"1.2.2.1.2","depth":4,"next":{"title":"ISudFSTAPP","level":"1.2.2.1.3","depth":4,"path":"app/Client/API/ISudFSTAPP.md","ref":"app/Client/API/ISudFSTAPP.md","articles":[]},"previous":{"title":"SudMGP","level":"1.2.2.1.1","depth":4,"path":"app/Client/API/SudMGP.md","ref":"app/Client/API/SudMGP.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en-US","gitbook":"*"},"file":{"path":"app/Client/API/ISudCfg.md","mtime":"2022-07-15T07:38:32.166Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-15T07:40:23.217Z"},"basePath":"../../..","book":{"language":"en-US"}});
+            gitbook.page.hasChanged({"page":{"title":"ISudCfg","level":"1.2.2.1.2","depth":4,"next":{"title":"ISudFSTAPP","level":"1.2.2.1.3","depth":4,"path":"app/Client/API/ISudFSTAPP.md","ref":"app/Client/API/ISudFSTAPP.md","articles":[]},"previous":{"title":"SudMGP","level":"1.2.2.1.1","depth":4,"path":"app/Client/API/SudMGP.md","ref":"app/Client/API/SudMGP.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en-US","gitbook":"*"},"file":{"path":"app/Client/API/ISudCfg.md","mtime":"2022-07-29T06:07:48.045Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-29T06:08:43.334Z"},"basePath":"../../..","book":{"language":"en-US"}});
         });
     </script>
 </div>
