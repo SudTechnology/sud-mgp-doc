@@ -88,6 +88,9 @@ function main() {
 | get_game_report_info_page | string | 分页查询游戏局信息接口地址（服务端使用）          |
 | query_game_report_info    | string | 根据自定义游戏局ID查询游戏上报信息接口地址（服务端使用） |
 | report_game_round_bill    | string | 上报每局游戏消耗货币信息（服务端使用）           |
+| push_event                | string | 推送事件到游戏服（服务端使用）               |
+| auth_app_list             | string | 查询授权应用列表（服务端使用）               |
+| auth_room_list            | string | 查询授权房间列表（服务端使用）               |
 
 ## 返回示例
 
@@ -99,7 +102,10 @@ function main() {
     "get_game_report_info": "",
     "get_game_report_info_page": "",
     "query_game_report_info": "",
-    "report_game_round_bill": ""
+    "report_game_round_bill": "",
+    "push_event": "",
+    "auth_app_list": "",
+    "auth_room_list": ""
   }
 }
 ```
