@@ -65,6 +65,21 @@ public class SignTest {
 }
 ```
 
+#### Nodejs示例代码：
+```js
+function signTest() {
+    let appId = '';
+    let appSecret = '';
+    let timestamp = '';
+    let nonce = '';
+    let body = '';
+    let signContent = appId + '\n' + timestamp + '\n' + nonce + '\n' + body + '\n';
+    let hmac = Crypto.createHmac('sha1', appSecret);
+    let signature = hmac.update(signContent).digest('hex');
+    console.log(signature);
+}
+```
+
 ## 设置 Authorization请求头
 
 - ### Authorization请求头
@@ -107,6 +122,18 @@ public class AuthorizationHeaderTest {
     System.out.println(authorization);
   }
 
+}
+```
+
+#### Nodejs示例代码：
+```js
+function authorizationHeaderTest() {
+    let appId = '';
+    let timestamp = '';
+    let nonce = '';
+    let signature = '';
+    let authorization = 'Sud-Auth app_id="' + appId + '",timestamp="' + timestamp + '",nonce="' + nonce + '",signature="' + signature + '"';
+    console.log(authorization);
 }
 ```
 
