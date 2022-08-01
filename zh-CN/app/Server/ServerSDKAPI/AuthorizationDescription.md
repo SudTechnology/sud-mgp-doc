@@ -65,36 +65,6 @@ public class SignTest {
 }
 ```
 
-#### Go示例代码：
-```go
-import (
-	"crypto/hmac"
-	"crypto/sha1"
-	"fmt"
-	"testing"
-)
-func TestSign(t *testing.T) {
-	// 应用ID
-	var appId = ""
-	// 应用secret
-	var appSecret = ""
-	// 请求时间戳（发送请求的时间戳）
-	var timestamp = ""
-	// 随机字符串 (自定义随机字符串)
-	var nonce = ""
-	// 请求body (请求body， 需保证发送方与接收方的数据一致，建议在拦截器里做对应认证)
-	var body = ""
-
-	// 签名串
-	signContent := fmt.Sprintf("%s\n%s\n%s\n%s\n", appId, timestamp, nonce, body)
-	// 签名值
-	mac := hmac.New(sha1.New, []byte(appSecret))
-	mac.Write([]byte(signContent))
-	signature := mac.Sum(nil)
-	t.Logf("signature:%x", signature)
-}
-```
-
 ## 设置 Authorization请求头
 
 - ### Authorization请求头
@@ -140,27 +110,6 @@ public class AuthorizationHeaderTest {
 }
 ```
 
-
-#### Go示例代码：
-```go
-import (
-	"fmt"
-	"testing"
-)
-func TestAuthorizationHeader(t *testing.T) {
-	// 应用ID
-	var appId = ""
-	// 请求时间戳（发送请求的时间戳）
-	var timestamp = ""
-	// 随机字符串 (自定义随机字符串)
-	var nonce = ""
-	// 签名值
-	var signature = ""
-	authorization := fmt.Sprintf("Sud-Auth app_id=\"%s\",timestamp=\"%s\",nonce=\"%s\",signature=\"%s\"",
-		appId, timestamp, nonce, signature)
-	t.Logf("authorization:%s", authorization)
-}
-```
 
 - ### 最终组成的HTTP请求示例:
 
