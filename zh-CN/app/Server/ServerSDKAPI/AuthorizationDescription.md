@@ -65,8 +65,10 @@ public class SignTest {
 }
 ```
 
-#### Nodejs示例代码：
+#### Node示例代码：
 ```js
+const Crypto = require('crypto');
+
 function signTest() {
     let appId = '';
     let appSecret = '';
@@ -155,7 +157,7 @@ public class AuthorizationHeaderTest {
 }
 ```
 
-#### Nodejs示例代码：
+#### Node示例代码：
 ```js
 function authorizationHeaderTest() {
     let appId = '';
