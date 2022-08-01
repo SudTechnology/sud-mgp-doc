@@ -91,7 +91,7 @@ func TestSign(t *testing.T) {
 	mac := hmac.New(sha1.New, []byte(appSecret))
 	mac.Write([]byte(signContent))
 	signature := mac.Sum(nil)
-	t.Logf("signature:%x", string(signature))
+	t.Logf("signature:%x", signature)
 }
 ```
 
