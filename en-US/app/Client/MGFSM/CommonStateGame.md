@@ -518,7 +518,14 @@ mg_common_game_asr
 
 ```json
 {
-	"isOpen": true		// Indicates whehter the voice recognition is enabled. Valid values: true: voice recognition is enabled; false: voice recognition is disabled.
+  "isOpen": true, 
+  "wordList": ["关键词1", "关键词2"], 
+  "wordLanguage ": "zh-CN",
+  "wordType": "text",
+  "isCloseConnHitted ": true,
+  "enableIsHit ": true,
+  "enableIsReturnText ": true,
+  "extra": {}
 }
 ```
 
