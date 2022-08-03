@@ -62,6 +62,20 @@ public class SudMGP {
     public static ISudFSTAPP loadMG(Activity activity, String userId, String roomId, String code, int mgId, String language, ISudFSMMG fsmMG);
 
     /**
+     * List of pre-loaded game packs
+     * @param context  context
+     * @param mgIdList List of Game ids
+     * @param listener listener
+     */
+    public static void preloadMGPkgList(Context context, List<Long> mgIdList, ISudListenerPreloadMGPkg listener);
+
+    /**
+     * Cancel preloading the game package
+     * @param mgIdList List of Game ids
+     */
+    public static void cancelPreloadMGPkgList(List<Long> mgIdList);
+    
+    /**
      * Destroy game.
      * @param fstApp
      * @return
@@ -162,6 +176,19 @@ public class SudMGP {
                         language:(NSString*_Nonnull)language
                            fsmMG:(id<ISudFSMMG>_Nonnull)fsmMG
                         rootView:(UIView*_Nonnull)rootView;
+
+/**
+ * List of pre-loaded game packs
+ * @param mgIdList List of Game ids
+ * @param listener listener
+ */
+-(void) preloadMGPkgList:(NSArray<NSNumber *> *) mgIdList listener:(id<ISudListenerPreloadMGPkg>) listener;
+
+/**
+ * Cancel preloading the game package
+ * @param mgIdList List of Game ids
+ */
+-(void) cancelPreloadMGPkgList:(NSArray<NSNumber *> *) mgIdList;
 
 /**
  * Destroy game.
