@@ -73,4 +73,5 @@
     * [JWT鉴权](app/Server/Auth/README.md)
         * [鉴权](app/Server/Auth/Authentication.md)
         * [数据交换](app/Server/Auth/Data%20exchange.md)
+    * [自行实现鉴权方式](app/Server/ImplementAuthenticationByYourself.md) 
     * [服务端更新日志](app/Server/Server_Change_Log.md)
