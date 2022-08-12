@@ -12,11 +12,15 @@
 
 - [分页获取房间内游戏上报信息](ObtainTheReportInformationOfGameByPage.md)
 
+- [查询游戏上报信息（新）](QueryGameReportInformation.md)
+
+- [推送事件到游戏服务](PushEventToMgServer.md)
+
+- [服务端上报每局游戏消耗的货币信息](ReportAmountOfCurrencyConsumedInEachGameRound.md)
+
+## 接口地址配置获取
+
 - [获取服务端接口API配置](ObtainServerEndAPIConfigurations.md)
-
-- [查询游戏上报信息](QueryGameReportInformation.md)
-
-- [上报每局游戏消耗的货币信息](ReportAmountOfCurrencyConsumedInEachGameRound.md)
 
 ## 关于鉴权
 
