@@ -133,7 +133,7 @@ Authorization: 认证类型 签名信息 （注：认证类型与签名信息以
 - 示例：(因排版问题可能存在换行，实际数据应在一行)
 
 ```
-Authorizatio: Sud-Auth app_id="1461564080052999111",timestamp="1646382565",nonce="keVJLJTItd1VBtGT",signature="8d6e3c25614278a08b5abe4c205c18adee8437d2"
+Authorization: Sud-Auth app_id="1461564080052999111",timestamp="1646382565",nonce="keVJLJTItd1VBtGT",signature="8d6e3c25614278a08b5abe4c205c18adee8437d2"
 ```
 
 #### Java示例代码：
