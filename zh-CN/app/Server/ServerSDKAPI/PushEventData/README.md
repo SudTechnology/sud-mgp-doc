@@ -3,7 +3,7 @@
 ![SUD](../../../Resource/logo.png)
 
 
-## 事件列表
+## 推送事件列表
 
 - [用户加入游戏/退出游戏](UserInReqData.md)
 - [用户退出](UserOutReqData.md)

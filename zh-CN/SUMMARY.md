@@ -57,7 +57,7 @@
         * [查询游戏上报信息（新）](app/Server/ServerSDKAPI/QueryGameReportInformation.md)
         * [分页获取房间内游戏上报信息](app/Server/ServerSDKAPI/ObtainTheReportInformationOfGameByPage.md)
         * [推送事件到游戏服务](app/Server/ServerSDKAPI/PushEventToMgServer.md)
-        * [推送事件说明](app/Server/ServerSDKAPI/PushEventData/README.md)
+        * [推送事件列表](app/Server/ServerSDKAPI/PushEventData/README.md)
           * [用户加入游戏/退出游戏](app/Server/ServerSDKAPI/PushEventData/UserInReqData.md)
           * [用户退出](app/Server/ServerSDKAPI/PushEventData/UserOutReqData.md)
           * [用户准备/取消准备](app/Server/ServerSDKAPI/PushEventData/UserReadyReqData.md)
