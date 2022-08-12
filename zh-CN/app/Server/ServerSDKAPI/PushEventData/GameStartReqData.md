@@ -1,3 +1,7 @@
+#
+
+![SUD](../../../Resource/logo.png)
+
 ##### GameStartReqData
 
 | 参数名                     | 必选  | 类型     | 说明                                         |
