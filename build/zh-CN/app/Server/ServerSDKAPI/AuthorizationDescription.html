@@ -871,7 +871,7 @@
                 <a href="PushEventData/">
             
                     
-                    推送事件说明
+                    推送事件列表
             
                 </a>
             
@@ -1226,6 +1226,49 @@ keVJLJTItd1VBtGT
 
 }
 </code></pre>
+<h4 id="node&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;">Node&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Crypto = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;crypto&apos;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">signTest</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">let</span> appId = <span class="hljs-string">&apos;&apos;</span>;
+    <span class="hljs-keyword">let</span> appSecret = <span class="hljs-string">&apos;&apos;</span>;
+    <span class="hljs-keyword">let</span> timestamp = <span class="hljs-string">&apos;&apos;</span>;
+    <span class="hljs-keyword">let</span> nonce = <span class="hljs-string">&apos;&apos;</span>;
+    <span class="hljs-keyword">let</span> body = <span class="hljs-string">&apos;&apos;</span>;
+    <span class="hljs-keyword">let</span> signContent = appId + <span class="hljs-string">&apos;\n&apos;</span> + timestamp + <span class="hljs-string">&apos;\n&apos;</span> + nonce + <span class="hljs-string">&apos;\n&apos;</span> + body + <span class="hljs-string">&apos;\n&apos;</span>;
+    <span class="hljs-keyword">let</span> hmac = Crypto.createHmac(<span class="hljs-string">&apos;sha1&apos;</span>, appSecret);
+    <span class="hljs-keyword">let</span> signature = hmac.update(signContent).digest(<span class="hljs-string">&apos;hex&apos;</span>);
+    <span class="hljs-built_in">console</span>.log(signature);
+}
+</code></pre>
+<h4 id="go&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;">Go&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;crypto/hmac&quot;</span>
+    <span class="hljs-string">&quot;crypto/sha1&quot;</span>
+    <span class="hljs-string">&quot;fmt&quot;</span>
+    <span class="hljs-string">&quot;testing&quot;</span>
+)
+<span class="hljs-keyword">func</span> TestSign(t *testing.T) {
+    <span class="hljs-comment">// &#x5E94;&#x7528;ID</span>
+    <span class="hljs-keyword">var</span> appId = <span class="hljs-string">&quot;&quot;</span>
+    <span class="hljs-comment">// &#x5E94;&#x7528;secret</span>
+    <span class="hljs-keyword">var</span> appSecret = <span class="hljs-string">&quot;&quot;</span>
+    <span class="hljs-comment">// &#x8BF7;&#x6C42;&#x65F6;&#x95F4;&#x6233;&#xFF08;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x7684;&#x65F6;&#x95F4;&#x6233;&#xFF09;</span>
+    <span class="hljs-keyword">var</span> timestamp = <span class="hljs-string">&quot;&quot;</span>
+    <span class="hljs-comment">// &#x968F;&#x673A;&#x5B57;&#x7B26;&#x4E32; (&#x81EA;&#x5B9A;&#x4E49;&#x968F;&#x673A;&#x5B57;&#x7B26;&#x4E32;)</span>
+    <span class="hljs-keyword">var</span> nonce = <span class="hljs-string">&quot;&quot;</span>
+    <span class="hljs-comment">// &#x8BF7;&#x6C42;body (&#x8BF7;&#x6C42;body&#xFF0C; &#x9700;&#x4FDD;&#x8BC1;&#x53D1;&#x9001;&#x65B9;&#x4E0E;&#x63A5;&#x6536;&#x65B9;&#x7684;&#x6570;&#x636E;&#x4E00;&#x81F4;&#xFF0C;&#x5EFA;&#x8BAE;&#x5728;&#x62E6;&#x622A;&#x5668;&#x91CC;&#x505A;&#x5BF9;&#x5E94;&#x8BA4;&#x8BC1;)</span>
+    <span class="hljs-keyword">var</span> body = <span class="hljs-string">&quot;&quot;</span>
+
+    <span class="hljs-comment">// &#x7B7E;&#x540D;&#x4E32;</span>
+    signContent := fmt.Sprintf(<span class="hljs-string">&quot;%s\n%s\n%s\n%s\n&quot;</span>, appId, timestamp, nonce, body)
+    <span class="hljs-comment">// &#x7B7E;&#x540D;&#x503C;</span>
+    mac := hmac.New(sha1.New, []<span class="hljs-keyword">byte</span>(appSecret))
+    mac.Write([]<span class="hljs-keyword">byte</span>(signContent))
+    signature := mac.Sum(<span class="hljs-literal">nil</span>)
+    t.Logf(<span class="hljs-string">&quot;signature:%x&quot;</span>, signature)
+}
+</code></pre>
 <h2 id="&#x8BBE;&#x7F6E;-authorization&#x8BF7;&#x6C42;&#x5934;">&#x8BBE;&#x7F6E; Authorization&#x8BF7;&#x6C42;&#x5934;</h2>
 <ul>
 <li><h3 id="authorization&#x8BF7;&#x6C42;&#x5934;">Authorization&#x8BF7;&#x6C42;&#x5934;</h3>
@@ -1265,7 +1308,36 @@ public class AuthorizationHeaderTest {
   }
 
 }
-</code></pre><ul>
+</code></pre><h4 id="node&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;">Node&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">authorizationHeaderTest</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">let</span> appId = <span class="hljs-string">&apos;&apos;</span>;
+    <span class="hljs-keyword">let</span> timestamp = <span class="hljs-string">&apos;&apos;</span>;
+    <span class="hljs-keyword">let</span> nonce = <span class="hljs-string">&apos;&apos;</span>;
+    <span class="hljs-keyword">let</span> signature = <span class="hljs-string">&apos;&apos;</span>;
+    <span class="hljs-keyword">let</span> authorization = <span class="hljs-string">&apos;Sud-Auth app_id=&quot;&apos;</span> + appId + <span class="hljs-string">&apos;&quot;,timestamp=&quot;&apos;</span> + timestamp + <span class="hljs-string">&apos;&quot;,nonce=&quot;&apos;</span> + nonce + <span class="hljs-string">&apos;&quot;,signature=&quot;&apos;</span> + signature + <span class="hljs-string">&apos;&quot;&apos;</span>;
+    <span class="hljs-built_in">console</span>.log(authorization);
+}
+</code></pre>
+<h4 id="go&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;">Go&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;fmt&quot;</span>
+    <span class="hljs-string">&quot;testing&quot;</span>
+)
+<span class="hljs-keyword">func</span> TestAuthorizationHeader(t *testing.T) {
+    <span class="hljs-comment">// &#x5E94;&#x7528;ID</span>
+    <span class="hljs-keyword">var</span> appId = <span class="hljs-string">&quot;&quot;</span>
+    <span class="hljs-comment">// &#x8BF7;&#x6C42;&#x65F6;&#x95F4;&#x6233;&#xFF08;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x7684;&#x65F6;&#x95F4;&#x6233;&#xFF09;</span>
+    <span class="hljs-keyword">var</span> timestamp = <span class="hljs-string">&quot;&quot;</span>
+    <span class="hljs-comment">// &#x968F;&#x673A;&#x5B57;&#x7B26;&#x4E32; (&#x81EA;&#x5B9A;&#x4E49;&#x968F;&#x673A;&#x5B57;&#x7B26;&#x4E32;)</span>
+    <span class="hljs-keyword">var</span> nonce = <span class="hljs-string">&quot;&quot;</span>
+    <span class="hljs-comment">// &#x7B7E;&#x540D;&#x503C;</span>
+    <span class="hljs-keyword">var</span> signature = <span class="hljs-string">&quot;&quot;</span>
+    authorization := fmt.Sprintf(<span class="hljs-string">&quot;Sud-Auth app_id=\&quot;%s\&quot;,timestamp=\&quot;%s\&quot;,nonce=\&quot;%s\&quot;,signature=\&quot;%s\&quot;&quot;</span>,
+        appId, timestamp, nonce, signature)
+    t.Logf(<span class="hljs-string">&quot;authorization:%s&quot;</span>, authorization)
+}
+</code></pre>
+<ul>
 <li><h3 id="&#x6700;&#x7EC8;&#x7EC4;&#x6210;&#x7684;http&#x8BF7;&#x6C42;&#x793A;&#x4F8B;">&#x6700;&#x7EC8;&#x7EC4;&#x6210;&#x7684;HTTP&#x8BF7;&#x6C42;&#x793A;&#x4F8B;:</h3>
 </li>
 </ul>
@@ -1321,7 +1393,7 @@ public class AuthorizationHeaderTest {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"认证请求头Authorization实现方式","level":"2.1.4.1","depth":3,"next":{"title":"获取服务端接口API配置","level":"2.1.4.2","depth":3,"path":"app/Server/ServerSDKAPI/ObtainServerEndAPIConfigurations.md","ref":"app/Server/ServerSDKAPI/ObtainServerEndAPIConfigurations.md","articles":[]},"previous":{"title":"SDK服务API","level":"2.1.4","depth":2,"path":"app/Server/ServerSDKAPI/README.md","ref":"app/Server/ServerSDKAPI/README.md","articles":[{"title":"认证请求头Authorization实现方式","level":"2.1.4.1","depth":3,"path":"app/Server/ServerSDKAPI/AuthorizationDescription.md","ref":"app/Server/ServerSDKAPI/AuthorizationDescription.md","articles":[]},{"title":"获取服务端接口API配置","level":"2.1.4.2","depth":3,"path":"app/Server/ServerSDKAPI/ObtainServerEndAPIConfigurations.md","ref":"app/Server/ServerSDKAPI/ObtainServerEndAPIConfigurations.md","articles":[]},{"title":"获取游戏列表","level":"2.1.4.3","depth":3,"path":"app/Server/ServerSDKAPI/ObtainTheGameList.md","ref":"app/Server/ServerSDKAPI/ObtainTheGameList.md","articles":[]},{"title":"获取游戏信息","level":"2.1.4.4","depth":3,"path":"app/Server/ServerSDKAPI/ObtainGameInformation.md","ref":"app/Server/ServerSDKAPI/ObtainGameInformation.md","articles":[]},{"title":"获取游戏上报信息","level":"2.1.4.5","depth":3,"path":"app/Server/ServerSDKAPI/ObtainTheReportInformationOfGame.md","ref":"app/Server/ServerSDKAPI/ObtainTheReportInformationOfGame.md","articles":[]},{"title":"查询游戏上报信息（新）","level":"2.1.4.6","depth":3,"path":"app/Server/ServerSDKAPI/QueryGameReportInformation.md","ref":"app/Server/ServerSDKAPI/QueryGameReportInformation.md","articles":[]},{"title":"分页获取房间内游戏上报信息","level":"2.1.4.7","depth":3,"path":"app/Server/ServerSDKAPI/ObtainTheReportInformationOfGameByPage.md","ref":"app/Server/ServerSDKAPI/ObtainTheReportInformationOfGameByPage.md","articles":[]},{"title":"推送事件到游戏服务","level":"2.1.4.8","depth":3,"path":"app/Server/ServerSDKAPI/PushEventToMgServer.md","ref":"app/Server/ServerSDKAPI/PushEventToMgServer.md","articles":[]},{"title":"推送事件说明","level":"2.1.4.9","depth":3,"path":"app/Server/ServerSDKAPI/PushEventData/README.md","ref":"app/Server/ServerSDKAPI/PushEventData/README.md","articles":[{"title":"用户加入游戏/退出游戏","level":"2.1.4.9.1","depth":4,"path":"app/Server/ServerSDKAPI/PushEventData/UserInReqData.md","ref":"app/Server/ServerSDKAPI/PushEventData/UserInReqData.md","articles":[]},{"title":"用户退出","level":"2.1.4.9.2","depth":4,"path":"app/Server/ServerSDKAPI/PushEventData/UserOutReqData.md","ref":"app/Server/ServerSDKAPI/PushEventData/UserOutReqData.md","articles":[]},{"title":"用户准备/取消准备","level":"2.1.4.9.3","depth":4,"path":"app/Server/ServerSDKAPI/PushEventData/UserReadyReqData.md","ref":"app/Server/ServerSDKAPI/PushEventData/UserReadyReqData.md","articles":[]},{"title":"游戏开始","level":"2.1.4.9.4","depth":4,"path":"app/Server/ServerSDKAPI/PushEventData/GameStartReqData.md","ref":"app/Server/ServerSDKAPI/PushEventData/GameStartReqData.md","articles":[]},{"title":"队长更换","level":"2.1.4.9.5","depth":4,"path":"app/Server/ServerSDKAPI/PushEventData/CaptainChangeReqData.md","ref":"app/Server/ServerSDKAPI/PushEventData/CaptainChangeReqData.md","articles":[]},{"title":"用户踢人","level":"2.1.4.9.6","depth":4,"path":"app/Server/ServerSDKAPI/PushEventData/UserKickReqData.md","ref":"app/Server/ServerSDKAPI/PushEventData/UserKickReqData.md","articles":[]},{"title":"游戏结束","level":"2.1.4.9.7","depth":4,"path":"app/Server/ServerSDKAPI/PushEventData/GameEndReqData.md","ref":"app/Server/ServerSDKAPI/PushEventData/GameEndReqData.md","articles":[]},{"title":"游戏玩法设置","level":"2.1.4.9.8","depth":4,"path":"app/Server/ServerSDKAPI/PushEventData/GameSettingReqData.md","ref":"app/Server/ServerSDKAPI/PushEventData/GameSettingReqData.md","articles":[]},{"title":"加入AI","level":"2.1.4.9.9","depth":4,"path":"app/Server/ServerSDKAPI/PushEventData/AiAddReqData.md","ref":"app/Server/ServerSDKAPI/PushEventData/AiAddReqData.md","articles":[]}]},{"title":"服务端上报每局游戏消耗的货币信息","level":"2.1.4.10","depth":3,"path":"app/Server/ServerSDKAPI/ReportAmountOfCurrencyConsumedInEachGameRound.md","ref":"app/Server/ServerSDKAPI/ReportAmountOfCurrencyConsumedInEachGameRound.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Server/ServerSDKAPI/AuthorizationDescription.md","mtime":"2022-08-12T04:14:45.370Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-12T04:15:00.293Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
+            gitbook.page.hasChanged({"page":{"title":"认证请求头Authorization实现方式","level":"2.1.4.1","depth":3,"next":{"title":"获取服务端接口API配置","level":"2.1.4.2","depth":3,"path":"app/Server/ServerSDKAPI/ObtainServerEndAPIConfigurations.md","ref":"app/Server/ServerSDKAPI/ObtainServerEndAPIConfigurations.md","articles":[]},"previous":{"title":"SDK服务API","level":"2.1.4","depth":2,"path":"app/Server/ServerSDKAPI/README.md","ref":"app/Server/ServerSDKAPI/README.md","articles":[{"title":"认证请求头Authorization实现方式","level":"2.1.4.1","depth":3,"path":"app/Server/ServerSDKAPI/AuthorizationDescription.md","ref":"app/Server/ServerSDKAPI/AuthorizationDescription.md","articles":[]},{"title":"获取服务端接口API配置","level":"2.1.4.2","depth":3,"path":"app/Server/ServerSDKAPI/ObtainServerEndAPIConfigurations.md","ref":"app/Server/ServerSDKAPI/ObtainServerEndAPIConfigurations.md","articles":[]},{"title":"获取游戏列表","level":"2.1.4.3","depth":3,"path":"app/Server/ServerSDKAPI/ObtainTheGameList.md","ref":"app/Server/ServerSDKAPI/ObtainTheGameList.md","articles":[]},{"title":"获取游戏信息","level":"2.1.4.4","depth":3,"path":"app/Server/ServerSDKAPI/ObtainGameInformation.md","ref":"app/Server/ServerSDKAPI/ObtainGameInformation.md","articles":[]},{"title":"获取游戏上报信息","level":"2.1.4.5","depth":3,"path":"app/Server/ServerSDKAPI/ObtainTheReportInformationOfGame.md","ref":"app/Server/ServerSDKAPI/ObtainTheReportInformationOfGame.md","articles":[]},{"title":"查询游戏上报信息（新）","level":"2.1.4.6","depth":3,"path":"app/Server/ServerSDKAPI/QueryGameReportInformation.md","ref":"app/Server/ServerSDKAPI/QueryGameReportInformation.md","articles":[]},{"title":"分页获取房间内游戏上报信息","level":"2.1.4.7","depth":3,"path":"app/Server/ServerSDKAPI/ObtainTheReportInformationOfGameByPage.md","ref":"app/Server/ServerSDKAPI/ObtainTheReportInformationOfGameByPage.md","articles":[]},{"title":"推送事件到游戏服务","level":"2.1.4.8","depth":3,"path":"app/Server/ServerSDKAPI/PushEventToMgServer.md","ref":"app/Server/ServerSDKAPI/PushEventToMgServer.md","articles":[]},{"title":"推送事件列表","level":"2.1.4.9","depth":3,"path":"app/Server/ServerSDKAPI/PushEventData/README.md","ref":"app/Server/ServerSDKAPI/PushEventData/README.md","articles":[{"title":"用户加入游戏/退出游戏","level":"2.1.4.9.1","depth":4,"path":"app/Server/ServerSDKAPI/PushEventData/UserInReqData.md","ref":"app/Server/ServerSDKAPI/PushEventData/UserInReqData.md","articles":[]},{"title":"用户退出","level":"2.1.4.9.2","depth":4,"path":"app/Server/ServerSDKAPI/PushEventData/UserOutReqData.md","ref":"app/Server/ServerSDKAPI/PushEventData/UserOutReqData.md","articles":[]},{"title":"用户准备/取消准备","level":"2.1.4.9.3","depth":4,"path":"app/Server/ServerSDKAPI/PushEventData/UserReadyReqData.md","ref":"app/Server/ServerSDKAPI/PushEventData/UserReadyReqData.md","articles":[]},{"title":"游戏开始","level":"2.1.4.9.4","depth":4,"path":"app/Server/ServerSDKAPI/PushEventData/GameStartReqData.md","ref":"app/Server/ServerSDKAPI/PushEventData/GameStartReqData.md","articles":[]},{"title":"队长更换","level":"2.1.4.9.5","depth":4,"path":"app/Server/ServerSDKAPI/PushEventData/CaptainChangeReqData.md","ref":"app/Server/ServerSDKAPI/PushEventData/CaptainChangeReqData.md","articles":[]},{"title":"用户踢人","level":"2.1.4.9.6","depth":4,"path":"app/Server/ServerSDKAPI/PushEventData/UserKickReqData.md","ref":"app/Server/ServerSDKAPI/PushEventData/UserKickReqData.md","articles":[]},{"title":"游戏结束","level":"2.1.4.9.7","depth":4,"path":"app/Server/ServerSDKAPI/PushEventData/GameEndReqData.md","ref":"app/Server/ServerSDKAPI/PushEventData/GameEndReqData.md","articles":[]},{"title":"游戏玩法设置","level":"2.1.4.9.8","depth":4,"path":"app/Server/ServerSDKAPI/PushEventData/GameSettingReqData.md","ref":"app/Server/ServerSDKAPI/PushEventData/GameSettingReqData.md","articles":[]},{"title":"加入AI","level":"2.1.4.9.9","depth":4,"path":"app/Server/ServerSDKAPI/PushEventData/AiAddReqData.md","ref":"app/Server/ServerSDKAPI/PushEventData/AiAddReqData.md","articles":[]}]},{"title":"服务端上报每局游戏消耗的货币信息","level":"2.1.4.10","depth":3,"path":"app/Server/ServerSDKAPI/ReportAmountOfCurrencyConsumedInEachGameRound.md","ref":"app/Server/ServerSDKAPI/ReportAmountOfCurrencyConsumedInEachGameRound.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Server/ServerSDKAPI/AuthorizationDescription.md","mtime":"2022-08-12T06:10:52.919Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-12T06:13:11.147Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
         });
     </script>
 </div>
