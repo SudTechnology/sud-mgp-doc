@@ -37,31 +37,34 @@
 
 | 游戏事件           | 事件数据                                                          | 说明          |
 |:---------------|:--------------------------------------------------------------|:------------|
-| user_in        | [UserInReqData](PushEventData/UserInReqData.md)               | 用户加入游戏/退出游戏 |
-| user_out       | [UserOutReqData](PushEventData/UserOutReqData.md)             | 用户退出        |
-| user_ready     | [UserReadyReqData](PushEventData/UserReadyReqData.md)         | 用户准备/取消准备   |
-| game_start     | [GameStartReqData](PushEventData/GameStartReqData.md)         | 游戏开始        |
-| captain_change | [CaptainChangeReqData](PushEventData/CaptainChangeReqData.md) | 队长更换        |
-| user_kick      | [UserKickReqData](PushEventData/UserKickReqData.md)           | 用户踢人        |
-| game_end       | [GameEndReqData](PushEventData/GameEndReqData.md)             | 游戏结束        |
+| user_in        | [UserInReqData](PushEventData/UserInReqData.md)               | 用户加入          |
+| user_out       | [UserOutReqData](PushEventData/UserOutReqData.md)             | 用户退出          |
+| user_ready     | [UserReadyReqData](PushEventData/UserReadyReqData.md)         | 用户准备/取消准备  |
+| game_start     | [GameStartReqData](PushEventData/GameStartReqData.md)         | 游戏开始          |
+| captain_change | [CaptainChangeReqData](PushEventData/CaptainChangeReqData.md) | 队长更换          |
+| user_kick      | [UserKickReqData](PushEventData/UserKickReqData.md)           | 用户踢人          |
+| game_end       | [GameEndReqData](PushEventData/GameEndReqData.md)             | 游戏结束          |
 | game_setting   | [GameSettingReqData](PushEventData/GameSettingReqData.md)     | 游戏玩法设置      |
-| ai_add         | [AiAddReqData](PushEventData/AiAddReqData.md)                 | 加入AI        |
+| ai_add         | [AiAddReqData](PushEventData/AiAddReqData.md)                 | 加入AI            |
+| room_info      | [RoomInfoReqData](PushEventData/RoomInfoReqData.md)           | 获取房间座位信息   |
 
 ## 请求示例
 
 ```json
 {
-  "event": "user_in",
-  "mg_id": "mg_id_1",
-  "timestamp": 1657770493152,
-  "data": {
-    "uid": "uid_1",
-    "is_in": true,
-    "room_id":"room_id_1",
-    "seat_index": -1,
-    "is_seat_random": true,
-    "team_id": 1
-  }
+    "event": "user_in",
+    "mg_id": "mg_id_1",
+    "app_id": "app_id_1",
+    "timestamp": 1657770493152,
+    "data": {
+        "uid": "uid_1",
+        "room_id":"room_id_1",
+        "mode": 1,
+        "language":"zh-CN",
+        "seat_index": -1,
+        "is_seat_random": true,
+        "team_id": 1
+    }
 }
 ```
 
