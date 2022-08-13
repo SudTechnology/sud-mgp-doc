@@ -57,17 +57,26 @@
 
 - BaseResp
 
-| 参数名      | 必选  | 类型     | 说明   |
-|:---------|:----|:-------|------|
-| ret_code | 是   | int    | 响应码  |
-| ret_msg  | 是   | string | 响应信息 |
-| data     | 否   | object | 响应数据 |
+| 参数名      | 必选  | 类型                         | 说明   |
+|:---------|:----|:---------------------------|------|
+| ret_code | 是   | int                        | 响应码  |
+| ret_msg  | 是   | string                     | 响应信息 |
+| data     | 否   | AppserverBulletConnectResp | 响应数据 |
+
+- AppserverBulletConnectResp
+
+| 参数名   | 必选  | 类型     | 说明   |
+|:------|:----|:-------|------|
+| token | 是   | string | 连接令牌 |
 
 ## 返回示例
 
 ```json
 {
   "ret_code": 0,
-  "ret_msg": ""
+  "ret_msg": "",
+  "data": {
+    "token": "xxx"
+  }
 }
 ```
