@@ -67,6 +67,7 @@
           * [游戏结束](app/Server/ServerSDKAPI/PushEventData/GameEndReqData.md)
           * [游戏玩法设置](app/Server/ServerSDKAPI/PushEventData/GameSettingReqData.md)
           * [加入AI](app/Server/ServerSDKAPI/PushEventData/AiAddReqData.md)
+          * [获取房间座位列表](app/Server/ServerSDKAPI/PushEventData/RoomInfoReqData.md)
         * [服务端上报每局游戏消耗的货币信息](app/Server/ServerSDKAPI/ReportAmountOfCurrencyConsumedInEachGameRound.md)
     * [服务端Demo下载](app/Server/Demo/README.md)
     * [服务端错误码](app/Server/ErrorCode.md)
