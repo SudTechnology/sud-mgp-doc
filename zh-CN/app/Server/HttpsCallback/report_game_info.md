@@ -46,6 +46,7 @@
 |battle_start_at |是 |int32 |战斗开始时间（秒）  |
 |players |是 |player_object |player_object 数组 |
 |report_game_info_extras |是 |string |游戏上报信息扩展参数（透传），取值范围：长度不超过1024字节，超过则截断  |
+|report_game_info_key |是 |string |游戏上报信息扩展参数（透传），取值范围：长度不超过64字节，超过则截断。接入方服务端可以根据这个字段来查询一局游戏的数据  |
 
 - player_object
 
