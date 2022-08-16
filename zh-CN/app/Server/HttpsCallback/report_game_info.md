@@ -103,7 +103,8 @@
 			"uid": "u1",
 			"is_ai": 0
 		}],
-		"report_game_info_extras":"custom param"
+		"report_game_info_extras":"custom param",
+		"report_game_info_key":"custom param"
 	},
 	"uid": "u1",
 	"ss_token": "fyRTOsubRLCGrRvKoKm7wIcMM1DL7cfb"
@@ -111,7 +112,7 @@
 }
 ```
 
-## game_finish 请求示例
+## game_settle 请求示例
 ```json
 {
 	"report_type": "game_settle",
@@ -141,7 +142,8 @@
 			"score":2,
 			"is_win":0
 		}],
-		"report_game_info_extras":"custom param"
+		"report_game_info_extras":"custom param",
+		"report_game_info_key":"custom param"
 	},
 	"uid": "u1",
 	"ss_token": "fyRTOsubRLCGrRvKoKm7wIcMM1DL7cfb"
