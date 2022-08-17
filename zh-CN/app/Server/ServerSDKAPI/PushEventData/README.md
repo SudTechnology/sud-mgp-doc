@@ -15,3 +15,5 @@
 - [游戏玩法设置](GameSettingReqData.md)
 - [加入AI](AiAddReqData.md)
 - [获取房间座位信息](RoomInfoReqData.md)
+- [快速开始游戏](QuickStartReqData.md)
+- [房间清理](RoomClearReqData.md)

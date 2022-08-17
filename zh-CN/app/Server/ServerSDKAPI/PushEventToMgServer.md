@@ -47,6 +47,8 @@
 | game_setting   | [GameSettingReqData](PushEventData/GameSettingReqData.md)     | 游戏玩法设置      |
 | ai_add         | [AiAddReqData](PushEventData/AiAddReqData.md)                 | 加入AI            |
 | room_info      | [RoomInfoReqData](PushEventData/RoomInfoReqData.md)           | 获取房间座位信息   |
+| quick_start    | [QuickStartReqData](PushEventData/QuickStartReqData.md)       | 一键开始一局游戏<br/>1. 判断消息中携带的用户信息是否合法，并初始化用户信息<br/>2. 如有正在进行中的游戏，会报错。没有进行中的游戏, 踢出当前在游戏位的所有玩家<br/> 3. 设置玩法配置（如飞行棋）<br/> 4. 消息中携带的用户加入游戏位 <br/>5. 所有人准备<br/> 6. 开一局游戏且初始化游戏场景 |
+| room_clear     | [RoomClearReqData](PushEventData/RoomClearReqData.md)         | 房间重置清理<br/>1. 如有正在进行中的游戏，会结算游戏<br/>2. 踢出当前在游戏位的所有玩家 |
 
 ## 请求示例
 
