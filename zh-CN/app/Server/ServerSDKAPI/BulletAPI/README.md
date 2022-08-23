@@ -1,6 +1,6 @@
 #
 
-![SUD](../../Resource/logo.png)
+![SUD](../../../Resource/logo.png)
 
 ## 弹幕游戏服务API
 

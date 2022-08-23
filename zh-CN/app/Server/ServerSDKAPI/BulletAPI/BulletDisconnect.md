@@ -1,15 +1,15 @@
 #
 
-![SUD](../../Resource/logo.png)
+![SUD](../../../Resource/logo.png)
 
 ## 简要描述
 
-- 弹幕服务切换游戏
+- 断开连接（服务端调用）
 
 ## 请求URL
 
-- 测试环境：
-- 生产环境：
+- 测试环境：接口地址详见[获取服务端API配置](../ObtainServerEndAPIConfigurations.md)中bullet_api对象中字段
+- 生产环境：接口地址详见[获取服务端API配置](../ObtainServerEndAPIConfigurations.md)中bullet_api对象中字段
 
 ## 请求方式
 
@@ -21,20 +21,18 @@
 
 ## 请求头 [Authorization]
 
-- [认证请求头Authorization实现方式](../ServerSDKAPI/AuthorizationDescription.md)
+- [认证请求头Authorization实现方式](../AuthorizationDescription.md)
 
 ## 请求参数
 
-| 参数名     | 必选  | 类型       | 说明       |
-|:--------|:----|:---------|----------|
-| mg_id   | 是   | string   | 要切换的游戏id |
-| room_id | 是   | string   | 房间id     |
+| 参数名       | 必选  | 类型       | 说明   |
+|:----------|:----|:---------|------|
+| room_id   | 是   | string   | 房间id |
 
 ## 请求示例
 
 ```json
 {
-  "mg_id": "xxx",
   "room_id": "xxx"
 }
 ```

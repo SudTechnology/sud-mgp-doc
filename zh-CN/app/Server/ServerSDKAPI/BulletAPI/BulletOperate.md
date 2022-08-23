@@ -1,15 +1,15 @@
 #
 
-![SUD](../../Resource/logo.png)
+![SUD](../../../Resource/logo.png)
 
 ## 简要描述
 
-- 弹幕服务操作游戏
+- 操作游戏（服务端调用）
 
 ## 请求URL
 
-- 测试环境：
-- 生产环境：
+- 测试环境：接口地址详见[获取服务端API配置](../ObtainServerEndAPIConfigurations.md)中bullet_api对象中字段
+- 生产环境：接口地址详见[获取服务端API配置](../ObtainServerEndAPIConfigurations.md)中bullet_api对象中字段
 
 ## 请求方式
 
@@ -24,7 +24,7 @@
 | Header Name     | Header Value                                                                                 |
 |:----------------|:---------------------------------------------------------------------------------------------|
 | `RequestId`     | 每次请求的唯一值                                                                                     |
-| `Authorization` | `Sud-Auth <params>`，参考：[认证请求头Authorization实现方式](../ServerSDKAPI/AuthorizationDescription.md) |
+| `Authorization` | `Sud-Auth <params>`，参考：[认证请求头Authorization实现方式](../AuthorizationDescription.md) |
 
 ## 请求参数
 
