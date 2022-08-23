@@ -47,6 +47,8 @@
             * [update_sstoken](app/Server/HttpsCallback/update_sstoken.md)
             * [get_user_info](app/Server/HttpsCallback/get_user_info.md)
             * [report_game_info](app/Server/HttpsCallback/report_game_info.md)
+            * [notify](app/Server/HttpsCallback/notify/README.md)
+                * [房间用户变更通知](app/Server/HttpsCallback/notify/RoomUsersChangedNotify.md)
     * [服务端SDK下载](app/Server/SDK/README.md)
     * [SDK服务API](app/Server/ServerSDKAPI/README.md)
         * [认证请求头Authorization实现方式](app/Server/ServerSDKAPI/AuthorizationDescription.md)
