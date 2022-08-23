@@ -32,7 +32,7 @@
 | changed_time | 是   | string | 变更时间戳(毫秒) | 1647844976502     |
 
 ##### 消息验签
-[验签](../../ServerSDKAPI/CallbackSignatureVerify.md)
+[验签](../CallbackSignatureVerify.md)
 
 #### 请求示例
 ```

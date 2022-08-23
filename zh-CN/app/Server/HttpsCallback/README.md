@@ -14,3 +14,6 @@
 
 ## 游戏角色说明
 - [游戏role说明](game/README.md)
+
+## 验签说明
+- [回调验签说明](CallbackSignatureVerify.md)
