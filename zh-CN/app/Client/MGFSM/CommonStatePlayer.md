@@ -280,3 +280,25 @@ mg_common_game_countdown_time
 ```
 游戏通知app层当前游戏剩余时间
 ```
+
+### 12. 游戏通知app层当前玩家死亡后变成ob视角（2022-08-23新增，目前狼人杀生效）
+
+- state
+
+```
+mg_common_self_ob_status
+```
+
+- data
+
+```json
+{
+	"isOb": true	// 是否成为ob视角
+}
+```
+
+- 说明
+
+```
+游戏通知app层当前玩家死亡后变成ob视角
+```
