@@ -958,7 +958,7 @@
 <li>data</li>
 </ul>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;msg&quot;</span>: <span class="hljs-string">&quot;Hello FSM from MG player!&quot;</span>
+  <span class="hljs-string">&quot;msg&quot;</span>: <span class="hljs-string">&quot;Hello FSM from MG player!&quot;</span>
 }
 </code></pre>
 <ul>
@@ -975,10 +975,10 @@
 <li>data</li>
 </ul>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;isIn&quot;</span>: <span class="hljs-literal">true</span>,           <span class="hljs-comment">// Indicates whether a user joins or exits a game. Valid values: true: joined; false: not joined.</span>
-    <span class="hljs-string">&quot;teamId&quot;</span>:<span class="hljs-number">1</span>,           <span class="hljs-comment">// Team to join.</span>
-    <span class="hljs-string">&quot;reason&quot;</span>: <span class="hljs-number">0</span>,          <span class="hljs-comment">// This parameter is valid when isIn is set to false. Valid values: 0: proactively exit; 1: kicked. This parameter is set to -1 by default, which is meaningless and facilitates handling.</span>
-    <span class="hljs-string">&quot;kickUID&quot;</span>:<span class="hljs-string">&quot;&quot;</span>          <span class="hljs-comment">// This parameter is valid when reason is set to 1. kickUID indicates the ID of the user who kicks other players. The condition onPlayerStateChange (userId == kickedUID == selfUID) is designed for users to determine whether he or she has been kicked. By default, kickUID is set to NULL, which is meaningless and facilitates handling.</span>
+  <span class="hljs-string">&quot;isIn&quot;</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">// Indicates whether a user joins or exits a game. Valid values: true: joined; false: not joined.</span>
+  <span class="hljs-string">&quot;teamId&quot;</span>: <span class="hljs-number">1</span>, <span class="hljs-comment">// Team to join.</span>
+  <span class="hljs-string">&quot;reason&quot;</span>: <span class="hljs-number">0</span>, <span class="hljs-comment">// This parameter is valid when isIn is set to false. Valid values: 0: proactively exit; 1: kicked. This parameter is set to -1 by default, which is meaningless and facilitates handling.</span>
+  <span class="hljs-string">&quot;kickUID&quot;</span>: <span class="hljs-string">&quot;&quot;</span> <span class="hljs-comment">// This parameter is valid when reason is set to 1. kickUID indicates the ID of the user who kicks other players. The condition onPlayerStateChange (userId == kickedUID == selfUID) is designed for users to determine whether he or she has been kicked. By default, kickUID is set to NULL, which is meaningless and facilitates handling.</span>
 }
 </code></pre>
 <ul>
@@ -996,7 +996,7 @@ After a game starts, users who do not join the game are OBs.
 <li>data</li>
 </ul>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;isReady&quot;</span>: <span class="hljs-literal">true</span>      <span class="hljs-comment">// Indicates whether a user gets ready for a game. Valid values: true: ready; false: not ready.</span>
+  <span class="hljs-string">&quot;isReady&quot;</span>: <span class="hljs-literal">true</span> <span class="hljs-comment">// Indicates whether a user gets ready for a game. Valid values: true: ready; false: not ready.</span>
 }
 </code></pre>
 <ul>
@@ -1013,7 +1013,7 @@ After a game starts, users who do not join the game are OBs.
 <li>data</li>
 </ul>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;isCaptain&quot;</span>: <span class="hljs-literal">true</span>   <span class="hljs-comment">// Indicates whether a user is captain. Valid values: true: captain; false: not captain.</span>
+  <span class="hljs-string">&quot;isCaptain&quot;</span>: <span class="hljs-literal">true</span> <span class="hljs-comment">// Indicates whether a user is captain. Valid values: true: captain; false: not captain.</span>
 }
 </code></pre>
 <ul>
@@ -1030,10 +1030,10 @@ After a game starts, users who do not join the game are OBs.
 <li>data</li>
 </ul>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;isPlaying&quot;</span>: <span class="hljs-literal">true</span>,  <span class="hljs-comment">// Indicates whether a user is playing a game. Valid values: true: playing a game; false: not playing a game.</span>
-    <span class="hljs-string">&quot;gameRoundId&quot;</span>: <span class="hljs-string">&quot;12345699&quot;</span>, <span class="hljs-comment">// ID of this round of game. This parameter is valid when isPlaying is set to true. </span>
-    <span class="hljs-string">&quot;reason&quot;</span>: <span class="hljs-number">0</span>,           <span class="hljs-comment">// This parameter is valid when isPlaying is set to false. Valid values: 0: indicates that this round of game is over normally; 1: indicates that this round of game is over in advance (the player ends the game); 2: indicates that this round of game is over in advance (no real players and only robots play the game), which is not supported temporarily; 3: indicates that this round of game is over in advance (no one plays). By default, reason is set to -1, which is meaningless and facilitates handling.</span>
-    <span class="hljs-string">&quot;spaceMax&quot;</span>: <span class="hljs-literal">true</span> <span class="hljs-comment">// Valid values: true: you are advised to downsize the native UI and spare as much operation space for the game as possible; false: initial state.</span>
+  <span class="hljs-string">&quot;isPlaying&quot;</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">// Indicates whether a user is playing a game. Valid values: true: playing a game; false: not playing a game.</span>
+  <span class="hljs-string">&quot;gameRoundId&quot;</span>: <span class="hljs-string">&quot;12345699&quot;</span>, <span class="hljs-comment">// ID of this round of game. This parameter is valid when isPlaying is set to true.</span>
+  <span class="hljs-string">&quot;reason&quot;</span>: <span class="hljs-number">0</span>, <span class="hljs-comment">// This parameter is valid when isPlaying is set to false. Valid values: 0: indicates that this round of game is over normally; 1: indicates that this round of game is over in advance (the player ends the game); 2: indicates that this round of game is over in advance (no real players and only robots play the game), which is not supported temporarily; 3: indicates that this round of game is over in advance (no one plays). By default, reason is set to -1, which is meaningless and facilitates handling.</span>
+  <span class="hljs-string">&quot;spaceMax&quot;</span>: <span class="hljs-literal">true</span> <span class="hljs-comment">// Valid values: true: you are advised to downsize the native UI and spare as much operation space for the game as possible; false: initial state.</span>
 }
 </code></pre>
 <h3 id="reason-parameter-description">reason parameter description</h3>
@@ -1103,8 +1103,8 @@ If the user exits the game, restore the space allocation.
 <li>data</li>
 </ul>
 <pre><code class="lang-json">{
-  <span class="hljs-string">&quot;preSeatIndex&quot;</span>: <span class="hljs-number">1</span>,    <span class="hljs-comment">// Previous game seat No.</span>
-  <span class="hljs-string">&quot;currentSeatIndex&quot;</span>: <span class="hljs-number">1</span>        <span class="hljs-comment">// Current game seat No.</span>
+  <span class="hljs-string">&quot;preSeatIndex&quot;</span>: <span class="hljs-number">1</span>, <span class="hljs-comment">// Previous game seat No.</span>
+  <span class="hljs-string">&quot;currentSeatIndex&quot;</span>: <span class="hljs-number">1</span> <span class="hljs-comment">// Current game seat No.</span>
 }
 </code></pre>
 <ul>
@@ -1120,7 +1120,7 @@ If the user exits the game, restore the space allocation.
 <li>data</li>
 </ul>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;User ID&quot;</span>    <span class="hljs-comment">// ID of the user whose avatar is tapped.</span>
+  <span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;User ID&quot;</span> <span class="hljs-comment">// ID of the user whose avatar is tapped.</span>
 }
 </code></pre>
 <ul>
@@ -1136,7 +1136,7 @@ If the user exits the game, restore the space allocation.
 <li>data</li>
 </ul>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;&#x7528;&#x6237;id&quot;</span>    <span class="hljs-comment">// ID of the user whose avatar is tapped.</span>
+  <span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;&#x7528;&#x6237;id&quot;</span> <span class="hljs-comment">// ID of the user whose avatar is tapped.</span>
 }
 </code></pre>
 <ul>
@@ -1152,15 +1152,15 @@ If the user exits the game, restore the space allocation.
 <li>data</li>
 </ul>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;player id&quot;</span>,    <span class="hljs-comment">// player id</span>
-    <span class="hljs-string">&quot;isDeath&quot;</span>: <span class="hljs-literal">true</span>,  <span class="hljs-comment">// Whether the player is dead: true: dead, false: not dead; Default false</span>
+  <span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;player id&quot;</span>, <span class="hljs-comment">// player id</span>
+  <span class="hljs-string">&quot;isDeath&quot;</span>: <span class="hljs-literal">true</span> <span class="hljs-comment">// Whether the player is dead: true: dead, false: not dead; Default false</span>
 }
 </code></pre>
 <ul>
 <li>Description</li>
 </ul>
 <pre><code>Game notification app player death status
-</code></pre><h3 id="9-game-notification-app-players-turn--added-on-april-24-2022">9. Game notification app player&apos;s turn  (added on April 24, 2022)</h3>
+</code></pre><h3 id="9-game-notification-app-players-turn-added-on-april-24-2022">9. Game notification app player&apos;s turn (added on April 24, 2022)</h3>
 <ul>
 <li>state</li>
 </ul>
@@ -1169,8 +1169,8 @@ If the user exits the game, restore the space allocation.
 <li>data</li>
 </ul>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;player id&quot;</span>,    <span class="hljs-comment">// player id</span>
-    <span class="hljs-string">&quot;isTurn&quot;</span>: <span class="hljs-literal">true</span>,  <span class="hljs-comment">// Whether it&apos;s the player&apos;s turn to take the shot true: it&apos;s the shot round of the above uid player, false: it&apos;s not the shot round of the above uid player; Default false</span>
+  <span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;player id&quot;</span>, <span class="hljs-comment">// player id</span>
+  <span class="hljs-string">&quot;isTurn&quot;</span>: <span class="hljs-literal">true</span> <span class="hljs-comment">// Whether it&apos;s the player&apos;s turn to take the shot true: it&apos;s the shot round of the above uid player, false: it&apos;s not the shot round of the above uid player; Default false</span>
 }
 </code></pre>
 <ul>
@@ -1186,8 +1186,8 @@ If the user exits the game, restore the space allocation.
 <li>data</li>
 </ul>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;player id&quot;</span>,        <span class="hljs-comment">// player id</span>
-    <span class="hljs-string">&quot;isSelected&quot;</span>: <span class="hljs-literal">true</span>,  <span class="hljs-comment">// Whether the player selects true: selected, false: not selected; Default false</span>
+  <span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;player id&quot;</span>, <span class="hljs-comment">// player id</span>
+  <span class="hljs-string">&quot;isSelected&quot;</span>: <span class="hljs-literal">true</span> <span class="hljs-comment">// Whether the player selects true: selected, false: not selected; Default false</span>
 }
 </code></pre>
 <ul>
@@ -1203,13 +1203,29 @@ If the user exits the game, restore the space allocation.
 <li>data</li>
 </ul>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;countdown&quot;</span>: <span class="hljs-number">123</span> <span class="hljs-comment">// Time remaining in seconds</span>
+  <span class="hljs-string">&quot;countdown&quot;</span>: <span class="hljs-number">123</span> <span class="hljs-comment">// Time remaining in seconds</span>
 }
 </code></pre>
 <ul>
 <li>Description</li>
 </ul>
 <pre><code>The game notifies the app layer of the remaining time of the current game
+</code></pre><h3 id="12-the-game-notifies-the-app-layer-that-the-current-player-will-become-an-ob-perspective-after-death-added-on-august-23-2022-and-now-the-werewolf-">12. The game notifies the app layer that the current player will become an OB perspective after death (added on August 23, 2022, and now the werewolf )</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_self_ob_status
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;isOb&quot;</span>: <span class="hljs-literal">true</span>
+}
+</code></pre>
+<ul>
+<li>&#x8BF4;&#x660E;</li>
+</ul>
+<pre><code>The game notifies the app layer that the current player will become an OB perspective after death
 </code></pre>
       <script>
         var pathname = window.location.pathname
@@ -1258,7 +1274,7 @@ If the user exits the game, restore the space allocation.
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"General state - Player onPlayerStateChange","level":"1.2.2.3.2","depth":4,"next":{"title":"DrawGuess","level":"1.2.2.3.3","depth":4,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]},"previous":{"title":"General state - Game onGameStateChange","level":"1.2.2.3.1","depth":4,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en-US","gitbook":"*"},"file":{"path":"app/Client/MGFSM/CommonStatePlayer.md","mtime":"2022-08-23T02:21:10.718Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-24T03:23:56.846Z"},"basePath":"../../..","book":{"language":"en-US"}});
+            gitbook.page.hasChanged({"page":{"title":"General state - Player onPlayerStateChange","level":"1.2.2.3.2","depth":4,"next":{"title":"DrawGuess","level":"1.2.2.3.3","depth":4,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]},"previous":{"title":"General state - Game onGameStateChange","level":"1.2.2.3.1","depth":4,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en-US","gitbook":"*"},"file":{"path":"app/Client/MGFSM/CommonStatePlayer.md","mtime":"2022-08-25T02:53:07.269Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-25T04:56:14.580Z"},"basePath":"../../..","book":{"language":"en-US"}});
         });
     </script>
 </div>
