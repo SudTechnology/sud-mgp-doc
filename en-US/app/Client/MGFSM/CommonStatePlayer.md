@@ -26,7 +26,7 @@ mg_common_player_hello_fsm
 
 ```json
 {
-	"msg": "Hello FSM from MG player!"
+  "msg": "Hello FSM from MG player!"
 }
 ```
 
@@ -37,6 +37,7 @@ This state is used for testing.
 ```
 
 ### 1. Joining (modified)
+
 - Earliest version: V1.1.30.xx
 - state
 
@@ -48,10 +49,10 @@ mg_common_player_in
 
 ```json
 {
-	"isIn": true, 		  // Indicates whether a user joins or exits a game. Valid values: true: joined; false: not joined.
-	"teamId":1,   		// Team to join.
-	"reason": 0,		  // This parameter is valid when isIn is set to false. Valid values: 0: proactively exit; 1: kicked. This parameter is set to -1 by default, which is meaningless and facilitates handling.
-	"kickUID":""		  // This parameter is valid when reason is set to 1. kickUID indicates the ID of the user who kicks other players. The condition onPlayerStateChange (userId == kickedUID == selfUID) is designed for users to determine whether he or she has been kicked. By default, kickUID is set to NULL, which is meaningless and facilitates handling.
+  "isIn": true, // Indicates whether a user joins or exits a game. Valid values: true: joined; false: not joined.
+  "teamId": 1, // Team to join.
+  "reason": 0, // This parameter is valid when isIn is set to false. Valid values: 0: proactively exit; 1: kicked. This parameter is set to -1 by default, which is meaningless and facilitates handling.
+  "kickUID": "" // This parameter is valid when reason is set to 1. kickUID indicates the ID of the user who kicks other players. The condition onPlayerStateChange (userId == kickedUID == selfUID) is designed for users to determine whether he or she has been kicked. By default, kickUID is set to NULL, which is meaningless and facilitates handling.
 }
 ```
 
@@ -63,6 +64,7 @@ After a game starts, users who do not join the game are OBs.
 ```
 
 ### 2. Ready (modified)
+
 - Earliest version: V1.1.30.xx
 - state
 
@@ -74,7 +76,7 @@ mg_common_player_ready
 
 ```json
 {
-	"isReady": true	  // Indicates whether a user gets ready for a game. Valid values: true: ready; false: not ready.
+  "isReady": true // Indicates whether a user gets ready for a game. Valid values: true: ready; false: not ready.
 }
 ```
 
@@ -85,6 +87,7 @@ Whether a user gets ready for a game.
 ```
 
 ### 3. Captain (modified)
+
 - Earliest version: V1.1.30.xx
 - state
 
@@ -96,7 +99,7 @@ mg_common_player_captain
 
 ```json
 {
-	"isCaptain": true   // Indicates whether a user is captain. Valid values: true: captain; false: not captain.
+  "isCaptain": true // Indicates whether a user is captain. Valid values: true: captain; false: not captain.
 }
 ```
 
@@ -107,6 +110,7 @@ Whether a user is the captain who is authorized to start the game.
 ```
 
 ### 4. Gaming (modified)
+
 - Earliest version: V1.1.30.xx
 - state
 
@@ -118,21 +122,21 @@ mg_common_player_playing
 
 ```json
 {
-	"isPlaying": true,  // Indicates whether a user is playing a game. Valid values: true: playing a game; false: not playing a game.
-	"gameRoundId": "12345699", // ID of this round of game. This parameter is valid when isPlaying is set to true. 
-	"reason": 0,		   // This parameter is valid when isPlaying is set to false. Valid values: 0: indicates that this round of game is over normally; 1: indicates that this round of game is over in advance (the player ends the game); 2: indicates that this round of game is over in advance (no real players and only robots play the game), which is not supported temporarily; 3: indicates that this round of game is over in advance (no one plays). By default, reason is set to -1, which is meaningless and facilitates handling.
-	"spaceMax": true // Valid values: true: you are advised to downsize the native UI and spare as much operation space for the game as possible; false: initial state.
+  "isPlaying": true, // Indicates whether a user is playing a game. Valid values: true: playing a game; false: not playing a game.
+  "gameRoundId": "12345699", // ID of this round of game. This parameter is valid when isPlaying is set to true.
+  "reason": 0, // This parameter is valid when isPlaying is set to false. Valid values: 0: indicates that this round of game is over normally; 1: indicates that this round of game is over in advance (the player ends the game); 2: indicates that this round of game is over in advance (no real players and only robots play the game), which is not supported temporarily; 3: indicates that this round of game is over in advance (no one plays). By default, reason is set to -1, which is meaningless and facilitates handling.
+  "spaceMax": true // Valid values: true: you are advised to downsize the native UI and spare as much operation space for the game as possible; false: initial state.
 }
 ```
 
 ### reason parameter description
 
-| reason | Type | Value | Description | Role | Operation |
-|:----    |:---|:----- |:----- |-----   |-----   |
-| reason | int | 0 | This round of game is over normally. | Player | This round of game is over normally. |
-| reason | int | 1 | This round of game is over in advance (the player ends the game). | Player | **app_common_self_playing isPlaying=false** is sent to the app. |
-| reason | int | 2 | This round of game is over in advance (no real plays and only robots play the game). | Player | Not supported temporarily. |
-| reason | int | 3 | This round of game is over in advance (no one plays). | Player + captain | **app_common_self_end** is sent to the app. |
+| reason | Type | Value | Description                                                                          | Role             | Operation                                                       |
+| :----- | :--- | :---- | :----------------------------------------------------------------------------------- | ---------------- | --------------------------------------------------------------- |
+| reason | int  | 0     | This round of game is over normally.                                                 | Player           | This round of game is over normally.                            |
+| reason | int  | 1     | This round of game is over in advance (the player ends the game).                    | Player           | **app_common_self_playing isPlaying=false** is sent to the app. |
+| reason | int  | 2     | This round of game is over in advance (no real plays and only robots play the game). | Player           | Not supported temporarily.                                      |
+| reason | int  | 3     | This round of game is over in advance (no one plays).                                | Player + captain | **app_common_self_end** is sent to the app.                     |
 
 - Description
 
@@ -147,6 +151,7 @@ If the user exits the game, restore the space allocation.
 ```
 
 ### 5. Changing the game seat
+
 - Earliest version: V1.1.30.xx
 - state
 
@@ -158,8 +163,8 @@ mg_common_player_change_seat
 
 ```json
 {
-  "preSeatIndex": 1,	// Previous game seat No.
-  "currentSeatIndex": 1		// Current game seat No.
+  "preSeatIndex": 1, // Previous game seat No.
+  "currentSeatIndex": 1 // Current game seat No.
 }
 ```
 
@@ -181,7 +186,7 @@ mg_common_self_click_game_player_icon
 
 ```json
 {
-	"uid": "User ID"	// ID of the user whose avatar is tapped.
+  "uid": "User ID" // ID of the user whose avatar is tapped.
 }
 ```
 
@@ -190,7 +195,6 @@ mg_common_self_click_game_player_icon
 ```
 Indicates that the game notifies the app of tapping a player's avatar.
 ```
-
 
 ### 7. Click the player's Avatar on the game notification app
 
@@ -204,7 +208,7 @@ mg_common_self_click_game_player_icon
 
 ```json
 {
-	"uid": "用户id"	// ID of the user whose avatar is tapped.
+  "uid": "用户id" // ID of the user whose avatar is tapped.
 }
 ```
 
@@ -213,7 +217,6 @@ mg_common_self_click_game_player_icon
 ```
  Click the player's Avatar on the game notification app
 ```
-
 
 ### 8. Game notification app player death status (added on April 24, 2022)
 
@@ -227,8 +230,8 @@ mg_common_self_die_status
 
 ```json
 {
-	"uid": "player id",	// player id
-	"isDeath": true,  // Whether the player is dead: true: dead, false: not dead; Default false
+  "uid": "player id", // player id
+  "isDeath": true // Whether the player is dead: true: dead, false: not dead; Default false
 }
 ```
 
@@ -238,7 +241,7 @@ mg_common_self_die_status
 Game notification app player death status
 ```
 
-### 9. Game notification app player's turn  (added on April 24, 2022)
+### 9. Game notification app player's turn (added on April 24, 2022)
 
 - state
 
@@ -250,15 +253,15 @@ mg_common_self_turn_status
 
 ```json
 {
-	"uid": "player id",	// player id
-	"isTurn": true,  // Whether it's the player's turn to take the shot true: it's the shot round of the above uid player, false: it's not the shot round of the above uid player; Default false
+  "uid": "player id", // player id
+  "isTurn": true // Whether it's the player's turn to take the shot true: it's the shot round of the above uid player, false: it's not the shot round of the above uid player; Default false
 }
 ```
 
 - Description
 
 ```
- Game notification app player's turn 
+ Game notification app player's turn
 ```
 
 ### 10. Game notification app player selection status (added on April 24, 2022)
@@ -273,8 +276,8 @@ mg_common_self_select_status
 
 ```json
 {
-	"uid": "player id",		// player id
-	"isSelected": true,  // Whether the player selects true: selected, false: not selected; Default false
+  "uid": "player id", // player id
+  "isSelected": true // Whether the player selects true: selected, false: not selected; Default false
 }
 ```
 
@@ -283,7 +286,6 @@ mg_common_self_select_status
 ```
  Game notification app player selection status
 ```
-
 
 ### 11. The game notifies the app layer of the remaining time of the current game (added on May 23, 2022, and UMO takes effect at present)
 
@@ -297,7 +299,7 @@ mg_common_game_countdown_time
 
 ```json
 {
-	"countdown": 123 // Time remaining in seconds
+  "countdown": 123 // Time remaining in seconds
 }
 ```
 
@@ -305,4 +307,26 @@ mg_common_game_countdown_time
 
 ```
 The game notifies the app layer of the remaining time of the current game
+```
+
+### 12. The game notifies the app layer that the current player will become an OB perspective after death (added on August 23, 2022, and now the werewolf )
+
+- state
+
+```
+mg_common_self_ob_status
+```
+
+- data
+
+```json
+{
+  "isOb": true
+}
+```
+
+- 说明
+
+```
+The game notifies the app layer that the current player will become an OB perspective after death
 ```
