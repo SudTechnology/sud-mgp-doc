@@ -80,6 +80,8 @@ function main() {
 
 ## 返回参数
 
+#### 服务端api
+
 | 参数名                       | 类型     | 说明                            |
 |:--------------------------|:-------|-------------------------------|
 | get_mg_list               | string | 拉取游戏列表接口地址（服务端使用）             |
@@ -91,6 +93,15 @@ function main() {
 | push_event                | string | 推送事件到游戏服（服务端使用）               |
 | auth_app_list             | string | 查询授权应用列表（服务端使用）               |
 | auth_room_list            | string | 查询授权房间列表（服务端使用）               |
+
+#### 弹幕api
+| 参数名         | 类型     | 说明              |
+|:------------|:-------|-----------------|
+| connect     | string | 创建连接接口地址（服务端使用） |
+| operate     | string | 操作游戏接口地址（服务端使用） |
+| change_game | string | 切换游戏接口地址（服务端使用） |
+| disconnect  | string | 销毁连接接口地址（服务端使用） |
+
 
 ## 返回示例
 
@@ -106,6 +117,12 @@ function main() {
     "push_event": "",
     "auth_app_list": "",
     "auth_room_list": ""
+  },
+  "bullet_api": {
+    "connect": "",
+    "operate": "",
+    "change_game": "",
+    "disconnect": ""
   }
 }
 ```
