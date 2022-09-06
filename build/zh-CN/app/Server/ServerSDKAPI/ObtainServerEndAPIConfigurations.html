@@ -768,6 +768,89 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.2.6.1" data-path="../HttpsCallback/notify/">
+            
+                <a href="../HttpsCallback/notify/">
+            
+                    
+                    消息通知
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.2.6.1.1" data-path="../HttpsCallback/notify/RoomUsersChangedNotify.html">
+            
+                <a href="../HttpsCallback/notify/RoomUsersChangedNotify.html">
+            
+                    
+                    房间用户变更通知
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2.7" data-path="../HttpsCallback/game/">
+            
+                <a href="../HttpsCallback/game/">
+            
+                    
+                    游戏扩展信息说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.2.7.1" data-path="../HttpsCallback/game/GameRole.html">
+            
+                <a href="../HttpsCallback/game/GameRole.html">
+            
+                    
+                    角色说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2.7.2" data-path="../HttpsCallback/game/GameExtras.html">
+            
+                <a href="../HttpsCallback/game/GameExtras.html">
+            
+                    
+                    扩展字段说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
 
@@ -930,7 +1013,7 @@
                 <a href="PushEventData/UserInReqData.html">
             
                     
-                    用户加入游戏/退出游戏
+                    用户加入
             
                 </a>
             
@@ -1320,6 +1403,7 @@
 <p>&#x65E0;</p>
 <h2 id="&#x8BF7;&#x6C42;&#x793A;&#x4F8B;">&#x8BF7;&#x6C42;&#x793A;&#x4F8B;</h2>
 <h2 id="&#x8FD4;&#x56DE;&#x53C2;&#x6570;">&#x8FD4;&#x56DE;&#x53C2;&#x6570;</h2>
+<h4 id="&#x670D;&#x52A1;&#x7AEF;api">&#x670D;&#x52A1;&#x7AEF;api</h4>
 <table>
 <thead>
 <tr>
@@ -1376,6 +1460,38 @@
 </tr>
 </tbody>
 </table>
+<h4 id="&#x5F39;&#x5E55;api">&#x5F39;&#x5E55;api</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">connect</td>
+<td style="text-align:left">string</td>
+<td>&#x521B;&#x5EFA;&#x8FDE;&#x63A5;&#x63A5;&#x53E3;&#x5730;&#x5740;&#xFF08;&#x670D;&#x52A1;&#x7AEF;&#x4F7F;&#x7528;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">operate</td>
+<td style="text-align:left">string</td>
+<td>&#x64CD;&#x4F5C;&#x6E38;&#x620F;&#x63A5;&#x53E3;&#x5730;&#x5740;&#xFF08;&#x670D;&#x52A1;&#x7AEF;&#x4F7F;&#x7528;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">change_game</td>
+<td style="text-align:left">string</td>
+<td>&#x5207;&#x6362;&#x6E38;&#x620F;&#x63A5;&#x53E3;&#x5730;&#x5740;&#xFF08;&#x670D;&#x52A1;&#x7AEF;&#x4F7F;&#x7528;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">disconnect</td>
+<td style="text-align:left">string</td>
+<td>&#x9500;&#x6BC1;&#x8FDE;&#x63A5;&#x63A5;&#x53E3;&#x5730;&#x5740;&#xFF08;&#x670D;&#x52A1;&#x7AEF;&#x4F7F;&#x7528;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
 <h2 id="&#x8FD4;&#x56DE;&#x793A;&#x4F8B;">&#x8FD4;&#x56DE;&#x793A;&#x4F8B;</h2>
 <pre><code class="lang-json">{
   <span class="hljs-string">&quot;api&quot;</span>: {
@@ -1388,6 +1504,12 @@
     <span class="hljs-string">&quot;push_event&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
     <span class="hljs-string">&quot;auth_app_list&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
     <span class="hljs-string">&quot;auth_room_list&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+  },
+  <span class="hljs-string">&quot;bullet_api&quot;</span>: {
+    <span class="hljs-string">&quot;connect&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+    <span class="hljs-string">&quot;operate&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+    <span class="hljs-string">&quot;change_game&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+    <span class="hljs-string">&quot;disconnect&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
   }
 }
 </code></pre>
@@ -1439,7 +1561,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"获取服务端接口API配置","level":"2.1.4.2","depth":3,"next":{"title":"获取游戏列表","level":"2.1.4.3","depth":3,"path":"app/Server/ServerSDKAPI/ObtainTheGameList.md","ref":"app/Server/ServerSDKAPI/ObtainTheGameList.md","articles":[]},"previous":{"title":"认证请求头Authorization实现方式","level":"2.1.4.1","depth":3,"path":"app/Server/ServerSDKAPI/AuthorizationDescription.md","ref":"app/Server/ServerSDKAPI/AuthorizationDescription.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Server/ServerSDKAPI/ObtainServerEndAPIConfigurations.md","mtime":"2022-08-23T02:21:10.734Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-25T04:56:14.580Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
+            gitbook.page.hasChanged({"page":{"title":"获取服务端接口API配置","level":"2.1.4.2","depth":3,"next":{"title":"获取游戏列表","level":"2.1.4.3","depth":3,"path":"app/Server/ServerSDKAPI/ObtainTheGameList.md","ref":"app/Server/ServerSDKAPI/ObtainTheGameList.md","articles":[]},"previous":{"title":"认证请求头Authorization实现方式","level":"2.1.4.1","depth":3,"path":"app/Server/ServerSDKAPI/AuthorizationDescription.md","ref":"app/Server/ServerSDKAPI/AuthorizationDescription.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Server/ServerSDKAPI/ObtainServerEndAPIConfigurations.md","mtime":"2022-09-06T03:57:16.126Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-06T04:17:15.445Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
         });
     </script>
 </div>
