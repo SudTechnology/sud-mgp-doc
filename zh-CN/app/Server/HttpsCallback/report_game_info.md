@@ -86,7 +86,7 @@
 |award |否 |int32|奖励 |
 |extras |否 |string|扩展参数[扩展说明](game/GameExtras.md)|
 
-## game_start 请求示例
+## game_start 请求示例 
 ```json
 {
 	"report_type": "game_start",
