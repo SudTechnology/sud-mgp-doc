@@ -317,6 +317,104 @@ class SudMGP {
 }
 ```
 
+## Unity
+
+```C#
+public class SudMGP
+{
+    /**
+    * 获取SDK版本
+    * @return 示例:"1.1.35.286"
+    */
+    public static string getVersion();
+
+    /**
+    * 获取SDK版本别名
+    * @return 示例:"v1.1.35.286-et"
+    */
+    public static string getVersionAlias();
+
+    /**
+    * 获取配置
+    * @return
+    */
+    public static ISudCfg getCfg();
+
+    /**
+    * 初始化SDK
+    * @param appId     小游戏平台生成
+    * @param appKey    小游戏平台生成
+    * @param isTestEnv true:测试环境 false:生产环境
+    * @param mono      脚本对象，用于内部协程
+    * @param listener  ISudListenerInitSDK
+    */
+    public static void initSDK(string appId, string appKey, bool isTestEnv, MonoBehaviour mono, ISudListenerInitSDK listener);
+
+    /**
+    * 初始化SDK
+    * @param model    SudInitSdkParamModel
+    * @param mono      脚本对象，用于内部协程
+    * @param listener ISudListenerInitSDK
+    *                 最低版本：v1.1.54.xx
+    */
+    public static void initSDK(SudInitSDKParamModel model, MonoBehaviour mono, ISudListenerInitSDK listener);
+
+    /**
+     * 反初始化SDK
+     * @param listener ISudListenerUninitSDK
+     */
+    public static void uninitSDK(ISudListenerUninitSDK listener);
+
+    /**
+    * 加载游戏
+    * @param userId   用户ID，业务系统保证每个用户拥有唯一ID
+    * @param roomId   房间ID，业务系统保证唯一性，进入同一房间内
+    * @param code     短期令牌Code
+    * @param mgId     小游戏ID，测试环境和生产环境小游戏ID是一致的
+    * @param language 游戏语言 现支持，简体：zh-CN 繁体：zh-TW 英语：en-US 马来语：ms-MY 等
+    * @param fsmMG    ISudFSMMG
+    * @return ISudFSTAPP
+    */
+    public static ISudFSTAPP loadMG(string userId, string roomId, string code, long mgId, string language, ISudFSMMG fsmMG);
+
+    /**
+    * 加载游戏
+    * @param model SudLoadMgParamModel
+    * @param fsmMG ISudFSMMG
+    * @return ISudFSTAPP
+    * 最低版本：v1.1.54.xx
+    */
+    public static ISudFSTAPP loadMG(SudLoadMGParamModel model, ISudFSMMG fsmMG);
+
+    /**
+    * 销毁游戏
+    * @param fstApp ISudFSTAPP
+    * @return bool
+    */
+    public static bool destroyMG(ISudFSTAPP fstApp);
+
+    /**
+    * 设置统计上报userId
+    * @param userId
+    */
+    public static void setUserId(string userId);
+
+    /**
+    * 设置日志等级
+    * @param logLevel Log.VERBOSE Log.ERROR
+    */
+    public static void setLogLevel(int logLevel);
+
+    /**
+    * 设置接管日志
+    *
+    * @param logger ISudLogger
+    */
+    public static void setLogger(ISudLogger logger);
+
+}
+
+```
 
 ## API 调用时序图
 

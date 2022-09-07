@@ -181,3 +181,50 @@ interface ISudFSTAPP {
 }
 ```
 
+## Unity
+
+```C#
+public interface ISudFSTAPP
+{
+    /**
+    * 销毁游戏
+    * @return bool
+    */
+    bool destroyMG();
+
+    /**
+    * 更新短期令牌code
+    * @param code 短期令牌code
+    * @param listener 回调只表示APP状态通知到了小游戏，不表示小游戏执行了别的逻辑代码（比如：游戏业务逻辑网络请求），一般传null。
+    */
+    void updateCode(string code, ISudListenerNotifyStateChange listener);
+
+    /**
+    * 获取游戏状态
+    * @param state state
+    * @return json
+    */
+    string getGameState(string state);
+
+    /**
+    * 获取玩家状态
+    * @param userId userId
+    * @param state state
+    * @return json
+    */
+    string getPlayerState(string userId, string state);
+
+    /**
+    * APP状态通知给小游戏
+    * @param state state
+    * @param dataJson example: {"key": "value"}
+    * @param listener 回调只表示APP状态通知到了小游戏，不表示小游戏执行了别的逻辑代码（比如：游戏业务逻辑网络请求），一般传null。
+    */
+    void notifyStateChange(string state, string dataJson, ISudListenerNotifyStateChange listener);
+
+    /**
+    * 加载失败，重新加载游戏
+    */
+    void reloadMG();
+}
+```
