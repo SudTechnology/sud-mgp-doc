@@ -22,8 +22,10 @@
 
 2. 使用[SudMGPAuth](./API/SudMGPAuth-Go.md)提供的API实现以下回调接口，供小游戏服务鉴权和获取用户基本信息，可参考Demo
 
-    - [get_sstoken](./HttpsCallback/get_sstoken.md)
+   - get_code：此接口功能为初始化客户端SDK前生成短期令牌Code功能，由app调用业务服务端，可以通过引用服务端SDK实现，具体实现参考[demo](https://github.com/SudTechnology/hello-sud-go/releases)中login方法，如不引用SDK，可参考[自行实现鉴权](ImplementAuthenticationByYourself.md)中说明。
 
-    - [update_sstoken](./HttpsCallback/update_sstoken.md)
+   - [get_sstoken](./HttpsCallback/get_sstoken.md)
 
-    - [get_user_info](./HttpsCallback/get_user_info.md)
+   - [update_sstoken](./HttpsCallback/update_sstoken.md)
+
+   - [get_user_info](./HttpsCallback/get_user_info.md)
