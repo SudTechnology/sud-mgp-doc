@@ -237,3 +237,79 @@ interface ISudFSMMG {
     ): void;    
 }
 ```
+
+## Unity
+
+```C#
+public interface ISudFSMMG
+{
+    /**
+    * 游戏日志
+    * 最低版本：v1.1.30.xx
+    */
+    void onGameLog(string dataJson);
+
+    /**
+    * 游戏加载进度(loadMG)
+    * @param stage 阶段：start=1,loading=2,end=3
+    * @param retCode 错误码：0成功
+    * @param progress 进度：[0, 100]
+    */
+    void onGameLoadingProgress(int stage, int retCode, int progress);
+
+    /**
+    * 游戏开始（游戏长连接建立完成）
+    * 最低版本：v1.1.30.xx
+    */
+    void onGameStarted();
+
+    /**
+    * 游戏销毁
+    * 最低版本：v1.1.30.xx
+    */
+    void onGameDestroyed();
+
+    /**
+    * 短期令牌code过期
+    * APP接入方需要调用handle.success或handle.fail
+    * @param dataJson {"code":"value"}
+    */
+    void onExpireCode(ISudFSMStateHandle handle, string dataJson);
+
+    /**
+    * 获取游戏View信息
+    * APP接入方需要调用handle.success或handle.fail
+    * @param handle ISudFSMStateHandle
+    * @param dataJson {}
+    */
+    void onGetGameViewInfo(ISudFSMStateHandle handle, string dataJson);
+
+    /**
+    * 获取游戏Config
+    * APP接入方需要调用handle.success或handle.fail
+    * @param handle ISudFSMStateHandle
+    * @param dataJson dataJson
+    * 最低版本：v1.1.30.xx
+    */
+    void onGetGameCfg(ISudFSMStateHandle handle, string dataJson);
+
+    /**
+    * 游戏状态变化
+    * APP接入方需要调用handle.success或handle.fail
+    * @param handle ISudFSMStateHandle
+    * @param state state
+    * @param dataJson dataJson
+    */
+    void onGameStateChange(ISudFSMStateHandle handle, string state, string dataJson);
+
+    /**
+    * 游戏玩家状态变化
+    * APP接入方需要调用handle.success或handle.fail
+    * @param handle ISudFSMStateHandle
+    * @param userId userId
+    * @param state state
+    * @param dataJson dataJson
+    */
+    void onPlayerStateChange(ISudFSMStateHandle handle, string userId, string state, string dataJson);
+}
+```
