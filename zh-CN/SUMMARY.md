@@ -81,8 +81,5 @@
         * [服务端上报每局游戏消耗的货币信息](app/Server/ServerSDKAPI/ReportAmountOfCurrencyConsumedInEachGameRound.md)
     * [服务端Demo下载](app/Server/Demo/README.md)
     * [服务端错误码](app/Server/ErrorCode.md)
-    * [JWT鉴权](app/Server/Auth/README.md)
-        * [鉴权](app/Server/Auth/Authentication.md)
-        * [数据交换](app/Server/Auth/Data%20exchange.md)
     * [自行实现鉴权方式](app/Server/ImplementAuthenticationByYourself.md) 
     * [服务端更新日志](app/Server/Server_Change_Log.md)

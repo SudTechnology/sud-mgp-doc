@@ -53,7 +53,4 @@
         * [Obtain server-end API configurations](app/Server/ServerSDKAPI/ObtainServerEndAPIConfigurations.md)
     * [Download the server-end demo](app/Server/Demo/README.md)
     * [Server error codes](app/Server/ErrorCode.md)
-    * [JWT authentication](app/Server/Auth/README.md)
-        * [Authentication](app/Server/Auth/Authentication.md)
-        * [Data exchange](app/Server/Auth/Data exchange.md)
     * [Server changelog](app/Server/Server_Change_Log.md)
