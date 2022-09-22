@@ -1,4 +1,7 @@
 {
   "plugins": ["page"],
-  "language" : "zh-hans"
+  "language" : "zh-hans",
+  "styles": {
+    "website": "styles/website-custom.css"
+  }
 }
