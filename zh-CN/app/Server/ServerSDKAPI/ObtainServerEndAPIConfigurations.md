@@ -102,6 +102,11 @@ function main() {
 | change_game | string | 切换游戏接口地址（服务端使用） |
 | disconnect  | string | 销毁连接接口地址（服务端使用） |
 
+#### NFT API
+
+| 参数名         | 类型     | 说明                     |
+|:------------|:-------|------------------------|
+| get_details | string | 获取已穿戴的NFT详情接口地址（服务端使用） |
 
 ## 返回示例
 
@@ -123,6 +128,9 @@ function main() {
     "operate": "",
     "change_game": "",
     "disconnect": ""
+  },
+  "nft_api": {
+    "get_details": ""
   }
 }
 ```

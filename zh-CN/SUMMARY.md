@@ -89,4 +89,3 @@
     * [客户端](nft/Client/README.md)
         * [客户端快速接入](nft/Client/test.md)
     * [服务端](nft/Server/README.md)
-        * [服务端快速接入](nft/Server/test.md)
