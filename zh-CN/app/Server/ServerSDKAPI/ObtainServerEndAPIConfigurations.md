@@ -129,8 +129,8 @@ function main() {
     "change_game": "",
     "disconnect": ""
   },
-  "nft_api": {
-    "get_details": ""
+  "web3_api": {
+    "get_nft_details": ""
   }
 }
 ```
