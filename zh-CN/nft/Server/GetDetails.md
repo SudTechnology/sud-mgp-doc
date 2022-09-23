@@ -48,11 +48,11 @@
 
 - BaseResp
 
-| 参数名      | 必选  | 类型                  | 说明   |
-|:---------|:----|:--------------------|------|
-| ret_code | 是   | int                 | 响应码  |
-| ret_msg  | 是   | string              | 响应信息 |
-| data     | 是   | `GetNftDetailsResp` | 响应数据 |
+| 参数名      | 必选  | 类型                  | 说明                  |
+|:---------|:----|:--------------------|---------------------|
+| ret_code | 是   | int                 | [错误码](./RetCode.md) |
+| ret_msg  | 是   | string              | 响应信息                |
+| data     | 是   | `GetNftDetailsResp` | 响应数据                |
 
 - GetNftDetailsResp
 
@@ -69,7 +69,3 @@
 | chain_type       | 否   | int64  | 链网类型      |
 | contract_address | 否   | string | 合约地址      |
 | token_id         | 否   | string | nft token |
-
-# 错误码
-
-- [错误码](./RetCode.md)
