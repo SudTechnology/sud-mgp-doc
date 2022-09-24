@@ -8,6 +8,6 @@
 
 ### 2. [QuickStart 源代码和文档](https://github.com/SudTechnology/hello-sud-plus-ios/tree/master/project/SudNFTQuickStart)
 
-[comment]: <> (### 3. API调用时序图)
+### 3. API调用时序图
 
-[comment]: <> (![api]&#40;../../Resource/Client/sdk_api_sd.png&#41;)
+![api](../../Resource/Client/SudNFT.png)
