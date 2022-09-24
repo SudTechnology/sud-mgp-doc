@@ -85,7 +85,11 @@
         * [服务端更新日志](app/Server/Server_Change_Log.md)
 
 
-* [NFT服务](README.md)
+* [NFT服务](nft/README.md)
     * [客户端](nft/Client/README.md)
-        * [客户端快速接入](nft/Client/test.md)
+        * [客户端快速接入](nft/Client/StartUp/README.md)
+            * [iOS](nft/Client/StartUp/StartUp-iOS.md)
+            * [Android](nft/Client/StartUp/StartUp-Android.md)
+        * [客户端SDK下载](nft/Client/SDK/README.md)
+        * [客户端Demo下载](nft/Client/Demo/README.md)
     * [服务端](nft/Server/README.md)
