@@ -3,23 +3,12 @@
 ![SUD](../Resource/logo.png)
 
 ## 客户端
-### API
-- [SudMGP](API/SudMGP.md)
-- [ISudCfg](API/ISudCfg.md)
-- [ISudFSTAPP](API/ISudFSTAPP.md)
-- [ISudFSMMG](API/ISudFSMMG.md)
-    - [onGetGameCfg](API/ISudFSMMG/onGetGameCfg.md)
-    - [onGetGameViewInfo](API/ISudFSMMG/onGetGameViewInfo.md)
 
-### APP状态控制器 ISudFSTAPP
-- [通用状态 notifyStateChange](APPFST/CommonState.md)
-- [元宇宙莎莎舞 notifyStateChange](APPFST/CommonStateForDisco.md)
-
-### MG状态机 ISudFSMMG
-- [通用状态-游戏 onGameStateChange](MGFSM/CommonStateGame.md)
-- [通用状态-玩家 onPlayerStateChange](MGFSM/CommonStatePlayer.md)
-- [你画我猜](MGFSM/DrawGuess.md)
-- [元宇宙砂砂舞](MGFSM/Disco.md)
-
-### FAQ
-- [FAQ](FAQ/README.md)
+* [客户端快速接入](StartUp/README.md)
+    * [iOS](StartUp/StartUp-iOS.md)
+    * [Android](StartUp/StartUp-Android.md)
+* [客户端文档](Doc/README.md)
+    * [API](Doc/API/README.md)
+        * [SudNFT](Doc/API/SudNFT.md)
+* [客户端SDK下载](SDK/README.md)
+* [客户端Demo下载](Demo/README.md)
