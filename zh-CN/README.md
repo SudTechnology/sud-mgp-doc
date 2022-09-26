@@ -22,6 +22,7 @@
 - [文档](app/Client/StartUp.md)
 
 - [更新日志(SudMGP和游戏)](app/Client/ChangeLog.md)
+
 ## 客户端SDK下载
 
 - [SudMGP-Android](https://github.com/SudTechnology/sud-mgp-android/releases)

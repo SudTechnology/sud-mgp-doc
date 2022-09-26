@@ -22,6 +22,7 @@
 - [Documentation](app/Client/StartUp.md)
 
 - [Changelog(SudMGP and Game)](app/Client/ChangeLog.md)
+
 ## Download the client SDK
 
 - [SudMGP-Android](https://github.com/SudTechnology/sud-mgp-android/releases)
