@@ -1213,52 +1213,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.7" data-path="../../Auth/">
-            
-                <a href="../../Auth/">
-            
-                    
-                    JWT鉴权
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="2.1.7.1" data-path="../../Auth/Authentication.html">
-            
-                <a href="../../Auth/Authentication.html">
-            
-                    
-                    鉴权
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.7.2" data-path="../../Auth/Data%20exchange.md">
-            
-                <span>
-            
-                    
-                    数据交换
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.8" data-path="../../ImplementAuthenticationByYourself.html">
+        <li class="chapter " data-level="2.1.7" data-path="../../ImplementAuthenticationByYourself.html">
             
                 <a href="../../ImplementAuthenticationByYourself.html">
             
@@ -1271,7 +1226,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.9" data-path="../../Server_Change_Log.html">
+        <li class="chapter " data-level="2.1.8" data-path="../../Server_Change_Log.html">
             
                 <a href="../../Server_Change_Log.html">
             
@@ -1361,6 +1316,190 @@
 <pre><code class="lang-json"> <span class="hljs-string">&quot;extras&quot;</span>:<span class="hljs-string">&quot;{&quot;</span>cards<span class="hljs-string">&quot;: &quot;</span><span class="hljs-number">101</span>,<span class="hljs-number">102</span><span class="hljs-string">&quot;}&quot;</span>
  <span class="hljs-comment">//&#x4E00;&#x5F20;&#x724C;&#x7528;&#x4E09;&#x4E2A;&#x6570;&#x5B57;&#x63CF;&#x53D9;&#xFF0C;&#x767E;&#x4F4D;&#x586B;&#x5145;&#x4F4D;&#xFF0C;&#x65E0;&#x610F;&#x4E49;&#xFF0C;&#x5341;&#x4F4D;&#x9AA8;&#x724C;&#x4E0A;&#x90E8;&#x5206;&#x7684;&#x70B9;&#x6570;&#xFF0C;&#x4E2A;&#x4F4D;&#x662F;&#x9AA8;&#x724C;&#x4E0B;&#x90E8;&#x5206;&#x7684;&#x70B9;&#x6570;</span>
 </code></pre>
+<h3 id="2&#x98DE;&#x884C;&#x68CB;&#xFF08;mgid1468180338417074177&#xFF09;">2.&#x98DE;&#x884C;&#x68CB;&#xFF08;mg_id:1468180338417074177&#xFF09;</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">color</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">int32</td>
+<td>&#x73A9;&#x5BB6;&#x7684;&#x68CB;&#x5B50;&#x989C;&#x8272;</td>
+</tr>
+<tr>
+<td style="text-align:left">steps</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">int32</td>
+<td>&#x73A9;&#x5BB6;&#x68CB;&#x5B50;&#x7684;&#x603B;&#x524D;&#x8FDB;&#x6B65;&#x6570;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="&#x98DE;&#x884C;&#x68CB;&#x6269;&#x5C55;&#x53C2;&#x6570;&#x793A;&#x4F8B;">&#x98DE;&#x884C;&#x68CB;&#x6269;&#x5C55;&#x53C2;&#x6570;&#x793A;&#x4F8B;</h5>
+<pre><code class="lang-json"> <span class="hljs-string">&quot;extras&quot;</span>:<span class="hljs-string">&quot;{&quot;</span>color<span class="hljs-string">&quot;: 1, &quot;</span>steps<span class="hljs-string">&quot;:580}&quot;</span>
+ <span class="hljs-comment">//color&#xFF1A;1&#x662F;&#x7EA2;&#x8272;&#xFF0C;2&#x662F;&#x7EFF;&#x8272;&#xFF0C;3&#x662F;&#x9EC4;&#x8272;&#xFF0C;4&#x662F;&#x84DD;&#x8272;&#xFF1B;</span>
+ <span class="hljs-comment">//steps&#xFF1A;&#x73A9;&#x5BB6;&#x6240;&#x6709;&#x68CB;&#x5B50;&#x524D;&#x8FDB;&#x6B65;&#x6570;&#x4E4B;&#x548C;&#xFF0C;&#x5230;&#x8FBE;&#x7EC8;&#x70B9;&#x7684;&#x68CB;&#x5B50;&#x6B65;&#x6570;&#x4F1A;*10&#xFF0C;&#x9014;&#x4E2D;&#x7684;&#x5C31;&#x76F4;&#x63A5;&#x662F;&#x6B65;&#x6570;&#xFF0C;1&#x4E2A;&#x68CB;&#x5B50;&#x8FBE;&#x5230;&#x7EC8;&#x70B9;&#x7684;&#x603B;&#x6B65;&#x6570;&#x4E3A;57&#xFF1B;</span>
+ <span class="hljs-comment">//&#x4E3E;&#x4F8B;&#xFF1A;steps&#x662F;580&#xFF0C;&#x6E38;&#x620F;&#x6A21;&#x5F0F;&#x662F;2&#x4E2A;&#x68CB;&#x5B50;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x4EE3;&#x8868;1&#x4E2A;&#x68CB;&#x5B50;&#x8FBE;&#x5230;&#x4E86;&#x7EC8;&#x70B9;&#xFF0C;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x68CB;&#x5B50;&#x524D;&#x8FDB;&#x4E86;10&#x6B65;</span>
+</code></pre>
+<h3 id="3umo&#xFF08;mgid1472142559912517633&#xFF09;">3.UMO&#xFF08;mg_id:1472142559912517633&#xFF09;</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">cards</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x73A9;&#x5BB6;&#x5269;&#x4F59;&#x624B;&#x724C;&#x6570;&#x7EC4;&#xFF0C;&#x9017;&#x53F7;&#x5206;&#x5272;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="umo&#x6269;&#x5C55;&#x53C2;&#x6570;&#x793A;&#x4F8B;">UMO&#x6269;&#x5C55;&#x53C2;&#x6570;&#x793A;&#x4F8B;</h5>
+<pre><code class="lang-json"> <span class="hljs-string">&quot;extras&quot;</span>:<span class="hljs-string">&quot;{&quot;</span>cards<span class="hljs-string">&quot;: &quot;</span><span class="hljs-number">21</span>,<span class="hljs-number">310</span>,<span class="hljs-number">500</span><span class="hljs-string">&quot;}&quot;</span>
+ <span class="hljs-comment">//&#x4E00;&#x5F20;&#x724C;&#x7528;&#x4E09;&#x4E2A;&#x6570;&#x5B57;&#x63CF;&#x8FF0;&#xFF1A;</span>
+ <span class="hljs-comment">//&#x767E;&#x4F4D;&#x662F;&#x724C;&#x7684;&#x7C7B;&#x578B;&#xFF1A;0&#x662F;&#x6570;&#x5B57;&#x724C;&#xFF0C;1&#x662F;&#x963B;&#x6321;&#x724C;&#xFF0C;2&#x662F;&#x7FFB;&#x8F6C;&#x724C;&#xFF0C;3&#x662F;+2&#x724C;&#xFF0C;4&#x662F;&#x4E07;&#x80FD;&#x724C;&#xFF0C;5&#x662F;&#x738B;&#x724C;&#xFF1B;</span>
+ <span class="hljs-comment">//&#x5341;&#x4F4D;&#x662F;&#x724C;&#x7684;&#x989C;&#x8272;&#xFF1A;0&#x662F;&#x901A;&#x7528;&#xFF0C;1&#x662F;&#x7EA2;&#x8272;&#xFF0C;2&#x662F;&#x9EC4;&#x8272;&#xFF0C;3&#x662F;&#x84DD;&#x8272;&#xFF0C;4&#x662F;&#x7EFF;&#x8272;&#xFF1B;</span>
+ <span class="hljs-comment">//&#x4E2A;&#x4F4D;&#x662F;&#x724C;&#x7684;&#x70B9;&#x6570;&#xFF1A;0-9&#x70B9;</span>
+</code></pre>
+<h3 id="4&#x53CB;&#x5C3D;&#x95EF;&#x5173;&#xFF08;mgid1490944230389182466&#xFF09;">4.&#x53CB;&#x5C3D;&#x95EF;&#x5173;&#xFF08;mg_id:1490944230389182466&#xFF09;</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">color</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">int32</td>
+<td>&#x73A9;&#x5BB6;&#x7684;&#x89D2;&#x8272;&#x989C;&#x8272;</td>
+</tr>
+<tr>
+<td style="text-align:left">levels</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x5173;&#x5361;&#x4FE1;&#x606F;&#xFF0C;&#x6570;&#x7EC4;&#xFF0C;{&#x5F53;&#x524D;&#x5DF2;&#x901A;&#x5173;&#x5173;&#x5361;&#xFF0C;&#x603B;&#x5173;&#x5361;}</td>
+</tr>
+<tr>
+<td style="text-align:left">time</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">int32</td>
+<td>&#x901A;&#x5173;&#x65F6;&#x95F4;&#xFF0C;&#x5355;&#x4F4D;&#x79D2;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="&#x53CB;&#x5C3D;&#x95EF;&#x5173;&#x6269;&#x5C55;&#x53C2;&#x6570;&#x793A;&#x4F8B;">&#x53CB;&#x5C3D;&#x95EF;&#x5173;&#x6269;&#x5C55;&#x53C2;&#x6570;&#x793A;&#x4F8B;</h5>
+<pre><code class="lang-json"> <span class="hljs-string">&quot;extras&quot;</span>:<span class="hljs-string">&quot;{&quot;</span>color<span class="hljs-string">&quot;: 1,&quot;</span>levels<span class="hljs-string">&quot;: &quot;</span><span class="hljs-number">1</span>,<span class="hljs-number">4</span><span class="hljs-string">&quot;,&quot;</span>time<span class="hljs-string">&quot;: 80}&quot;</span>
+ <span class="hljs-comment">//color:1&#x662F;&#x7C89;&#x8272;&#xFF0C;2&#x662F;&#x7D2B;&#x8272;&#xFF0C;3&#x662F;&#x7EFF;&#x8272;&#xFF0C;4&#x662F;&#x84DD;&#x8272;&#xFF0C;5&#x662F;&#x9EC4;&#x8272;&#xFF0C;6&#x662F;&#x6A59;&#x8272;</span>
+ <span class="hljs-comment">//level&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x524D;&#x9762;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x4EE3;&#x8868;&#x5F53;&#x524D;&#x5DF2;&#x901A;&#x5173;&#x5173;&#x5361;&#xFF0C;&#x540E;&#x9762;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x4EE3;&#x8868;&#x603B;&#x5173;&#x5361;</span>
+ <span class="hljs-comment">//time&#x4EE3;&#x8868;&#x901A;&#x5173;&#x65F6;&#x95F4;&#xFF0C;&#x5355;&#x4F4D;&#x79D2;</span>
+</code></pre>
+<h3 id="5&#x5FB7;&#x5DDE;&#x6251;&#x514B;&#xFF08;mgid1494212349664686081&#xFF09;">5.&#x5FB7;&#x5DDE;&#x6251;&#x514B;&#xFF08;mg_id:1494212349664686081&#xFF09;</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">pokers</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">poker&#x5BF9;&#x8C61;&#x6570;&#x7EC4;</td>
+<td>&#x73A9;&#x5BB6;&#x624B;&#x724C;</td>
+</tr>
+<tr>
+<td style="text-align:left">public_pokers</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">poker&#x5BF9;&#x8C61;&#x6570;&#x7EC4;</td>
+<td>&#x516C;&#x5171;&#x724C;</td>
+</tr>
+<tr>
+<td style="text-align:left">card_type</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">int32</td>
+<td>&#x6700;&#x7EC8;&#x7EC4;&#x6210;&#x7684;&#x724C;&#x578B;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>poker</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">number</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">int32</td>
+<td>&#x724C;&#x7684;&#x70B9;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:left">color</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">int32</td>
+<td>&#x724C;&#x7684;&#x82B1;&#x8272;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="&#x5FB7;&#x5DDE;&#x6251;&#x514B;&#x6269;&#x5C55;&#x53C2;&#x6570;&#x793A;&#x4F8B;">&#x5FB7;&#x5DDE;&#x6251;&#x514B;&#x6269;&#x5C55;&#x53C2;&#x6570;&#x793A;&#x4F8B;</h5>
+<pre><code class="lang-json"> &quot;extras&quot;:&quot;{
+    &quot;pokers&quot;: [{
+        &quot;number&quot;: 13,
+        &quot;color&quot;: 20
+    }, {
+        &quot;number&quot;: 14,
+        &quot;color&quot;: 20
+    }],
+    &quot;public_pokers&quot;: [{
+        &quot;number&quot;: 8,
+        &quot;color&quot;: 20
+    }, {
+        &quot;number&quot;: 9,
+        &quot;color&quot;: 20
+    }, {
+        &quot;number&quot;: 10,
+        &quot;color&quot;: 20
+    }, {
+        &quot;number&quot;: 11,
+        &quot;color&quot;: 20
+    }, {
+        &quot;number&quot;: 12,
+        &quot;color&quot;: 20
+    }],
+    &quot;card_type&quot;: 10
+}&quot;
+ //pokers&#x4EE3;&#x8868;&#x73A9;&#x5BB6;&#x7684;&#x624B;&#x724C;&#xFF0C;public_pokers&#x4EE3;&#x8868;&#x516C;&#x724C;&#xFF1B;
+ //number:2-13&#x4EE3;&#x8868;&#x6251;&#x514B;&#x724C;&#x7684;&#x70B9;&#x6570;&#xFF0C;&#x5176;&#x4E2D;11&#x662F;J,12&#x662F;Q,13&#x662F;K,14&#x662F;A
+ //color&#x4EE3;&#x8868;&#x6251;&#x514B;&#x724C;&#x7684;&#x82B1;&#x8272;&#xFF0C;&#x5176;&#x4E2D;20&#x662F;&#x9ED1;&#x6843;&#xFF0C;30&#x662F;&#x7EA2;&#x6843;&#xFF0C;40&#x662F;&#x6885;&#x82B1;&#xFF0C;50&#x662F;&#x65B9;&#x5757;
+ //card_type&#x4EE3;&#x8868;&#x73A9;&#x5BB6;&#x6700;&#x7EC8;&#x7EC4;&#x6210;&#x7684;&#x724C;&#x578B;&#xFF0C;&#x5176;&#x4E2D;10&#x662F;&#x7687;&#x5BB6;&#x540C;&#x82B1;&#x987A;&#xFF0C;9&#x662F;&#x540C;&#x82B1;&#x987A;&#xFF0C;8&#x662F;&#x56DB;&#x6761;&#xFF0C;7&#x662F;&#x846B;&#x82A6;&#xFF0C;6&#x662F;&#x540C;&#x82B1;&#xFF0C;5&#x662F;&#x987A;&#x5B50;&#xFF0C;4&#x662F;&#x4E09;&#x6761;&#xFF0C;3&#x662F;&#x4E24;&#x5BF9;&#xFF0C;2&#x662F;&#x4E00;&#x5BF9;&#xFF0C;1&#x662F;&#x9AD8;&#x724C;&#xFF0C;0&#x662F;&#x5F03;&#x724C;
+</code></pre>
 
       <script>
         var pathname = window.location.pathname
@@ -1409,7 +1548,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"扩展字段说明","level":"2.1.2.2.7.2","depth":5,"next":{"title":"服务端SDK下载","level":"2.1.3","depth":2,"path":"app/Server/SDK/README.md","ref":"app/Server/SDK/README.md","articles":[]},"previous":{"title":"角色说明","level":"2.1.2.2.7.1","depth":5,"path":"app/Server/HttpsCallback/game/GameRole.md","ref":"app/Server/HttpsCallback/game/GameRole.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Server/HttpsCallback/game/GameExtras.md","mtime":"2022-09-06T03:57:16.125Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-07T10:01:38.332Z"},"basePath":"../../../..","book":{"language":"zh-CN"}});
+            gitbook.page.hasChanged({"page":{"title":"扩展字段说明","level":"2.1.2.2.7.2","depth":5,"next":{"title":"服务端SDK下载","level":"2.1.3","depth":2,"path":"app/Server/SDK/README.md","ref":"app/Server/SDK/README.md","articles":[]},"previous":{"title":"角色说明","level":"2.1.2.2.7.1","depth":5,"path":"app/Server/HttpsCallback/game/GameRole.md","ref":"app/Server/HttpsCallback/game/GameRole.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Server/HttpsCallback/game/GameExtras.md","mtime":"2022-09-26T08:32:25.685Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-26T08:51:26.253Z"},"basePath":"../../../..","book":{"language":"zh-CN"}});
         });
     </script>
 </div>
