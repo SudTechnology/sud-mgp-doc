@@ -34,10 +34,6 @@
 
 - [QuickStart-iOS New Demo](https://github.com/SudTechnology/hello-sud-plus-ios/tree/master/project/QuickStart)
 
-- [HelloSud-Android](https://github.com/SudTechnology/hello-sud-android/releases)
-
-- [HelloSud-iOS](https://github.com/SudTechnology/hello-sud-ios/releases)
-
 - [HelloSudPlus-Android Business Scene](https://github.com/SudTechnology/hello-sud-plus-android/tree/master)
 
 - [HelloSudPlus-iOS Business Scene](https://github.com/SudTechnology/hello-sud-plus-ios/tree/master)

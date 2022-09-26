@@ -35,10 +35,6 @@
 
 - [QuickStart-iOS 全新接入Demo](https://github.com/SudTechnology/hello-sud-plus-ios/tree/master/project/QuickStart)
 
-- [HelloSud-Android](https://github.com/SudTechnology/hello-sud-android/releases)
-  
-- [HelloSud-iOS](https://github.com/SudTechnology/hello-sud-ios/releases)
-
 - [HelloSudPlus-Android 展示多业务场景](https://github.com/SudTechnology/hello-sud-plus-android/tree/master)
 
 - [HelloSudPlus-iOS 展示多业务场景](https://github.com/SudTechnology/hello-sud-plus-ios/tree/master)
