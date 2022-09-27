@@ -1665,6 +1665,20 @@ SDK&#x4EC5;&#x4F1A;&#x7F13;&#x5B58;&#x6700;&#x65B0;&#x4E00;&#x6761;&#x3002;
 <td></td>
 <td>&#x6740;&#x81EA;&#x5DF1;&#x7684;&#x73A9;&#x5BB6;&#x7684; id</td>
 </tr>
+<tr>
+<td style="text-align:left">isManaged</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">&#x662F;</td>
+<td></td>
+<td>&#x662F;&#x5426;&#x6258;&#x7BA1;&#x5B8C;&#x6210;&#x6E38;&#x620F;</td>
+</tr>
+<tr>
+<td style="text-align:left">extras</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">&#x662F;</td>
+<td></td>
+<td>&#x6269;&#x5C55;&#x4FE1;&#x606F;</td>
+</tr>
 </tbody>
 </table>
 <ul>
@@ -1681,7 +1695,9 @@ SDK&#x4EC5;&#x4F1A;&#x7F13;&#x5B58;&#x6700;&#x65B0;&#x4E00;&#x6761;&#x3002;
       <span class="hljs-string">&quot;score&quot;</span>: <span class="hljs-number">100</span>, <span class="hljs-comment">// &#x79EF;&#x5206;</span>
       <span class="hljs-string">&quot;isEscaped&quot;</span>: <span class="hljs-number">1</span>, <span class="hljs-comment">// &#x9003;&#x8DD1;</span>
       <span class="hljs-string">&quot;killerId&quot;</span>: <span class="hljs-string">&quot;&#x6740;&#x81EA;&#x5DF1;&#x7684;&#x73A9;&#x5BB6;id&quot;</span>, <span class="hljs-comment">// &#x6740;&#x81EA;&#x5DF1;&#x7684;&#x73A9;&#x5BB6;id</span>
-      <span class="hljs-string">&quot;isAI&quot;</span>: <span class="hljs-number">0</span> <span class="hljs-comment">// &#x662F;&#x5426;&#x662F;AI&#x73A9;&#x5BB6;</span>
+      <span class="hljs-string">&quot;isAI&quot;</span>: <span class="hljs-number">0</span>, <span class="hljs-comment">// &#x662F;&#x5426;&#x662F;AI&#x73A9;&#x5BB6;</span>
+      <span class="hljs-string">&quot;isManaged&quot;</span>: <span class="hljs-number">0</span>, <span class="hljs-comment">// &#x662F;&#x5426;&#x6258;&#x7BA1;&#x5B8C;&#x6210;&#x6E38;&#x620F;</span>
+      <span class="hljs-string">&quot;extras&quot;</span>: <span class="hljs-string">&quot;&quot;</span> <span class="hljs-comment">// &#x6269;&#x5C55;&#x4FE1;&#x606F;</span>
     }
   ]
 }
@@ -2074,7 +2090,7 @@ SDK&#x4EC5;&#x4F1A;&#x7F13;&#x5B58;&#x6700;&#x65B0;&#x4E00;&#x6761;&#x3002;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"通用状态-游戏 onGameStateChange","level":"1.2.2.3.1","depth":4,"next":{"title":"通用状态-玩家 onPlayerStateChange","level":"1.2.2.3.2","depth":4,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},"previous":{"title":"MG状态机 ISudFSMMG","level":"1.2.2.3","depth":3,"path":"app/Client/MGFSM/README.md","ref":"app/Client/MGFSM/README.md","articles":[{"title":"通用状态-游戏 onGameStateChange","level":"1.2.2.3.1","depth":4,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},{"title":"通用状态-玩家 onPlayerStateChange","level":"1.2.2.3.2","depth":4,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},{"title":"你画我猜","level":"1.2.2.3.3","depth":4,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]},{"title":"元宇宙砂砂舞","level":"1.2.2.3.4","depth":4,"path":"app/Client/MGFSM/Disco.md","ref":"app/Client/MGFSM/Disco.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Client/MGFSM/CommonStateGame.md","mtime":"2022-09-26T08:32:25.669Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-26T08:51:26.253Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
+            gitbook.page.hasChanged({"page":{"title":"通用状态-游戏 onGameStateChange","level":"1.2.2.3.1","depth":4,"next":{"title":"通用状态-玩家 onPlayerStateChange","level":"1.2.2.3.2","depth":4,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},"previous":{"title":"MG状态机 ISudFSMMG","level":"1.2.2.3","depth":3,"path":"app/Client/MGFSM/README.md","ref":"app/Client/MGFSM/README.md","articles":[{"title":"通用状态-游戏 onGameStateChange","level":"1.2.2.3.1","depth":4,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},{"title":"通用状态-玩家 onPlayerStateChange","level":"1.2.2.3.2","depth":4,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},{"title":"你画我猜","level":"1.2.2.3.3","depth":4,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]},{"title":"元宇宙砂砂舞","level":"1.2.2.3.4","depth":4,"path":"app/Client/MGFSM/Disco.md","ref":"app/Client/MGFSM/Disco.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Client/MGFSM/CommonStateGame.md","mtime":"2022-09-27T08:01:16.646Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-27T08:05:03.184Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
         });
     </script>
 </div>
