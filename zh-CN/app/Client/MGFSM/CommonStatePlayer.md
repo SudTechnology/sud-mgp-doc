@@ -45,10 +45,11 @@ mg_common_player_in
 
 ```json
 {
-	"isIn": true, 		  // true 已加入，false 未加入;
-	"teamId":1,   		// 加入哪支队伍;
-	"reason": 0,		  // 当isIn==false时有效；0 主动退出，1 被踢;（reason默认-1，无意义便于处理）
-	"kickUID":""		  // 当reason==1时有效；kickUID为踢人的用户uid；判断被踢的人是本人条件(onPlayerStateChange(userId==kickedUID == selfUID)；（kickUID默认""，无意义便于处理）
+	"isIn": true, 		  	// true 已加入，false 未加入;
+	"teamId":1,   			// 加入哪支队伍;
+	"reason": 0,		 	// 当isIn==false时有效；0 主动退出，1 被踢;（reason默认-1，无意义便于处理）
+	"kickUID":"",		  	// 当reason==1时有效；kickUID为踢人的用户uid；判断被踢的人是本人条件(onPlayerStateChange(userId==kickedUID == selfUID)；（kickUID默认""，无意义便于处理）
+	"seatIndex": 0,        	// 玩家的座位号 0开始(isIn 为true 时才有效)
 }
 ```
 

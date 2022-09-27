@@ -49,10 +49,11 @@ mg_common_player_in
 
 ```json
 {
-  "isIn": true, // Indicates whether a user joins or exits a game. Valid values: true: joined; false: not joined.
-  "teamId": 1, // Team to join.
-  "reason": 0, // This parameter is valid when isIn is set to false. Valid values: 0: proactively exit; 1: kicked. This parameter is set to -1 by default, which is meaningless and facilitates handling.
-  "kickUID": "" // This parameter is valid when reason is set to 1. kickUID indicates the ID of the user who kicks other players. The condition onPlayerStateChange (userId == kickedUID == selfUID) is designed for users to determine whether he or she has been kicked. By default, kickUID is set to NULL, which is meaningless and facilitates handling.
+  "isIn": true,   // Indicates whether a user joins or exits a game. Valid values: true: joined; false: not joined.
+  "teamId": 1,    // Team to join.
+  "reason": 0,    // This parameter is valid when isIn is set to false. Valid values: 0: proactively exit; 1: kicked. This parameter is set to -1 by default, which is meaningless and facilitates handling.
+  "kickUID": "",  // This parameter is valid when reason is set to 1. kickUID indicates the ID of the user who kicks other players. The condition onPlayerStateChange (userId == kickedUID == selfUID) is designed for users to determine whether he or she has been kicked. By default, kickUID is set to NULL, which is meaningless and facilitates handling.
+  "seatIndex": 0, // The player's seat number starts from 0 (only valid when isIn is true)
 }
 ```
 

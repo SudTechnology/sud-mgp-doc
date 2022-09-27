@@ -107,8 +107,16 @@ dataJsonResp = {
 |ui.game_table_image.hide  |No  |bool |Indicates whether to disable the game table image  Valid values: **false**: show; **false**: hide,  The parameter is set to **false** by default   |
 |ui.game_countdown_time  |No  |json |The feature to disable the game countdown |
 |ui.game_countdown_time.hide  |No  |bool |Indicates whether to disable the game countdown  Valid values: **false**: show; **false**: hide,  The parameter is set to **false** by default |
-|ui.game_selected_tips  |否  |json |The feature to disable th prompt text of play method selected in the game  (Currently supported by Ludo only.) |
-|ui.game_selected_tips.hide  |否  |bool |Indicates whether to disable the prompt text of play method selected in the game  Valid values: **false**: show; **false**: hide,  The parameter is set to **false** by default |
+|ui.game_selected_tips  |No  |json |The feature to disable th prompt text of play method selected in the game  (Currently supported by Ludo only.) |
+|ui.game_selected_tips.hide  |No  |bool |Indicates whether to disable the prompt text of play method selected in the game  Valid values: **false**: show; **false**: hide,  The parameter is set to **false** by default |
+|ui.nft_avatar  |No  |json |NFT avatar in the game   |
+|ui.nft_avatar.hide  |No  |bool |Whether to hide the display of NFT avatar in the game (false: display; true: hide, default to true)   |
+|ui.game_opening  |No  |json |Game opening animation   |
+|ui.game_opening.hide  |No  |bool |Whether to hide the opening animation in the game (false: display; true: hide, default is true)  |
+|ui.game_mvp  |No  |json |Mvp animation before game settlement   |
+|ui.game_mvp.hide  |No  |bool |Whether the mvp animation before game settlement hides the mvp animation before game settlement (false: display; true: hide, default to true)  |
+|ui.umo_icon  |No  |json |UMO icon in the upper right corner of animation and avatar in the game  |
+|ui.umo_icon.hide  |No  |bool |Whether to hide the UMO icon in the upper right corner of the animation and avatar in the game and change it to UNO (false: do not hide, still show UMO; true: hide, change to show UNO, default to false)  |
 
 
 ### Response parameters
@@ -210,6 +218,18 @@ dataJsonResp = {
             "hide": false
         },
         "game_selected_tips": {
+            "hide": false
+        },
+        "ui.nft_avatar": {
+            "hide": true
+        },
+        "ui.game_opening": {
+            "hide": true
+        },
+        "ui.game_mvp": {
+            "hide": true
+        },
+        "ui.umo_icon": {
             "hide": false
         }
     }
