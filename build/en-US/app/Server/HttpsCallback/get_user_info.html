@@ -1,0 +1,1123 @@
+
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>get_user_info · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="report_game_info.html" />
+    
+    
+    <link rel="prev" href="update_sstoken.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    SudMGP interactive game platform
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../Client/">
+            
+                <a href="../../Client/">
+            
+                    
+                    Client
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../Client/StartUp.html">
+            
+                <a href="../../Client/StartUp.html">
+            
+                    
+                    Client quick start
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../Client/StartUp-iOS.html">
+            
+                <a href="../../Client/StartUp-iOS.html">
+            
+                    
+                    iOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../Client/StartUp-Android.html">
+            
+                <a href="../../Client/StartUp-Android.html">
+            
+                    
+                    Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../../Client/StartUp-Web.html">
+            
+                <a href="../../Client/StartUp-Web.html">
+            
+                    
+                    Web
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../Client/">
+            
+                <a href="../../Client/">
+            
+                    
+                    Client documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../Client/API/">
+            
+                <a href="../../Client/API/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.1" data-path="../../Client/API/SudMGP.html">
+            
+                <a href="../../Client/API/SudMGP.html">
+            
+                    
+                    SudMGP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.2" data-path="../../Client/API/ISudCfg.html">
+            
+                <a href="../../Client/API/ISudCfg.html">
+            
+                    
+                    ISudCfg
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.3" data-path="../../Client/API/ISudFSTAPP.html">
+            
+                <a href="../../Client/API/ISudFSTAPP.html">
+            
+                    
+                    ISudFSTAPP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.4" data-path="../../Client/API/ISudFSMMG.html">
+            
+                <a href="../../Client/API/ISudFSMMG.html">
+            
+                    
+                    ISudFSMMG
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.4.1" data-path="../../Client/API/ISudFSMMG/onGetGameCfg.html">
+            
+                <a href="../../Client/API/ISudFSMMG/onGetGameCfg.html">
+            
+                    
+                    onGetGameCfg
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.4.2" data-path="../../Client/API/ISudFSMMG/onGetGameViewInfo.html">
+            
+                <a href="../../Client/API/ISudFSMMG/onGetGameViewInfo.html">
+            
+                    
+                    onGetGameViewInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../Client/APPFST/">
+            
+                <a href="../../Client/APPFST/">
+            
+                    
+                    App FST ISudFSTAPP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1" data-path="../../Client/APPFST/CommonState.html">
+            
+                <a href="../../Client/APPFST/CommonState.html">
+            
+                    
+                    General state notifyStateChange
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../Client/MGFSM/">
+            
+                <a href="../../Client/MGFSM/">
+            
+                    
+                    MG FSM ISudFSMMG
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="../../Client/MGFSM/CommonStateGame.html">
+            
+                <a href="../../Client/MGFSM/CommonStateGame.html">
+            
+                    
+                    General state - Game onGameStateChange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.2" data-path="../../Client/MGFSM/CommonStatePlayer.html">
+            
+                <a href="../../Client/MGFSM/CommonStatePlayer.html">
+            
+                    
+                    General state - Player onPlayerStateChange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.3" data-path="../../Client/MGFSM/DrawGuess.html">
+            
+                <a href="../../Client/MGFSM/DrawGuess.html">
+            
+                    
+                    DrawGuess
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../Client/SDK/">
+            
+                <a href="../../Client/SDK/">
+            
+                    
+                    Download the client SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../Client/Demo/">
+            
+                <a href="../../Client/Demo/">
+            
+                    
+                    Download the client demo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../Client/FAQ/">
+            
+                <a href="../../Client/FAQ/">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../Client/Languages/">
+            
+                <a href="../../Client/Languages/">
+            
+                    
+                    Multiple languages for game
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../Client/ChangeLog.html">
+            
+                <a href="../../Client/ChangeLog.html">
+            
+                    
+                    Changelog(SudMGP and Game)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Server
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../StartUp.html">
+            
+                <a href="../StartUp.html">
+            
+                    
+                    Server quick start
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../StartUp-Java.html">
+            
+                <a href="../StartUp-Java.html">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../StartUp-Go.html">
+            
+                <a href="../StartUp-Go.html">
+            
+                    
+                    Go
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../StartUp-Node.html">
+            
+                <a href="../StartUp-Node.html">
+            
+                    
+                    Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../StartUp-Dotnet.html">
+            
+                <a href="../StartUp-Dotnet.html">
+            
+                    
+                    C# .Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Server documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../API/">
+            
+                <a href="../API/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1.1" data-path="../API/SudMGPAuth-Java.html">
+            
+                <a href="../API/SudMGPAuth-Java.html">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.1.2" data-path="../API/SudMGPAuth-Go.html">
+            
+                <a href="../API/SudMGPAuth-Go.html">
+            
+                    
+                    Go
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.1.3" data-path="../API/SudMGPAuth-Node.html">
+            
+                <a href="../API/SudMGPAuth-Node.html">
+            
+                    
+                    Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.1.4" data-path="../API/SudMGPAuth-DotNet.html">
+            
+                <a href="../API/SudMGPAuth-DotNet.html">
+            
+                    
+                    C# .Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    HTTPS service callback
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.2.1" data-path="get_sstoken.html">
+            
+                <a href="get_sstoken.html">
+            
+                    
+                    get_sstoken
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2.2" data-path="update_sstoken.html">
+            
+                <a href="update_sstoken.html">
+            
+                    
+                    update_sstoken
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2.2.3" data-path="get_user_info.html">
+            
+                <a href="get_user_info.html">
+            
+                    
+                    get_user_info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2.4" data-path="report_game_info.html">
+            
+                <a href="report_game_info.html">
+            
+                    
+                    report_game_info
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../SDK/">
+            
+                <a href="../SDK/">
+            
+                    
+                    Download the server-end SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../ServerSDKAPI/">
+            
+                <a href="../ServerSDKAPI/">
+            
+                    
+                    SDK service API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../ServerSDKAPI/ObtainTheGameList.html">
+            
+                <a href="../ServerSDKAPI/ObtainTheGameList.html">
+            
+                    
+                    Obtain the game list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../ServerSDKAPI/ObtainGameInformation.html">
+            
+                <a href="../ServerSDKAPI/ObtainGameInformation.html">
+            
+                    
+                    Obtain game information
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../ServerSDKAPI/ObtainTheReportInformationOfGame.html">
+            
+                <a href="../ServerSDKAPI/ObtainTheReportInformationOfGame.html">
+            
+                    
+                    Obtain the report information of game
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="../ServerSDKAPI/ObtainTheReportInformationOfGameByPage.html">
+            
+                <a href="../ServerSDKAPI/ObtainTheReportInformationOfGameByPage.html">
+            
+                    
+                    Obtain the report information of game by page
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.5" data-path="../ServerSDKAPI/ObtainServerEndAPIConfigurations.html">
+            
+                <a href="../ServerSDKAPI/ObtainServerEndAPIConfigurations.html">
+            
+                    
+                    Obtain server-end API configurations
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../Demo/">
+            
+                <a href="../Demo/">
+            
+                    
+                    Download the server-end demo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../ErrorCode.html">
+            
+                <a href="../ErrorCode.html">
+            
+                    
+                    Server error codes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../Server_Change_Log.html">
+            
+                <a href="../Server_Change_Log.html">
+            
+                    
+                    Server changelog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >get_user_info</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>#</p>
+<p><img src="../../Resource/logo.png" alt="SUD"></p>
+<h2 id="description">Description</h2>
+<ul>
+<li>Obtain user information.</li>
+</ul>
+<h2 id="request-url">Request URL</h2>
+<ul>
+<li>The test environment and production environment URLs are different and need to be separately configured by Sud.</li>
+<li>The production environment URL takes effect after its online deployment.</li>
+</ul>
+<h2 id="request-method">Request method</h2>
+<ul>
+<li>https</li>
+<li>POST</li>
+<li>Parameters are in JSON format and included in the request body.</li>
+</ul>
+<h2 id="request-parameters-more-fields-may-be-added-and-the-client-needs-to-ensure-the-compatibility-of-new-fields">Request parameters (More fields may be added, and the client needs to ensure the compatibility of new fields.)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Required</th>
+<th style="text-align:left">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ss_token</td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left">string</td>
+<td>The token.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sample-requests">Sample requests</h2>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;ss_token&quot;</span>:<span class="hljs-string">&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMjMiLCJleHAiOjE2MzA0MTc4NDksImFwcF9pZCI6ImFwcElEIn0.BWFAf7-Bi20KsFIjnQcF2ET1RNhoZRhoWa-VOxYbPuY&quot;</span>
+}
+</code></pre>
+<h2 id="response-parameters">Response parameters</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Required</th>
+<th style="text-align:left">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ret_code</td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left">int32</td>
+<td>The error code. Valid values: <strong>0</strong>: the request is successful; other values: the request is failed.</td>
+</tr>
+<tr>
+<td style="text-align:left">ret_msg</td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left">string</td>
+<td>The error information.</td>
+</tr>
+<tr>
+<td style="text-align:left">sdk_error_code</td>
+<td style="text-align:left">No</td>
+<td style="text-align:left">int32</td>
+<td>The SDK error code. Valid values: <strong>0</strong>: the request is successful; other values: the request is failed.</td>
+</tr>
+<tr>
+<td style="text-align:left">data</td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left">object</td>
+<td>Data.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="data-parameter-description">data parameter description</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Required</th>
+<th style="text-align:left">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">uid</td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left">string</td>
+<td>The user ID.</td>
+</tr>
+<tr>
+<td style="text-align:left">nick_name</td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left">string</td>
+<td>The user nickname.</td>
+</tr>
+<tr>
+<td style="text-align:left">avatar_url</td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left">string</td>
+<td>The URL of the user avatar. (The recommended size is 128 x 128 pixels.)</td>
+</tr>
+<tr>
+<td style="text-align:left">gender</td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left">string</td>
+<td>The gender. Valid values: <strong>female</strong>, <strong>male</strong>. If the gender is unknown, leave it empty.</td>
+</tr>
+<tr>
+<td style="text-align:left">is_ai</td>
+<td style="text-align:left">No</td>
+<td style="text-align:left">int32</td>
+<td>Whether the player is a robot. Valid values: <strong>0</strong>: common user; <strong>1</strong>: robot. The parameter is set to <strong>0</strong> by default.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sample-success-responses">Sample success responses</h2>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;ret_code&quot;</span>: <span class="hljs-number">0</span>, <span class="hljs-comment">// The error code. Valid values: 0: the request is successful; other values: the request is failed.</span>
+    <span class="hljs-string">&quot;ret_msg&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+    <span class="hljs-string">&quot;sdk_error_code&quot;</span>:<span class="hljs-number">0</span>,<span class="hljs-comment">// The SDK error code. Valid values: 0: the request is successful; other values: the request is failed.</span>
+    <span class="hljs-string">&quot;data&quot;</span>: {
+        <span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;1380100177150345266&quot;</span>,
+        <span class="hljs-string">&quot;nick_name&quot;</span>: <span class="hljs-string">&quot;Mengmeng&quot;</span>,
+        <span class="hljs-string">&quot;avatar_url&quot;</span>: <span class="hljs-string">&quot;https://icon.png?128*128&quot;</span>,
+        <span class="hljs-string">&quot;gender&quot;</span>: <span class="hljs-string">&quot;female&quot;</span>,
+        <span class="hljs-string">&quot;is_ai&quot;</span>: <span class="hljs-number">0</span>
+    }
+}
+</code></pre>
+<h2 id="sample-responses-with-error-codes">Sample responses with error codes</h2>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;ret_code&quot;</span>: <span class="hljs-number">1</span>, <span class="hljs-comment">// The error code. Valid values: 0: the request is successful; other values: the request is failed.</span>
+    <span class="hljs-string">&quot;ret_msg&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+    <span class="hljs-string">&quot;sdk_error_code&quot;</span>:<span class="hljs-number">1005</span>,<span class="hljs-comment">// The SDK error code. Valid values: 0: the request is successful; other values: the request is failed.</span>
+    <span class="hljs-string">&quot;data&quot;</span>: {
+        <span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;1380100177150345266&quot;</span>,
+        <span class="hljs-string">&quot;nick_name&quot;</span>: <span class="hljs-string">&quot;Mengmeng&quot;</span>,
+        <span class="hljs-string">&quot;avatar_url&quot;</span>: <span class="hljs-string">&quot;https://icon.png?128*128&quot;</span>,
+        <span class="hljs-string">&quot;gender&quot;</span>: <span class="hljs-string">&quot;female&quot;</span>
+    }
+}
+</code></pre>
+
+      <script>
+        var pathname = window.location.pathname
+        top.postMessage({pathname},  "*"); 
+        console.log("发送页面数据完毕")
+      </script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="update_sstoken.html" class="navigation navigation-prev " aria-label="Previous page: update_sstoken">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="report_game_info.html" class="navigation navigation-next " aria-label="Next page: report_game_info">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"get_user_info","level":"1.3.2.2.3","depth":4,"next":{"title":"report_game_info","level":"1.3.2.2.4","depth":4,"path":"app/Server/HttpsCallback/report_game_info.md","ref":"app/Server/HttpsCallback/report_game_info.md","articles":[]},"previous":{"title":"update_sstoken","level":"1.3.2.2.2","depth":4,"path":"app/Server/HttpsCallback/update_sstoken.md","ref":"app/Server/HttpsCallback/update_sstoken.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en-US","gitbook":"*"},"file":{"path":"app/Server/HttpsCallback/get_user_info.md","mtime":"2022-09-26T08:32:25.666Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-27T08:05:03.184Z"},"basePath":"../../..","book":{"language":"en-US"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

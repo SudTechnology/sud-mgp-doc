@@ -187,6 +187,8 @@ mg_common_game_settle
 | score     | int    | 是   |      | 积分                       |
 | isEscaped | int    | 否   |      | 是否逃跑 1：逃跑 0：非逃跑 |
 | killerId  | string | 否   |      | 杀自己的玩家的 id          |
+| isManaged | int    | 是   |      | 是否托管完成游戏           |
+| extras    | string | 是   |      | 扩展信息                   |
 
 - data
 
@@ -202,7 +204,9 @@ mg_common_game_settle
       "score": 100, // 积分
       "isEscaped": 1, // 逃跑
       "killerId": "杀自己的玩家id", // 杀自己的玩家id
-      "isAI": 0 // 是否是AI玩家
+      "isAI": 0, // 是否是AI玩家
+      "isManaged": 0, // 是否托管完成游戏
+      "extras": "" // 扩展信息
     }
   ]
 }

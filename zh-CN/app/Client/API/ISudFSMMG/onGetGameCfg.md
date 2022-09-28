@@ -109,6 +109,14 @@ dataJsonResp = {
 |ui.game_countdown_time.hide  |否  |bool |是否隐藏游戏中游戏倒计时显示（false: 显示； true: 隐藏，默认为false）   |
 |ui.game_selected_tips  |否  |json |游戏中所选择的玩法提示文字  （注：现在只针对ludo生效） |
 |ui.game_selected_tips.hide  |否  |bool |是否隐藏游戏中所选择的玩法提示文字显示（false: 显示； true: 隐藏，默认为false）   |
+|ui.nft_avatar  |否  |json |游戏中的NFT头像   |
+|ui.nft_avatar.hide  |否  |bool |是否隐藏游戏中NFT头像的显示（false: 显示； true: 隐藏，默认为ture）   |
+|ui.game_opening  |否  |json |游戏开场动画   |
+|ui.game_opening.hide  |否  |bool |是否隐藏游戏中的开场动画（false: 显示； true: 隐藏，默认为true）   |
+|ui.game_mvp  |否  |json |游戏结算前的mvp动画   |
+|ui.game_mvp.hide  |否  |bool |是否隐藏游戏结算前的mvp动画（false: 显示； true: 隐藏，默认为ture）   |
+|ui.umo_icon  |否  |json |游戏中动画和头像右上角的UMO图标   |
+|ui.umo_icon.hide  |否  |bool |是否隐藏游戏中动画和头像右上角的UMO图标并改为UNO（false: 不隐藏，依然显示UMO； true: 隐藏，改为显示UNO，默认为false）   |
 
 
 ### 返回示例
@@ -210,6 +218,18 @@ dataJsonResp = {
             "hide": false
         },
         "game_selected_tips": {
+            "hide": false
+        },
+        "ui.nft_avatar": {
+            "hide": true
+        },
+        "ui.game_opening": {
+            "hide": true
+        },
+        "ui.game_mvp": {
+            "hide": true
+        },
+        "ui.umo_icon": {
             "hide": false
         }
     }
