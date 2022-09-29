@@ -1,4 +1,0 @@
-#
-
-![SUD](../../Resource/logo.png)
-

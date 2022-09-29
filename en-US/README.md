@@ -22,6 +22,7 @@
 - [Documentation](app/Client/StartUp.md)
 
 - [Changelog(SudMGP and Game)](app/Client/ChangeLog.md)
+
 ## Download the client SDK
 
 - [SudMGP-Android](https://github.com/SudTechnology/sud-mgp-android/releases)
@@ -33,10 +34,6 @@
 - [QuickStart-Android New Demo](https://github.com/SudTechnology/hello-sud-plus-android/tree/master/project/QuickStart)
 
 - [QuickStart-iOS New Demo](https://github.com/SudTechnology/hello-sud-plus-ios/tree/master/project/QuickStart)
-
-- [HelloSud-Android](https://github.com/SudTechnology/hello-sud-android/releases)
-
-- [HelloSud-iOS](https://github.com/SudTechnology/hello-sud-ios/releases)
 
 - [HelloSudPlus-Android Business Scene](https://github.com/SudTechnology/hello-sud-plus-android/tree/master)
 

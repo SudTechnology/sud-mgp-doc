@@ -187,6 +187,8 @@ mg_common_game_settle
 | score | int | Yes |    |   Points. |
 | isEscaped | int | No |    | Indicates whether the player has escaped. Valid values: **1**: escaped; **0**: not escaped. |
 | killerId | string | No  |    | ID of the player who killed other players. |
+| isManaged | int    | Yes   |      | Whether to complete the game by hosting           |
+| extras    | string | No   |      | Extended information                   |
 
 - data
 
@@ -202,7 +204,9 @@ mg_common_game_settle
             "score": 100,           // Points.
             "isEscaped": 1,         // Whether the player has escaped.
             "killerId": "ID of the player who killed other players." ,   // ID of the player who killed himself/herself.
-            "isAI": 0               // Whether is a AI player
+            "isAI": 0,               // Whether is a AI player
+            "isManaged": 0,         // Whether to complete the game by hosting
+            "extras": ""            // Extended information
         }
     ]
 }
