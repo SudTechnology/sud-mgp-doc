@@ -22,6 +22,7 @@
 - [文档](app/Client/StartUp.md)
 
 - [更新日志(SudMGP和游戏)](app/Client/ChangeLog.md)
+
 ## 客户端SDK下载
 
 - [SudMGP-Android](https://github.com/SudTechnology/sud-mgp-android/releases)
@@ -34,10 +35,6 @@
 - [QuickStart-Android 全新接入Demo](https://github.com/SudTechnology/hello-sud-plus-android/tree/master/project/QuickStart)
 
 - [QuickStart-iOS 全新接入Demo](https://github.com/SudTechnology/hello-sud-plus-ios/tree/master/project/QuickStart)
-
-- [HelloSud-Android](https://github.com/SudTechnology/hello-sud-android/releases)
-  
-- [HelloSud-iOS](https://github.com/SudTechnology/hello-sud-ios/releases)
 
 - [HelloSudPlus-Android 展示多业务场景](https://github.com/SudTechnology/hello-sud-plus-android/tree/master)
 

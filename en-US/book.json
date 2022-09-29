@@ -1,3 +1,6 @@
 {
-  "plugins": ["page"]
+  "plugins": ["page"],
+  "styles": {
+    "website": "styles/website-custom.css"
+  }
 }

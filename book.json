@@ -1,5 +1,8 @@
 {
   "plugins": [
-    "page"
-  ]
+    "page", "-sharing", "expandable-chapters"
+  ],
+  "styles": {
+    "website": "styles/website-custom.css"
+  }
 }
