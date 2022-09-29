@@ -71,10 +71,13 @@
 
 - GameMode
 
-|参数名|必选|类型|说明|
-|:----    |:---|:----- |-----   |
-|mode |是  |int | 模式编号 |
-|count |是  |list | count[0]: 最小人数，count[1]: 最大人数 |
+|参数名|必选| 类型   | 说明                              |
+|:----    |:---|:-----|---------------------------------|
+|mode |是  | int  | 模式编号                            |
+|count |是  | list | count[0]: 最小人数，count[1]: 最大人数   |
+|team_count |是  | list | count[0]: 最小队伍数，count[1]: 最大队伍数 |
+|team_member_count |是  | list | count[0]: 每队最小人数，count[1]: 每队最大人数 |
+|rule |是  | json | 游戏规则                            |
 
 ## 返回示例
 
