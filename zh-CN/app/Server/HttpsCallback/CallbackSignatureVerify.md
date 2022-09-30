@@ -78,8 +78,67 @@ public boolean verifySignature(HttpServletRequest request, String requestBody) {
         }
 ```
 
+- #### Node示例代码：
 
+```js
+const Crypto = require('crypto');
 
+function verifySignature(request) {
+    // SudAppId
+    let sudAppId = request.headers["Sud-AppId"];
+    // SudTimestamp
+    let sudTimestamp = request.headers["Sud-Timestamp"];
+    // SudNonce
+    let sudNonce = request.headers["Sud-Nonce"];
+    // SudSignature
+    let sudSignature = request.headers["Sud-Signature"];
+    // 请求body (需保证发送方与接收方的数据一致，建议在拦截器里取对应值）
+    let body = request.body;
 
+    // 构造签名串
+    let signContent := sudAppId + '\n' + sudTimestamp + '\n' + sudNonce + '\n' + JSON.stringify(body) + '\n';
 
+    // 计算签名值
+    let appSecret = '';
+    let hmac = Crypto.createHmac('sha1', appSecret);
+    let signature = hmac.update(signContent).digest('hex');
 
+    // 比较签名值 true: 验签成功， false: 验签失败
+    return sudSignature == signature;
+}
+```
+
+- #### Go示例代码：
+
+```go
+import (
+    "crypto/hmac"
+    "crypto/sha1"
+    "fmt"
+    "github.com/valyala/fasthttp"
+)
+func verifySignature(ctx *fasthttp.RequestCtx) bool {
+    // SudAppId
+    sudAppId := ctx.Request.Header.Peek("Sud-AppId")
+    // SudTimestamp
+    sudTimestamp := ctx.Request.Header.Peek("Sud-Timestamp")
+    // SudNonce
+    sudNonce := ctx.Request.Header.Peek("Sud-Nonce")
+    // SudSignature
+    sudSignature := ctx.Request.Header.Peek("Sud-Signature")
+    // 请求body (需保证发送方与接收方的数据一致，建议在拦截器里取对应值）
+    body := ctx.Request.Body()
+
+    // 构造签名串
+    signContent := fmt.Sprintf("%s\n%s\n%s\n%s\n", sudAppId, sudTimestamp, sudNonce, string(body))
+
+    // 计算签名值
+    appSecret := ""
+    mac := hmac.New(sha1.New, []byte(appSecret))
+    mac.Write([]byte(signContent))
+    signature := mac.Sum(nil)
+
+    // 比较签名值 true: 验签成功， false: 验签失败
+    return sudSignature == signature
+}
+```
