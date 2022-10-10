@@ -8,6 +8,9 @@
 | 通知事件名称   | 通知事件值                                                           |
 |:---------|:----------------------------------------------------------------|
 | 房间用户人数变更 | [sud.mg.merchant.room.users.changed](RoomUsersChangedNotify.md) |
+| 订单状态变更呢  | [sud.mg.merchant.order.changed](OrderChangedNotify.md)          |
+| 用户结算通知   | [sud.mg.merchant.user.settle](UserSettleNotify.md)              |
+| 单场游戏结算通知 | [sud.mg.merchant.match.settle](MatchSettleNotify.md)            |
 
 
 

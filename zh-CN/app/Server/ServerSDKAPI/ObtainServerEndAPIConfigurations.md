@@ -93,6 +93,11 @@ function main() {
 | push_event                | string | 推送事件到游戏服（服务端使用）               |
 | auth_app_list             | string | 查询授权应用列表（服务端使用）               |
 | auth_room_list            | string | 查询授权房间列表（服务端使用）               |
+| create_order              | string | 创建订单（服务端使用）                   |
+| query_order               | string | 查询订单（服务端使用）                   |
+| query_match_base          | string | 查询单场游戏基础信息（服务端使用）             |
+| query_match_round_ids     | string | 查询单场游戏内的所有局id（服务端使用）          |
+| query_user_settle         | string | 查询用户结算信息（服务端使用）               |
 
 #### 弹幕api
 | 参数名         | 类型     | 说明              |
