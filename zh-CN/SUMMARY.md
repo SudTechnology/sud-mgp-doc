@@ -89,7 +89,7 @@
                      * [礼物](app/Server/API/BulletAPI/BulletOpData/BulletGift.md)
                      * [弹幕](app/Server/API/BulletAPI/BulletOpData/BulletComment.md)
         * [服务端Demo下载](app/Server/Demo/README.md)
-        * [服务端错误码](app/Server/ErrorCode.md)
+        * [错误码](app/Server/ErrorCode.md)
         * [自行实现鉴权方式](app/Server/ImplementAuthenticationByYourself.md) 
         * [服务端更新日志](app/Server/Server_Change_Log.md)
 

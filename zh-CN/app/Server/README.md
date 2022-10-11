@@ -64,7 +64,7 @@
 
 - [弹幕游戏服务端API](API/BulletAPI/README.md)
 
-### 服务端错误码
+### 错误码
 
 - [错误码](ErrorCode.md)
 
