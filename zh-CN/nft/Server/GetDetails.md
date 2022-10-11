@@ -8,8 +8,8 @@
 
 ## 请求URL
 
-- 测试环境：接口地址详见[获取服务端API配置](../../app/Server/ServerSDKAPI/ObtainServerEndAPIConfigurations.md)中web3_api对象字段
-- 生产环境：接口地址详见[获取服务端API配置](../../app/Server/ServerSDKAPI/ObtainServerEndAPIConfigurations.md)中web3_api对象字段
+- 测试环境：接口地址详见[获取服务端API配置](../../app/Server/API/ObtainServerEndAPIConfigurations.md)中web3_api对象字段
+- 生产环境：接口地址详见[获取服务端API配置](../../app/Server/API/ObtainServerEndAPIConfigurations.md)中web3_api对象字段
 
 ## 请求方式
 
@@ -23,7 +23,7 @@
 
 | Header Name     | Header Value                                                                                               |
 |:----------------|:-----------------------------------------------------------------------------------------------------------|
-| `Authorization` | `Sud-Auth <params>`，参考：[认证请求头Authorization实现方式](../../app/Server/ServerSDKAPI/AuthorizationDescription.md) |
+| `Authorization` | `Sud-Auth <params>`，参考：[认证请求头Authorization实现方式](../../app/Server/API/AuthorizationDescription.md) |
 
 ## 请求参数
 

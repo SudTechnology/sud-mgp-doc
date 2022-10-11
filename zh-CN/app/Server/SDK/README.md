@@ -2,7 +2,17 @@
 
 ![SUD](../../Resource/logo.png)
 
-## 服务端SDK下载
+### SDK-API
+
+- [Java](SudMGPAuth-Java.md)
+
+- [Go](SudMGPAuth-Go.md)
+
+- [Node](SudMGPAuth-Node.md)
+
+- [C# .Net](SudMGPAuth-Dotnet.md)
+
+## SDK下载
 
 - [Java v1.0.4](https://github.com/SudTechnology/sud-mgp-auth-java/releases)
 
