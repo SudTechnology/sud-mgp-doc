@@ -82,6 +82,8 @@
                 * [切换游戏](app/Server/ServerSDKAPI/BulletAPI/BulletChangeGame.md)
                 * [操作游戏](app/Server/ServerSDKAPI/BulletAPI/BulletOperate.md)
                 * [操作码/操作数据对应表](app/Server/ServerSDKAPI/BulletAPI/BulletOpData/README.md)
+                     * [礼物](app/Server/ServerSDKAPI/BulletAPI/BulletOpData/BulletGift.md)
+                     * [弹幕](app/Server/ServerSDKAPI/BulletAPI/BulletOpData/BulletComment.md)
         * [服务端Demo下载](app/Server/Demo/README.md)
         * [服务端错误码](app/Server/ErrorCode.md)
         * [自行实现鉴权方式](app/Server/ImplementAuthenticationByYourself.md) 
