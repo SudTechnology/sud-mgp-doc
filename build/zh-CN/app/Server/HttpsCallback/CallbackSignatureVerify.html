@@ -871,7 +871,7 @@
                 <a href="../ServerSDKAPI/">
             
                     
-                    SDK服务API
+                    服务端API
             
                 </a>
             
@@ -1169,6 +1169,90 @@
                 </a>
             
 
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.11" data-path="../ServerSDKAPI/BulletAPI/">
+            
+                <a href="../ServerSDKAPI/BulletAPI/">
+            
+                    
+                    弹幕游戏服务端API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.4.11.1" data-path="../ServerSDKAPI/BulletAPI/BulletConnect.html">
+            
+                <a href="../ServerSDKAPI/BulletAPI/BulletConnect.html">
+            
+                    
+                    创建连接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.11.2" data-path="../ServerSDKAPI/BulletAPI/BulletDisconnect.html">
+            
+                <a href="../ServerSDKAPI/BulletAPI/BulletDisconnect.html">
+            
+                    
+                    断开连接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.11.3" data-path="../ServerSDKAPI/BulletAPI/BulletChangeGame.html">
+            
+                <a href="../ServerSDKAPI/BulletAPI/BulletChangeGame.html">
+            
+                    
+                    切换游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.11.4" data-path="../ServerSDKAPI/BulletAPI/BulletOperate.html">
+            
+                <a href="../ServerSDKAPI/BulletAPI/BulletOperate.html">
+            
+                    
+                    操作游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.11.5" data-path="../ServerSDKAPI/BulletAPI/BulletOpData/">
+            
+                <a href="../ServerSDKAPI/BulletAPI/BulletOpData/">
+            
+                    
+                    操作码/操作数据对应表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -1546,6 +1630,71 @@ keVJLJTItd1VBtGT
         <span class="hljs-keyword">return</span> sudSignature.equals(signature);
         }
 </code></pre>
+<ul>
+<li><h4 id="node&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;">Node&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</h4>
+</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Crypto = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;crypto&apos;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">verifySignature</span>(<span class="hljs-params">request</span>) </span>{
+    <span class="hljs-comment">// SudAppId</span>
+    <span class="hljs-keyword">let</span> sudAppId = request.headers[<span class="hljs-string">&quot;Sud-AppId&quot;</span>];
+    <span class="hljs-comment">// SudTimestamp</span>
+    <span class="hljs-keyword">let</span> sudTimestamp = request.headers[<span class="hljs-string">&quot;Sud-Timestamp&quot;</span>];
+    <span class="hljs-comment">// SudNonce</span>
+    <span class="hljs-keyword">let</span> sudNonce = request.headers[<span class="hljs-string">&quot;Sud-Nonce&quot;</span>];
+    <span class="hljs-comment">// SudSignature</span>
+    <span class="hljs-keyword">let</span> sudSignature = request.headers[<span class="hljs-string">&quot;Sud-Signature&quot;</span>];
+    <span class="hljs-comment">// &#x8BF7;&#x6C42;body (&#x9700;&#x4FDD;&#x8BC1;&#x53D1;&#x9001;&#x65B9;&#x4E0E;&#x63A5;&#x6536;&#x65B9;&#x7684;&#x6570;&#x636E;&#x4E00;&#x81F4;&#xFF0C;&#x5EFA;&#x8BAE;&#x5728;&#x62E6;&#x622A;&#x5668;&#x91CC;&#x53D6;&#x5BF9;&#x5E94;&#x503C;&#xFF09;</span>
+    <span class="hljs-keyword">let</span> body = request.body;
+
+    <span class="hljs-comment">// &#x6784;&#x9020;&#x7B7E;&#x540D;&#x4E32;</span>
+    <span class="hljs-keyword">let</span> signContent := sudAppId + <span class="hljs-string">&apos;\n&apos;</span> + sudTimestamp + <span class="hljs-string">&apos;\n&apos;</span> + sudNonce + <span class="hljs-string">&apos;\n&apos;</span> + <span class="hljs-built_in">JSON</span>.stringify(body) + <span class="hljs-string">&apos;\n&apos;</span>;
+
+    <span class="hljs-comment">// &#x8BA1;&#x7B97;&#x7B7E;&#x540D;&#x503C;</span>
+    <span class="hljs-keyword">let</span> appSecret = <span class="hljs-string">&apos;&apos;</span>;
+    <span class="hljs-keyword">let</span> hmac = Crypto.createHmac(<span class="hljs-string">&apos;sha1&apos;</span>, appSecret);
+    <span class="hljs-keyword">let</span> signature = hmac.update(signContent).digest(<span class="hljs-string">&apos;hex&apos;</span>);
+
+    <span class="hljs-comment">// &#x6BD4;&#x8F83;&#x7B7E;&#x540D;&#x503C; true: &#x9A8C;&#x7B7E;&#x6210;&#x529F;&#xFF0C; false: &#x9A8C;&#x7B7E;&#x5931;&#x8D25;</span>
+    <span class="hljs-keyword">return</span> sudSignature == signature;
+}
+</code></pre>
+<ul>
+<li><h4 id="go&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;">Go&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</h4>
+</li>
+</ul>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;crypto/hmac&quot;</span>
+    <span class="hljs-string">&quot;crypto/sha1&quot;</span>
+    <span class="hljs-string">&quot;fmt&quot;</span>
+    <span class="hljs-string">&quot;github.com/valyala/fasthttp&quot;</span>
+)
+<span class="hljs-keyword">func</span> verifySignature(ctx *fasthttp.RequestCtx) <span class="hljs-keyword">bool</span> {
+    <span class="hljs-comment">// SudAppId</span>
+    sudAppId := ctx.Request.Header.Peek(<span class="hljs-string">&quot;Sud-AppId&quot;</span>)
+    <span class="hljs-comment">// SudTimestamp</span>
+    sudTimestamp := ctx.Request.Header.Peek(<span class="hljs-string">&quot;Sud-Timestamp&quot;</span>)
+    <span class="hljs-comment">// SudNonce</span>
+    sudNonce := ctx.Request.Header.Peek(<span class="hljs-string">&quot;Sud-Nonce&quot;</span>)
+    <span class="hljs-comment">// SudSignature</span>
+    sudSignature := ctx.Request.Header.Peek(<span class="hljs-string">&quot;Sud-Signature&quot;</span>)
+    <span class="hljs-comment">// &#x8BF7;&#x6C42;body (&#x9700;&#x4FDD;&#x8BC1;&#x53D1;&#x9001;&#x65B9;&#x4E0E;&#x63A5;&#x6536;&#x65B9;&#x7684;&#x6570;&#x636E;&#x4E00;&#x81F4;&#xFF0C;&#x5EFA;&#x8BAE;&#x5728;&#x62E6;&#x622A;&#x5668;&#x91CC;&#x53D6;&#x5BF9;&#x5E94;&#x503C;&#xFF09;</span>
+    body := ctx.Request.Body()
+
+    <span class="hljs-comment">// &#x6784;&#x9020;&#x7B7E;&#x540D;&#x4E32;</span>
+    signContent := fmt.Sprintf(<span class="hljs-string">&quot;%s\n%s\n%s\n%s\n&quot;</span>, sudAppId, sudTimestamp, sudNonce, <span class="hljs-keyword">string</span>(body))
+
+    <span class="hljs-comment">// &#x8BA1;&#x7B97;&#x7B7E;&#x540D;&#x503C;</span>
+    appSecret := <span class="hljs-string">&quot;&quot;</span>
+    mac := hmac.New(sha1.New, []<span class="hljs-keyword">byte</span>(appSecret))
+    mac.Write([]<span class="hljs-keyword">byte</span>(signContent))
+    signature := mac.Sum(<span class="hljs-literal">nil</span>)
+
+    <span class="hljs-comment">// &#x6BD4;&#x8F83;&#x7B7E;&#x540D;&#x503C; true: &#x9A8C;&#x7B7E;&#x6210;&#x529F;&#xFF0C; false: &#x9A8C;&#x7B7E;&#x5931;&#x8D25;</span>
+    <span class="hljs-keyword">return</span> sudSignature == signature
+}
+</code></pre>
 
       <script>
         var pathname = window.location.pathname
@@ -1594,7 +1743,7 @@ keVJLJTItd1VBtGT
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"回调验签说明","level":"1.1.2.2.2.6","depth":5,"next":{"title":"消息通知","level":"1.1.2.2.2.6.1","depth":6,"path":"app/Server/HttpsCallback/notify/README.md","ref":"app/Server/HttpsCallback/notify/README.md","articles":[{"title":"房间用户变更通知","level":"1.1.2.2.2.6.1.1","depth":7,"path":"app/Server/HttpsCallback/notify/RoomUsersChangedNotify.md","ref":"app/Server/HttpsCallback/notify/RoomUsersChangedNotify.md","articles":[]}]},"previous":{"title":"房间用户变更通知","level":"1.1.2.2.2.5.1","depth":6,"path":"app/Server/HttpsCallback/notify/RoomUsersChangedNotify.md","ref":"app/Server/HttpsCallback/notify/RoomUsersChangedNotify.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page","-sharing","expandable-chapters"],"styles":{"website":"styles/website-custom.css"},"pluginsConfig":{"page":{},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Server/HttpsCallback/CallbackSignatureVerify.md","mtime":"2022-09-26T08:32:25.685Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-30T03:48:30.302Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
+            gitbook.page.hasChanged({"page":{"title":"回调验签说明","level":"1.1.2.2.2.6","depth":5,"next":{"title":"消息通知","level":"1.1.2.2.2.6.1","depth":6,"path":"app/Server/HttpsCallback/notify/README.md","ref":"app/Server/HttpsCallback/notify/README.md","articles":[{"title":"房间用户变更通知","level":"1.1.2.2.2.6.1.1","depth":7,"path":"app/Server/HttpsCallback/notify/RoomUsersChangedNotify.md","ref":"app/Server/HttpsCallback/notify/RoomUsersChangedNotify.md","articles":[]}]},"previous":{"title":"房间用户变更通知","level":"1.1.2.2.2.5.1","depth":6,"path":"app/Server/HttpsCallback/notify/RoomUsersChangedNotify.md","ref":"app/Server/HttpsCallback/notify/RoomUsersChangedNotify.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page","-sharing","expandable-chapters"],"styles":{"website":"styles/website-custom.css"},"pluginsConfig":{"page":{},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Server/HttpsCallback/CallbackSignatureVerify.md","mtime":"2022-10-11T07:37:37.688Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-11T07:40:07.886Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
         });
     </script>
 </div>
