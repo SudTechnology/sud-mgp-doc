@@ -53,7 +53,7 @@
                     * [角色说明](app/Server/HttpsCallback/game/GameRole.md)
                     * [扩展字段说明](app/Server/HttpsCallback/game/GameExtras.md)
         * [服务端SDK下载](app/Server/SDK/README.md)
-        * [SDK服务API](app/Server/ServerSDKAPI/README.md)
+        * [服务端API](app/Server/ServerSDKAPI/README.md)
             * [认证请求头Authorization实现方式](app/Server/ServerSDKAPI/AuthorizationDescription.md)
             * [获取服务端接口API配置](app/Server/ServerSDKAPI/ObtainServerEndAPIConfigurations.md)
             * [获取游戏列表](app/Server/ServerSDKAPI/ObtainTheGameList.md)
