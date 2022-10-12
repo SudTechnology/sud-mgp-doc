@@ -1,6 +1,6 @@
 #
 
-![SUD](../Resource/logo1.png)
+![SUD](../Resource/logo.png)
 
 ## 介绍
 
