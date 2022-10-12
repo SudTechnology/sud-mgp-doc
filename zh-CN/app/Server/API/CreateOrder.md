@@ -34,8 +34,7 @@
 | cmd          | 是    | string | 触发的行为动作                        | 
 | from_uid     | 是    | string | 付费用户uid                        | 
 | to_uid       | 是    | string | 目标用户uid                        | 
-| value        | 是    | int32  | 所属的游戏价值                        | 
-| seq          | 否    | int32  | 序列号 (默认：0) 游戏中对时序有要求时使用        |  
+| value        | 是    | int32  | 所属的游戏价值                        |
 | payload      | 特殊可选 | json   | 附加数据                           |
 
 - cmd | payload 参数对应表
@@ -57,8 +56,7 @@
   "cmd": "add_score",
   "from_uid": "001",
   "to_uid": "002",
-  "value": 100,
-  "seq": 0
+  "value": 100
 }
 ```
 

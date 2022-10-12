@@ -61,8 +61,7 @@
 | cmd          | 是    | string | 触发的行为动作                                                                                      |test
 | from_uid     | 是    | string | 付费用户uid                                                                                      |u001
 | to_uid       | 是    | string | 目标用户uid                                                                                      |u002
-| value        | 否    | int32  | 所属的游戏价值                                                                                      |1
-| seq          | 否    | int32  | 序列号 (默认：0) 游戏中对时序有要求时使用                                                                      |0
+| value        | 是    | int32  | 所属的游戏价值                                                                                      |1
 | payload      | 特殊可选 | json   | 附加数据                                                                                         |<br>
 | status       | 是    | string | 订单状态: <br> CREATED (订单创建完成，待执行)， EXECUTING (执行中)，EXECUTE_FAIL (执行失败)， EXECUTE_SUCCESS (执行成功) | EXECUTE_SUCCESS
 
@@ -80,7 +79,6 @@
     "room_id": "9009",
     "cmd": "test",
     "value": 1,
-    "seq": 0,
     "status": "EXECUTE_FAIL"
   }
 }
