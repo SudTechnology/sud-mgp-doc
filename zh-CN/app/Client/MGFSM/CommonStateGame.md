@@ -651,3 +651,47 @@ mg_common_game_network_state
 ```
 游戏通知app层添当前网络连接状态
 ```
+
+### 23. 游戏通知app获取积分
+
+- state
+
+```
+mg_common_game_get_score
+```
+
+- data
+
+```json
+{
+}
+```
+
+- 说明
+
+```
+游戏通知app获取积分
+```
+
+### 24. 游戏通知app带入积分
+
+- state
+
+```
+mg_common_game_set_score
+```
+
+- data
+
+```json
+{
+	"currentScore": 0,	// 本人当前积分
+	"addScore": 10,		// 充值积分
+	"totalScore": 10	// 充值后总积分
+}
+```
+
+- 说明
+```
+游戏通知app带入积分
+```

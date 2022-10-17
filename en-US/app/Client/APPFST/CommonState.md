@@ -457,3 +457,25 @@ app_common_game_reconnect
 ```
 Notify game to retry connection
 ```
+
+### 18. The app returns the player's current score
+
+- state
+
+```
+app_common_game_score
+```
+
+- data
+
+```json
+{
+	"score": 10	//  player's current score
+}
+```
+
+- 说明
+
+```
+The app returns the player's current score
+```

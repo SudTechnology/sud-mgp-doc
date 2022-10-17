@@ -117,6 +117,8 @@ dataJsonResp = {
 |ui.game_mvp.hide  |No  |bool |Whether the mvp animation before game settlement hides the mvp animation before game settlement (false: display; true: hide, default to true)  |
 |ui.umo_icon  |No  |json |UMO icon in the upper right corner of animation and avatar in the game  |
 |ui.umo_icon.hide  |No  |bool |Whether to hide the UMO icon in the upper right corner of the animation and avatar in the game and change it to UNO (false: do not hide, still show UMO; true: hide, change to show UNO, default to false)  |
+|ui.logo  |No  |json | the logo in lobby   |
+|ui.logo.hide  |No  |bool |Whether to hide the logo in lobby（false: display; true: hide, default to false）   |
 
 
 ### Response parameters
@@ -230,6 +232,9 @@ dataJsonResp = {
             "hide": true
         },
         "ui.umo_icon": {
+            "hide": false
+        },
+        "ui.logo": {
             "hide": false
         }
     }

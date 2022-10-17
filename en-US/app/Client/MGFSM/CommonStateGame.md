@@ -655,3 +655,48 @@ mg_common_game_network_state
 ```
 The game notifies the app layer to add the current network connection status
 ```
+
+
+### 23. Game notification app to get score
+
+- state
+
+```
+mg_common_game_get_score
+```
+
+- data
+
+```json
+{
+}
+```
+
+- Description
+
+```
+Game notification app to get score
+```
+
+### 24. score brought in by game notification app
+
+- state
+
+```
+mg_common_game_set_score
+```
+
+- data
+
+```json
+{
+	"currentScore": 0,	// self current points
+	"addScore": 10,		// Recharge score
+	"totalScore": 10	// Total score after recharging
+}
+```
+
+- Description
+```
+score brought in by game notification app
+```

@@ -458,3 +458,25 @@ app_common_game_reconnect
 ```
 通知游戏重试连接
 ```
+
+### 18. app返回玩家当前积分
+
+- state
+
+```
+app_common_game_score
+```
+
+- data
+
+```json
+{
+	"score": 10	// 玩家当前积分
+}
+```
+
+- 说明
+
+```
+app返回玩家当前积分
+```

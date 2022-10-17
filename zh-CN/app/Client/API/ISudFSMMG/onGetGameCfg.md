@@ -117,6 +117,8 @@ dataJsonResp = {
 |ui.game_mvp.hide  |否  |bool |是否隐藏游戏结算前的mvp动画（false: 显示； true: 隐藏，默认为ture）   |
 |ui.umo_icon  |否  |json |游戏中动画和头像右上角的UMO图标   |
 |ui.umo_icon.hide  |否  |bool |是否隐藏游戏中动画和头像右上角的UMO图标并改为UNO（false: 不隐藏，依然显示UMO； true: 隐藏，改为显示UNO，默认为false）   |
+|ui.logo  |否  |json |大厅中的logo   |
+|ui.logo.hide  |否  |bool |是否隐藏大厅中的logo（false: 不隐藏； true: 隐藏，默认为false）   |
 
 
 ### 返回示例
@@ -230,6 +232,9 @@ dataJsonResp = {
             "hide": true
         },
         "ui.umo_icon": {
+            "hide": false
+        },
+        "ui.logo": {
             "hide": false
         }
     }
