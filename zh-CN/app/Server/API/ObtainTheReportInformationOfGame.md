@@ -6,6 +6,7 @@
 
 - 当前接口会在未来作废，推荐使用[查询游戏上报信息（新）](QueryGameReportInformation.md)
 - 服务端根据app_id，app_secret, game_round_id, report_type获取游戏上报信息
+- 数据只支持查询一个月以内的游戏局信息
 - 当前接口针对每个app_id请求限制频率为10次/秒
 
 ## 请求URL

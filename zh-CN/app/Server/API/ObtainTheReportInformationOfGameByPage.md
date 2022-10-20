@@ -5,6 +5,7 @@
 ## 简要描述
 
 - 服务端根据app_id，app_secret, room_id, page_no, page_size 分页获取房间内游戏上报信息
+- 数据只支持查询一个月以内的游戏局信息
 - 当前接口针对每个app_id请求限制频率为10次/秒
 
 ## 请求URL
