@@ -1,0 +1,1970 @@
+
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>General state - Game onGameStateChange · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website-custom.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="CommonStatePlayer.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    SudMGP interactive game platform
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Client
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1.1" data-path="../StartUp.html">
+            
+                <a href="../StartUp.html">
+            
+                    
+                    Client quick start
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1.1.1" data-path="../StartUp-iOS.html">
+            
+                <a href="../StartUp-iOS.html">
+            
+                    
+                    iOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.1.2" data-path="../StartUp-Android.html">
+            
+                <a href="../StartUp-Android.html">
+            
+                    
+                    Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.1.3" data-path="../StartUp-Web.html">
+            
+                <a href="../StartUp-Web.html">
+            
+                    
+                    Web
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Client documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1.2.1" data-path="../API/">
+            
+                <a href="../API/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1.2.1.1" data-path="../API/SudMGP.html">
+            
+                <a href="../API/SudMGP.html">
+            
+                    
+                    SudMGP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2.1.2" data-path="../API/ISudCfg.html">
+            
+                <a href="../API/ISudCfg.html">
+            
+                    
+                    ISudCfg
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2.1.3" data-path="../API/ISudFSTAPP.html">
+            
+                <a href="../API/ISudFSTAPP.html">
+            
+                    
+                    ISudFSTAPP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2.1.4" data-path="../API/ISudFSMMG.html">
+            
+                <a href="../API/ISudFSMMG.html">
+            
+                    
+                    ISudFSMMG
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1.2.1.4.1" data-path="../API/ISudFSMMG/onGetGameCfg.html">
+            
+                <a href="../API/ISudFSMMG/onGetGameCfg.html">
+            
+                    
+                    onGetGameCfg
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2.1.4.2" data-path="../API/ISudFSMMG/onGetGameViewInfo.html">
+            
+                <a href="../API/ISudFSMMG/onGetGameViewInfo.html">
+            
+                    
+                    onGetGameViewInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2.2" data-path="../APPFST/">
+            
+                <a href="../APPFST/">
+            
+                    
+                    App FST ISudFSTAPP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1.2.2.1" data-path="../APPFST/CommonState.html">
+            
+                <a href="../APPFST/CommonState.html">
+            
+                    
+                    General state notifyStateChange
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    MG FSM ISudFSMMG
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.1.1.2.3.1" data-path="CommonStateGame.html">
+            
+                <a href="CommonStateGame.html">
+            
+                    
+                    General state - Game onGameStateChange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2.3.2" data-path="CommonStatePlayer.html">
+            
+                <a href="CommonStatePlayer.html">
+            
+                    
+                    General state - Player onPlayerStateChange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2.3.3" data-path="DrawGuess.html">
+            
+                <a href="DrawGuess.html">
+            
+                    
+                    DrawGuess
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.3" data-path="../SDK/">
+            
+                <a href="../SDK/">
+            
+                    
+                    Download the client SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.4" data-path="../Demo/">
+            
+                <a href="../Demo/">
+            
+                    
+                    Download the client demo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.5" data-path="../FAQ/">
+            
+                <a href="../FAQ/">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.6" data-path="../Languages/">
+            
+                <a href="../Languages/">
+            
+                    
+                    Multiple languages for game
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.7" data-path="../ChangeLog.html">
+            
+                <a href="../ChangeLog.html">
+            
+                    
+                    Changelog(SudMGP and Game)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../../Server/">
+            
+                <a href="../../Server/">
+            
+                    
+                    Server
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.1" data-path="../../Server/StartUp.html">
+            
+                <a href="../../Server/StartUp.html">
+            
+                    
+                    Server quick start
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.1.1" data-path="../../Server/StartUp-Java.html">
+            
+                <a href="../../Server/StartUp-Java.html">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.1.2" data-path="../../Server/StartUp-Go.html">
+            
+                <a href="../../Server/StartUp-Go.html">
+            
+                    
+                    Go
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.1.3" data-path="../../Server/StartUp-Node.html">
+            
+                <a href="../../Server/StartUp-Node.html">
+            
+                    
+                    Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.1.4" data-path="../../Server/StartUp-Dotnet.html">
+            
+                <a href="../../Server/StartUp-Dotnet.html">
+            
+                    
+                    C# .Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2" data-path="../../Server/">
+            
+                <a href="../../Server/">
+            
+                    
+                    Server documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.2.1" data-path="../../Server/API/">
+            
+                <a href="../../Server/API/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.2.1.1" data-path="../../Server/API/SudMGPAuth-Java.html">
+            
+                <a href="../../Server/API/SudMGPAuth-Java.html">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2.1.2" data-path="../../Server/API/SudMGPAuth-Go.html">
+            
+                <a href="../../Server/API/SudMGPAuth-Go.html">
+            
+                    
+                    Go
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2.1.3" data-path="../../Server/API/SudMGPAuth-Node.html">
+            
+                <a href="../../Server/API/SudMGPAuth-Node.html">
+            
+                    
+                    Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2.1.4" data-path="../../Server/API/SudMGPAuth-DotNet.html">
+            
+                <a href="../../Server/API/SudMGPAuth-DotNet.html">
+            
+                    
+                    C# .Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2.2" data-path="../../Server/HttpsCallback/">
+            
+                <a href="../../Server/HttpsCallback/">
+            
+                    
+                    HTTPS service callback
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.2.2.1" data-path="../../Server/HttpsCallback/get_sstoken.html">
+            
+                <a href="../../Server/HttpsCallback/get_sstoken.html">
+            
+                    
+                    get_sstoken
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2.2.2" data-path="../../Server/HttpsCallback/update_sstoken.html">
+            
+                <a href="../../Server/HttpsCallback/update_sstoken.html">
+            
+                    
+                    update_sstoken
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2.2.3" data-path="../../Server/HttpsCallback/get_user_info.html">
+            
+                <a href="../../Server/HttpsCallback/get_user_info.html">
+            
+                    
+                    get_user_info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2.2.4" data-path="../../Server/HttpsCallback/report_game_info.html">
+            
+                <a href="../../Server/HttpsCallback/report_game_info.html">
+            
+                    
+                    report_game_info
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3" data-path="../../Server/SDK/">
+            
+                <a href="../../Server/SDK/">
+            
+                    
+                    Download the server-end SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4" data-path="../../Server/ServerSDKAPI/">
+            
+                <a href="../../Server/ServerSDKAPI/">
+            
+                    
+                    SDK service API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.4.1" data-path="../../Server/ServerSDKAPI/ObtainTheGameList.html">
+            
+                <a href="../../Server/ServerSDKAPI/ObtainTheGameList.html">
+            
+                    
+                    Obtain the game list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.2" data-path="../../Server/ServerSDKAPI/ObtainGameInformation.html">
+            
+                <a href="../../Server/ServerSDKAPI/ObtainGameInformation.html">
+            
+                    
+                    Obtain game information
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.3" data-path="../../Server/ServerSDKAPI/ObtainTheReportInformationOfGame.html">
+            
+                <a href="../../Server/ServerSDKAPI/ObtainTheReportInformationOfGame.html">
+            
+                    
+                    Obtain the report information of game
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.4" data-path="../../Server/ServerSDKAPI/ObtainTheReportInformationOfGameByPage.html">
+            
+                <a href="../../Server/ServerSDKAPI/ObtainTheReportInformationOfGameByPage.html">
+            
+                    
+                    Obtain the report information of game by page
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.5" data-path="../../Server/ServerSDKAPI/ObtainServerEndAPIConfigurations.html">
+            
+                <a href="../../Server/ServerSDKAPI/ObtainServerEndAPIConfigurations.html">
+            
+                    
+                    Obtain server-end API configurations
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.5" data-path="../../Server/Demo/">
+            
+                <a href="../../Server/Demo/">
+            
+                    
+                    Download the server-end demo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.6" data-path="../../Server/ErrorCode.html">
+            
+                <a href="../../Server/ErrorCode.html">
+            
+                    
+                    Server error codes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.7" data-path="../../Server/Server_Change_Log.html">
+            
+                <a href="../../Server/Server_Change_Log.html">
+            
+                    
+                    Server changelog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../../nft/">
+            
+                <a href="../../../nft/">
+            
+                    
+                    NFT服务
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../../nft/Client/">
+            
+                <a href="../../../nft/Client/">
+            
+                    
+                    客户端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="../../../nft/Client/StartUp/">
+            
+                <a href="../../../nft/Client/StartUp/">
+            
+                    
+                    客户端快速接入
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1.1" data-path="../../../nft/Client/StartUp/StartUp-iOS.html">
+            
+                <a href="../../../nft/Client/StartUp/StartUp-iOS.html">
+            
+                    
+                    iOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.1.2" data-path="../../../nft/Client/StartUp/StartUp-Android.html">
+            
+                <a href="../../../nft/Client/StartUp/StartUp-Android.html">
+            
+                    
+                    Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="../../../nft/Client/Doc/">
+            
+                <a href="../../../nft/Client/Doc/">
+            
+                    
+                    客户端文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.2.1" data-path="../../../nft/Client/Doc/API/">
+            
+                <a href="../../../nft/Client/Doc/API/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.2.1.1" data-path="../../../nft/Client/Doc/API/SudNFT.html">
+            
+                <a href="../../../nft/Client/Doc/API/SudNFT.html">
+            
+                    
+                    SudNFT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="../../../nft/Client/SDK/">
+            
+                <a href="../../../nft/Client/SDK/">
+            
+                    
+                    客户端SDK下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.4" data-path="../../../nft/Client/Demo/">
+            
+                <a href="../../../nft/Client/Demo/">
+            
+                    
+                    客户端Demo下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../../nft/Server/">
+            
+                <a href="../../../nft/Server/">
+            
+                    
+                    服务端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="../../../nft/Server/GetDetails.html">
+            
+                <a href="../../../nft/Server/GetDetails.html">
+            
+                    
+                    获取已穿戴NFT详情
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >General state - Game onGameStateChange</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>#</p>
+<p><img src="../../Resource/logo.png" alt="SUD"></p>
+<h1 id="general-state---game">General state - Game</h1>
+<blockquote>
+<p>Tips</p>
+<ol>
+<li><p>The SDK ensures that states are sent from the game to the app serially.</p>
+</li>
+<li><p>After a state notification, SudMGP ensures that states are sent from the game to the app serially and caches the latest <strong>data</strong> value based on the <strong>state</strong> value for the app to proactively obtain it at anytime.</p>
+</li>
+<li><p>ISudFSMMG void onGameStateChange(ISudFSMStateHandle handle, String state, String dataJson);</p>
+</li>
+</ol>
+</blockquote>
+<h3 id="0-testing">0. Testing</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_hello_fsm
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;msg&quot;</span>: <span class="hljs-string">&quot;Hello FSM from MG!&quot;</span>
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>This state is used for testing.
+</code></pre><h3 id="1-public-screen-messages-modified">1. Public screen messages (modified)</h3>
+<ul>
+<li>Earliest version: V1.1.30.xx</li>
+<li>state</li>
+</ul>
+<pre><code>mg_common_public_message
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+        <span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-number">0</span>,
+        <span class="hljs-string">&quot;msg&quot;</span>:[
+            {
+                <span class="hljs-string">&quot;phrase&quot;</span>:<span class="hljs-number">1</span>,
+                <span class="hljs-string">&quot;text&quot;</span>:{
+                    <span class="hljs-string">&quot;default&quot;</span>:<span class="hljs-string">&quot;Player&quot;</span>,
+                    <span class="hljs-string">&quot;en-US&quot;</span>:<span class="hljs-string">&quot;Player&quot;</span>
+                }
+            },
+            {
+                <span class="hljs-string">&quot;phrase&quot;</span>:<span class="hljs-number">2</span>,
+                <span class="hljs-string">&quot;user&quot;</span>:{
+                    <span class="hljs-string">&quot;name&quot;</span>:<span class="hljs-string">&quot;User A&quot;</span>,
+                    <span class="hljs-string">&quot;uid&quot;</span>:<span class="hljs-string">&quot;0001&quot;</span>,
+                    <span class="hljs-string">&quot;color&quot;</span>:<span class="hljs-string">&quot;#00FF00&quot;</span>
+                }
+            },
+            {
+                <span class="hljs-string">&quot;phrase&quot;</span>:<span class="hljs-number">1</span>,
+                <span class="hljs-string">&quot;text&quot;</span>:{
+                    <span class="hljs-string">&quot;default&quot;</span>:<span class="hljs-string">&quot;Defeated the player&quot;</span>,
+                    <span class="hljs-string">&quot;en-US&quot;</span>:<span class="hljs-string">&quot;Defeated the player&quot;</span>
+                }
+            },
+            {
+                <span class="hljs-string">&quot;phrase&quot;</span>:<span class="hljs-number">2</span>,
+                <span class="hljs-string">&quot;user&quot;</span>:{
+                    <span class="hljs-string">&quot;name&quot;</span>:<span class="hljs-string">&quot;User B&quot;</span>,
+                    <span class="hljs-string">&quot;uid&quot;</span>:<span class="hljs-string">&quot;0002&quot;</span>,
+                    <span class="hljs-string">&quot;color&quot;</span>:<span class="hljs-string">&quot;#FF0000&quot;</span>
+                }
+            }
+        ]
+    }
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>Indicates that messages are sent to the public screen. Valid values:
+type
+0: notification
+1: reminder
+2: post-game analysis
+3: others
+msg
+
+Parameters in &lt;!-- --&gt; are escape characters.
+&lt;!--name: user nickname|uid: user ID|color: recommended color--&gt;
+name/uid/color are optional fields. When these parameters are null, the code is as follows:
+&lt;!--name:|uid:|color:--&gt;
+The SDK caches only the latest data.
+</code></pre><ul>
+<li>json</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Required</th>
+<th>Default</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">type</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Yes</td>
+<td></td>
+<td>Phrase type.</td>
+</tr>
+<tr>
+<td style="text-align:left">msg</td>
+<td style="text-align:left">json[Phrase, Phrase]</td>
+<td style="text-align:left">Yes</td>
+<td></td>
+<td>Phrase json array.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Phrase</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Required</th>
+<th>Default</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">phrase</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Yes</td>
+<td></td>
+<td>Phrase type.</td>
+</tr>
+<tr>
+<td style="text-align:left">text</td>
+<td style="text-align:left">json</td>
+<td style="text-align:left">Yes when <strong>phrase</strong> is <strong>1</strong></td>
+<td></td>
+<td>This parameter is required when <strong>phrase</strong> is <strong>1</strong>.</td>
+</tr>
+<tr>
+<td style="text-align:left">user</td>
+<td style="text-align:left">json</td>
+<td style="text-align:left">Yes when <strong>phrase</strong> is <strong>2</strong></td>
+<td></td>
+<td>This parameter is required when <strong>phrase</strong> is <strong>2</strong>.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Parameter description when <strong>phrase</strong> is <strong>1</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Required</th>
+<th>Default</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">text</td>
+<td style="text-align:left">json</td>
+<td style="text-align:left">Yes</td>
+<td></td>
+<td>Phrase type.</td>
+</tr>
+<tr>
+<td style="text-align:left">text.default</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">Yes</td>
+<td></td>
+<td>default. The default type is <strong>text</strong>.</td>
+</tr>
+<tr>
+<td style="text-align:left">text.zh-CN</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">No</td>
+<td></td>
+<td>zh-CN, text</td>
+</tr>
+<tr>
+<td style="text-align:left">text.en-US</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">No</td>
+<td></td>
+<td>en-US, text</td>
+</tr>
+<tr>
+<td style="text-align:left">text.XXXX</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">No</td>
+<td></td>
+<td>XXXX, text</td>
+</tr>
+<tr>
+<td style="text-align:left">text.XXXX</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">No</td>
+<td></td>
+<td>XXXX rule: language code(lowercase letters)-country/region code(uppercase letters)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Parameter description when <strong>phrase</strong> is <strong>2</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Required</th>
+<th>Default</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">user</td>
+<td style="text-align:left">json</td>
+<td style="text-align:left">Yes</td>
+<td></td>
+<td>This parameter is required when <strong>phrase</strong> is <strong>2</strong>.</td>
+</tr>
+<tr>
+<td style="text-align:left">name</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">Yes</td>
+<td></td>
+<td>This parameter is required when <strong>phrase</strong> is <strong>2</strong>.</td>
+</tr>
+<tr>
+<td style="text-align:left">uid</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">Yes</td>
+<td></td>
+<td>This parameter is required when <strong>phrase</strong> is <strong>2</strong>.</td>
+</tr>
+<tr>
+<td style="text-align:left">color</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">Yes</td>
+<td></td>
+<td>This parameter is required when <strong>phrase</strong> is <strong>2</strong>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-keyword">2. Keyword</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_key_word_to_hit
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;wordType&quot;</span>: <span class="hljs-string">&quot;text&quot;</span>,                       <span class="hljs-comment">// This parameter is required. Valid values: text: fuzzy match; number: exact match (required). By default, the parameter is set to text for DrawGuess and Word Guess, and number for Number Bomb.</span>
+  <span class="hljs-string">&quot;word&quot;</span>: <span class="hljs-string">&quot;Keyword&quot;</span>,                        <span class="hljs-comment">// A single keyword, compatible with earlier versions.</span>
+  <span class="hljs-string">&quot;wordList&quot;</span>: [<span class="hljs-string">&quot;Keyword 1&quot;</span>, <span class="hljs-string">&quot;Keyword 2&quot;</span>, &#x2026;],    <span class="hljs-comment">// This parameter is required and indicates the list of keywords. Multiple keywords can be entered.</span>
+<span class="hljs-string">&quot;wordLanguage &quot;</span>: <span class="hljs-string">&quot;zh-CN&quot;</span>,       <span class="hljs-comment">// This parameter is required and indicates the keyword language. The default value is zh-CN.</span>
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>Indicates the keyword state.
+</code></pre><h3 id="3-post-game">3. Post-game</h3>
+<ul>
+<li>Earliest version: V1.1.30.xx</li>
+<li>state</li>
+</ul>
+<pre><code>mg_common_game_settle
+</code></pre><ul>
+<li>data</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Required</th>
+<th>Default</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">gameMode</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Yes</td>
+<td>1</td>
+<td>Game mode. The default value is <strong>1</strong>.</td>
+</tr>
+<tr>
+<td style="text-align:left">gameRoundId</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">Yes</td>
+<td></td>
+<td>ID of this round of game.</td>
+</tr>
+<tr>
+<td style="text-align:left">results</td>
+<td style="text-align:left">PlayerResult json array</td>
+<td style="text-align:left">Yes</td>
+<td></td>
+<td>Game results of players.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>PlayerResult = {}</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Required</th>
+<th>Default</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">uid</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">Yes</td>
+<td></td>
+<td>User ID.</td>
+</tr>
+<tr>
+<td style="text-align:left">rank</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Yes</td>
+<td></td>
+<td>Player ranking, starting from 1.</td>
+</tr>
+<tr>
+<td style="text-align:left">award</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Yes</td>
+<td></td>
+<td>Award.</td>
+</tr>
+<tr>
+<td style="text-align:left">score</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Yes</td>
+<td></td>
+<td>Points.</td>
+</tr>
+<tr>
+<td style="text-align:left">isEscaped</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">No</td>
+<td></td>
+<td>Indicates whether the player has escaped. Valid values: <strong>1</strong>: escaped; <strong>0</strong>: not escaped.</td>
+</tr>
+<tr>
+<td style="text-align:left">killerId</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">No</td>
+<td></td>
+<td>ID of the player who killed other players.</td>
+</tr>
+<tr>
+<td style="text-align:left">isManaged</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Yes</td>
+<td></td>
+<td>Whether to complete the game by hosting</td>
+</tr>
+<tr>
+<td style="text-align:left">extras</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">No</td>
+<td></td>
+<td>Extended information</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;gameMode&quot;</span>: <span class="hljs-number">1</span>,                     <span class="hljs-comment">// Game mode.</span>
+    <span class="hljs-string">&quot;gameRoundId&quot;</span>: <span class="hljs-string">&quot;123&quot;</span>,            <span class="hljs-comment">// ID of this round of game.</span>
+    <span class="hljs-string">&quot;results&quot;</span>: [
+        {
+            <span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;&#x7528;&#x6237;id&quot;</span>,        <span class="hljs-comment">// User ID.</span>
+            <span class="hljs-string">&quot;rank&quot;</span>: <span class="hljs-number">1</span>,                 <span class="hljs-comment">// Player ranking, starting from 1.</span>
+            <span class="hljs-string">&quot;award&quot;</span>: <span class="hljs-number">100</span>,           <span class="hljs-comment">// Award.</span>
+            <span class="hljs-string">&quot;score&quot;</span>: <span class="hljs-number">100</span>,           <span class="hljs-comment">// Points.</span>
+            <span class="hljs-string">&quot;isEscaped&quot;</span>: <span class="hljs-number">1</span>,         <span class="hljs-comment">// Whether the player has escaped.</span>
+            <span class="hljs-string">&quot;killerId&quot;</span>: <span class="hljs-string">&quot;ID of the player who killed other players.&quot;</span> ,   <span class="hljs-comment">// ID of the player who killed himself/herself.</span>
+            <span class="hljs-string">&quot;isAI&quot;</span>: <span class="hljs-number">0</span>,               <span class="hljs-comment">// Whether is a AI player</span>
+            <span class="hljs-string">&quot;isManaged&quot;</span>: <span class="hljs-number">0</span>,         <span class="hljs-comment">// Whether to complete the game by hosting</span>
+            <span class="hljs-string">&quot;extras&quot;</span>: <span class="hljs-string">&quot;&quot;</span>            <span class="hljs-comment">// Extended information</span>
+        }
+    ]
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>Indicates the post-game state.
+</code></pre><h3 id="4-tapping-the-join-button">4. Tapping the Join button</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_self_click_join_btn
+</code></pre><ul>
+<li>data</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Required</th>
+<th>Default</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">seatIndex</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">No</td>
+<td>-1</td>
+<td>Seat number of the user in the game. This parameter is of the int type, and the value ranges from 0 to the total number of seats.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;seatIndex&quot;</span>: <span class="hljs-number">0</span>    <span class="hljs-comment">// Seat number of the user in the game. This parameter is of the int type, and the value ranges from 0 to the total number of seats. When seatIndex is -1, players take an empty seat at random. If the value of seatIndex is greater than the total number of seats, players fail to take a seat.</span>
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>Indicates that a user taps the Join button or taps the avatar to join a game.
+</code></pre><h3 id="5-tapping-the-cancel-join-button">5. Tapping the Cancel Join button</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_self_click_cancel_join_btn
+</code></pre><ul>
+<li><p>data</p>
+<pre><code class="lang-json">{
+}
+</code></pre>
+</li>
+<li><p>Description</p>
+</li>
+</ul>
+<pre><code>Indicates that a user taps the Cancel Join button.
+</code></pre><h3 id="6-tapping-the-ready-button">6. Tapping the Ready button</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_self_click_ready_btn
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>Indicates that a user taps the Ready button.
+</code></pre><h3 id="7-tapping-the-cancel-ready-button">7. Tapping the Cancel Ready button</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_self_click_cancel_ready_btn
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>Indicates that a user taps the Cancel Ready button.
+</code></pre><h3 id="8-tapping-the-start-button">8. Tapping the Start button</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_self_click_start_btn
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>Indicates that a user (captain) taps the Start button.
+</code></pre><h3 id="9-tapping-the-share-button">9. Tapping the Share button</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_self_click_share_btn
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>Indicates that a user taps the Share button.
+</code></pre><h3 id="10-gaming">10. Gaming</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_game_state
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;gameState&quot;</span>: <span class="hljs-number">0</span> <span class="hljs-comment">// The state of the game. Valid values: 0: idle state. The game is not started; 1: loading state. All players are ready. The captain taps the Start button and the game scenes are loading; 2: playing state. The game is ongoing.</span>
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>Indicates the game state.
+</code></pre><h3 id="11-tapping-the-close-button-on-the-post-game-screen-added-on-december-27-2021">11. Tapping the Close button on the post-game screen (added on December 27, 2021)</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_self_click_game_settle_close_btn
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>Indicates that a user taps the Close button on the post-game screen.
+</code></pre><h3 id="12-tapping-the-play-again-button-on-the-post-game-screen-added-on-december-27-2021">12. Tapping the Play Again button on the post-game screen (added on December 27, 2021)</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_self_click_game_settle_again_btn
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>Indicates that a user taps the Play Again button on the post-game page.
+</code></pre><h3 id="13-reporting-the-sound-list-in-a-game-added-on-december-30-2021">13. Reporting the sound list in a game (added on December 30, 2021)</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_game_sound_list
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;list&quot;</span>: [
+    {
+      <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;click&quot;</span>, <span class="hljs-comment">// Sound resource name.</span>
+      <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;https://www.xxxx/click.mp3&quot;</span>, <span class="hljs-comment">// URL of a sound resource.</span>
+      <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;mp3&quot;</span> <span class="hljs-comment">// Sound resource type.</span>
+    }
+  ]
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>Indicates that a game reports the list of all sound resources in the game.
+</code></pre><h3 id="14-notifying-the-app-layer-of-playing-sound-added-on-december-30-2021">14. Notifying the app layer of playing sound (added on December 30, 2021)</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_game_sound
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;isPlay&quot;</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">// Indicates whether to play sound. Valid values: true: sound is played; false: sound is not played.</span>
+    <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;click&quot;</span>,<span class="hljs-comment">// The name of the sound file to be played without a suffix.</span>
+    <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;mp3&quot;</span>,  <span class="hljs-comment">// Sound resource type.</span>
+    <span class="hljs-string">&quot;times&quot;</span>: <span class="hljs-number">1</span>,     <span class="hljs-comment">// Number of play times. Note: When times is 0, sound is played in a circular manner.</span>
+    <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;https://www.xxxx.xx/xxx.mp3&quot;</span> <span class="hljs-comment">// URL of a sound resource.</span>
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>Indicates that the game notifies the app layer of playing sound.
+</code></pre><h3 id="15-notifying-the-app-layer-of-playing-background-music-added-on-january-7-2022">15. Notifying the app layer of playing background music (added on January 7, 2022)</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_game_bg_music_state
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;state&quot;</span>: <span class="hljs-literal">true</span> <span class="hljs-comment">// State of the background music. Valid values: true: background music is turned on;  false: background music is turned off.</span>
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>Indicates that the game notifies the app layer of playing background music.
+</code></pre><h3 id="16-notifying-the-app-layer-of-playing-sound-effect-added-on-january-7-2022">16. Notifying the app layer of playing sound effect (added on January 7, 2022)</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_game_sound_state
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;state&quot;</span>: <span class="hljs-literal">true</span> <span class="hljs-comment">// State of the sound effect. Valid values: true: sound effect is turned on;  false: sound effect is turned off.</span>
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>Indicates that the game notifies the app layer of playing sound effect.
+</code></pre><h3 id="17-asr-enablingdisabling-voice-recognition-added-in-sudmgp-v1145xx">17. ASR (enabling/disabling voice recognition, added in SudMGP V1.1.45.xx)</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_game_asr
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;isOpen&quot;</span>: <span class="hljs-literal">true</span>, 
+  <span class="hljs-string">&quot;wordList&quot;</span>: [<span class="hljs-string">&quot;&#x5173;&#x952E;&#x8BCD;1&quot;</span>, <span class="hljs-string">&quot;&#x5173;&#x952E;&#x8BCD;2&quot;</span>], 
+  <span class="hljs-string">&quot;wordLanguage &quot;</span>: <span class="hljs-string">&quot;zh-CN&quot;</span>,
+  <span class="hljs-string">&quot;wordType&quot;</span>: <span class="hljs-string">&quot;text&quot;</span>,
+  <span class="hljs-string">&quot;isCloseConnHitted &quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-string">&quot;enableIsHit &quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-string">&quot;enableIsReturnText &quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-string">&quot;extra&quot;</span>: {}
+}
+</code></pre>
+<ul>
+<li>Description<pre><code>Indicates whether voice recognition is enabled.
+</code></pre></li>
+</ul>
+<h3 id="18-microphone-added-on-march-4-2022">18. Microphone (added on March 4, 2022)</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_self_microphone
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;isOn&quot;</span>: <span class="hljs-literal">true</span>    <span class="hljs-comment">// Indicates whether a user turns on or off the microphone. Valid values: true: the microphone is turned on, and the app enables RTC stream push; false: the microphone is turned off, and the app disables RTC stream push.</span>
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>Indicates that the game notifies the app of the microphone state.
+</code></pre><h3 id="19-headphone-receiver-and-speaker-added-on-march-4-2022">19. Headphone (receiver and speaker) (added on March 4, 2022)</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_self_headphone
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;isOn&quot;</span>: <span class="hljs-literal">true</span>    <span class="hljs-comment">// Headphone state (receiver and speaker). Valid values: true: the headset is turned on, and the app enables RTC stream push; false: the headset is turned off, and the app disables RTC stream push.</span>
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>Indicates that the game notifies the app of the headset state (receiver and speaker).
+</code></pre><h3 id="20-appcommonselfx-response-error-code&#xFF08;added-on-may-10-2022&#xFF09;">20. app_common_self_x response error code&#xFF08;added on May 10, 2022&#xFF09;</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_app_common_self_x_resp
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;state&quot;</span>: <span class="hljs-string">&quot;app_common_self_playing&quot;</span>,   <span class="hljs-comment">// Field required, refer to: https://docs.sud.tech/zh-CN/app/Client/APPFST/CommonState.html</span>
+  <span class="hljs-string">&quot;resultCode&quot;</span>: <span class="hljs-number">0</span>,    <span class="hljs-comment">// Field required&#xFF0C;refer to: https://docs.sud.tech/zh-CN/app/Server/ErrorCode.html</span>
+  <span class="hljs-string">&quot;isIn&quot;</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">// When state=app_common_self_in, the field is required</span>
+  <span class="hljs-string">&quot;isReady&quot;</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">// When state=app_common_self_ready, the field is required</span>
+  <span class="hljs-string">&quot;isPlaying&quot;</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">// When state=app_common_self_playing, the field is required</span>
+  <span class="hljs-string">&quot;reportGameInfoExtras&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-comment">// When state=app_common_self_playing, the field is required</span>
+  <span class="hljs-string">&quot;curCaptainUID&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-comment">// When state=app_common_self_captain, the field is required</span>
+  <span class="hljs-string">&quot;kickedUID&quot;</span>: <span class="hljs-string">&quot;&quot;</span> <span class="hljs-comment">//When state=app_common_self_kick, the field is required</span>
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>App Common state operation error result callback state (Note: only the resultCode != 0 is called back)
+</code></pre><h3 id="21-whether-the-game-notifies-the-app-layer-of-the-success-of-adding-the-robot-players-added-on-may-17-2022">21. Whether the game notifies the app layer of the success of adding the robot players (added on May 17, 2022)</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_game_add_ai_players
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;resultCode&quot;</span>: <span class="hljs-number">0</span>, <span class="hljs-comment">// Return code 0: successful, non-0: unsuccessful</span>
+    <span class="hljs-string">&quot;userIds&quot;</span>: [<span class="hljs-string">&quot;123&quot;</span>, ...] <span class="hljs-comment">// Successfully added to the playerid list</span>
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>Whether the game notifies the app layer to add the accompanying robot successfully
+</code></pre><h3 id="22-the-game-notifies-the-app-layer-to-add-the-current-network-connection-status-added-on-june-21-2022">22. The game notifies the app layer to add the current network connection status (added on June 21, 2022)</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_game_network_state
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;state&quot;</span>: <span class="hljs-number">1</span>,    <span class="hljs-comment">// 0:closed, 1: connected</span>
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>The game notifies the app layer to add the current network connection status
+</code></pre><h3 id="23-game-notification-app-to-get-score">23. Game notification app to get score</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_game_get_score
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+}
+</code></pre>
+<ul>
+<li>Description</li>
+</ul>
+<pre><code>Game notification app to get score
+</code></pre><h3 id="24-score-brought-in-by-game-notification-app">24. score brought in by game notification app</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_game_set_score
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;currentScore&quot;</span>: <span class="hljs-number">0</span>,    <span class="hljs-comment">// self current points</span>
+    <span class="hljs-string">&quot;addScore&quot;</span>: <span class="hljs-number">10</span>,        <span class="hljs-comment">// Recharge score</span>
+    <span class="hljs-string">&quot;totalScore&quot;</span>: <span class="hljs-number">10</span>    <span class="hljs-comment">// Total score after recharging</span>
+}
+</code></pre>
+<ul>
+<li>Description<pre><code>score brought in by game notification app
+</code></pre></li>
+</ul>
+
+      <script>
+        var pathname = window.location.pathname
+        top.postMessage({pathname},  "*"); 
+        console.log("发送页面数据完毕")
+      </script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: MG FSM ISudFSMMG">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="CommonStatePlayer.html" class="navigation navigation-next " aria-label="Next page: General state - Player onPlayerStateChange">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"General state - Game onGameStateChange","level":"1.1.1.2.3.1","depth":5,"next":{"title":"General state - Player onPlayerStateChange","level":"1.1.1.2.3.2","depth":5,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},"previous":{"title":"MG FSM ISudFSMMG","level":"1.1.1.2.3","depth":4,"path":"app/Client/MGFSM/README.md","ref":"app/Client/MGFSM/README.md","articles":[{"title":"General state - Game onGameStateChange","level":"1.1.1.2.3.1","depth":5,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},{"title":"General state - Player onPlayerStateChange","level":"1.1.1.2.3.2","depth":5,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},{"title":"DrawGuess","level":"1.1.1.2.3.3","depth":5,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page","-sharing","expandable-chapters"],"styles":{"website":"styles/website-custom.css"},"pluginsConfig":{"page":{},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en-US","gitbook":"*"},"file":{"path":"app/Client/MGFSM/CommonStateGame.md","mtime":"2022-11-01T03:50:51.720Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-11-01T04:18:27.634Z"},"basePath":"../../..","book":{"language":"en-US"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
