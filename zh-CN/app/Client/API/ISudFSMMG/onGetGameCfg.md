@@ -59,7 +59,7 @@ dataJsonResp = {
 |ui.lobby_help_btn.hide  |否  |bool |是否隐藏大厅的『帮助』按钮（false: 显示； true: 隐藏，默认为false）   |
 |ui.lobby_players  |否  |json |大厅游戏位   |
 |ui.lobby_players.custom  |否  |bool |点击大厅游戏位加入游戏（false: 游戏处理逻辑； true: 游戏只通知app按钮点击事件，不处理；默认为false）   |
-|ui.lobby_players.hide  |否  |bool |是否隐藏大厅游戏位（false: 显示； true: 隐藏，默认为false）   |
+|ui.lobby_players.hide  |否  |bool |是否隐藏大厅游戏位（false: 显示； true: 隐藏，默认为false；teenpatti和德州扑克暂不支持隐藏）   |
 |ui.lobby_player_captain_icon  |否  |json |大厅游戏位上队长标识   |
 |ui.lobby_player_captain_icon.hide  |否  |bool |是否隐藏大厅游戏位上队长标识（false: 显示； true: 隐藏，默认为false）   |
 |ui.lobby_player_kickout_icon  |否  |json |大厅游戏位上『踢人』按钮   |

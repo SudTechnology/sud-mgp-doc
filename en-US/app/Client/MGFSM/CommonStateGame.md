@@ -412,7 +412,7 @@ mg_common_self_click_game_settle_again_btn
 Indicates that a user taps the Play Again button on the post-game page.
 ```
 
-### 13. Reporting the sound list in a game (added on December 30, 2021, currently, this feature is only supported by Pong)
+### 13. Reporting the sound list in a game (added on December 30, 2021)
 
 - state
 
@@ -440,7 +440,7 @@ mg_common_game_sound_list
 Indicates that a game reports the list of all sound resources in the game.
 ```
 
-### 14. Notifying the app layer of playing sound (added on December 30, 2021, currently, this feature is only supported by Pong)
+### 14. Notifying the app layer of playing sound (added on December 30, 2021)
 
 - state
 
@@ -466,7 +466,7 @@ mg_common_game_sound
 Indicates that the game notifies the app layer of playing sound.
 ```
 
-### 15. Notifying the app layer of playing background music (added on January 7, 2022, currently, this feature is only supported by Pong)
+### 15. Notifying the app layer of playing background music (added on January 7, 2022)
 
 - state
 
@@ -488,7 +488,7 @@ mg_common_game_bg_music_state
 Indicates that the game notifies the app layer of playing background music.
 ```
 
-### 16. Notifying the app layer of playing sound effect (added on January 7, 2022, currently, this feature is only supported by Pong)
+### 16. Notifying the app layer of playing sound effect (added on January 7, 2022)
 
 - state
 

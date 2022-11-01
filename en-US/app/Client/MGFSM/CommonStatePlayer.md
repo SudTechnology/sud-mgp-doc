@@ -175,7 +175,7 @@ mg_common_player_change_seat
 Indicates that a player changes his/her game seat.
 ```
 
-### 6. Notifying the app of tapping a player's avatar (Added on February 9, 2022. Only supported by Ludo currently. This state applies only to player avatars in game scenes.)
+### 6. Notifying the app of tapping a player's avatar (Added on February 9, 2022. This state applies only to player avatars in game scenes.)
 
 - state
 
