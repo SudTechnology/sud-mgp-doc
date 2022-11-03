@@ -27,7 +27,7 @@
 |:----    |:---|:----- |-----   |
 |status |是  |string |房间状态<br/>WATING: 等待游戏开始<br/>PLAYING: 游戏中 |
 |captain_uid |是  |string |队长uid |
-|players |是  |PlayerObject数组 |游戏位玩家数组 |
+|player |是  |PlayerObject数组 |游戏位玩家数组 |
 
 ##### PlayerObject
 |参数名|必选|类型|说明|
@@ -45,7 +45,7 @@
 	"data": {
         "status": "WATING",
 		"captain_uid": "uid_1",
-		"players": [{
+		"player": [{
 		     "uid": "uid_1",
 			 "seat_index": 0,
 			 "status": "READY",

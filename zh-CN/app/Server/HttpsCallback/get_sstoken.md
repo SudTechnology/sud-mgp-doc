@@ -45,7 +45,17 @@
 |:----|:---|:-----|-----|
 |ss_token|是|string|token|
 |expire_date|是|int64|过期时间（毫秒数）|
+|user_info |否|object   |userInfoObj对象，当userInfoObj对象有数据时，小游戏服务端会采用该数据，不会调用getUserinfo接口，节省一次调用 |
 
+
+##### userInfoObj 对象说明 
+|参数名|必选|类型|说明|
+|:----|:---|:-----|-----|
+|uid|是|string|用户id|
+|nick_name|是|string|用户昵称|
+|avatar_url|是|string|用户头像url(建议使用128*128尺寸)|
+|gender|是|string|性别（female or male or "") 未知性别请填写空字符串|
+|is_ai |否|int32|0:普通用户，1:机器人（默认为0）|
 ## 正确返回示例
 
 ```json
@@ -55,7 +65,14 @@
     "sdk_error_code":0,//sdk错误码，0为成功，其他错误
     "data": {
         "ss_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMjMiLCJleHAiOjE2MzA0MTc4NjEsImFwcF9pZCI6ImFwcElEIn0.vk6cX4dGHJ-du6tKAMqy-qoD9xB_GV2Dh356cZgMQxM",
-        "expire_date": 1630417861359
+        "expire_date": 1630417861359,
+        "user_info": {
+            "uid": "1380100177150345266",
+            "nick_name": "萌萌",
+            "avatar_url": "https://icon.png?128*128",
+            "gender": "female",
+            "is_ai": 0
+    	}
     }
 }
 ```
