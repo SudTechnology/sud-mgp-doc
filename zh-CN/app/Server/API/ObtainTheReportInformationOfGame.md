@@ -114,6 +114,12 @@
 |rank |是 |int32|排名从1开始，平局排名相同 |
 |is_escaped |是 |int32|0:正常，1:逃跑 |
 |is_ai |是 |int32|0:普通用户，1:机器人 |
+|role |否 |int32|0:表示没有角色信息，玩家在游戏中的角色 [游戏role 说明](../HttpsCallback/game/GameRole.md)|
+|score |否 |int32|玩家当前局得到的分数 |
+|is_win |否 |int32|结果 0:表示没有信息，1:输，2:赢，3:平局|
+|award |否 |int32|奖励 |
+|extras |否 |string|扩展参数[扩展说明](game/GameExtras.md)|
+|is_managed |否 |int32|是否托管 0:未托管 1:托管 |
 
 ## 返回示例
 
