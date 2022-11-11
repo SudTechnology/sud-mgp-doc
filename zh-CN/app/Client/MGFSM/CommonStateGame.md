@@ -149,7 +149,8 @@ mg_common_key_word_to_hit
 {
   "wordType": "text",   					// 必填字段；text:文本包含匹配; number:数字等于匹配(必填字段)；默认:text（你画我猜、你说我猜）；数字炸弹填number；
   "word": "关键", 					   // 单个关键词，兼容老版本
-  "wordList"：["关键词1"，"关键词2"，…],	// 必填字段；关键词列表，可以传送多个关键词
+  "realWord": "关键词",
+  "wordList": ["关键词1", "关键词2", …],	// 必填字段；关键词列表，可以传送多个关键词
 "wordLanguage ": "zh-CN", 	  // 必填字段；关键词语言，默认:zh-CN；
 }
 ```

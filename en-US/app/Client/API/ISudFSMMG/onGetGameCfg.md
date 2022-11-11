@@ -120,7 +120,7 @@ dataJsonResp = {
 |ui.logo  |No  |json | the logo in lobby   |
 |ui.logo.hide  |No  |bool |Whether to hide the logo in lobby (false: display; true: hide, default to false)  |
 |ui.game_players  |No  |json |Players seat in game   |
-|ui.game_players  |NO  |bool |Whether to hide the Players seat in game (false: display; true: hide, default is false)  |
+|ui.game_players  |NO  |bool |Whether to hide the Players seat in game (false: display; true: hide, default is false, Currently supported by DrawAndGuess only.)  |
 
 
 ### Response parameters

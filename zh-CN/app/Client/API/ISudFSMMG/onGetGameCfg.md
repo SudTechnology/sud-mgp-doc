@@ -120,7 +120,7 @@ dataJsonResp = {
 |ui.logo  |否  |json |大厅中的logo   |
 |ui.logo.hide  |否  |bool |是否隐藏大厅中的logo（false: 不隐藏； true: 隐藏，默认为false）   |
 |ui.game_players  |否  |json |游戏中的游戏位   |
-|ui.game_players  |否  |bool |是否隐藏游戏中的游戏位（false: 不隐藏； true: 隐藏，默认为false）   |
+|ui.game_players  |否  |bool |是否隐藏游戏中的游戏位（false: 不隐藏； true: 隐藏，默认为false，暂时只支持你画我猜）   |
 
 
 ### 返回示例

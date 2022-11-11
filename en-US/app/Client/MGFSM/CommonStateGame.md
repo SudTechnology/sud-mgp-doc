@@ -150,6 +150,7 @@ mg_common_key_word_to_hit
 {
   "wordType": "text",   					// This parameter is required. Valid values: text: fuzzy match; number: exact match (required). By default, the parameter is set to text for DrawGuess and Word Guess, and number for Number Bomb.
   "word": "Keyword", 					   // A single keyword, compatible with earlier versions.
+  "realWord": "关键词",					    //	A single keyword			
   "wordList": ["Keyword 1", "Keyword 2", …],	// This parameter is required and indicates the list of keywords. Multiple keywords can be entered.
 "wordLanguage ": "zh-CN", 	  // This parameter is required and indicates the keyword language. The default value is zh-CN.
 }
