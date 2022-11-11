@@ -1883,6 +1883,132 @@ The SDK caches only the latest data.
 <li>Description<pre><code>score brought in by game notification app
 </code></pre></li>
 </ul>
+<h3 id="25-create-order-in-game">25. create order in game</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_game_create_order
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;cmd&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,         <span class="hljs-comment">// triggered actions, such as rewards, purchases, etc</span>
+    <span class="hljs-string">&quot;fromUid&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,     <span class="hljs-comment">// from uid</span>
+    <span class="hljs-string">&quot;toUid&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,     <span class="hljs-comment">// target uid</span>
+    <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-number">123</span>,     <span class="hljs-comment">// value</span>
+    <span class="hljs-string">&quot;payload&quot;</span>: <span class="hljs-string">&quot;{}&quot;</span>, <span class="hljs-comment">// extended data json string, special optional</span>
+}
+</code></pre>
+<ul>
+<li>cmd &#x4E8B;&#x4EF6;&#x6570;&#x636E;&#x53C2;&#x6570;&#x5BF9;&#x5E94;&#x8868;</li>
+</ul>
+<p>1.Texas Poker Pro, Games ID=1557194155570024449</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">cmd</th>
+<th style="text-align:left">value</th>
+<th style="text-align:left">cmd (payload)</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">add_score</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">add score</td>
+</tr>
+</tbody>
+</table>
+<p>2.TeenPati Pro, Games ID=1557194487352053761</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">cmd</th>
+<th style="text-align:left">value</th>
+<th style="text-align:left">cmd (payload)</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">add_score</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">add score</td>
+</tr>
+</tbody>
+</table>
+<p>3.Space wolf kill, Games ID=1559736844916183041</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">cmd</th>
+<th style="text-align:left">value</th>
+<th style="text-align:left">cmd (payload)</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">reward</td>
+<td style="text-align:left">1 //0.5 ticket<br>2 //1 ticket<br>3 //1.5 ticket<br>4 //2 ticket<br>5 //2.5 ticket<br>6 //3 ticket<br>7 //3.5 ticket<br>8 //4 ticket<br>9 //4.5 ticket<br>10 //5 ticket</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">reward</td>
+</tr>
+</tbody>
+</table>
+<p>4.were wolf, Games ID=1472142747708284929</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">cmd</th>
+<th style="text-align:left">value</th>
+<th style="text-align:left">cmd (payload)</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">use_role</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">{&quot;role_id&quot;: 1</td>
+<td style="text-align:left"></td>
+<td>2</td>
+<td></td>
+<td>3</td>
+<td></td>
+<td>4</td>
+<td></td>
+<td>5</td>
+<td></td>
+<td>6 }</td>
+<td>&#x62A2;&#x89D2;&#x8272;</td>
+</tr>
+</tbody>
+</table>
+<p>role_id (1: wolf, 2: farmer, 3: prophet, 4: witch, 5: hunter, 6: guard)</p>
+<ul>
+<li>description</li>
+</ul>
+<pre><code>create order
+</code></pre><h3 id="26-game-notification-app-player-role-only-valid-for-werewolf-killing">26. Game notification app player role (only valid for werewolf killing)</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_player_role_id
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;playersRoleId&quot;</span>: [{<span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;id&quot;</span>, <span class="hljs-string">&quot;roleId&quot;</span>: <span class="hljs-number">1</span> }, {<span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;id&quot;</span>, <span class="hljs-string">&quot;roleId&quot;</span>: <span class="hljs-number">1</span>}],     <span class="hljs-comment">// roleId (1: wolf, 2: farmer, 3: prophet, 4: witch, 5: hunter, 6: guard)</span>
+}
+</code></pre>
+<ul>
+<li>description<pre><code>notification app player role
+</code></pre></li>
+</ul>
 
       <script>
         var pathname = window.location.pathname
@@ -1931,7 +2057,7 @@ The SDK caches only the latest data.
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"General state - Game onGameStateChange","level":"1.1.1.2.3.1","depth":5,"next":{"title":"General state - Player onPlayerStateChange","level":"1.1.1.2.3.2","depth":5,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},"previous":{"title":"MG FSM ISudFSMMG","level":"1.1.1.2.3","depth":4,"path":"app/Client/MGFSM/README.md","ref":"app/Client/MGFSM/README.md","articles":[{"title":"General state - Game onGameStateChange","level":"1.1.1.2.3.1","depth":5,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},{"title":"General state - Player onPlayerStateChange","level":"1.1.1.2.3.2","depth":5,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},{"title":"DrawGuess","level":"1.1.1.2.3.3","depth":5,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page","-sharing","expandable-chapters"],"styles":{"website":"styles/website-custom.css"},"pluginsConfig":{"page":{},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en-US","gitbook":"*"},"file":{"path":"app/Client/MGFSM/CommonStateGame.md","mtime":"2022-11-01T03:50:51.720Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-11-04T07:46:02.538Z"},"basePath":"../../..","book":{"language":"en-US"}});
+            gitbook.page.hasChanged({"page":{"title":"General state - Game onGameStateChange","level":"1.1.1.2.3.1","depth":5,"next":{"title":"General state - Player onPlayerStateChange","level":"1.1.1.2.3.2","depth":5,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},"previous":{"title":"MG FSM ISudFSMMG","level":"1.1.1.2.3","depth":4,"path":"app/Client/MGFSM/README.md","ref":"app/Client/MGFSM/README.md","articles":[{"title":"General state - Game onGameStateChange","level":"1.1.1.2.3.1","depth":5,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},{"title":"General state - Player onPlayerStateChange","level":"1.1.1.2.3.2","depth":5,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},{"title":"DrawGuess","level":"1.1.1.2.3.3","depth":5,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page","-sharing","expandable-chapters"],"styles":{"website":"styles/website-custom.css"},"pluginsConfig":{"page":{},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en-US","gitbook":"*"},"file":{"path":"app/Client/MGFSM/CommonStateGame.md","mtime":"2022-11-11T03:31:12.094Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-11-11T03:39:10.723Z"},"basePath":"../../..","book":{"language":"en-US"}});
         });
     </script>
 </div>

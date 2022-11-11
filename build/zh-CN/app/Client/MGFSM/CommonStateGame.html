@@ -2412,6 +2412,132 @@ SDK&#x4EC5;&#x4F1A;&#x7F13;&#x5B58;&#x6700;&#x65B0;&#x4E00;&#x6761;&#x3002;
 <li>&#x8BF4;&#x660E;<pre><code>&#x6E38;&#x620F;&#x901A;&#x77E5;app&#x5E26;&#x5165;&#x79EF;&#x5206;
 </code></pre></li>
 </ul>
+<h3 id="25-&#x521B;&#x5EFA;&#x8BA2;&#x5355;">25. &#x521B;&#x5EFA;&#x8BA2;&#x5355;</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_game_create_order
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;cmd&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,         <span class="hljs-comment">// &#x89E6;&#x53D1;&#x7684;&#x884C;&#x4E3A;&#x52A8;&#x4F5C;&#xFF0C;&#x6BD4;&#x5982;&#x6253;&#x8D4F;&#xFF0C;&#x8D2D;&#x4E70;&#x7B49;</span>
+    <span class="hljs-string">&quot;fromUid&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,     <span class="hljs-comment">// &#x4ED8;&#x8D39;&#x7528;&#x6237;uid</span>
+    <span class="hljs-string">&quot;toUid&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,     <span class="hljs-comment">// &#x76EE;&#x6807;&#x7528;&#x6237;uid</span>
+    <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-number">123</span>,     <span class="hljs-comment">// &#x6240;&#x5C5E;&#x7684;&#x6E38;&#x620F;&#x4EF7;&#x503C;</span>
+    <span class="hljs-string">&quot;payload&quot;</span>: <span class="hljs-string">&quot;{}&quot;</span>, <span class="hljs-comment">// &#x6269;&#x5C55;&#x6570;&#x636E; json &#x5B57;&#x7B26;&#x4E32;, &#x7279;&#x6B8A;&#x53EF;&#x9009;</span>
+}
+</code></pre>
+<ul>
+<li>cmd &#x4E8B;&#x4EF6;&#x6570;&#x636E;&#x53C2;&#x6570;&#x5BF9;&#x5E94;&#x8868;</li>
+</ul>
+<p>1.&#x5FB7;&#x5DDE;&#x6251;&#x514B;&#x4E13;&#x4E1A;&#x7248;&#xFF0C;&#x6E38;&#x620F;ID=1557194155570024449</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">cmd</th>
+<th style="text-align:left">value</th>
+<th style="text-align:left">cmd&#x9644;&#x52A0;&#x6570;&#x636E;(payload)</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">add_score</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">&#x5E26;&#x5165;&#x79EF;&#x5206;</td>
+</tr>
+</tbody>
+</table>
+<p>2.TeenPatti&#x4E13;&#x4E1A;&#x7248;&#xFF0C;&#x6E38;&#x620F;ID=1557194487352053761</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">cmd</th>
+<th style="text-align:left">value</th>
+<th style="text-align:left">cmd&#x9644;&#x52A0;&#x6570;&#x636E;(payload)</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">add_score</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">&#x5E26;&#x5165;&#x79EF;&#x5206;</td>
+</tr>
+</tbody>
+</table>
+<p>3.&#x592A;&#x7A7A;&#x6740;&#xFF0C;&#x6E38;&#x620F;ID=1559736844916183041</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">cmd</th>
+<th style="text-align:left">value</th>
+<th style="text-align:left">cmd&#x9644;&#x52A0;&#x6570;&#x636E;(payload)</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">reward</td>
+<td style="text-align:left">1 //0.5&#x7968;<br>2 //1&#x7968;<br>3 //1.5&#x7968;<br>4 //2&#x7968;<br>5 //2.5&#x7968;<br>6 //3&#x7968;<br>7 //3.5&#x7968;<br>8 //4&#x7968;<br>9 //4.5&#x7968;<br>10 //5&#x7968;</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">&#x6253;&#x8D4F;</td>
+</tr>
+</tbody>
+</table>
+<p>4.&#x72FC;&#x4EBA;&#x6740;&#xFF0C;&#x6E38;&#x620F;ID=1472142747708284929</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">cmd</th>
+<th style="text-align:left">value</th>
+<th style="text-align:left">cmd&#x9644;&#x52A0;&#x6570;&#x636E;(payload)</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">use_role</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">{&quot;role_id&quot;: 1</td>
+<td style="text-align:left"></td>
+<td>2</td>
+<td></td>
+<td>3</td>
+<td></td>
+<td>4</td>
+<td></td>
+<td>5</td>
+<td></td>
+<td>6 }</td>
+<td>&#x62A2;&#x89D2;&#x8272;</td>
+</tr>
+</tbody>
+</table>
+<p>role_id &#x8BF4;&#x660E;&#xFF08;1&#xFF1A;&#x72FC;&#x4EBA;&#xFF0C;2&#xFF1A;&#x6751;&#x6C11;&#xFF0C;3&#xFF1A;&#x9884;&#x8A00;&#x5BB6;&#xFF0C;4&#xFF1A;&#x5973;&#x5DEB;&#xFF0C;5&#xFF1A;&#x730E;&#x4EBA;&#xFF0C;6&#xFF1A;&#x5B88;&#x536B;&#xFF09;</p>
+<ul>
+<li>&#x8BF4;&#x660E;</li>
+</ul>
+<pre><code>&#x521B;&#x5EFA;&#x8BA2;&#x5355;
+</code></pre><h3 id="26-&#x6E38;&#x620F;&#x901A;&#x77E5;app&#x73A9;&#x5BB6;&#x89D2;&#x8272;&#x4EC5;&#x5BF9;&#x72FC;&#x4EBA;&#x6740;&#x6709;&#x6548;">26. &#x6E38;&#x620F;&#x901A;&#x77E5;app&#x73A9;&#x5BB6;&#x89D2;&#x8272;(&#x4EC5;&#x5BF9;&#x72FC;&#x4EBA;&#x6740;&#x6709;&#x6548;)</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>mg_common_player_role_id
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;playersRoleId&quot;</span>: [{<span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;&#x73A9;&#x5BB6;id&quot;</span>, <span class="hljs-string">&quot;roleId&quot;</span>: <span class="hljs-number">1</span> }, {<span class="hljs-string">&quot;uid&quot;</span>: <span class="hljs-string">&quot;&#x73A9;&#x5BB6;id&quot;</span>, <span class="hljs-string">&quot;roleId&quot;</span>: <span class="hljs-number">1</span>}],     <span class="hljs-comment">// roleId: (0:&#x4E0D;&#x77E5;&#x9053;&#xFF0C;1&#x72FC;&#x4EBA;&#xFF0C;2&#x6751;&#x6C11;&#xFF0C;3&#x9884;&#x8A00;&#x5BB6;&#xFF0C;4&#x5973;&#x5DEB;&#xFF0C;5&#x730E;&#x4EBA;, 6&#x5B88;&#x536B;)</span>
+}
+</code></pre>
+<ul>
+<li>&#x8BF4;&#x660E;<pre><code>&#x6E38;&#x620F;&#x901A;&#x77E5;app&#x73A9;&#x5BB6;&#x89D2;&#x8272;
+</code></pre></li>
+</ul>
 
       <script>
         var pathname = window.location.pathname
@@ -2460,7 +2586,7 @@ SDK&#x4EC5;&#x4F1A;&#x7F13;&#x5B58;&#x6700;&#x65B0;&#x4E00;&#x6761;&#x3002;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"通用状态-游戏 onGameStateChange","level":"1.1.1.2.3.1","depth":5,"next":{"title":"通用状态-玩家 onPlayerStateChange","level":"1.1.1.2.3.2","depth":5,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},"previous":{"title":"MG状态机 ISudFSMMG","level":"1.1.1.2.3","depth":4,"path":"app/Client/MGFSM/README.md","ref":"app/Client/MGFSM/README.md","articles":[{"title":"通用状态-游戏 onGameStateChange","level":"1.1.1.2.3.1","depth":5,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},{"title":"通用状态-玩家 onPlayerStateChange","level":"1.1.1.2.3.2","depth":5,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},{"title":"你画我猜","level":"1.1.1.2.3.3","depth":5,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]},{"title":"元宇宙砂砂舞","level":"1.1.1.2.3.4","depth":5,"path":"app/Client/MGFSM/Disco.md","ref":"app/Client/MGFSM/Disco.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page","-sharing","expandable-chapters"],"styles":{"website":"styles/website-custom.css"},"pluginsConfig":{"page":{},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Client/MGFSM/CommonStateGame.md","mtime":"2022-11-01T03:50:51.721Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-11-04T07:46:02.538Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
+            gitbook.page.hasChanged({"page":{"title":"通用状态-游戏 onGameStateChange","level":"1.1.1.2.3.1","depth":5,"next":{"title":"通用状态-玩家 onPlayerStateChange","level":"1.1.1.2.3.2","depth":5,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},"previous":{"title":"MG状态机 ISudFSMMG","level":"1.1.1.2.3","depth":4,"path":"app/Client/MGFSM/README.md","ref":"app/Client/MGFSM/README.md","articles":[{"title":"通用状态-游戏 onGameStateChange","level":"1.1.1.2.3.1","depth":5,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},{"title":"通用状态-玩家 onPlayerStateChange","level":"1.1.1.2.3.2","depth":5,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},{"title":"你画我猜","level":"1.1.1.2.3.3","depth":5,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]},{"title":"元宇宙砂砂舞","level":"1.1.1.2.3.4","depth":5,"path":"app/Client/MGFSM/Disco.md","ref":"app/Client/MGFSM/Disco.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page","-sharing","expandable-chapters"],"styles":{"website":"styles/website-custom.css"},"pluginsConfig":{"page":{},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Client/MGFSM/CommonStateGame.md","mtime":"2022-11-11T03:31:12.095Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-11-11T03:39:10.723Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
         });
     </script>
 </div>
