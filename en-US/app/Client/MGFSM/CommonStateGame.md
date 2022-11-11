@@ -700,3 +700,76 @@ mg_common_game_set_score
 ```
 score brought in by game notification app
 ```
+
+### 25. create order in game
+
+- state
+
+```
+mg_common_game_create_order
+```
+
+- data
+
+```json
+{
+	"cmd": "",	     // triggered actions, such as rewards, purchases, etc
+	"fromUid": "",	 // from uid
+	"toUid": "",	 // target uid
+	"value": 123,	 // value
+	"payload": "{}", // extended data json string, special optional
+}
+```
+
+- cmd 事件数据参数对应表
+
+1.Texas Poker Pro, Games ID=1557194155570024449
+
+|cmd|value|cmd (payload)|description|
+|:----|:---|:---|:-----|
+|add_score ||| add score| 
+
+2.TeenPati Pro, Games ID=1557194487352053761
+
+|cmd|value|cmd (payload)|description|
+|:----|:---|:---|:-----|
+|add_score ||| add score| 
+
+3.Space wolf kill, Games ID=1559736844916183041
+
+|cmd|value|cmd (payload)|description|
+|:----|:---|:---|:-----|
+|reward |1 //0.5 ticket<br/>2 //1 ticket<br/>3 //1.5 ticket<br/>4 //2 ticket<br/>5 //2.5 ticket<br/>6 //3 ticket<br/>7 //3.5 ticket<br/>8 //4 ticket<br/>9 //4.5 ticket<br/>10 //5 ticket|| reward| 
+
+4.were wolf, Games ID=1472142747708284929
+
+|cmd|value|cmd (payload)|description|
+|:----|:---|:---|:-----|
+|use_role ||{"role_id": 1 || 2 || 3 || 4 || 5 || 6 }| 抢角色|
+role_id (1: wolf, 2: farmer, 3: prophet, 4: witch, 5: hunter, 6: guard)
+- description
+
+```
+create order
+```
+
+### 26. Game notification app player role (only valid for werewolf killing)
+
+- state
+
+```
+mg_common_player_role_id
+```
+
+- data
+
+```json
+{
+	"playersRoleId": [{"uid": "id", "roleId": 1 }, {"uid": "id", "roleId": 1}], 	// roleId (1: wolf, 2: farmer, 3: prophet, 4: witch, 5: hunter, 6: guard)
+}
+```
+
+- description
+```
+notification app player role
+```

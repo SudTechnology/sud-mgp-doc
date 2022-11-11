@@ -118,7 +118,9 @@ dataJsonResp = {
 |ui.umo_icon  |No  |json |UMO icon in the upper right corner of animation and avatar in the game  |
 |ui.umo_icon.hide  |No  |bool |Whether to hide the UMO icon in the upper right corner of the animation and avatar in the game and change it to UNO (false: do not hide, still show UMO; true: hide, change to show UNO, default to false)  |
 |ui.logo  |No  |json | the logo in lobby   |
-|ui.logo.hide  |No  |bool |Whether to hide the logo in lobby（false: display; true: hide, default to false）   |
+|ui.logo.hide  |No  |bool |Whether to hide the logo in lobby (false: display; true: hide, default to false)  |
+|ui.game_players  |No  |json |Players seat in game   |
+|ui.game_players  |NO  |bool |Whether to hide the Players seat in game (false: display; true: hide, default is false)  |
 
 
 ### Response parameters
@@ -222,19 +224,22 @@ dataJsonResp = {
         "game_selected_tips": {
             "hide": false
         },
-        "ui.nft_avatar": {
+        "nft_avatar": {
             "hide": true
         },
-        "ui.game_opening": {
+        "game_opening": {
             "hide": true
         },
-        "ui.game_mvp": {
+        "game_mvp": {
             "hide": true
         },
-        "ui.umo_icon": {
+        "umo_icon": {
             "hide": false
         },
-        "ui.logo": {
+        "logo": {
+            "hide": false
+        },
+        "game_players": {
             "hide": false
         }
     }

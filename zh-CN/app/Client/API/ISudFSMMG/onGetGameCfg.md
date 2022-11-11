@@ -119,6 +119,8 @@ dataJsonResp = {
 |ui.umo_icon.hide  |否  |bool |是否隐藏游戏中动画和头像右上角的UMO图标并改为UNO（false: 不隐藏，依然显示UMO； true: 隐藏，改为显示UNO，默认为false）   |
 |ui.logo  |否  |json |大厅中的logo   |
 |ui.logo.hide  |否  |bool |是否隐藏大厅中的logo（false: 不隐藏； true: 隐藏，默认为false）   |
+|ui.game_players  |否  |json |游戏中的游戏位   |
+|ui.game_players  |否  |bool |是否隐藏游戏中的游戏位（false: 不隐藏； true: 隐藏，默认为false）   |
 
 
 ### 返回示例
@@ -222,19 +224,22 @@ dataJsonResp = {
         "game_selected_tips": {
             "hide": false
         },
-        "ui.nft_avatar": {
+        "nft_avatar": {
             "hide": true
         },
-        "ui.game_opening": {
+        "game_opening": {
             "hide": true
         },
-        "ui.game_mvp": {
+        "game_mvp": {
             "hide": true
         },
-        "ui.umo_icon": {
+        "umo_icon": {
             "hide": false
         },
-        "ui.logo": {
+        "logo": {
+            "hide": false
+        },
+        "game_players": {
             "hide": false
         }
     }
