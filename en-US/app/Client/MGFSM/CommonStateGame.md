@@ -525,6 +525,7 @@ mg_common_game_asr
 {
   "isOpen": true, 
   "wordList": ["关键词1", "关键词2"], 
+  "realWord": "关键词",
   "wordLanguage ": "zh-CN",
   "wordType": "text",
   "isCloseConnHitted ": true,

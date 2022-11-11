@@ -519,6 +519,7 @@ mg_common_game_asr
 {
   "isOpen": true, // true:打开语音识别 false:关闭语音识别
   "wordList": ["关键词1", "关键词2"], // 必填字段；关键词列表，可以传送多个关键词
+  "realWord": "关键词",               // 必填字段；关键词
   "wordLanguage ": "zh-CN", // 必填字段；关键词语言，默认:zh-CN(老版本游戏可能没有)；透传
   "wordType": "text", // 必填字段；text:文本包含匹配; number:数字等于匹配(必填字段)；默认:text(老版本游戏可能没有)；数字炸弹填number；透传
   "isCloseConnHitted ": true, // 必填字段；关闭语音识别的方式。false: 关闭Seesion不断开连接；true:关闭Session断开连接；isOpen为true时，为命中关键字时的关闭方式，默认:true(老版本游戏可能没有)；透传
