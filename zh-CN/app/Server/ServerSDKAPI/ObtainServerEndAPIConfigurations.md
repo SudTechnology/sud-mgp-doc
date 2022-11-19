@@ -102,11 +102,12 @@ function main() {
 | change_game | string | 切换游戏接口地址（服务端使用） |
 | disconnect  | string | 销毁连接接口地址（服务端使用） |
 
-#### NFT API
+#### web3 API
 
-| 参数名         | 类型     | 说明                     |
-|:------------|:-------|------------------------|
-| get_details | string | 获取已穿戴的NFT详情接口地址（服务端使用） |
+| 参数名             | 类型     | 说明                       |
+|:----------------|:-------|--------------------------|
+| get_details     | string | 获取已穿戴的NFT详情接口地址（服务端使用）   |
+| refresh_details | string | 刷新已穿戴的NFT详情令牌接口地址（服务端使用） |
 
 ## 返回示例
 
@@ -130,7 +131,8 @@ function main() {
     "disconnect": ""
   },
   "web3_api": {
-    "get_nft_details": ""
+    "get_nft_details": "",
+    "refresh_details": ""
   }
 }
 ```
