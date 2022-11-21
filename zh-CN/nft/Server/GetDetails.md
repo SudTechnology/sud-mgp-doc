@@ -19,10 +19,10 @@
 
 ## 请求头
 
-| Header Name     | Header Value                                                                                               |
-|:----------------|:-----------------------------------------------------------------------------------------------------------|
-| `Authorization` | `Sud-Auth <params>`，参考：[认证请求头Authorization实现方式](../../app/Server/ServerSDKAPI/AuthorizationDescription.md) |
-| `RequestId`     | 唯一请求id                                                                                                     |
+| Header Name     | Header Value                                                                                      |
+|:----------------|:--------------------------------------------------------------------------------------------------|
+| `Authorization` | `Sud-Auth <params>`，参考：[认证请求头Authorization实现方式](../../app/Server/API/AuthorizationDescription.md) |
+| `RequestId`     | 唯一请求id                                                                                            |
 
 ## 请求参数
 
