@@ -1,5 +1,3 @@
-#
-
 ![SUD](../../app/Resource/logo.png)
 
 ## 介绍
@@ -21,9 +19,10 @@
 
 ## 请求头
 
-| Header Name     | Header Value                                                                                               |
-|:----------------|:-----------------------------------------------------------------------------------------------------------|
+| Header Name     | Header Value                                                                                      |
+|:----------------|:--------------------------------------------------------------------------------------------------|
 | `Authorization` | `Sud-Auth <params>`，参考：[认证请求头Authorization实现方式](../../app/Server/API/AuthorizationDescription.md) |
+| `RequestId`     | 唯一请求id                                                                                            |
 
 ## 请求参数
 
@@ -32,7 +31,7 @@
 | user_id            | 是   | string       | 用户id         |
 | nft_details_tokens | 是   | array string | nft详情token列表 |
 
-# 请求示例
+## 请求示例
 
 ```json
 {
@@ -44,7 +43,7 @@
 }
 ```
 
-# 返回参数
+## 返回参数
 
 - BaseResp
 
@@ -69,3 +68,23 @@
 | chain_type       | 否   | int64  | 链网类型      |
 | contract_address | 否   | string | 合约地址      |
 | token_id         | 否   | string | nft token |
+
+## 返回示例
+
+```json
+{
+    "ret_code": 0,
+    "ret_msg": "success",
+    "data": {
+        "nft_details_map": {
+			"xxx" : {
+				"media_type": 1,
+				"rich_media_url" : "xxx",
+				"chain_type": 1,
+				"contract_address": "xxx",
+				"token_id": "xxx"
+			}
+		}
+    }
+}
+```
