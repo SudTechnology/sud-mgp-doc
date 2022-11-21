@@ -85,6 +85,7 @@
 |is_win |否 |int32|结果 0:表示没有信息，1:输，2:赢，3:平局|
 |award |否 |int32|奖励 |
 |extras |否 |string|扩展参数[扩展说明](game/GameExtras.md)|
+|is_managed |否 |int32|是否托管 0:未托管 1:托管 |
 
 ## game_start 请求示例 
 ```json

@@ -358,7 +358,7 @@ app_common_open_vibrate
 A user turns on or off the vibration effect.
 ```
 
-### 14. Volume level (added on December 31, 2021 and currently supported by Pong)
+### 14. Volume level (added on December 31, 2021)
 
 - state
 
@@ -436,7 +436,7 @@ app_common_game_add_ai_players
 add AI players in the game
 ```
 
-### 17. After receiving the game disconnect notification, the app notifies the game to retry the connection (added on June 21, 2022, Ludo is temporarily supported)
+### 17. After receiving the game disconnect notification, the app notifies the game to retry the connection (added on June 21, 2022)
 
 - state
 
@@ -456,4 +456,26 @@ app_common_game_reconnect
 
 ```
 Notify game to retry connection
+```
+
+### 18. The app returns the player's current score
+
+- state
+
+```
+app_common_game_score
+```
+
+- data
+
+```json
+{
+	"score": 10	//  player's current score
+}
+```
+
+- 说明
+
+```
+The app returns the player's current score
 ```

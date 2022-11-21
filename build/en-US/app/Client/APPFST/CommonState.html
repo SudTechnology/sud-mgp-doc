@@ -1367,7 +1367,7 @@ Restore the keyword hitting state when the keyword in the game is updated.
 <li>Description</li>
 </ul>
 <pre><code>A user turns on or off the vibration effect.
-</code></pre><h3 id="14-volume-level-added-on-december-31-2021-and-currently-supported-by-pong">14. Volume level (added on December 31, 2021 and currently supported by Pong)</h3>
+</code></pre><h3 id="14-volume-level-added-on-december-31-2021">14. Volume level (added on December 31, 2021)</h3>
 <ul>
 <li>state</li>
 </ul>
@@ -1427,7 +1427,7 @@ Restore the keyword hitting state when the keyword in the game is updated.
 <li>Description</li>
 </ul>
 <pre><code>add AI players in the game
-</code></pre><h3 id="17-after-receiving-the-game-disconnect-notification-the-app-notifies-the-game-to-retry-the-connection-added-on-june-21-2022-ludo-is-temporarily-supported">17. After receiving the game disconnect notification, the app notifies the game to retry the connection (added on June 21, 2022, Ludo is temporarily supported)</h3>
+</code></pre><h3 id="17-after-receiving-the-game-disconnect-notification-the-app-notifies-the-game-to-retry-the-connection-added-on-june-21-2022">17. After receiving the game disconnect notification, the app notifies the game to retry the connection (added on June 21, 2022)</h3>
 <ul>
 <li>state</li>
 </ul>
@@ -1443,6 +1443,22 @@ Restore the keyword hitting state when the keyword in the game is updated.
 <li>Description</li>
 </ul>
 <pre><code>Notify game to retry connection
+</code></pre><h3 id="18-the-app-returns-the-players-current-score">18. The app returns the player&apos;s current score</h3>
+<ul>
+<li>state</li>
+</ul>
+<pre><code>app_common_game_score
+</code></pre><ul>
+<li>data</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;score&quot;</span>: <span class="hljs-number">10</span>    <span class="hljs-comment">//  player&apos;s current score</span>
+}
+</code></pre>
+<ul>
+<li>&#x8BF4;&#x660E;</li>
+</ul>
+<pre><code>The app returns the player&apos;s current score
 </code></pre>
       <script>
         var pathname = window.location.pathname
@@ -1491,7 +1507,7 @@ Restore the keyword hitting state when the keyword in the game is updated.
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"General state notifyStateChange","level":"1.1.1.2.2.1","depth":5,"next":{"title":"MG FSM ISudFSMMG","level":"1.1.1.2.3","depth":4,"path":"app/Client/MGFSM/README.md","ref":"app/Client/MGFSM/README.md","articles":[{"title":"General state - Game onGameStateChange","level":"1.1.1.2.3.1","depth":5,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},{"title":"General state - Player onPlayerStateChange","level":"1.1.1.2.3.2","depth":5,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},{"title":"DrawGuess","level":"1.1.1.2.3.3","depth":5,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]}]},"previous":{"title":"App FST ISudFSTAPP","level":"1.1.1.2.2","depth":4,"path":"app/Client/APPFST/README.md","ref":"app/Client/APPFST/README.md","articles":[{"title":"General state notifyStateChange","level":"1.1.1.2.2.1","depth":5,"path":"app/Client/APPFST/CommonState.md","ref":"app/Client/APPFST/CommonState.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page","-sharing","expandable-chapters"],"styles":{"website":"styles/website-custom.css"},"pluginsConfig":{"page":{},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en-US","gitbook":"*"},"file":{"path":"app/Client/APPFST/CommonState.md","mtime":"2022-09-26T08:32:25.649Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-28T03:41:59.052Z"},"basePath":"../../..","book":{"language":"en-US"}});
+            gitbook.page.hasChanged({"page":{"title":"General state notifyStateChange","level":"1.1.1.2.2.1","depth":5,"next":{"title":"MG FSM ISudFSMMG","level":"1.1.1.2.3","depth":4,"path":"app/Client/MGFSM/README.md","ref":"app/Client/MGFSM/README.md","articles":[{"title":"General state - Game onGameStateChange","level":"1.1.1.2.3.1","depth":5,"path":"app/Client/MGFSM/CommonStateGame.md","ref":"app/Client/MGFSM/CommonStateGame.md","articles":[]},{"title":"General state - Player onPlayerStateChange","level":"1.1.1.2.3.2","depth":5,"path":"app/Client/MGFSM/CommonStatePlayer.md","ref":"app/Client/MGFSM/CommonStatePlayer.md","articles":[]},{"title":"DrawGuess","level":"1.1.1.2.3.3","depth":5,"path":"app/Client/MGFSM/DrawGuess.md","ref":"app/Client/MGFSM/DrawGuess.md","articles":[]}]},"previous":{"title":"App FST ISudFSTAPP","level":"1.1.1.2.2","depth":4,"path":"app/Client/APPFST/README.md","ref":"app/Client/APPFST/README.md","articles":[{"title":"General state notifyStateChange","level":"1.1.1.2.2.1","depth":5,"path":"app/Client/APPFST/CommonState.md","ref":"app/Client/APPFST/CommonState.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page","-sharing","expandable-chapters"],"styles":{"website":"styles/website-custom.css"},"pluginsConfig":{"page":{},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en-US","gitbook":"*"},"file":{"path":"app/Client/APPFST/CommonState.md","mtime":"2022-11-01T03:50:51.720Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-11-11T06:28:48.964Z"},"basePath":"../../..","book":{"language":"en-US"}});
         });
     </script>
 </div>

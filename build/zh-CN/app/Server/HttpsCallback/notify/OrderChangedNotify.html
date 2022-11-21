@@ -1,0 +1,1938 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>订单状态变更通知 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../../styles/website-custom.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../CallbackSignatureVerify.html" />
+    
+    
+    <link rel="prev" href="UserSettleNotify.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    SudMGP互动小游戏接入平台文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../../../Client/">
+            
+                <a href="../../../Client/">
+            
+                    
+                    客户端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1.1" data-path="../../../Client/StartUp.html">
+            
+                <a href="../../../Client/StartUp.html">
+            
+                    
+                    客户端快速接入
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1.1.1" data-path="../../../Client/StartUp-iOS.html">
+            
+                <a href="../../../Client/StartUp-iOS.html">
+            
+                    
+                    iOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.1.2" data-path="../../../Client/StartUp-Android.html">
+            
+                <a href="../../../Client/StartUp-Android.html">
+            
+                    
+                    Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.1.3" data-path="../../../Client/StartUp-Web.html">
+            
+                <a href="../../../Client/StartUp-Web.html">
+            
+                    
+                    Web
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2" data-path="../../../Client/">
+            
+                <a href="../../../Client/">
+            
+                    
+                    客户端文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1.2.1" data-path="../../../Client/API/">
+            
+                <a href="../../../Client/API/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1.2.1.1" data-path="../../../Client/API/SudMGP.html">
+            
+                <a href="../../../Client/API/SudMGP.html">
+            
+                    
+                    SudMGP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2.1.2" data-path="../../../Client/API/ISudCfg.html">
+            
+                <a href="../../../Client/API/ISudCfg.html">
+            
+                    
+                    ISudCfg
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2.1.3" data-path="../../../Client/API/ISudFSTAPP.html">
+            
+                <a href="../../../Client/API/ISudFSTAPP.html">
+            
+                    
+                    ISudFSTAPP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2.1.4" data-path="../../../Client/API/ISudFSMMG.html">
+            
+                <a href="../../../Client/API/ISudFSMMG.html">
+            
+                    
+                    ISudFSMMG
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1.2.1.4.1" data-path="../../../Client/API/ISudFSMMG/onGetGameCfg.html">
+            
+                <a href="../../../Client/API/ISudFSMMG/onGetGameCfg.html">
+            
+                    
+                    onGetGameCfg
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2.1.4.2" data-path="../../../Client/API/ISudFSMMG/onGetGameViewInfo.html">
+            
+                <a href="../../../Client/API/ISudFSMMG/onGetGameViewInfo.html">
+            
+                    
+                    onGetGameViewInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2.2" data-path="../../../Client/APPFST/">
+            
+                <a href="../../../Client/APPFST/">
+            
+                    
+                    APP状态转换器 ISudFSTAPP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1.2.2.1" data-path="../../../Client/APPFST/CommonState.html">
+            
+                <a href="../../../Client/APPFST/CommonState.html">
+            
+                    
+                    通用状态 notifyStateChange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2.2.2" data-path="../../../Client/APPFST/CommonStateForDisco.html">
+            
+                <a href="../../../Client/APPFST/CommonStateForDisco.html">
+            
+                    
+                    元宇宙砂砂舞 notifyStateChange
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2.3" data-path="../../../Client/MGFSM/">
+            
+                <a href="../../../Client/MGFSM/">
+            
+                    
+                    MG状态机 ISudFSMMG
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1.2.3.1" data-path="../../../Client/MGFSM/CommonStateGame.html">
+            
+                <a href="../../../Client/MGFSM/CommonStateGame.html">
+            
+                    
+                    通用状态-游戏 onGameStateChange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2.3.2" data-path="../../../Client/MGFSM/CommonStatePlayer.html">
+            
+                <a href="../../../Client/MGFSM/CommonStatePlayer.html">
+            
+                    
+                    通用状态-玩家 onPlayerStateChange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2.3.3" data-path="../../../Client/MGFSM/DrawGuess.html">
+            
+                <a href="../../../Client/MGFSM/DrawGuess.html">
+            
+                    
+                    你画我猜
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2.3.4" data-path="../../../Client/MGFSM/Disco.html">
+            
+                <a href="../../../Client/MGFSM/Disco.html">
+            
+                    
+                    元宇宙砂砂舞
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.3" data-path="../../../Client/SDK/">
+            
+                <a href="../../../Client/SDK/">
+            
+                    
+                    客户端SDK下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.4" data-path="../../../Client/Demo/">
+            
+                <a href="../../../Client/Demo/">
+            
+                    
+                    客户端Demo下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.5" data-path="../../../Client/FAQ/">
+            
+                <a href="../../../Client/FAQ/">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.6" data-path="../../../Client/Languages/">
+            
+                <a href="../../../Client/Languages/">
+            
+                    
+                    游戏多语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.7" data-path="../../../Client/ChangeLog.html">
+            
+                <a href="../../../Client/ChangeLog.html">
+            
+                    
+                    更新日志(SudMGP和游戏)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    服务端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.1" data-path="../../StartUp.html">
+            
+                <a href="../../StartUp.html">
+            
+                    
+                    快速接入
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.1.1" data-path="../../StartUp-Java.html">
+            
+                <a href="../../StartUp-Java.html">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.1.2" data-path="../../StartUp-Go.html">
+            
+                <a href="../../StartUp-Go.html">
+            
+                    
+                    Go
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.1.3" data-path="../../StartUp-Node.html">
+            
+                <a href="../../StartUp-Node.html">
+            
+                    
+                    Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.1.4" data-path="../../StartUp-Dotnet.html">
+            
+                <a href="../../StartUp-Dotnet.html">
+            
+                    
+                    C#.Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2" data-path="../../SDK/">
+            
+                <a href="../../SDK/">
+            
+                    
+                    SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.2.1" data-path="../../SDK/SudMGPAuth-Java.html">
+            
+                <a href="../../SDK/SudMGPAuth-Java.html">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2.2" data-path="../../SDK/SudMGPAuth-Go.html">
+            
+                <a href="../../SDK/SudMGPAuth-Go.html">
+            
+                    
+                    Go
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2.3" data-path="../../SDK/SudMGPAuth-Node.html">
+            
+                <a href="../../SDK/SudMGPAuth-Node.html">
+            
+                    
+                    Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2.4" data-path="../../SDK/SudMGPAuth-Dotnet.html">
+            
+                <a href="../../SDK/SudMGPAuth-Dotnet.html">
+            
+                    
+                    C#.Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Https服务回调
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.3.1" data-path="../get_sstoken.html">
+            
+                <a href="../get_sstoken.html">
+            
+                    
+                    get_sstoken
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.2" data-path="../update_sstoken.html">
+            
+                <a href="../update_sstoken.html">
+            
+                    
+                    update_sstoken
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.3" data-path="../get_user_info.html">
+            
+                <a href="../get_user_info.html">
+            
+                    
+                    get_user_info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.4" data-path="../report_game_info.html">
+            
+                <a href="../report_game_info.html">
+            
+                    
+                    report_game_info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    消息通知
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.3.5.1" data-path="RoomUsersChangedNotify.html">
+            
+                <a href="RoomUsersChangedNotify.html">
+            
+                    
+                    房间用户变更通知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.5.2" data-path="MatchSettleNotify.html">
+            
+                <a href="MatchSettleNotify.html">
+            
+                    
+                    单场游戏结算通知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.5.3" data-path="UserSettleNotify.html">
+            
+                <a href="UserSettleNotify.html">
+            
+                    
+                    用户结算通知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.2.3.5.4" data-path="OrderChangedNotify.html">
+            
+                <a href="OrderChangedNotify.html">
+            
+                    
+                    订单状态变更通知
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.6" data-path="../CallbackSignatureVerify.html">
+            
+                <a href="../CallbackSignatureVerify.html">
+            
+                    
+                    回调验签说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.7" data-path="../game/">
+            
+                <a href="../game/">
+            
+                    
+                    游戏扩展信息说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.3.7.1" data-path="../game/GameRole.html">
+            
+                <a href="../game/GameRole.html">
+            
+                    
+                    角色说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.7.2" data-path="../game/GameExtras.html">
+            
+                <a href="../game/GameExtras.html">
+            
+                    
+                    扩展字段说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4" data-path="../../API/">
+            
+                <a href="../../API/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.4.1" data-path="../../API/AuthorizationDescription.html">
+            
+                <a href="../../API/AuthorizationDescription.html">
+            
+                    
+                    认证请求头Authorization实现方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.2" data-path="../../API/ObtainServerEndAPIConfigurations.html">
+            
+                <a href="../../API/ObtainServerEndAPIConfigurations.html">
+            
+                    
+                    获取服务端接口API配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.3" data-path="../../API/ObtainTheGameList.html">
+            
+                <a href="../../API/ObtainTheGameList.html">
+            
+                    
+                    获取游戏列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.4" data-path="../../API/ObtainGameInformation.html">
+            
+                <a href="../../API/ObtainGameInformation.html">
+            
+                    
+                    获取游戏信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.5" data-path="../../API/ObtainTheReportInformationOfGame.html">
+            
+                <a href="../../API/ObtainTheReportInformationOfGame.html">
+            
+                    
+                    获取游戏上报信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.6" data-path="../../API/QueryGameReportInformation.html">
+            
+                <a href="../../API/QueryGameReportInformation.html">
+            
+                    
+                    查询游戏上报信息（新）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.7" data-path="../../API/ObtainTheReportInformationOfGameByPage.html">
+            
+                <a href="../../API/ObtainTheReportInformationOfGameByPage.html">
+            
+                    
+                    分页获取房间内游戏上报信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.8" data-path="../../API/PushEventToMgServer.html">
+            
+                <a href="../../API/PushEventToMgServer.html">
+            
+                    
+                    推送事件到游戏服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.9" data-path="../../API/PushEventData/">
+            
+                <a href="../../API/PushEventData/">
+            
+                    
+                    推送事件列表
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.4.9.1" data-path="../../API/PushEventData/UserInReqData.html">
+            
+                <a href="../../API/PushEventData/UserInReqData.html">
+            
+                    
+                    用户加入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.9.2" data-path="../../API/PushEventData/UserOutReqData.html">
+            
+                <a href="../../API/PushEventData/UserOutReqData.html">
+            
+                    
+                    用户退出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.9.3" data-path="../../API/PushEventData/UserReadyReqData.html">
+            
+                <a href="../../API/PushEventData/UserReadyReqData.html">
+            
+                    
+                    用户准备/取消准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.9.4" data-path="../../API/PushEventData/GameStartReqData.html">
+            
+                <a href="../../API/PushEventData/GameStartReqData.html">
+            
+                    
+                    游戏开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.9.5" data-path="../../API/PushEventData/CaptainChangeReqData.html">
+            
+                <a href="../../API/PushEventData/CaptainChangeReqData.html">
+            
+                    
+                    队长更换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.9.6" data-path="../../API/PushEventData/UserKickReqData.html">
+            
+                <a href="../../API/PushEventData/UserKickReqData.html">
+            
+                    
+                    用户踢人
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.9.7" data-path="../../API/PushEventData/GameEndReqData.html">
+            
+                <a href="../../API/PushEventData/GameEndReqData.html">
+            
+                    
+                    游戏结束
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.9.8" data-path="../../API/PushEventData/GameSettingReqData.html">
+            
+                <a href="../../API/PushEventData/GameSettingReqData.html">
+            
+                    
+                    游戏玩法设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.9.9" data-path="../../API/PushEventData/AiAddReqData.html">
+            
+                <a href="../../API/PushEventData/AiAddReqData.html">
+            
+                    
+                    加入AI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.9.10" data-path="../../API/PushEventData/RoomInfoReqData.html">
+            
+                <a href="../../API/PushEventData/RoomInfoReqData.html">
+            
+                    
+                    获取房间座位列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.9.11" data-path="../../API/PushEventData/QuickStartReqData.html">
+            
+                <a href="../../API/PushEventData/QuickStartReqData.html">
+            
+                    
+                    快速开始游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.9.12" data-path="../../API/PushEventData/RoomClearReqData.html">
+            
+                <a href="../../API/PushEventData/RoomClearReqData.html">
+            
+                    
+                    房间清理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.10" data-path="../../API/CreateOrder.html">
+            
+                <a href="../../API/CreateOrder.html">
+            
+                    
+                    游戏内付费下单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.11" data-path="../../API/QueryMatchBase.html">
+            
+                <a href="../../API/QueryMatchBase.html">
+            
+                    
+                    查询单场游戏基础信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.12" data-path="../../API/QueryMatchRoundIds.html">
+            
+                <a href="../../API/QueryMatchRoundIds.html">
+            
+                    
+                    查询单场游戏内的所有局id
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.13" data-path="../../API/QueryOrder.html">
+            
+                <a href="../../API/QueryOrder.html">
+            
+                    
+                    查询订单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.14" data-path="../../API/QueryUserSettle.html">
+            
+                <a href="../../API/QueryUserSettle.html">
+            
+                    
+                    查询用户结算信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.15" data-path="../../API/ReportAmountOfCurrencyConsumedInEachGameRound.html">
+            
+                <a href="../../API/ReportAmountOfCurrencyConsumedInEachGameRound.html">
+            
+                    
+                    服务端上报每局游戏消耗的货币信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.16" data-path="../../API/BulletAPI/">
+            
+                <a href="../../API/BulletAPI/">
+            
+                    
+                    弹幕游戏服务端API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.4.16.1" data-path="../../API/BulletAPI/BulletConnect.html">
+            
+                <a href="../../API/BulletAPI/BulletConnect.html">
+            
+                    
+                    创建连接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.16.2" data-path="../../API/BulletAPI/BulletDisconnect.html">
+            
+                <a href="../../API/BulletAPI/BulletDisconnect.html">
+            
+                    
+                    断开连接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.16.3" data-path="../../API/BulletAPI/BulletChangeGame.html">
+            
+                <a href="../../API/BulletAPI/BulletChangeGame.html">
+            
+                    
+                    切换游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.16.4" data-path="../../API/BulletAPI/BulletOperate.html">
+            
+                <a href="../../API/BulletAPI/BulletOperate.html">
+            
+                    
+                    操作游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.16.5" data-path="../../API/BulletAPI/BulletOpData/">
+            
+                <a href="../../API/BulletAPI/BulletOpData/">
+            
+                    
+                    操作码/操作数据对应表
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.4.16.5.1" data-path="../../API/BulletAPI/BulletOpData/BulletGift.html">
+            
+                <a href="../../API/BulletAPI/BulletOpData/BulletGift.html">
+            
+                    
+                    礼物
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4.16.5.2" data-path="../../API/BulletAPI/BulletOpData/BulletComment.html">
+            
+                <a href="../../API/BulletAPI/BulletOpData/BulletComment.html">
+            
+                    
+                    弹幕
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.5" data-path="../../Demo/">
+            
+                <a href="../../Demo/">
+            
+                    
+                    服务端Demo下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.6" data-path="../../ErrorCode.html">
+            
+                <a href="../../ErrorCode.html">
+            
+                    
+                    错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.7" data-path="../../ImplementAuthenticationByYourself.html">
+            
+                <a href="../../ImplementAuthenticationByYourself.html">
+            
+                    
+                    自行实现鉴权方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.8" data-path="../../Server_Change_Log.html">
+            
+                <a href="../../Server_Change_Log.html">
+            
+                    
+                    服务端更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../../nft/">
+            
+                <a href="../../../../nft/">
+            
+                    
+                    NFT服务
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../../nft/Client/">
+            
+                <a href="../../../../nft/Client/">
+            
+                    
+                    客户端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../../../nft/Client/StartUp/">
+            
+                <a href="../../../../nft/Client/StartUp/">
+            
+                    
+                    客户端快速接入
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1.1" data-path="../../../../nft/Client/StartUp/StartUp-iOS.html">
+            
+                <a href="../../../../nft/Client/StartUp/StartUp-iOS.html">
+            
+                    
+                    iOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.2" data-path="../../../../nft/Client/StartUp/StartUp-Android.html">
+            
+                <a href="../../../../nft/Client/StartUp/StartUp-Android.html">
+            
+                    
+                    Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../../../nft/Client/Doc/">
+            
+                <a href="../../../../nft/Client/Doc/">
+            
+                    
+                    客户端文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.2.1" data-path="../../../../nft/Client/Doc/API/">
+            
+                <a href="../../../../nft/Client/Doc/API/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.2.1.1" data-path="../../../../nft/Client/Doc/API/SudNFT.html">
+            
+                <a href="../../../../nft/Client/Doc/API/SudNFT.html">
+            
+                    
+                    SudNFT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../../../../nft/Client/SDK/">
+            
+                <a href="../../../../nft/Client/SDK/">
+            
+                    
+                    客户端SDK下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../../../../nft/Client/Demo/">
+            
+                <a href="../../../../nft/Client/Demo/">
+            
+                    
+                    客户端Demo下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../../nft/Server/">
+            
+                <a href="../../../../nft/Server/">
+            
+                    
+                    服务端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../../../nft/Server/GetDetails.html">
+            
+                <a href="../../../../nft/Server/GetDetails.html">
+            
+                    
+                    获取已穿戴NFT详情
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >订单状态变更通知</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>#</p>
+<p><img src="../../../Resource/logo.png" alt="SUD"></p>
+<h4 id="&#x7B80;&#x8981;&#x63CF;&#x8FF0;">&#x7B80;&#x8981;&#x63CF;&#x8FF0;</h4>
+<ul>
+<li>&#x8BA2;&#x5355;&#x72B6;&#x6001;&#x53D8;&#x66F4;&#x901A;&#x77E5;</li>
+</ul>
+<h4 id="&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;">&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;</h4>
+<ul>
+<li>https</li>
+<li>POST</li>
+<li>&#x53C2;&#x6570;&#x4E3A;Json&#x683C;&#x5F0F;&#xFF0C;&#x653E;&#x5728;body&#x5185;</li>
+</ul>
+<h4 id="&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#xFF08;&#x53EF;&#x80FD;&#x4F1A;&#x65B0;&#x589E;&#x52A0;&#x5B57;&#x6BB5;&#xFF0C;&#x8BF7;&#x670D;&#x52A1;&#x7AEF;&#x4FDD;&#x6301;&#x65B0;&#x589E;&#x52A0;&#x5B57;&#x6BB5;&#x517C;&#x5BB9;&#x6027;&#xFF09;">&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#xFF08;&#x53EF;&#x80FD;&#x4F1A;&#x65B0;&#x589E;&#x52A0;&#x5B57;&#x6BB5;&#xFF0C;&#x8BF7;&#x670D;&#x52A1;&#x7AEF;&#x4FDD;&#x6301;&#x65B0;&#x589E;&#x52A0;&#x5B57;&#x6BB5;&#x517C;&#x5BB9;&#x6027;&#xFF09;</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+<th>&#x793A;&#x4F8B;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">notify_id</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x901A;&#x77E5;ID</td>
+<td>0795d77f85789da0eb387a5096</td>
+</tr>
+<tr>
+<td style="text-align:left">notify_time</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x901A;&#x77E5;&#x65F6;&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x65F6;&#x95F4;&#x6233;&#xFF08;&#x6BEB;&#x79D2;&#xFF09;</td>
+<td>1647834452408</td>
+</tr>
+<tr>
+<td style="text-align:left">app_id</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x6D88;&#x606F;&#x63A5;&#x6536;&#x65B9;&#x7684;&#x5E94;&#x7528;id</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">notify_event</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x901A;&#x77E5;&#x4E8B;&#x4EF6;</td>
+<td>sud.mg.merchant.order.changed</td>
+</tr>
+<tr>
+<td style="text-align:left">data</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">OrderChangedModel</td>
+<td>&#x901A;&#x77E5;&#x6570;&#x636E;</td>
+<td>{}</td>
+</tr>
+</tbody>
+</table>
+<h5 id="orderchangedmodel">OrderChangedModel</h5>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+<th>&#x793A;&#x4F8B;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">order_id</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>SUD &#x8BA2;&#x5355;&#x53F7;</td>
+<td>1659497694888</td>
+</tr>
+<tr>
+<td style="text-align:left">out_order_id</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x5546;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x552F;&#x4E00;&#x8BA2;&#x5355;&#x53F7;</td>
+<td>1659497694000</td>
+</tr>
+<tr>
+<td style="text-align:left">out_group_id</td>
+<td style="text-align:left">&#x5426;</td>
+<td style="text-align:left">string</td>
+<td>&#x5546;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x8BA2;&#x5355;&#x7EC4;id</td>
+<td>1659497694</td>
+</tr>
+<tr>
+<td style="text-align:left">mg_id</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x6E38;&#x620F;id</td>
+<td>14615640800525066</td>
+</tr>
+<tr>
+<td style="text-align:left">room_id</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x623F;&#x95F4;id</td>
+<td>9009</td>
+</tr>
+<tr>
+<td style="text-align:left">round_id</td>
+<td style="text-align:left">&#x5426;</td>
+<td style="text-align:left">string</td>
+<td>&#x8BA2;&#x5355;&#x5173;&#x8054;&#x7684;&#x6E38;&#x620F;&#x5C40;id</td>
+<td>ce56b6lzi1a7</td>
+</tr>
+<tr>
+<td style="text-align:left">cmd</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x89E6;&#x53D1;&#x7684;&#x884C;&#x4E3A;&#x52A8;&#x4F5C;</td>
+<td>test</td>
+</tr>
+<tr>
+<td style="text-align:left">from_uid</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x4ED8;&#x8D39;&#x7528;&#x6237;uid</td>
+<td>u001</td>
+</tr>
+<tr>
+<td style="text-align:left">to_uid</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x76EE;&#x6807;&#x7528;&#x6237;uid</td>
+<td>u002</td>
+</tr>
+<tr>
+<td style="text-align:left">value</td>
+<td style="text-align:left">&#x5426;</td>
+<td style="text-align:left">int32</td>
+<td>&#x6240;&#x5C5E;&#x7684;&#x6E38;&#x620F;&#x4EF7;&#x503C;</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">seq</td>
+<td style="text-align:left">&#x5426;</td>
+<td style="text-align:left">int32</td>
+<td>&#x5E8F;&#x5217;&#x53F7; (&#x9ED8;&#x8BA4;&#xFF1A;0) &#x6E38;&#x620F;&#x4E2D;&#x5BF9;&#x65F6;&#x5E8F;&#x6709;&#x8981;&#x6C42;&#x65F6;&#x4F7F;&#x7528;</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">payload</td>
+<td style="text-align:left">&#x7279;&#x6B8A;&#x53EF;&#x9009;</td>
+<td style="text-align:left">json</td>
+<td>&#x9644;&#x52A0;&#x6570;&#x636E;</td>
+<td><br></td>
+</tr>
+<tr>
+<td style="text-align:left">status</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x8BA2;&#x5355;&#x72B6;&#x6001;: <br> CREATED (&#x8BA2;&#x5355;&#x521B;&#x5EFA;&#x5B8C;&#x6210;&#xFF0C;&#x5F85;&#x6267;&#x884C;)&#xFF0C; EXECUTING (&#x6267;&#x884C;&#x4E2D;)&#xFF0C;EXECUTE_FAIL (&#x6267;&#x884C;&#x5931;&#x8D25;)&#xFF0C; EXECUTE_SUCCESS (&#x6267;&#x884C;&#x6210;&#x529F;)</td>
+<td>EXECUTE_SUCCESS</td>
+</tr>
+</tbody>
+</table>
+<h5 id="&#x6D88;&#x606F;&#x9A8C;&#x7B7E;">&#x6D88;&#x606F;&#x9A8C;&#x7B7E;</h5>
+<p><a href="../CallbackSignatureVerify.html">&#x9A8C;&#x7B7E;</a></p>
+<h4 id="&#x8BF7;&#x6C42;&#x793A;&#x4F8B;">&#x8BF7;&#x6C42;&#x793A;&#x4F8B;</h4>
+<pre><code>{
+    &quot;notify_id&quot;: &quot;0795d77f85789da0eb387a50964993a3eba1fedfec2b12f729861392a9b5ad04&quot;,
+    &quot;notify_time&quot;: &quot;1647844976502&quot;,
+    &quot;app_id&quot;: &quot;14615640800525066&quot;,
+    &quot;notify_event&quot;: &quot;sud.mg.merchant.order.changed&quot;,
+    &quot;data&quot;: {
+        &quot;order_id&quot;: &quot;1659497694888&quot;,
+        &quot;out_order_id&quot;: &quot;1659497694000&quot;,
+        &quot;out_group_id&quot;: &quot;1659497694&quot;,
+        &quot;mg_id&quot;: &quot;mgid01&quot;
+        &quot;room_id&quot;: &quot;9009&quot;,
+        &quot;round_id&quot;: &quot;ce56b6lzi1a7-cqhcr6fgdnwg-c5vfwwj9h6mz&quot;,
+        &quot;cmd&quot;: &quot;test&quot;,
+        &quot;from_uid&quot;: &quot;001&quot;,
+        &quot;to_uid&quot;: &quot;002&quot;
+        &quot;value&quot;: 1,
+        &quot;seq&quot;: 0,
+        &quot;payload&quot;: {
+            &quot;score&quot;: 1
+        }
+        &quot;status&quot;: &quot;EXECUTE_SUCCESS&quot;
+    }
+}
+</code></pre><h4 id="&#x901A;&#x77E5;&#x5E94;&#x7B54;">&#x901A;&#x77E5;&#x5E94;&#x7B54;</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9009;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+<th>&#x793A;&#x4F8B;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ret_code</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">int32</td>
+<td>&#x8FD4;&#x56DE;&#x72B6;&#x6001;&#x7801;, 0&#x4E3A;&#x6D88;&#x606F;&#x901A;&#x77E5;&#x6210;&#x529F;&#xFF0C;&#x5176;&#x4ED6;&#x9519;&#x8BEF;&#x7801;&#x4E3A;&#x5931;&#x8D25;</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">ret_msg</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x8FD4;&#x56DE;&#x6D88;&#x606F;</td>
+<td>SUCCESS</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x5E94;&#x7B54;&#x793A;&#x4F8B;">&#x5E94;&#x7B54;&#x793A;&#x4F8B;</h4>
+<pre><code>{
+    &quot;ret_code&quot;: 0,
+    &quot;ret_msg&quot;: &quot;SUCCESS&quot;,
+}
+</code></pre>
+      <script>
+        var pathname = window.location.pathname
+        top.postMessage({pathname},  "*"); 
+        console.log("发送页面数据完毕")
+      </script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="UserSettleNotify.html" class="navigation navigation-prev " aria-label="Previous page: 用户结算通知">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../CallbackSignatureVerify.html" class="navigation navigation-next " aria-label="Next page: 回调验签说明">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"订单状态变更通知","level":"1.1.2.3.5.4","depth":5,"next":{"title":"回调验签说明","level":"1.1.2.3.6","depth":4,"path":"app/Server/HttpsCallback/CallbackSignatureVerify.md","ref":"app/Server/HttpsCallback/CallbackSignatureVerify.md","articles":[]},"previous":{"title":"用户结算通知","level":"1.1.2.3.5.3","depth":5,"path":"app/Server/HttpsCallback/notify/UserSettleNotify.md","ref":"app/Server/HttpsCallback/notify/UserSettleNotify.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page","-sharing","expandable-chapters"],"styles":{"website":"styles/website-custom.css"},"pluginsConfig":{"page":{},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Server/HttpsCallback/notify/OrderChangedNotify.md","mtime":"2022-10-12T08:01:42.897Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-11-11T06:28:48.964Z"},"basePath":"../../../..","book":{"language":"zh-CN"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

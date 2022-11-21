@@ -150,6 +150,7 @@ mg_common_key_word_to_hit
 {
   "wordType": "text",   					// This parameter is required. Valid values: text: fuzzy match; number: exact match (required). By default, the parameter is set to text for DrawGuess and Word Guess, and number for Number Bomb.
   "word": "Keyword", 					   // A single keyword, compatible with earlier versions.
+  "realWord": "关键词",					    //	A single keyword			
   "wordList": ["Keyword 1", "Keyword 2", …],	// This parameter is required and indicates the list of keywords. Multiple keywords can be entered.
 "wordLanguage ": "zh-CN", 	  // This parameter is required and indicates the keyword language. The default value is zh-CN.
 }
@@ -412,7 +413,7 @@ mg_common_self_click_game_settle_again_btn
 Indicates that a user taps the Play Again button on the post-game page.
 ```
 
-### 13. Reporting the sound list in a game (added on December 30, 2021, currently, this feature is only supported by Pong)
+### 13. Reporting the sound list in a game (added on December 30, 2021)
 
 - state
 
@@ -440,7 +441,7 @@ mg_common_game_sound_list
 Indicates that a game reports the list of all sound resources in the game.
 ```
 
-### 14. Notifying the app layer of playing sound (added on December 30, 2021, currently, this feature is only supported by Pong)
+### 14. Notifying the app layer of playing sound (added on December 30, 2021)
 
 - state
 
@@ -466,7 +467,7 @@ mg_common_game_sound
 Indicates that the game notifies the app layer of playing sound.
 ```
 
-### 15. Notifying the app layer of playing background music (added on January 7, 2022, currently, this feature is only supported by Pong)
+### 15. Notifying the app layer of playing background music (added on January 7, 2022)
 
 - state
 
@@ -488,7 +489,7 @@ mg_common_game_bg_music_state
 Indicates that the game notifies the app layer of playing background music.
 ```
 
-### 16. Notifying the app layer of playing sound effect (added on January 7, 2022, currently, this feature is only supported by Pong)
+### 16. Notifying the app layer of playing sound effect (added on January 7, 2022)
 
 - state
 
@@ -524,6 +525,7 @@ mg_common_game_asr
 {
   "isOpen": true, 
   "wordList": ["关键词1", "关键词2"], 
+  "realWord": "关键词",
   "wordLanguage ": "zh-CN",
   "wordType": "text",
   "isCloseConnHitted ": true,
@@ -654,4 +656,122 @@ mg_common_game_network_state
 
 ```
 The game notifies the app layer to add the current network connection status
+```
+
+
+### 23. Game notification app to get score
+
+- state
+
+```
+mg_common_game_get_score
+```
+
+- data
+
+```json
+{
+}
+```
+
+- Description
+
+```
+Game notification app to get score
+```
+
+### 24. score brought in by game notification app
+
+- state
+
+```
+mg_common_game_set_score
+```
+
+- data
+
+```json
+{
+	"currentScore": 0,	// self current points
+	"addScore": 10,		// Recharge score
+	"totalScore": 10	// Total score after recharging
+}
+```
+
+- Description
+```
+score brought in by game notification app
+```
+
+### 25. create order in game
+
+- state
+
+```
+mg_common_game_create_order
+```
+
+- data
+
+```json
+{
+	"cmd": "",	     // triggered actions, such as rewards, purchases, etc
+	"fromUid": "",	 // from uid
+	"toUid": "",	 // target uid
+	"value": 123,	 // value
+	"payload": "{}", // extended data json string, special optional
+}
+```
+
+- cmd 事件数据参数对应表
+
+1.Texas Poker Pro, Games ID=1557194155570024449
+
+|cmd|value|cmd (payload)|description|
+|:----|:---|:---|:-----|
+|add_score ||| add score| 
+
+2.TeenPati Pro, Games ID=1557194487352053761
+
+|cmd|value|cmd (payload)|description|
+|:----|:---|:---|:-----|
+|add_score ||| add score| 
+
+3.Space wolf kill, Games ID=1559736844916183041
+
+|cmd|value|cmd (payload)|description|
+|:----|:---|:---|:-----|
+|reward |1 //0.5 ticket<br/>2 //1 ticket<br/>3 //1.5 ticket<br/>4 //2 ticket<br/>5 //2.5 ticket<br/>6 //3 ticket<br/>7 //3.5 ticket<br/>8 //4 ticket<br/>9 //4.5 ticket<br/>10 //5 ticket|| reward| 
+
+4.were wolf, Games ID=1472142747708284929
+
+|cmd|value|cmd (payload)|description|
+|:----|:---|:---|:-----|
+|use_role ||{"role_id": 1 || 2 || 3 || 4 || 5 || 6 }| 抢角色|
+role_id (1: wolf, 2: farmer, 3: prophet, 4: witch, 5: hunter, 6: guard)
+- description
+
+```
+create order
+```
+
+### 26. Game notification app player role (only valid for werewolf killing)
+
+- state
+
+```
+mg_common_player_role_id
+```
+
+- data
+
+```json
+{
+	"playersRoleId": [{"uid": "id", "roleId": 1 }, {"uid": "id", "roleId": 1}], 	// roleId (1: wolf, 2: farmer, 3: prophet, 4: witch, 5: hunter, 6: guard)
+}
+```
+
+- description
+```
+notification app player role
 ```

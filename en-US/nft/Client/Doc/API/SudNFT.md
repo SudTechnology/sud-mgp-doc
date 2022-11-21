@@ -67,6 +67,13 @@ public class SudNFT {
      * @param listener 回调
      */
     public static void removeNFTCredentialsToken(SudNFTRemoveCredentialsTokenParamModel model, ISudNFTListenerRemoveNFTCredentialsToken listener);
+
+    /**
+     * 刷新钱包token
+     * @param model    参数
+     * @param listener 回调
+     */
+    public static void refreshWalletToken(SudNFTRefreshWalletTokenParamModel model, ISudNFTListenerRefreshWalletToken listener);
     // endregion 国外钱包接口
 
     // region 国内钱包接口
@@ -111,6 +118,14 @@ public class SudNFT {
      * @param listener 回调
      */
     public static void unbindCnWallet(SudNFTUnbindCnWalletParamModel model, ISudNFTListenerUnbindCnWallet listener);
+
+    /**
+     * 刷新国内钱包token
+     *
+     * @param model    参数
+     * @param listener 回调
+     */
+    public static void refreshCnWalletToken(SudNFTRefreshCnWalletTokenParamModel model, ISudNFTListenerRefreshCnWalletToken listener);
     // endregion 国内钱包接口
 }
 ```
@@ -162,6 +177,11 @@ public class SudNFT {
 /// @param userActivity userActivity description
 + (BOOL)handleOpenUniversalLink:(NSUserActivity *)userActivity;
 
+/// 刷新钱包token
+/// @param paramModel 参数model
+/// @param listener 回调
++ (void)refreshWalletToken:(SudNFTRefreshWalletTokenParamModel *)paramModel listener:(ISudNFTListenerRefreshWalletToken)listener;
+
 #pragma mark CN
 
 /// 发送短信验证码
@@ -193,5 +213,10 @@ public class SudNFT {
 /// @param paramModel 参数
 /// @param listener 回调
 + (void)unbindCnWallet:(SudNFTUnBindCnWalletParamModel *)paramModel listener:(ISudNFTListenerUnBindCnWallet)listener;
+
+/// 刷新国内钱包token
+/// @param paramModel 参数model
+/// @param listener 回调
++ (void)refreshCnWalletToken:(SudNFTRefreshCnWalletTokenParamModel *)paramModel listener:(ISudNFTListenerRefreshCnWalletToken)listener;
 @end
 ```

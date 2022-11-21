@@ -4,7 +4,7 @@
 
 ## 服务端接入文档
 
-### 快速开始
+### 快速接入
 
 - [Java](./StartUp-Java.md)
 
@@ -12,48 +12,66 @@
 
 - [Node](./StartUp-Node.md)
 
-### API
+### SDK
 
-- [Java](./API/SudMGPAuth-Java.md)
+- [Java](SDK/SudMGPAuth-Java.md)
 
-- [Go](./API/SudMGPAuth-Go.md)
+- [Go](SDK/SudMGPAuth-Go.md)
 
-- [Node](./API/SudMGPAuth-Node.md)
+- [Node](SDK/SudMGPAuth-Node.md)
 
-- [Dotnet](./API/SudMGPAuth-Dotnet.md)
+- [Dotnet](SDK/SudMGPAuth-Dotnet.md)
 
 ### Https服务回调
 
-- [get_sstoken](./HttpsCallback/get_sstoken.md)
+- [get_sstoken](HttpsCallback/get_sstoken.md)
 
-- [update_sstoken](./HttpsCallback/update_sstoken.md)
+- [update_sstoken](HttpsCallback/update_sstoken.md)
 
-- [get_user_info](./HttpsCallback/get_user_info.md)
+- [get_user_info](HttpsCallback/get_user_info.md)
 
-- [report_game_info](./HttpsCallback/report_game_info.md)
+- [report_game_info](HttpsCallback/report_game_info.md)
 
-### SDK服务API
+- [消息通知](HttpsCallback/notify/README.md)
 
-- [获取游戏列表](ServerSDKAPI/ObtainTheGameList.md)
+### API
 
-- [获取游戏信息](ServerSDKAPI/ObtainGameInformation.md)
+- [获取游戏列表](API/ObtainTheGameList.md)
 
-- [获取游戏上报信息](ServerSDKAPI/ObtainTheReportInformationOfGame.md)
+- [获取游戏信息](API/ObtainGameInformation.md)
 
-- [分页获取房间内游戏上报信息](ServerSDKAPI/ObtainTheReportInformationOfGameByPage.md)
+- [获取游戏上报信息](API/ObtainTheReportInformationOfGame.md)
 
-- [获取服务端接口API配置](ServerSDKAPI/ObtainServerEndAPIConfigurations.md)
+- [查询游戏上报信息（新）](API/QueryGameReportInformation.md)
 
-- [上报每局游戏消耗货币信息](ServerSDKAPI/.md)
+- [分页获取房间内游戏上报信息](API/ObtainTheReportInformationOfGameByPage.md)
 
-- [查询游戏上报信息](ServerSDKAPI/.md)
+- [推送事件到游戏服务](API/PushEventToMgServer.md)
 
-### JWT最佳实践：基于客户端登陆态的服务器鉴权与数据交换
+- [推送事件列表](API/PushEventData/README.md)
 
-- [鉴权](Auth/Authentication.md)
+- [游戏内付费下单](API/CreateOrder.md)
 
-- [数据交换](Auth/Data%20exchange.md)
+- [查询单场游戏基础信息](API/QueryMatchBase.md)
 
-### 服务端错误码
+- [查询单场游戏内的所有局id](API/QueryMatchRoundIds.md)
 
-- [错误码](./ErrorCode.md)
+- [查询订单](API/QueryOrder.md)
+
+- [查询用户结算信息](API/QueryUserSettle.md)
+
+- [服务端上报每局游戏消耗的货币信息](API/ReportAmountOfCurrencyConsumedInEachGameRound.md)
+
+- [弹幕游戏服务端API](API/BulletAPI/README.md)
+
+### 错误码
+
+- [错误码](ErrorCode.md)
+
+### 服务端Demo下载
+
+- [服务端Demo下载](Demo/README.md)
+
+### 自行实现鉴权方式
+
+- [自行实现鉴权方式](ImplementAuthenticationByYourself.md) 
