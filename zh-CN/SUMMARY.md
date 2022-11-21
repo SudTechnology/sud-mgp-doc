@@ -105,3 +105,5 @@
         * [客户端Demo下载](nft/Client/Demo/README.md)
     * [服务端](nft/Server/README.md)
         * [获取已穿戴NFT详情](nft/Server/GetDetails.md)
+        * [刷新已穿戴NFT详情令牌](nft/Server/RefreshDetails.md)
+        * [错误码](nft/Server/RetCode.md)
