@@ -1809,7 +1809,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="nft-api">NFT API</h4>
+<h4 id="web3-api">web3 API</h4>
 <table>
 <thead>
 <tr>
@@ -1823,6 +1823,11 @@
 <td style="text-align:left">get_details</td>
 <td style="text-align:left">string</td>
 <td>&#x83B7;&#x53D6;&#x5DF2;&#x7A7F;&#x6234;&#x7684;NFT&#x8BE6;&#x60C5;&#x63A5;&#x53E3;&#x5730;&#x5740;&#xFF08;&#x670D;&#x52A1;&#x7AEF;&#x4F7F;&#x7528;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">refresh_details</td>
+<td style="text-align:left">string</td>
+<td>&#x5237;&#x65B0;&#x5DF2;&#x7A7F;&#x6234;&#x7684;NFT&#x8BE6;&#x60C5;&#x4EE4;&#x724C;&#x63A5;&#x53E3;&#x5730;&#x5740;&#xFF08;&#x670D;&#x52A1;&#x7AEF;&#x4F7F;&#x7528;&#xFF09;</td>
 </tr>
 </tbody>
 </table>
@@ -1846,7 +1851,8 @@
     <span class="hljs-string">&quot;disconnect&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
   },
   <span class="hljs-string">&quot;web3_api&quot;</span>: {
-    <span class="hljs-string">&quot;get_nft_details&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+    <span class="hljs-string">&quot;get_nft_details&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+    <span class="hljs-string">&quot;refresh_details&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
   }
 }
 </code></pre>
@@ -1898,7 +1904,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"获取服务端接口API配置","level":"1.1.2.4.2","depth":4,"next":{"title":"获取游戏列表","level":"1.1.2.4.3","depth":4,"path":"app/Server/API/ObtainTheGameList.md","ref":"app/Server/API/ObtainTheGameList.md","articles":[]},"previous":{"title":"认证请求头Authorization实现方式","level":"1.1.2.4.1","depth":4,"path":"app/Server/API/AuthorizationDescription.md","ref":"app/Server/API/AuthorizationDescription.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page","-sharing","expandable-chapters"],"styles":{"website":"styles/website-custom.css"},"pluginsConfig":{"page":{},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Server/API/ObtainServerEndAPIConfigurations.md","mtime":"2022-10-12T08:01:42.893Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-11-11T06:28:48.964Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
+            gitbook.page.hasChanged({"page":{"title":"获取服务端接口API配置","level":"1.1.2.4.2","depth":4,"next":{"title":"获取游戏列表","level":"1.1.2.4.3","depth":4,"path":"app/Server/API/ObtainTheGameList.md","ref":"app/Server/API/ObtainTheGameList.md","articles":[]},"previous":{"title":"认证请求头Authorization实现方式","level":"1.1.2.4.1","depth":4,"path":"app/Server/API/AuthorizationDescription.md","ref":"app/Server/API/AuthorizationDescription.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page","-sharing","expandable-chapters"],"styles":{"website":"styles/website-custom.css"},"pluginsConfig":{"page":{},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Server/API/ObtainServerEndAPIConfigurations.md","mtime":"2022-11-21T02:53:30.414Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-11-21T03:07:50.498Z"},"basePath":"../../..","book":{"language":"zh-CN"}});
         });
     </script>
 </div>
