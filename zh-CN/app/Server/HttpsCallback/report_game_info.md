@@ -24,8 +24,8 @@
 |:----|:---|:-----|-----|
 |report_type |是  |string |上报类型  |
 |report_msg |是  |object |上报数据对象  |
-|uid |是  |string |用户id，请求get_user_info 接口返回uid参数 |
-|ss_token  |是  |string |用户ss_token，请求get_sstoken 接口返回ss_token参数 |
+|uid |是  |string |用户id，请求get_user_info 接口返回uid参数(后续不再维护，建议不关注) |
+|ss_token  |是  |string |用户ss_token，请求get_sstoken 接口返回ss_token参数(后续不再维护，建议不关注) |
 
 ##### report_type 参数对应表
 
