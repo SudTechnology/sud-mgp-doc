@@ -474,8 +474,52 @@ app_common_game_score
 }
 ```
 
-- 说明
+- Description
 
 ```
 The app returns the player's current score
+```
+
+
+### 19. The app notifies the game click like (added on November 19, 2022, and currently supports you to draw and guess)
+
+- state
+
+```
+app_common_self_click_good
+```
+
+- data
+
+```json
+{
+	
+}
+```
+
+- Description
+
+```
+The app notifies the game click like
+```
+
+### 20. The app notifies the game thrown poop (added on November 19, 2022. Currently, you can draw and guess)
+
+- state
+
+```
+app_common_self_click_poop
+```
+
+- data
+
+```json
+{
+	
+}
+```
+
+- Description
+```
+The app notifies the game thrown poop
 ```

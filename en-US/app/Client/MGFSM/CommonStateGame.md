@@ -775,3 +775,45 @@ mg_common_player_role_id
 ```
 notification app player role
 ```
+
+### 27. The game notifies app players that they are thrown poop (only valid for you to draw, I guess)
+
+- state
+
+```
+mg_common_self_click_poop
+```
+
+- data
+
+```json
+{
+	
+}
+```
+
+- 说明
+```
+The game notifies app players that they are thrown poop
+```
+
+### 28. The game notifies app players that they are liked (only valid for you to draw and guess)
+
+- state
+
+```
+mg_common_self_click_good
+```
+
+- data
+
+```json
+{
+	
+}
+```
+
+- 说明
+```
+The game notifies app players that they are liked
+```

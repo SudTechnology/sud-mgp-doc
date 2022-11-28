@@ -480,3 +480,41 @@ app_common_game_score
 ```
 app返回玩家当前积分
 ```
+
+### 19. app通知游戏点赞玩家（2022-11-19增加，当前支持你画我猜）
+
+- state
+
+```
+app_common_self_click_good
+```
+
+- data
+
+```json
+{
+	
+}
+```
+
+- 说明
+
+```
+app通知游戏点赞玩家
+```
+
+### 20. app通知游戏点踩玩家（2022-11-19增加，当前支持你画我猜）
+
+- state
+
+```
+app_common_self_click_poop
+```
+
+- data
+
+```json
+{
+	
+}
+```

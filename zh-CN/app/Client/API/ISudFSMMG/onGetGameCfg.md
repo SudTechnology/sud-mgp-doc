@@ -121,6 +121,12 @@ dataJsonResp = {
 |ui.logo.hide  |否  |bool |是否隐藏大厅中的logo（false: 不隐藏； true: 隐藏，默认为false）   |
 |ui.game_players  |否  |json |游戏中的游戏位   |
 |ui.game_players.hide  |否  |bool |是否隐藏游戏中的游戏位（false: 不隐藏； true: 隐藏，默认为false，暂时只支持你画我猜）   |
+|ui.bullet_screens_btn  |否  |json | 你画我猜，你说我猜『弹幕开关』按钮   |
+|ui.bullet_screens_btn.hide  |否  |bool |是否隐藏 你画我猜，你说我猜『弹幕开关』按钮（false: 显示； true: 隐藏；默认为true）   |
+|ui.round_over_poop_btn  |否  |json | 你画我猜，小局结算界面点击扔大便按钮   |
+|ui.round_over_poop_btn.custom  |否  |bool |你画我猜，小局结算点击扔大便按钮抛事件（false: 正常点击； true: 游戏通知app按钮点击事件；默认为false）  |
+|ui.round_over_good_btn  |否  |json | 你画我猜，小局结算界面点击点赞按钮   |
+|ui.round_over_good_btn.custom  |否  |bool |你画我猜，小局结算点击点赞按钮抛事件（false: 正常点击； true: 游戏通知app按钮点击事件；默认为false）  |
 
 
 ### 返回示例
@@ -241,7 +247,16 @@ dataJsonResp = {
         },
         "game_players": {
             "hide": false
-        }
+        },
+        "bullet_screens_btn": {
+            "hide": false
+        },
+		"round_over_poop_btn": {
+			"custom": false
+		},
+		"round_over_good_btn": {
+			"custom": false
+		}
     }
 }
 ```

@@ -771,3 +771,46 @@ mg_common_player_role_id
 ```
 游戏通知app玩家角色
 ```
+
+
+### 27. 游戏通知app玩家被扔便便(仅对你画我猜有效)
+
+- state
+
+```
+mg_common_self_click_poop
+```
+
+- data
+
+```json
+{
+	
+}
+```
+
+- 说明
+```
+游戏通知app玩家被扔便便
+```
+
+### 28. 游戏通知app玩家被点赞(仅对你画我猜有效)
+
+- state
+
+```
+mg_common_self_click_good
+```
+
+- data
+
+```json
+{
+	
+}
+```
+
+- 说明
+```
+游戏通知app玩家被点赞
+```
