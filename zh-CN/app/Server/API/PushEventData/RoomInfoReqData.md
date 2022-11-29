@@ -13,7 +13,6 @@
 {
     "event": "room_info",
 	"mg_id": "mg_id_1",
-	"app_id": "app_id_1",
     "timestamp": 1657770493152,
 	"data": {
 	    "room_id": "roomId_1"

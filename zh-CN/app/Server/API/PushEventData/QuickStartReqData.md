@@ -28,7 +28,6 @@
 {
     "event": "quick_start",
 	"mg_id": "mg_id_1",
-	"app_id": "app_id_1",
     "timestamp": 1657770493152,
 	"data": {
 	    "codes": ["code_1", "code_2"],
