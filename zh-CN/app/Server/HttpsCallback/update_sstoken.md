@@ -45,6 +45,7 @@
 |:----|:---|:-----|-----|
 |ss_token|是|string|token|
 |expire_date|是|int64|过期时间（毫秒数）|
+|expire_date_str|否|string|过期时间（毫秒数）,nodejs服务请使用当前字段|
 
 ## 正确返回示例
 
