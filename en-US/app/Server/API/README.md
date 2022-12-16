@@ -14,19 +14,19 @@
 
 - [query game report information (new)](QueryGameReportInformation.md)
 
-- [push event To game server (todo)](PushEventToMgServer.md)
+- [(todo) push event To game server](PushEventToMgServer.md)
 
 - [report amount of currency consumed in each game round](ReportAmountOfCurrencyConsumedInEachGameRound.md)
 
-- [create order (todo)](CreateOrder.md)
+- [(todo) create order](CreateOrder.md)
 
-- [query match base (todo)](QueryMatchBase.md)
+- [(todo) query match base](QueryMatchBase.md)
 
-- [query match round ids (todo)](QueryMatchRoundIds.md)
+- [(todo) query match round ids](QueryMatchRoundIds.md)
 
-- [query order (todo)](QueryOrder.md)
+- [(todo) query order](QueryOrder.md)
 
-- [query user settle (todo)](QueryUserSettle.md)
+- [(todo) query user settle](QueryUserSettle.md)
 
 ## obtain server end API configurations
 

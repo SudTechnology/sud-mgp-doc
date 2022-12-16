@@ -18,5 +18,5 @@
 
 ## Signature verification description
 
-- [callback signature verify (todo)](CallbackSignatureVerify.md)
+- [(todo) callback signature verify](CallbackSignatureVerify.md)
 
