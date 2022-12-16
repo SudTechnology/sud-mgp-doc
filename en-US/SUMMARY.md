@@ -48,7 +48,7 @@
               * [user settle notify (todo)](app/Server/HttpsCallback/notify/UserSettleNotify.md)
               * [order changed notify (todo)](app/Server/HttpsCallback/notify/OrderChangedNotify.md)
           * [callback signature verify (todo)](app/Server/HttpsCallback/CallbackSignatureVerify.md)
-          * [游戏扩展信息说明](app/Server/HttpsCallback/game/README.md)
+          * [others](app/Server/HttpsCallback/game/README.md)
               * [role description](app/Server/HttpsCallback/game/GameRole.md)
               * [description of game extras (todo)](app/Server/HttpsCallback/game/GameExtras.md)
       * [API](app/Server/API/README.md)
