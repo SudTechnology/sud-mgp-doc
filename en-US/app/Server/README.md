@@ -46,23 +46,22 @@
 
 - [Obtain the report information of game by page](API/ObtainTheReportInformationOfGameByPage.md)
 
-- [推送事件到游戏服务](API/PushEventToMgServer.md)
+- [Push event to game server](API/PushEventToMgServer.md)
 
-- [推送事件列表](API/PushEventData/README.md)
+- [Push event data (todo)](API/PushEventData/README.md)
 
-- [游戏内付费下单](API/CreateOrder.md)
+- [Create order (todo)](API/CreateOrder.md)
 
-- [查询单场游戏基础信息](API/QueryMatchBase.md)
+- [Query match base (todo)](API/QueryMatchBase.md)
 
-- [查询单场游戏内的所有局id](API/QueryMatchRoundIds.md)
+- [Query match round ids (todo)](API/QueryMatchRoundIds.md)
 
-- [查询订单](API/QueryOrder.md)
+- [Query order (todo)](API/QueryOrder.md)
 
-- [查询用户结算信息](API/QueryUserSettle.md)
+- [Query user settle (todo)](API/QueryUserSettle.md)
 
 - [Report amount of currency consumed in each game round](API/ReportAmountOfCurrencyConsumedInEachGameRound.md)
 
-- [弹幕游戏服务端API(todo)](API/BulletAPI/README.md)
 
 ### Error codes
 

@@ -4,6 +4,7 @@
 
 ## Description
 
+- current interface will be deprecated in the future, it is recommended to use [query game report information (new)](QueryGameReportInformation.md)
 - Access the server end and obtain game report information based on **AppId**, **AppSecret**, **GameRoundId**, and **ReportType**.
 - Only game data in 24 hours is stored.
 
