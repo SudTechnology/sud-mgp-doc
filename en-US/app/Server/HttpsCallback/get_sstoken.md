@@ -45,6 +45,18 @@
 |:----|:---|:-----|-----|
 | ss_token | Yes | string | The token. |
 | expire_date | Yes | int64 | The expiration time, accurate to millisecond. |
+|expire_date_str| No |string|The expiration time, accurate to millisecond.,Please use the current field for nodejs service|
+|user_info | No |object   |userInfoObj object, when the userInfoObj object has data, the mini game server will use the data, and will not call the getUserinfo interface, saving one call|
+
+
+##### userInfoObj description
+| Parameter | Required | Type | Description |
+|:----|:---|:-----|-----|
+| uid | Yes | string | The user ID. |
+| nick_name | Yes | string | The user nickname. |
+| avatar_url | Yes | string | The URL of the user avatar. (The recommended size is 128 x 128 pixels.)|
+| gender | Yes | string | The gender. Valid values: **female**, **male**. If the gender is unknown, leave it empty. |
+| is_ai | No | int32 | Whether the player is a robot. Valid values: **0**: common user; **1**: robot. The parameter is set to **0** by default. |
 
 ## Sample success responses
 
@@ -55,7 +67,14 @@
     "sdk_error_code":0,// The SDK error code. Valid values: 0: the request is successful; other values: the request is failed.
     "data": {
         "ss_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMjMiLCJleHAiOjE2MzA0MTc4NjEsImFwcF9pZCI6ImFwcElEIn0.vk6cX4dGHJ-du6tKAMqy-qoD9xB_GV2Dh356cZgMQxM",
-        "expire_date": 1630417861359
+        "expire_date": 1630417861359,
+        "user_info": {
+            "uid": "1380100177150345266",
+            "nick_name": "萌萌",
+            "avatar_url": "https://icon.png?128*128",
+            "gender": "female",
+            "is_ai": 0
+    	}
     }
 }
 ```
