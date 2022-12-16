@@ -70,7 +70,7 @@
         "expire_date": 1630417861359,
         "user_info": {
             "uid": "1380100177150345266",
-            "nick_name": "萌萌",
+            "nick_name": "Mengmeng",
             "avatar_url": "https://icon.png?128*128",
             "gender": "female",
             "is_ai": 0
