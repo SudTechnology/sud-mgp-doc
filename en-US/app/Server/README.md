@@ -48,17 +48,17 @@
 
 - [Push event to game server](API/PushEventToMgServer.md)
 
-- [Push event data (todo)](API/PushEventData/README.md)
+- [(todo) Push event data](API/PushEventData/README.md)
 
-- [Create order (todo)](API/CreateOrder.md)
+- [(todo) Create order](API/CreateOrder.md)
 
-- [Query match base (todo)](API/QueryMatchBase.md)
+- [(todo) Query match base](API/QueryMatchBase.md)
 
-- [Query match round ids (todo)](API/QueryMatchRoundIds.md)
+- [(todo) Query match round ids](API/QueryMatchRoundIds.md)
 
-- [Query order (todo)](API/QueryOrder.md)
+- [(todo) Query order](API/QueryOrder.md)
 
-- [Query user settle (todo)](API/QueryUserSettle.md)
+- [(todo) Query user settle](API/QueryUserSettle.md)
 
 - [Report amount of currency consumed in each game round](API/ReportAmountOfCurrencyConsumedInEachGameRound.md)
 
