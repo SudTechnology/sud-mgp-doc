@@ -86,7 +86,7 @@
 ```
 
 
-3. Use the APIs provided in [SudMGPAuth](./API/SudMGPAuth-Java.md) to implement the following callback APIs for game server authentication and obtaining basic user information. For more information, see [Demo](https://github.com/SudTechnology/hello-sud-java).
+3. Use the APIs provided in [SudMGPAuth](SDK/SudMGPAuth-Java.md) to implement the following callback APIs for game server authentication and obtaining basic user information. For more information, see [Demo](https://github.com/SudTechnology/hello-sud-java).
 
 - [get_sstoken](./HttpsCallback/get_sstoken.md)
 

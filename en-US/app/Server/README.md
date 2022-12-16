@@ -14,13 +14,13 @@
 
 ### API
 
-- [Java](./API/SudMGPAuth-Java.md)
+- [Java](SDK/SudMGPAuth-Java.md)
 
-- [Go](./API/SudMGPAuth-Go.md)
+- [Go](SDK/SudMGPAuth-Go.md)
 
-- [Node](./API/SudMGPAuth-Node.md)
+- [Node](SDK/SudMGPAuth-Node.md)
 
-- [Dotnet](./API/SudMGPAuth-Dotnet.md)
+- [Dotnet](SDK/SudMGPAuth-Dotnet.md)
 
 ### HTTPS service callback
 
@@ -34,15 +34,15 @@
 
 ### SDK service API
 
-- [Obtain the game list](ServerSDKAPI/ObtainTheGameList.md)
+- [Obtain the game list](API/ObtainTheGameList.md)
 
-- [Obtain game information](ServerSDKAPI/ObtainGameInformation.md)
+- [Obtain game information](API/ObtainGameInformation.md)
 
-- [Obtain the report information of game](ServerSDKAPI/ObtainTheReportInformationOfGame.md)
+- [Obtain the report information of game](API/ObtainTheReportInformationOfGame.md)
 
-- [Obtain the report information of game by page](ServerSDKAPI/ObtainTheReportInformationOfGameByPage.md)
+- [Obtain the report information of game by page](API/ObtainTheReportInformationOfGameByPage.md)
 
-- [Obtain server-end API configurations](ServerSDKAPI/ObtainServerEndAPIConfigurations.md)
+- [Obtain server-end API configurations](API/ObtainServerEndAPIConfigurations.md)
 
 ### JWT best practices: server authentication and data exchange based on the client login state
 

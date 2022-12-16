@@ -20,7 +20,7 @@
    replace github.com/SudTechnology/mgp-auth-go => /localpath/github.com/SudTechnology/mgp-auth-go
    ```
 
-2. Use the APIs provided in [SudMGPAuth](./API/SudMGPAuth-Go.md) to implement the following callback APIs for game server authentication and obtaining basic user information. For more information, see Demo.
+2. Use the APIs provided in [SudMGPAuth](SDK/SudMGPAuth-Go.md) to implement the following callback APIs for game server authentication and obtaining basic user information. For more information, see Demo.
 
     - [get_sstoken](./HttpsCallback/get_sstoken.md)
 

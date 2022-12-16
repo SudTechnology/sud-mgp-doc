@@ -45,7 +45,7 @@
 </Project>
 ```
 
-3. Use the APIs provided in [SudMGPAuth](./API/SudMGPAuth-Dotnet.md) to implement the following callback APIs for game server authentication and obtaining basic user information. For more information, see Demo (TODO:). 
+3. Use the APIs provided in [SudMGPAuth](SDK/SudMGPAuth-Dotnet.md) to implement the following callback APIs for game server authentication and obtaining basic user information. For more information, see Demo (TODO:). 
 
 - [get_sstoken](./HttpsCallback/get_sstoken.md)
 

@@ -13,5 +13,10 @@
 - [report_game_info](report_game_info.md)
 
 ## Game role description
-- [Game role description](game/README.md)
+
+- [game role description](game/README.md)
+
+## Signature verification description
+
+- [callback signature verify](CallbackSignatureVerify.md)
 

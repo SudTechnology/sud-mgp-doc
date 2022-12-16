@@ -4,5 +4,5 @@
 
 ## Game role description
 
-- [Werewolf role description](Game role description.md)
+- [Werewolf role description](GameRole.md)
 

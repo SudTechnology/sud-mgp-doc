@@ -16,7 +16,7 @@
 
 1. Import **npm install -d** to the project.
 
-2. Use the APIs provided in [SudMGPAuth](./API/SudMGPAuth-Node.md) to implement the following callback APIs for game server authentication and obtaining basic user information. For more information, see Demo.
+2. Use the APIs provided in [SudMGPAuth](SDK/SudMGPAuth-Node.md) to implement the following callback APIs for game server authentication and obtaining basic user information. For more information, see Demo.
 
     - [get_sstoken](./HttpsCallback/get_sstoken.md)
 
