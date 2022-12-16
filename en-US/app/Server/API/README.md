@@ -12,7 +12,7 @@
 
 - [obtain the report information of game by page](ObtainTheReportInformationOfGameByPage.md)
 
-- [query game report information（new）](QueryGameReportInformation.md)
+- [query game report information (new)](QueryGameReportInformation.md)
 
 - [push event To game server](PushEventToMgServer.md)
 

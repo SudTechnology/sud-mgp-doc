@@ -57,7 +57,7 @@
           * [Obtain the game list](app/Server/API/ObtainTheGameList.md)
           * [Obtain game information](app/Server/API/ObtainGameInformation.md)
           * [Obtain the report information of game](app/Server/API/ObtainTheReportInformationOfGame.md)
-          * [查询游戏上报信息（新）](app/Server/API/QueryGameReportInformation.md)
+          * [Query game report information (new)](app/Server/API/QueryGameReportInformation.md)
           * [Obtain the report information of game by page](app/Server/API/ObtainTheReportInformationOfGameByPage.md)
           * [推送事件到游戏服务](app/Server/API/PushEventToMgServer.md)
           * [推送事件列表](app/Server/API/PushEventData/README.md)
