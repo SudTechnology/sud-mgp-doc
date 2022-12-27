@@ -17,7 +17,7 @@
     "timestamp": "1657770493152",
     "data": {
         "uid": "uid_1",
-        "is_cancel_ready": false,
+        "is_cancel_ready": false
     }
 }
 ```
