@@ -127,6 +127,8 @@ dataJsonResp = {
 |ui.round_over_poop_btn.custom  |否  |bool |你画我猜，小局结算点击扔大便按钮抛事件（false: 正常点击； true: 游戏通知app按钮点击事件；默认为false）  |
 |ui.round_over_good_btn  |否  |json | 你画我猜，小局结算界面点击点赞按钮   |
 |ui.round_over_good_btn.custom  |否  |bool |你画我猜，小局结算点击点赞按钮抛事件（false: 正常点击； true: 游戏通知app按钮点击事件；默认为false）  |
+|ui.mask  |否  |json | 弹框界面的蒙层   |
+|ui.mask.transparent  |否  |bool |是否将弹框界面的蒙层设置为全透明（false: 半透明； true: 全透明；默认为false）  |
 
 
 ### 返回示例
@@ -256,6 +258,9 @@ dataJsonResp = {
 		},
 		"round_over_good_btn": {
 			"custom": false
+		},
+		"mask": {
+			"transparent": false
 		}
     }
 }

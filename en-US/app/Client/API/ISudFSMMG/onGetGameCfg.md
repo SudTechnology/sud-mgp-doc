@@ -128,6 +128,8 @@ dataJsonResp = {
 | ui.round_over_poop_btn.custom     | 否       | bool | oundOver click throw stool button throw event (false: normal click; true: game notification app button click event; default is false)                                                                                                                                                                                                                                                                                 |
 | ui.round_over_good_btn            | 否       | json | good button in roundOver , Currently supported by DrawAndGuess only                                                                                                                                                                                                                                                                                                                                                   |
 | ui.round_over_good_btn.custom     | 否       | bool | Draw and guess, click the "like" button to throw an event (false: normal click; true: game notification app button click event; default is false)                                                                                                                                                                                                                                                                     |
+| ui.mask                           | 否       | json | Dialog mask layer                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ui.mask.transparent               | 否       | bool | Set dialog mask layer transparent (false: no transparent, true: transparent; default is false)                                                                                                                                                                                                                                                                                                                        |
 
 ### Response parameters
 
@@ -257,6 +259,9 @@ dataJsonResp = {
 		},
 		"round_over_good_btn": {
 			"custom": false
+		},
+		"mask": {
+			"transparent": false
 		}
     }
 }
