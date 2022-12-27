@@ -2215,6 +2215,18 @@ dataJsonResp = {
 <td style="text-align:left">bool</td>
 <td>&#x4F60;&#x753B;&#x6211;&#x731C;&#xFF0C;&#x5C0F;&#x5C40;&#x7ED3;&#x7B97;&#x70B9;&#x51FB;&#x70B9;&#x8D5E;&#x6309;&#x94AE;&#x629B;&#x4E8B;&#x4EF6;&#xFF08;false: &#x6B63;&#x5E38;&#x70B9;&#x51FB;&#xFF1B; true: &#x6E38;&#x620F;&#x901A;&#x77E5;app&#x6309;&#x94AE;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#xFF1B;&#x9ED8;&#x8BA4;&#x4E3A;false&#xFF09;</td>
 </tr>
+<tr>
+<td style="text-align:left">ui.mask</td>
+<td style="text-align:left">&#x5426;</td>
+<td style="text-align:left">json</td>
+<td>&#x5F39;&#x6846;&#x754C;&#x9762;&#x7684;&#x8499;&#x5C42;</td>
+</tr>
+<tr>
+<td style="text-align:left">ui.mask.transparent</td>
+<td style="text-align:left">&#x5426;</td>
+<td style="text-align:left">bool</td>
+<td>&#x662F;&#x5426;&#x5C06;&#x5F39;&#x6846;&#x754C;&#x9762;&#x7684;&#x8499;&#x5C42;&#x8BBE;&#x7F6E;&#x4E3A;&#x5168;&#x900F;&#x660E;&#xFF08;false: &#x534A;&#x900F;&#x660E;&#xFF1B; true: &#x5168;&#x900F;&#x660E;&#xFF1B;&#x9ED8;&#x8BA4;&#x4E3A;false&#xFF09;</td>
+</tr>
 </tbody>
 </table>
 <h3 id="&#x8FD4;&#x56DE;&#x793A;&#x4F8B;">&#x8FD4;&#x56DE;&#x793A;&#x4F8B;</h3>
@@ -2343,6 +2355,9 @@ dataJsonResp = {
         },
         &quot;round_over_good_btn&quot;: {
             &quot;custom&quot;: false
+        },
+        &quot;mask&quot;: {
+            &quot;transparent&quot;: false
         }
     }
 }
@@ -2395,7 +2410,7 @@ dataJsonResp = {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"onGetGameCfg","level":"1.1.1.2.1.4.1","depth":6,"next":{"title":"onGetGameViewInfo","level":"1.1.1.2.1.4.2","depth":6,"path":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","ref":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","articles":[]},"previous":{"title":"ISudFSMMG","level":"1.1.1.2.1.4","depth":5,"path":"app/Client/API/ISudFSMMG.md","ref":"app/Client/API/ISudFSMMG.md","articles":[{"title":"onGetGameCfg","level":"1.1.1.2.1.4.1","depth":6,"path":"app/Client/API/ISudFSMMG/onGetGameCfg.md","ref":"app/Client/API/ISudFSMMG/onGetGameCfg.md","articles":[]},{"title":"onGetGameViewInfo","level":"1.1.1.2.1.4.2","depth":6,"path":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","ref":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page","-sharing","expandable-chapters"],"styles":{"website":"styles/website-custom.css"},"pluginsConfig":{"page":{},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Client/API/ISudFSMMG/onGetGameCfg.md","mtime":"2022-11-28T09:33:42.059Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-12-16T08:35:26.850Z"},"basePath":"../../../..","book":{"language":"zh-CN"}});
+            gitbook.page.hasChanged({"page":{"title":"onGetGameCfg","level":"1.1.1.2.1.4.1","depth":6,"next":{"title":"onGetGameViewInfo","level":"1.1.1.2.1.4.2","depth":6,"path":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","ref":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","articles":[]},"previous":{"title":"ISudFSMMG","level":"1.1.1.2.1.4","depth":5,"path":"app/Client/API/ISudFSMMG.md","ref":"app/Client/API/ISudFSMMG.md","articles":[{"title":"onGetGameCfg","level":"1.1.1.2.1.4.1","depth":6,"path":"app/Client/API/ISudFSMMG/onGetGameCfg.md","ref":"app/Client/API/ISudFSMMG/onGetGameCfg.md","articles":[]},{"title":"onGetGameViewInfo","level":"1.1.1.2.1.4.2","depth":6,"path":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","ref":"app/Client/API/ISudFSMMG/onGetGameViewInfo.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page","-sharing","expandable-chapters"],"styles":{"website":"styles/website-custom.css"},"pluginsConfig":{"page":{},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"app/Client/API/ISudFSMMG/onGetGameCfg.md","mtime":"2022-12-27T03:05:29.569Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-12-27T03:07:18.252Z"},"basePath":"../../../..","book":{"language":"zh-CN"}});
         });
     </script>
 </div>
