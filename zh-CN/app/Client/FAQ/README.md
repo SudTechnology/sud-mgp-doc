@@ -16,7 +16,10 @@
 
 [错误码 速查列表](https://docs.sud.tech/zh-CN/app/Server/ErrorCode.html)
 
-### 问 1003: HelloSudPlus体验demo下载（展示多业务场景）
+### 问 1003: 我的App是否可以集成SudMGP SDK
+只要在App的 UI 框架中能嵌入原生View， 您的App就能直接集成SudMGP SDK
+
+### 问 1004: HelloSudPlus体验demo下载（展示多业务场景）
 ![Android](../../Resource/Client/hello_sudplus_android.png)
 ![iPhone](../../Resource/Client/hello_sudplus_iphone.png)
 
