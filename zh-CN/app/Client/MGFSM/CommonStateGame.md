@@ -814,3 +814,139 @@ mg_common_self_click_good
 ```
 游戏通知app玩家被点赞
 ```
+
+
+### 29. 游戏通知app游戏FPS(仅对碰碰，多米诺骨牌，飞镖达人生效)
+
+- state
+
+```
+mg_common_game_fps
+```
+
+- data
+
+```json
+{
+	"fps": 60
+}
+```
+
+- 说明
+```
+游戏通知app游戏FPS
+```
+
+
+### 30. 游戏通知app游戏弹框
+
+- state
+
+```
+mg_common_alert
+```
+
+- data
+
+```json
+{
+	"state": "show" // show:显示，close:关闭
+}
+```
+
+- 说明
+```
+游戏通知app游戏弹框
+```
+
+### 31. 游戏通知app最坑队友（只支持友尽闯关）
+
+- state
+
+```
+mg_common_worst_teammate
+```
+
+- data
+
+```json
+{
+	"uid": "123" // 最坑队友的uid
+}
+```
+
+- 说明
+```
+游戏通知app最坑队友
+```
+
+### 32. 游戏通知app因玩家逃跑导致游戏结束（只支持友尽闯关）
+
+- state
+
+```
+mg_common_game_over_tip
+```
+
+- data
+
+```json
+{
+	"uids": ["123", "345"] // 逃跑玩家的uid数组
+}
+```
+
+- 说明
+```
+游戏通知app因玩家逃跑导致游戏结束
+```
+
+
+### 33. 游戏通知app玩家颜色（只支持友尽闯关）
+
+- state
+
+```
+mg_common_game_player_color
+```
+
+- data
+
+```json
+{
+	"players": [
+		{"uid": "123", "color": 1},
+		{"uid": "123", "color": 2},
+		{"uid": "123", "color": 3}
+	]
+}
+
+//color:1是粉色，2是紫色，3是绿色，4是蓝色，5是黄色，6是橙色
+```
+
+- 说明
+```
+游戏通知app玩家颜色
+```
+
+### 34. 游戏通知app玩家头像的坐标（只支持ludo）
+
+- state
+
+```
+mg_common_game_player_icon_position
+```
+
+- data
+
+```json
+{
+	"uid":"123",	// 玩家id
+	"position":	{"x": 0, "y": 0}	// 头像坐标
+}
+```
+
+- 说明
+```
+游戏通知app玩家头像的坐标
+```
