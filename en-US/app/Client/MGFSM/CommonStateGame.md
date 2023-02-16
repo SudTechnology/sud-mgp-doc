@@ -692,8 +692,8 @@ mg_common_game_set_score
 
 ```json
 {
-	"currentScore": 0,	// self current points
-	"addScore": 10,		// Recharge score
+	"lastRoundScore": 0,	// self current points
+	"incrementalScore": 10,		// Recharge score
 	"totalScore": 10	// Total score after recharging
 }
 ```

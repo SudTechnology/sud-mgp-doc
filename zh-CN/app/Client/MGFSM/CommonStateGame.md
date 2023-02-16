@@ -687,8 +687,8 @@ mg_common_game_set_score
 
 ```json
 {
-	"currentScore": 0,	// 本人当前积分
-	"addScore": 10,		// 充值积分
+	"lastRoundScore": 0,	// 本人当前积分
+	"incrementalScore": 10,		// 充值积分
 	"totalScore": 10	// 充值后总积分
 }
 ```
